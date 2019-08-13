@@ -1,0 +1,7 @@
+name = Guao.org - Diseño Responsive
+description = Permite incorporar el CCS y JS necesario para que el contenido la plataforma guao.org se adapte a la pantalla de los dispositivos.
+core = 7.x
+version = 1.0
+package = Guao.org Modules
+stylesheets[all][] = guao_responsive_design.css
+scripts[] = guao_responsive_design.js
