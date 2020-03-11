@@ -45,7 +45,7 @@
     }
 
     #main-menu {
-        display: none;
+        /* display:none;*/
     }
 
     .homepage_menu_guao_bloque1 {
@@ -97,16 +97,24 @@
 
     .bloqueshomepage>div>ul {
         font-size: 2em !important;
-        display: none;
+        /* display: none;*/
     }
 
     #bloque03_fondo {
         width: 100% !important;
         background-position: bottom right !important;
         position: 10px 10px 0px 0px;
+        display: none;
     }
 
     #bloque03 {
-        /* background-image: url(/sites/default/files/home_secundaria.png); */
+        background-image: url(/sites/default/files/home_otros.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: 200px 280px;
+        padding-right: 20px;
+        margin-right: -20px;
+        padding-bottom: 80px;
+        margin-bottom: -80px;
     }
 }
