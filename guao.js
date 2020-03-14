@@ -27,7 +27,7 @@ var panel = this.nextElementSibling;
 $('.menu-437').click(function(e) {
  e.preventDefault();
 //do other stuff when a click happens
-});*/
+});
 
 var x = document.getElementsByClassName("menu-437");
 x.addEventListener("click", myFunction);
@@ -36,4 +36,4 @@ x.addEventListener("click", myFunction);
 function myFunction(event) {
   event.stopImmediatePropagation();
   event.preventDefault();
-}
+} */
