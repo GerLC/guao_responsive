@@ -1,60 +1,63 @@
 /* 
   Para todos los dispositivos
 */
+.body {
+  box-sizing: border-box;
+}
 @media (max-width: 1024px) {
+  html,
+  body {
+    width: 100vw;
+  }
 
-    html,
-    body {
-        width: 100vw;
-    }
+  .region-header {
+    display: none;
+  }
 
-    .region-header {
-        display: none;
-    }
+  #logo {
+    position: relative;
+    margin: 0 !important;
+    left: 50%;
+    transform: translate(-50%);
+  }
 
-    #logo {
-        position: relative;
-        margin: 0 !important;
-        left: 50%;
-        transform: translate(-50%);
-    }
+  .bloqueshomepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: central;
+  }
 
-    .bloqueshomepage {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  /*.bloqueshomepage > div {
+width: 80% !important;      
+height: 37.5rem !important;
+margin: 10px 0px !important;      
+}*/
+  .bloqueshomepage > div > p {
+    font-size: 4em;
+  }
 
-    /*.bloqueshomepage > div {
-    width: 80% !important;      
-    height: 37.5rem !important;
-    margin: 10px 0px !important;      
-  }*/
-    .bloqueshomepage>div>p {
-        font-size: 4em !important;
-    }
+  .bloqueshomepage > div > ul {
+    /*display:none;*/
+  }
 
-    .bloqueshomepage>div>ul {
-        /*display:none;*/
-    }
+  #bloque03_fondo {
+    width: 100% !important;
+    background-position: bottom right !important;
+  }
 
-    #bloque03_fondo {
-        width: 100% !important;
-        background-position: bottom right !important;
-    }
+  /*  #main-menu {
+    display: none;
+}*/
 
-    /*  #main-menu {
-        display: none;
-    }*/
+  .homepage_menu_guao_bloque1 {
+    display: none;
+  }
 
-    .homepage_menu_guao_bloque1 {
-        display: none;
-    }
-
-    .homepage_menu_guao {
-        display: none;
-    }
+  .homepage_menu_guao {
+    display: none;
+  }
 }
 
 /* 
@@ -62,11 +65,11 @@
 ##Screen = B/w 768px to 1024px
 */
 @media (min-width: 768px) and (max-width: 1024px) {
-    .bloqueshomepage>div {
-        width: 80% !important;
-        height: 37.5rem !important;
-        margin: 10px 0px !important;
-    }
+  .bloqueshomepage > div {
+    width: 80% !important;
+    height: 37.5rem !important;
+    margin: 10px 0px !important;
+  }
 }
 
 /* 
@@ -74,14 +77,16 @@
 ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}
 
 /* 
 ##Device = Low Resolution Tablets, Mobiles (Landscape)
 ##Screen = B/w 481px to 767px
 */
 
-@media (min-width: 481px) and (max-width: 767px) {}
+@media (min-width: 481px) and (max-width: 767px) {
+}
 
 /* 
 ##Device = Most of the Smartphones Mobiles (Portrait)
@@ -89,70 +94,71 @@
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-    .bloqueshomepage>div {
-        width: 80%;
-        height: 39rem;
-        margin: 1.5rem 0px;
-    }
-    
-    .bloqueshomepage{
-        margin: 5rem 0 0 0;
-        padding: 0 0 0 0;
-    }
+  .bloqueshomepage > div {
+    width: 80%;
+    height: 39rem;
+    margin: 1.5rem 0px;
+    padding: 2rem 4rem 4rem 4rem;
+  }
 
-    .bloqueshomepage>div>ul {
-        font-size: 2em;
-        /* display: none;*/
-    }
+  .bloqueshomepage {
+    margin: 5rem 0 0 0;
+    padding: 0 0 0 0;
+  }
 
-    #bloque03_fondo {
-        display: none;
-    }
-    #bloque01 {
-        background-size: 30rem;
-    }
-    #bloque02 {
-        background-size: 30rem;
-    }
+  .bloqueshomepage > div > p {
+    font-size: 6rem;
+  }
+  .bloqueshomepage > div > ul {
+    width: 30rem;
+  }
 
-    #bloque03 {
-        background-image: url(/sites/default/files/home_otros.png);
-        background-repeat: no-repeat;
-        background-position: 32rem 6rem;
-        background-size: 30rem;
+  .bloqueshomepage > div > ul {
+    font-size: 2em;
+    /* display: none;*/
+  }
 
-    }
+  #bloque03_fondo {
+    display: none;
+  }
+  #bloque01 {
+    background-size: 30rem;
+  }
+  #bloque02 {
+    background-size: 30rem;
+  }
 
-    /* Cambios de German */
+  #bloque03 {
+    background-image: url(/sites/default/files/home_otros.png);
+    background-repeat: no-repeat;
+    background-position: 32rem 6rem;
+    background-size: 30rem;
+  }
 
-    .menu-437 {
-     display: block;
-    
-    }
-    
-     .menu-677 ,.menu-615,.menu-2053,.menu-2630{
-        /*display: none;*/
-         max-height: 0;
-    
-    }
-    
-    
-    
-    #main-menu-links li {
+  /* Cambios de German */
+
+  .menu-437 {
+    display: block;
+  }
+
+  .menu-677,
+  .menu-615,
+  .menu-2053,
+  .menu-2630 {
+    /*display: none;*/
+    max-height: 0;
+  }
+
+  #main-menu-links li {
     font-weight: bold;
     font-size: 35px;
     width: 100%;
-    
-    }
-    
-     #main-menu-links {
-     position: relative;
+  }
+
+  #main-menu-links {
+    position: relative;
     outline: none;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    }
-
-
- 
-
+  }
 }
