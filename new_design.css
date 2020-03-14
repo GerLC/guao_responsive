@@ -11,7 +11,7 @@
   }
 
   .region-header {
-    display: none;
+   /* display: none;*/
   }
 
   #logo {
@@ -142,7 +142,7 @@ margin: 10px 0px !important;
 
   /* Cambios de German */
 
-  .menu-437 {
+ .menu-437 {
     display: block;
   }
 
@@ -166,4 +166,65 @@ margin: 10px 0px !important;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
+  
+  
+  
+  
+  /* LINKS SOCIALES FACEBOOK TWITTER INSTAGRAM
+  
+ /* #block-block-6 {
+  	position: absolute;
+	top: 960%;
+
+  }*/
+
+	.rteright {
+		position: absolute;
+		top: 960%;
+	}
+	
+	
+	.rteright > a > img {
+/*		min-width: 110% !important;
+		max-width: 200%;
+        height: auto;*/
+	}
+	
+	
+	
+	/* INPUT DE BUSQUEDA , MENU SECUNDARIO Y LOGIN */
+	
+	.block.block-search {
+		display: none;
+	}
+ 
+	#block-menu-menu-men-secundario {
+		display: none;
+	}
+
+	#block-system-user-menu {
+       margin-top: -2% !important; 
+       margin-left: 78% !important;
+	}
+	
+	#block-system-user-menu > div.content > ul > li.first > a {
+	    background-image: url(/sites/default/files/login0.png);
+	    background-repeat: no-repeat;
+		background-size: 1em;
+		padding-left: 40px !important;
+	}
+	
+	
+	#block-system-user-menu > div.content > ul > li > a {
+    color: black;
+    font-size: 3em;
+    padding-left: 10px;
+
+}
+
+	#block-system-user-menu > div.content > ul > li.last {
+    display: none;
+}
+
+
 }
