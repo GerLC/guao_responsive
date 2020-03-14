@@ -101,6 +101,11 @@ margin: 10px 0px !important;
     padding: 2rem 4rem 4rem 4rem;
   }
 
+  .bloqueshomepage > div > ul > li:before {
+    left: -0.5rem;
+    top: 2rem;
+  }
+
   .bloqueshomepage {
     margin: 5rem 0 0 0;
     padding: 0 0 0 0;
@@ -131,7 +136,7 @@ margin: 10px 0px !important;
   #bloque03 {
     background-image: url(/sites/default/files/home_otros.png);
     background-repeat: no-repeat;
-    background-position: 32rem 6rem;
+    background-position: 40rem 12rem;
     background-size: 30rem;
   }
 
