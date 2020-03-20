@@ -58,6 +58,8 @@ margin: 10px 0px !important;
   .homepage_menu_guao {
     display: none;
   }
+  
+
 }
 
 /* 
@@ -86,6 +88,8 @@ margin: 10px 0px !important;
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
+	
+
 }
 
 /* 
@@ -144,12 +148,12 @@ margin: 10px 0px !important;
 
  /* MENÚ HAMBURGER */
    #header {
-    border-bottom: 1px outset black;
-    height: 47rem;
-    min-height: 8rem;
+   	border-bottom: 1px outset black;
+   	height: 47rem;
+   	min-height: 8rem;
    /*max-height: 50rem;*/
     max-height: 0;
-    outline: none;
+   	outline: none;
     overflow: hidden;
     transition: max-height 0.6s ease-out;
    }
@@ -164,17 +168,17 @@ margin: 10px 0px !important;
      margin: 6px 30rem;
    }
 
-  #hamburger2 {
-   position: absolute;
+	#hamburger2 {
+	 position: absolute;
      left: -28rem;
      top: 5%;
      width: 50px;
      height: 8px;
      background-color: black;
      margin: 20px 30rem;
-  }
-  
-  #hamburger3 {
+	}
+	
+	#hamburger3 {
      position: absolute;
      left: -28rem;
      top: 5%;
@@ -196,7 +200,7 @@ margin: 10px 0px !important;
 
 /*
   #main-menu-links {
-    max-height: 0;
+  	max-height: 0;
     position: relative;
     outline: none;
     overflow: hidden;
@@ -207,22 +211,25 @@ margin: 10px 0px !important;
   /* INICIAR SESIÓN */
   
   #block-system-user-menu {
-   margin-left: 71rem!important;
+	 margin-left: 70rem!important;
   }
   
    #block-system-user-menu > div.content > ul > li.first > a {
+   display: table-caption;
    background-size: 2rem;
    padding-left: 48px!important;
+   font-size: 1px;
+   color: white;
 }
 
-  #block-system-user-menu > div.content > ul > li > a {
-      display: table-caption;
-      font-size: 1px;
-      color: white;
-  }
 
-  #block-system-user-menu > div.content > ul > li.last {
-    display: none;
+  #block-system-user-menu > div.content > ul > li.last > a {
+   position: relative;
+   float: left;
+   right: 13rem;
+   top: 6rem;
+   font-size: 2rem;
+   color: black;
 }
 
   /* BÚSQUEDA  */
@@ -232,40 +239,44 @@ margin: 10px 0px !important;
      top: 34rem !important;
      right: 33rem !important;
      
-  } 
-  
-  #block-search-form {
-    width: 300rem !important;
-    margin-left: 52%!important;
+	}	
+	
+	#block-search-form {
+	  width: 300rem !important;
+	  margin-left: 52%!important;
       margin-top: -105px!important;
-  }
-    
-  #block-search-form > div > form > div > div > div.form-item.form-type-textfield.form-item-search-block-form > input {
+	}
+		
+	#block-search-form > div > form > div > div > div.form-item.form-type-textfield.form-item-search-block-form > input {
     width: 58rem !important;
 }
 
-  #search-form input#edit-keys, #block-search-form .form-item-search-block-form input {
-      font-size: 2rem;
-  }
+	#search-form input#edit-keys, #block-search-form .form-item-search-block-form input {
+	    font-size: 2rem;
+	}
 
-  
+	
  #block-search-form > div > form > div > div > div.form-actions.form-wrapper > input {
     height: 3.05rem;
     background-size: 2.2rem;
     padding-right: 3rem;
 }
-  
+
+ #busqueda {
+   	 display: none;
+   }
+	
  /* MENÚ SECUNDARIO NOSOTROS , CONTACTOS ... */
  
-  #block-menu-menu-men-secundario {
-     position: relative;
-     top: 35.5rem;
-     margin-left: 5rem;
-     width: 100%
-    
-  }
+	#block-menu-menu-men-secundario {
+	   position: relative;
+	   top: 35.5rem;
+	   margin-left: 5rem;
+	   width: 100%
+	  
+	}
   
-  #block-menu-menu-men-secundario > div.content > ul > li > a {
+	#block-menu-menu-men-secundario > div.content > ul > li > a {
        font-size: 1.7rem;
        border-left: 6px solid red;
        color: black;
@@ -276,20 +287,23 @@ margin: 10px 0px !important;
 /* REDES SOCIALES SE QUITO DEL HEADER Y SE COLOCO
    EN EL FOOTER */
 
-  .rteright {
-        display: none;
-    }
+	.rteright {
+	     	display: none;
+	  }
 
-  #redes {
-    position: relative;
-      margin-left: 42rem;
-      top: -1rem;
-  }
-  
-  #redes > a {
-    margin: 1rem;
-  }
+	#redes {
+		position: relative;
+	    margin-left: 42rem;
+	    top: -1rem;
+	}
+	
+	#redes > a {
+		margin: 1rem;
+	}
 
+	#redesmensaje {
+		display: none;
+	}
 
 }
 
@@ -316,4 +330,188 @@ margin: 10px 0px !important;
         font-size: 2rem;
     }
     
+    
+     #logo {
+    position: relative;
+    left: 20%;
+	top: 0.45rem;
+  }
+  
+     #logo > img {
+    width: 15rem;
+    height: auto;
+}
+	
+	
+	#header {
+   	border-bottom: 1px outset black;
+   	height: 42rem;
+   	min-height: 8rem;
+    max-height: 0;
+   	outline: none;
+    overflow: hidden;
+    transition: max-height 0.6s ease-out;
+   }
+   
+   #hamburger1 {
+     position: absolute;
+     left: -28rem;
+     top: 10%;
+     width: 45px;
+     height: 7px;
+     background-color: black;
+     margin: 6px 30rem;
+   }
+
+	#hamburger2 {
+	 position: absolute;
+     left: -28rem;
+     top: 10%;
+     width: 45px;
+     height: 7px;
+     background-color: black;
+     margin: 20px 30rem;
+	}
+	
+	#hamburger3 {
+     position: absolute;
+     left: -28rem;
+     top: 10%;
+     width: 45px;
+     height: 7px;
+     background-color: black;
+     margin: 34px 30rem;
+   }
+   
+   /* MENU PRIMARIO TU AULA, BIBLIOTECA... */
+   
+   #main-menu-links  {
+    position: relative;
+    top: 2rem;
+  }
+     #main-menu-links li {
+    font-weight: bold;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  
+  
+   /* MENÚ SECUNDARIO NOSOTROS , CONTACTOS ... */
+ 
+	#block-menu-menu-men-secundario {
+	   position: relative;
+	   top: 23.5rem;
+	   margin-left: 14rem;
+	   width: 100%
+	  
+	}
+  
+	#block-menu-menu-men-secundario > div.content > ul > li > a {
+       font-size: 1.2rem;
+       border-left: 6px solid red;
+       color: black;
+}
+   
+   
+   /* REDES SOCIALES SE QUITO DEL HEADER Y SE COLOCO
+   EN EL FOOTER */
+
+	.rteright {
+	     position: relative;
+	     top: 32rem;
+	     right: 31rem;
+	     width: 22rem;
+	  }
+	
+	.rteright > a > img{
+		width: 3rem !important;
+		height: auto !important;
+	  }
+	
+		#redesmensaje {
+	    position: relative;
+	    top: 25rem;
+	    width: 27rem;
+	    font-size: 2rem;
+	    font-weight: bold;
+	    color: black;
+	    right: 29rem;
+	}
+	
+	#redes {
+		display: none;
+	}
+	
+	
+	
+	  /* BÚSQUEDA  */
+  
+  #block-search-form {
+  	transform: scaleX(0); 
+     position: relative;
+     right: 30rem;
+     width: 40rem !important;
+      overflow:visible;
+	  transition:transform 0.3s ease-out; 
+	  height: auto;
+	  
+	  transform-origin: right; 
+	  
+	}	
+	
+  #block-search-form > element.style {
+    transform: scaleX(0) !important;
+}
+
+   #busqueda {
+   	 position: absolute;
+   	 top: 2rem;
+   	 left: 64.5rem;
+   	 z-index: 1;
+   }
+	
+    #block-search-form > div > form > div > div > div.form-item.form-type-textfield.form-item-search-block-form > input {
+    width: 35rem !important;
+}
+
+	#search-form input#edit-keys, #block-search-form .form-item-search-block-form input {
+	    font-size: 1.5rem;
+	}
+
+	
+ #block-search-form > div > form > div > div > div.form-actions.form-wrapper > input {
+    height: 2.45rem;
+    background-size: 2rem;
+}
+
+
+	  /* INICIAR SESIÓN */
+  
+  #block-system-user-menu {
+	 margin-left: 70rem!important;
+  }
+  
+   #block-system-user-menu > div.content > ul > li.first > a {
+   display: table-caption;
+   background-size: 2rem;
+   padding-left: 48px!important;
+   position: relative;
+   top: 1.3rem;
+   left: 1rem;
+   font-size: 1px;
+   color: white;
+}
+
+
+  #block-system-user-menu > div.content > ul > li.last > a {
+   position: relative;
+   float: left;
+   right: 13rem;
+   top: 7rem;
+   font-size: 2rem;
+   color: black;
+   border-style: solid;
+}
+	
 }

@@ -9,7 +9,7 @@ jQuery(document).ready(function(){
 });
 
 
- /* FUNCION PARA EL HAMBURGER , SE REPITEN 3 VECES */
+ /* FUNCION PARA EL HAMBURGER , SE REPITEN 3 VECES MOBILE PORTRAIT */
 var div = document.createElement("div");
 div.id ="hamburger1";
 div.onclick = function () {
@@ -66,26 +66,10 @@ div.onclick = function () {
   }
 };
 document.getElementById("header").appendChild(div);
+ 
+ /* FIN */
 
-
-
-
-/* ESTO ES PARA INSERTAR EL VALOR AL PRINCIPIO DE TOODO
-  var what = document.getElementById("hamburger1");
-            var to = document.getElementById ("header");
-            to.insertBefore (what, to.firstChild);
-            
-  var what1 = document.getElementById("hamburger2");
-            var to1 = document.getElementById ("header");
-            to1.insertBefore (what1, to.firstChild);
-
- var what2 = document.getElementById("hamburger3");
-            var to2 = document.getElementById ("header");
-            to2.insertBefore (what2, to.firstChild);
-*/
-
-
- /* REDES SOCIALES EN FOOTER */
+ /* REDES SOCIALES EN FOOTER  MOBILE PORTRAIT*/
  
  var divfooter = document.createElement('div');  
  divfooter.id = "redes";
@@ -122,5 +106,39 @@ document.getElementById("header").appendChild(div);
  a.appendChild(img);
  a.href = "https://instagram.com/educacionguao/";  
  document.getElementById("redes").appendChild(a);
+ 
+ /*  FIN */ 
+ 
+ 
+ /* REDES SOCIALES MOBILE LANDSCAPE */
+ 
+ var msj = document.createElement("div");
+ msj.id ="redesmensaje";
+ var textnode = document.createTextNode("Visitanos en nuestras redes");    
+ msj.appendChild(textnode)
+ document.getElementById("block-block-6").appendChild(msj);
+ 
+  /* FIN */ 
 
-
+ /* BUSQUEDA MOBILE LANDSCAPE */
+ 
+ var busqueda = document.createElement('div');  
+ busqueda.id = "busqueda";
+ var imgb = document.createElement('img');  
+ imgb.src="/sites/default/files/home_search.png";
+ busqueda.appendChild(imgb);
+ busqueda.onclick = function () {
+    var x = document.getElementById("block-search-form");
+    
+   if ( x.style.transform == "scaleX(0)") {
+  x.style.transform = "scaleX(1)"; 
+   }else {
+    x.style.transform = "scaleX(0)"; 
+   }
+  
+};
+ document.getElementById("header").appendChild(busqueda);
+ 
+var what = document.getElementById("busqueda");
+var to = document.getElementById ("header");
+to.insertBefore (what, to.firstChild);
