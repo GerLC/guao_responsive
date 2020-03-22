@@ -10,9 +10,10 @@ jQuery(document).ready(function(){
 
 
  /* FUNCION PARA EL HAMBURGER , SE REPITEN 3 VECES MOBILE PORTRAIT */
-var div = document.createElement("div");
-div.id ="hamburger1";
-div.onclick = function () {
+var divclass =  document.createElement("div");
+divclass.classList = "hamburger";
+divclass.id = "hamburgerid";
+divclass.onclick = function () {
     var x = document.getElementById("header");
 
   if (x.style.maxHeight ) {
@@ -22,48 +23,28 @@ div.onclick = function () {
   } else {
 
     x.style.maxHeight = 50+ "rem";
-  x.classList.toggle("change");
+x.classList.toggle("change");
   
   }
 };
-document.getElementById("header").appendChild(div);
+document.getElementById("header").appendChild(divclass);
+ 
+var div = document.createElement("div");
+div.id ="hamburger1";
+
+document.getElementById("hamburgerid").appendChild(div);
 
     
 var div = document.createElement("div");
 div.id = "hamburger2";
-div.onclick = function () {
-    var x = document.getElementById("header");
-  if (x.style.maxHeight ) {
 
-    x.style.maxHeight = null;
-     x.classList.toggle("change");
-  } else {
-
-    x.style.maxHeight = 50+ "rem";
-x.classList.toggle("change");
-  
-  }
-};
-document.getElementById("header").appendChild(div);
+document.getElementById("hamburgerid").appendChild(div);
 
 
 var div = document.createElement("div");
 div.id = "hamburger3";
-div.onclick = function () {
-    var x = document.getElementById("header");
 
-  if (x.style.maxHeight ) {
-
-    x.style.maxHeight = null;
-     x.classList.toggle("change");
-  } else {
-
-    x.style.maxHeight = 50+ "rem";
-x.classList.toggle("change");
-  
-  }
-};
-document.getElementById("header").appendChild(div);
+document.getElementById("hamburgerid").appendChild(div);
  
  /* FIN */
 
@@ -117,12 +98,15 @@ document.getElementById("header").appendChild(div);
  busqueda.onclick = function () {
     var x = document.getElementById("block-search-form");
      var y = document.getElementById("busqueda");
+
    if ( x.style.transform == "scaleX(0)") {
   x.style.transform = "scaleX(1)"; 
   y.style.transform = "rotate(180deg)";
+
    }else {
     x.style.transform = "scaleX(0)"; 
     y.style.transform = "rotate(0deg)";
+
    }
   
 };
@@ -131,3 +115,5 @@ document.getElementById("header").appendChild(div);
 var what = document.getElementById("busqueda");
 var to = document.getElementById ("header");
 to.insertBefore (what, to.firstChild);
+
+
