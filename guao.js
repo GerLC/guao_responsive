@@ -18,13 +18,12 @@ div.onclick = function () {
   if (x.style.maxHeight ) {
 
     x.style.maxHeight = null;
-
-
+     x.classList.toggle("change");
   } else {
 
     x.style.maxHeight = 50+ "rem";
-
-
+  x.classList.toggle("change");
+  
   }
 };
 document.getElementById("header").appendChild(div);
@@ -34,16 +33,15 @@ var div = document.createElement("div");
 div.id = "hamburger2";
 div.onclick = function () {
     var x = document.getElementById("header");
-  
   if (x.style.maxHeight ) {
 
     x.style.maxHeight = null;
-
-
+     x.classList.toggle("change");
   } else {
 
     x.style.maxHeight = 50+ "rem";
-
+x.classList.toggle("change");
+  
   }
 };
 document.getElementById("header").appendChild(div);
@@ -57,11 +55,11 @@ div.onclick = function () {
   if (x.style.maxHeight ) {
 
     x.style.maxHeight = null;
-
+     x.classList.toggle("change");
   } else {
 
     x.style.maxHeight = 50+ "rem";
-
+x.classList.toggle("change");
   
   }
 };
@@ -108,17 +106,6 @@ document.getElementById("header").appendChild(div);
  document.getElementById("redes").appendChild(a);
  
  /*  FIN */ 
- 
- 
- /* REDES SOCIALES MOBILE LANDSCAPE */
- 
- var msj = document.createElement("div");
- msj.id ="redesmensaje";
- var textnode = document.createTextNode("Visitanos en nuestras redes");    
- msj.appendChild(textnode)
- document.getElementById("block-block-6").appendChild(msj);
- 
-  /* FIN */ 
 
  /* BUSQUEDA MOBILE LANDSCAPE */
  
@@ -129,11 +116,13 @@ document.getElementById("header").appendChild(div);
  busqueda.appendChild(imgb);
  busqueda.onclick = function () {
     var x = document.getElementById("block-search-form");
-    
+     var y = document.getElementById("busqueda");
    if ( x.style.transform == "scaleX(0)") {
   x.style.transform = "scaleX(1)"; 
+  y.style.transform = "rotate(180deg)";
    }else {
     x.style.transform = "scaleX(0)"; 
+    y.style.transform = "rotate(0deg)";
    }
   
 };
