@@ -117,3 +117,34 @@ var to = document.getElementById ("header");
 to.insertBefore (what, to.firstChild);
 
 
+		/* BIBLIOTECA */
+		
+ var circle = document.createElement("div");
+ circle.id = "circle";
+ document.getElementById("main").appendChild(circle);
+ 
+ var side =  document.createElement("div");
+ side.classList = "side";
+ side.id = "side";
+ side.onclick = function () {
+    var x = document.getElementById("sidebar-first");
+    var y = document.getElementById("side");
+
+   if ( y.style.transform == "rotate(-225deg)") {
+ /* x.style.width = "scaleX(1)"; */
+  x.style.width = "0";
+  y.style.transform = "rotate(-45deg)";
+
+   }else {
+ /*   x.style.transform = "scaleX(0)"; */
+ x.style.width = "97%";
+    y.style.transform = "rotate(-225deg)";
+
+   }
+  
+};
+ document.getElementById("main").appendChild(side);
+ 
+var what = document.getElementById("side");
+var to = document.getElementById ("main");
+to.insertBefore (what, to.firstChild);

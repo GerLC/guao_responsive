@@ -335,6 +335,27 @@ margin: 10px 0px !important;
 	#redesmensaje {
 		display: none;
 	}
+	
+	
+	
+ /* SIDEBARS */ 
+	
+	#sidebar-first {
+		position: relative;
+	}
+	
+	
+	.side {
+
+     border: solid black;
+	 border-width: 0px .3rem .3rem 0;
+	 display: inline-block;
+	 padding: .6rem;
+	 transform: rotate(-45deg);
+	 transition: 0.5s;
+   }
+   
+
 
 }
 
@@ -390,11 +411,10 @@ margin: 10px 0px !important;
      top: 10%;
      width: 45px;
      height: 7px;
-     background-color: black;
+     background-color: green;
      margin: 6px 30rem;
      transition: 0.4s;
-     background-color: lavender;
-       
+
    }
 
 	#hamburger2 {
@@ -403,10 +423,9 @@ margin: 10px 0px !important;
      top: 10%;
      width: 45px;
      height: 7px;
-     background-color: black;
+     background-color: blue;
      margin: 20px 30rem;
      transition: 0.4s;
-	background-color: Gray;
 	}
 	
 	#hamburger3 {
@@ -415,7 +434,7 @@ margin: 10px 0px !important;
      top: 10%;
      width: 45px;
      height: 7px;
-     background-color: black;
+     background-color: purple;
      margin: 34px 30rem;
      transition: 0.4s;
    }
@@ -566,3 +585,4 @@ margin: 10px 0px !important;
 }
 	
 }
+
