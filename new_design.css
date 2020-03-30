@@ -874,16 +874,35 @@ margin: 10px 0px !important;
     height: auto !important;
     }*/
 
+
     #redes {
         display: block;
         position: relative;
-        margin: 2rem;
-        width: 9rem;
+        text-align: center;
+    }
+
+    #redes>a {
+        margin: 1rem;
+        width: 3rem;
+    }
+
+    #redes>a>img {
+        width: 3rem;
+    }
+
+    #redesmensaje {
+        display: none;
     }
 
     #terminos {
-        font-size: 1rem;
+        font-size: 2rem;
+        text-align: center;
     }
+
+    #footer {
+        margin-top: 0;
+    }
+
 
     /* BÚSQUEDA  */
 
