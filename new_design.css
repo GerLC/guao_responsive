@@ -448,7 +448,7 @@ margin: 10px 0px !important;
 ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px){
     .bloqueshomepage>div {
         width: 80%;
         height: 39rem;
@@ -730,7 +730,7 @@ margin: 10px 0px !important;
 
 /*Smartphones LANDSCAPE*/
 
-@media (max-height:479px) {
+@media (max-height:479px) and (orientation: landscape) {
 
     .bloqueshomepage {
         display: flex;
@@ -887,7 +887,7 @@ margin: 10px 0px !important;
     }
 
     #redes>a>img {
-        width: 3rem;
+        width: 2.5em;
     }
 
     #redesmensaje {
@@ -895,7 +895,7 @@ margin: 10px 0px !important;
     }
 
     #terminos {
-        font-size: 2rem;
+        font-size: 1.5em;
         text-align: center;
     }
 
