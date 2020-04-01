@@ -401,9 +401,10 @@ margin: 10px 0px !important;
 
     .bloqueshomepage>div {
         width: 30%;
-        height: 23rem;
-        margin-left: 2rem;
-        padding: 2rem 2rem 2rem 2rem;
+        height: 22rem;
+        margin-left: .5rem;
+        padding: 1rem 5rem 1rem 2rem;
+        margin-bottom: 0;
     }
 
     .bloqueshomepage>div>p {
@@ -411,22 +412,39 @@ margin: 10px 0px !important;
     }
 
     .bloqueshomepage>div>ul {
-        width: 10rem;
+        width: 15rem;
         font-size: 1em;
     }
 
     .bloqueshomepage>div>ul>li:before {
         left: -0.5rem;
-        top: 2rem;
+        top: 1em;
     }
 
     #bloque01 {
-        background-size: 18rem;
+        background-size: 13rem;
+        ;
     }
 
     #bloque02 {
-        background-size: 10rem;
+        background-size: 13rem;
     }
+
+    #bloque03_fondo {
+        padding-right: 5rem;
+        background-position: 9.8rem 5.5rem;
+    }
+
+    .bloqueshomepage>div>ul>li>a {
+        color: white;
+        padding-left: 0.5rem
+    }
+
+    #terminos {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
 
 
 
