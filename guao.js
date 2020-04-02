@@ -131,37 +131,37 @@ to.insertBefore (what, to.firstChild);
  var bloquelogin = document.getElementById("block-system-user-menu");
  var login = document.createElement('div');  
  login.id = "login";
- login.classList = "login"
+ login.classList = "login";
  login.onclick = function () {
-    var x = document.getElementById("block-system-user-menu");
+     var x = document.getElementsByClassName("region-header")[0];
 
-   if ( x.style.display == "none") {
-  
+     x.classList.toggle("show");
 
- /*  x.classList.toggle("show");*/
-    x.style.display = "inline-block";
-
-   }else {
-
- /*   x.classList.toggle("show");*/
-    x.style.display = "none";
-    }
- 
 };
 
  var imglogin = document.createElement('img');  
  imglogin.src="/sites/default/files/login0.png";
+ imglogin.classList = "login";
  login.appendChild(imglogin);
  document.getElementById("header").appendChild(login);
 
+    /* PARA QUITAR BLOQUE AL CLICKEAR AFUERA */
+window.onclick = function(event) {
+  if (!event.target.matches('.login')) {
+    var dropdowns = document.getElementsByClassName("region-header");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 
-
-
-
- 
 
   /* BIBLIOTECA */
-    
+/*    
  var circle = document.createElement("div");
  circle.id = "circle";
  document.getElementById("main").appendChild(circle);
@@ -170,25 +170,25 @@ to.insertBefore (what, to.firstChild);
  side.classList = "side";
  side.id = "side";
  side.onclick = function () {
-    var x = document.getElementById("sidebar-first");
-    var y = document.getElementById("side");
+    var x = document.getElementsByClassName("section")[1];
+    /*var x = document.getElementById("sidebar-first");*/
+/*    var y = document.getElementById("side");
 
    if ( y.style.transform == "rotate(-225deg)") {
- /* x.style.width = "scaleX(1)"; */
-  x.style.width = "0";
+  x.style.display = "none"; 
   y.style.transform = "rotate(-45deg)";
  
    }else {
- /*   x.style.transform = "scaleX(0)"; */
- x.style.width = "97%";
+
+         x.style.display = "block"; 
+
     y.style.transform = "rotate(-225deg)";
 
    }
   
 };
- document.getElementById("main").appendChild(side);
- 
-var what = document.getElementById("side");
-var to = document.getElementById ("main");
-to.insertBefore (what, to.firstChild);
+ document.getElementById("sidebar-first").appendChild(side);
 
+var what = document.getElementById("side");
+var to = document.getElementById ("sidebar-first");
+to.insertBefore (what, to.firstChild);*/

@@ -345,9 +345,9 @@ margin: 10px 0px !important;
         width: 2rem;
     }
 
-    /*.show #block-system-user-menu { NO ME FUNCIONA ESTA MIERD
+    .show #block-system-user-menu { 
         display: inline-block !important;
-    }*/
+    }
 
     /* REDES SOCIALES SE QUITO DEL HEADER Y SE COLOCO
    EN EL FOOTER */
@@ -631,6 +631,10 @@ margin: 10px 0px !important;
         width: 2rem;
     }
 
+    .show #block-system-user-menu { 
+        display: inline-block !important;
+    }
+
     /* BÚSQUEDA  */
 
     .block.block-search {
@@ -723,21 +727,33 @@ margin: 10px 0px !important;
     /* SIDEBARS */
 
     #sidebar-first {
-        position: relative;
         display: none;
+        font-size: 1.5rem;
+      /*  height: 100%;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;*/
     }
 
-
+/*
     .side {
-
         border: solid black;
         border-width: 0px .3rem .3rem 0;
         display: inline-block;
         padding: .6rem;
         transform: rotate(-45deg);
         transition: 0.5s;
-    }
+    }*/
 
+    .page-biblioteca #sidebar-first {
+        
+    }
 
     .page-biblioteca {
         font-size: 3rem;
@@ -751,7 +767,6 @@ margin: 10px 0px !important;
 
 
     .page-biblioteca #page-title {
-
         text-align: center;
     }
 
@@ -759,6 +774,8 @@ margin: 10px 0px !important;
         width: 4em;
 
     }
+    
+    
 
 
 }
@@ -1081,4 +1098,9 @@ margin: 10px 0px !important;
     #login>img {
         width: 2rem;
     }
+
+    .show #block-system-user-menu { 
+        display: inline-block !important;
+    }    
+    
 }
