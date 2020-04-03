@@ -345,7 +345,7 @@ margin: 10px 0px !important;
         width: 2rem;
     }
 
-    .show #block-system-user-menu { 
+    .show #block-system-user-menu {
         display: inline-block !important;
     }
 
@@ -631,7 +631,7 @@ margin: 10px 0px !important;
         width: 2rem;
     }
 
-    .show #block-system-user-menu { 
+    .show #block-system-user-menu {
         display: inline-block !important;
     }
 
@@ -729,7 +729,7 @@ margin: 10px 0px !important;
     #sidebar-first {
         display: none;
         font-size: 1.5rem;
-      /*  height: 100%;
+        /*  height: 100%;
         position: fixed;
         z-index: 1;
         width: 100%;
@@ -741,7 +741,7 @@ margin: 10px 0px !important;
         padding-top: 60px;*/
     }
 
-/*
+    /*
     .side {
         border: solid black;
         border-width: 0px .3rem .3rem 0;
@@ -751,19 +751,26 @@ margin: 10px 0px !important;
         transition: 0.5s;
     }*/
 
-    .page-biblioteca #sidebar-first {
-        
-    }
+    .page-biblioteca #sidebar-first {}
 
     .page-biblioteca {
-        font-size: 3rem;
-        text-align: center;
+        font-size: 2em;
+        /*  text-align: center;*/
 
     }
 
     .page-biblioteca .views-row {
-        margin-left: 5rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        text-align: justify;
     }
+
+    .page-biblioteca .views-row>img {
+        width: 2rem;
+
+    }
+
+
 
 
     .page-biblioteca #page-title {
@@ -774,8 +781,37 @@ margin: 10px 0px !important;
         width: 4em;
 
     }
-    
-    
+
+    .field-item .even {
+        width: 5rem;
+        height: 5rem;
+
+    }
+
+    div.view.view-library .field.field-name-field-imagen-portada.field-type-image.field-label-hidden.portada_min>div>div>a>img {
+        width: 7em;
+        height: 11em;
+    }
+
+    div.view.view-library .field.field-name-field-imagen-portada.field-type-image.field-label-hidden.portada_min {
+        width: 7.5em;
+        height: 11.5em;
+        float: left;
+    }
+
+    div.view.view-library .field.field-name-field-autor.field-type-text.field-label-inline.clearfix,
+    div.view.view-library .field.field-name-field-editorial.field-type-text.field-label-inline.clearfix,
+    div.view.view-library .field.field-name-field-a-o-de-publicaci-n.field-type-text.field-label-inline.clearfix,
+    div.view.view-library .field.field-name-field-rating.field-type-fivestar.field-label-inline.clearfix {
+        float: none;
+        display: table-row;
+    }
+
+
+
+    .one-sidebar #content {
+        width: 100%;
+    }
 
 
 }
@@ -1099,8 +1135,8 @@ margin: 10px 0px !important;
         width: 2rem;
     }
 
-    .show #block-system-user-menu { 
+    .show #block-system-user-menu {
         display: inline-block !important;
-    }    
-    
+    }
+
 }
