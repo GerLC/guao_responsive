@@ -9,6 +9,40 @@ jQuery(document).ready(function(){
 });
 
 
+                  /* LISTENER */  
+        /* CLICK AFUERA PARA QUITAR LA VENTANA*/
+                    /*  SIBEBAR  */
+/*window.addEventListener('click', function(event) {
+         if (!event.target.matches('.side') ) {
+    var sidebar = document.getElementsByClassName("clearfix");
+    var i;
+    for (i = 0; i < sidebar.length; i++) {
+      var openDropdown = sidebar[i];
+      if (openDropdown.classList.contains('open')) {
+        openDropdown.classList.remove('open');
+      }
+    }
+  }
+});*/
+                    /*  INICIO SESION  */
+window.addEventListener('click', function(event) {
+  if (!event.target.matches('.login')) {
+    var dropdowns = document.getElementsByClassName("region-header");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+});
+
+
+
+
+
+
  /* FUNCION PARA EL HAMBURGER , SE REPITEN 3 VECES MOBILE PORTRAIT */
 var divclass =  document.createElement("div");
 divclass.classList = "hamburger";
@@ -97,12 +131,12 @@ document.getElementById("hamburgerid").appendChild(div);
  busqueda.appendChild(imgb);
  busqueda.onclick = function () {
     var x = document.getElementById("header");
-
+    var focus = document.getElementById('edit-search-block-form--2').focus();
    if ( x.style.transform == "scaleX(0)") {
-  
+   
 
    x.classList.toggle("changeb");
-
+   
 
    }else {
 
@@ -145,19 +179,6 @@ to.insertBefore (what, to.firstChild);
  login.appendChild(imglogin);
  document.getElementById("header").appendChild(login);
 
-    /* PARA QUITAR BLOQUE AL CLICKEAR AFUERA */
-window.onclick = function(event) {
-  if (!event.target.matches('.login')) {
-    var dropdowns = document.getElementsByClassName("region-header");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
 
 
   /* BIBLIOTECA */
@@ -167,10 +188,10 @@ window.onclick = function(event) {
  side.id = "side";
  side.onclick = function () {
    /* var x = document.getElementsByClassName("section")[1];*/
-    var x = document.getElementById("sidebar-first");
-    var y = document.getElementById("side");
+    var x = document.getElementById("main");
+  /*  var y = document.getElementById("side");*/
 
-   if ( y.style.transform == "rotate(-225deg)") {
+  /* if ( y.style.transform == "rotate(-225deg)") {
    x.style.width = "0";
   y.style.transform = "rotate(-45deg)";
   y.style.left = "1rem"
@@ -180,15 +201,19 @@ window.onclick = function(event) {
   x.style.width = "40rem";
     y.style.transform = "rotate(-225deg)";
     y.style.left = "38rem"
-   }
-  
+     
+   }*/
+  x.classList.toggle("open");
 };
- document.getElementById("page-title").appendChild(side);
+ document.getElementById("main").appendChild(side);
 /*
 var what = document.getElementById("side");
 var to = document.getElementById ("page-title");
 to.insertBefore (what, to.firstChild);
 */
+/*
+
+
 
 /* PARA QUE SE QUEDE AL BAJAR LA PANTALLA*/
 window.onscroll = function() {scrollfuction()};
@@ -203,6 +228,7 @@ function scrollfuction() {
     header.classList.remove("sticky");
   }
 }
+
 
 /*
 var prevScrollpos = window.pageYOffset;
