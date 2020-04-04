@@ -161,34 +161,57 @@ window.onclick = function(event) {
 
 
   /* BIBLIOTECA */
-/*    
- var circle = document.createElement("div");
- circle.id = "circle";
- document.getElementById("main").appendChild(circle);
  
  var side =  document.createElement("div");
  side.classList = "side";
  side.id = "side";
  side.onclick = function () {
-    var x = document.getElementsByClassName("section")[1];
-    /*var x = document.getElementById("sidebar-first");*/
-/*    var y = document.getElementById("side");
+   /* var x = document.getElementsByClassName("section")[1];*/
+    var x = document.getElementById("sidebar-first");
+    var y = document.getElementById("side");
 
    if ( y.style.transform == "rotate(-225deg)") {
-  x.style.display = "none"; 
+   x.style.width = "0";
   y.style.transform = "rotate(-45deg)";
- 
+  y.style.left = "1rem"
    }else {
 
-         x.style.display = "block"; 
 
+  x.style.width = "40rem";
     y.style.transform = "rotate(-225deg)";
-
+    y.style.left = "38rem"
    }
   
 };
- document.getElementById("sidebar-first").appendChild(side);
-
+ document.getElementById("page-title").appendChild(side);
+/*
 var what = document.getElementById("side");
-var to = document.getElementById ("sidebar-first");
-to.insertBefore (what, to.firstChild);*/
+var to = document.getElementById ("page-title");
+to.insertBefore (what, to.firstChild);
+*/
+
+/* PARA QUE SE QUEDE AL BAJAR LA PANTALLA*/
+window.onscroll = function() {scrollfuction()};
+
+var header = document.getElementById("header");
+var sticky = header.offsetTop;
+
+function scrollfuction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+/*
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("page-title").style.top = "0";
+  } else {
+    document.getElementById("page-title").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}*/
