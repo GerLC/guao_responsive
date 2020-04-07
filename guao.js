@@ -40,9 +40,6 @@ window.addEventListener('click', function(event) {
 
 
 
-
-
-
  /* FUNCION PARA EL HAMBURGER , SE REPITEN 3 VECES MOBILE PORTRAIT */
 var divclass =  document.createElement("div");
 divclass.classList = "hamburger";
@@ -125,17 +122,18 @@ document.getElementById("hamburgerid").appendChild(div);
  /* BUSQUEDA MOBILE LANDSCAPE */
  var busqueda = document.createElement('div');  
  busqueda.id = "busqueda";
-
+ busqueda.classList = "busqueda";
  var imgb = document.createElement('img');  
  imgb.src="/sites/default/files/home_search.png";
  busqueda.appendChild(imgb);
  busqueda.onclick = function () {
-    var x = document.getElementById("header");
+    var x = document.getElementById("page-wrapper");
     var focus = document.getElementById('edit-search-block-form--2').focus();
    if ( x.style.transform == "scaleX(0)") {
    
 
    x.classList.toggle("changeb");
+  
    
 
    }else {
