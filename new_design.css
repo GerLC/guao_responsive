@@ -347,7 +347,7 @@ margin: 10px 0px !important;
         width: 2rem;
     }
 
-    .show #block-system-user-menu { 
+    .show #block-system-user-menu {
         display: inline-block !important;
     }
 
@@ -385,32 +385,32 @@ margin: 10px 0px !important;
     #footer {
         margin-top: 0;
     }
-    
+
     /**Biblioteca**/
-    
-    
-        .page-biblioteca #sidebar-first {
+
+
+    .page-biblioteca #sidebar-first {
         display: none;
     }
 
     .page-biblioteca {
-        font-size: 2em;
-      /*  text-align: center;*/
+        font-size: 1.6em;
+        /*  text-align: center;*/
 
     }
 
     .page-biblioteca .views-row {
         margin-left: 2rem;
-        margin-right: 2rem;
+        margin-right: 4rem;
         text-align: justify;
     }
-    
-        .page-biblioteca .views-row > img {
+
+    .page-biblioteca .views-row>img {
         width: 2rem;
-        
+
     }
-    
-    
+
+
 
 
     .page-biblioteca #page-title {
@@ -421,36 +421,39 @@ margin: 10px 0px !important;
         width: 4em;
 
     }
-    
-    .field-item .even{
+
+    .field-item .even {
         width: 5rem;
         height: 5rem;
-        
-    }
-    
-    div.view.view-library .field.field-name-field-imagen-portada.field-type-image.field-label-hidden.portada_min > div > div > a > img {
-    width: 7em;
-    height: 11em;
-    }
-    
-    div.view.view-library .field.field-name-field-imagen-portada.field-type-image.field-label-hidden.portada_min {
-    width: 7.5em;
-    height: 11.5em;
-    float: left;
-}
 
-div.view.view-library .field.field-name-field-autor.field-type-text.field-label-inline.clearfix, div.view.view-library .field.field-name-field-editorial.field-type-text.field-label-inline.clearfix, div.view.view-library .field.field-name-field-a-o-de-publicaci-n.field-type-text.field-label-inline.clearfix, div.view.view-library .field.field-name-field-rating.field-type-fivestar.field-label-inline.clearfix {
-    float: none;
-    display: table-row;
-    line-height: 2rem;
-}
- 
-    
-    
-.one-sidebar #content {
-     width: 100%;
-}
-    
+    }
+
+    div.view.view-library .field.field-name-field-imagen-portada.field-type-image.field-label-hidden.portada_min>div>div>a>img {
+        width: 7em;
+        height: 11em;
+    }
+
+    div.view.view-library .field.field-name-field-imagen-portada.field-type-image.field-label-hidden.portada_min {
+        width: 7.5em;
+        height: 11.5em;
+        float: left;
+    }
+
+    div.view.view-library .field.field-name-field-autor.field-type-text.field-label-inline.clearfix,
+    div.view.view-library .field.field-name-field-editorial.field-type-text.field-label-inline.clearfix,
+    div.view.view-library .field.field-name-field-a-o-de-publicaci-n.field-type-text.field-label-inline.clearfix,
+    div.view.view-library .field.field-name-field-rating.field-type-fivestar.field-label-inline.clearfix {
+        float: none;
+        display: table-row;
+        line-height: 2rem;
+    }
+
+
+
+    .one-sidebar #content {
+        width: 100%;
+    }
+
 
 }
 
@@ -468,7 +471,7 @@ div.view.view-library .field.field-name-field-autor.field-type-text.field-label-
     }
 
     .bloqueshomepage>div {
-        width: 30%;
+        width: 15%;
         height: 22rem;
         margin-left: .5rem;
         padding: 1rem 5rem 1rem 2rem;
@@ -572,7 +575,7 @@ div.view.view-library .field.field-name-field-autor.field-type-text.field-label-
     #bloque03 {
         background-image: url(/sites/default/files/home_otros.png);
         background-repeat: no-repeat;
-        background-position: 40rem 12rem;
+        background-position: 34rem 11.5rem;
         background-size: 30rem;
     }
 
@@ -581,14 +584,15 @@ div.view.view-library .field.field-name-field-autor.field-type-text.field-label-
     /* MENÚ HAMBURGER */
     #header {
         border-bottom: 1px outset black;
-        height: 43rem;
+        height: 47rem;
         min-height: 8rem;
+        /*max-height: 50rem;*/
         max-height: 0;
         outline: none;
         overflow: hidden;
         transition: max-height 0.6s ease-out;
     }
-    
+
     #hamburgerid {
         position: relative;
         bottom: 34.2rem;
@@ -701,43 +705,27 @@ div.view.view-library .field.field-name-field-autor.field-type-text.field-label-
         width: 2rem;
     }
 
-    .show #block-system-user-menu { 
+    .show #block-system-user-menu {
         display: inline-block !important;
     }
 
     /* BÚSQUEDA  */
 
-    #block-search-form {
-        transform: scaleX(0);
+    .block.block-search {
         position: relative;
-        right: 41rem;
-        bottom: 2.3rem;
-        width: 49rem !important;
-        overflow: visible;
-        transition: transform 0.3s ease-out;
-        height: auto;
-        transform-origin: right;
+        top: 34rem !important;
+        right: 33rem !important;
     }
 
-    #block-search-form>element.style {
-        transform: scaleX(0) !important;
+    #block-search-form {
+        width: 300rem !important;
+        margin-left: 52% !important;
+        margin-top: -105px !important;
+        transform: scaleX(1) !important;
     }
-
-    #busqueda {
-        display: block !important;
-        position: absolute;
-        top: 1.29rem;
-        left: 64.5rem;
-        z-index: 1;
-        -webkit-transition: -webkit-transform .5s ease-in-out;
-        -ms-transition: -ms-transform .5s ease-in-out;
-        transition: transform .5s ease-in-out;
-    }
-
-
 
     #block-search-form>div>form>div>div>div.form-item.form-type-textfield.form-item-search-block-form>input {
-        width: 44rem !important;
+        width: 58rem !important;
     }
 
     #search-form input#edit-keys,
@@ -747,70 +735,20 @@ div.view.view-library .field.field-name-field-autor.field-type-text.field-label-
 
 
     #block-search-form>div>form>div>div>div.form-actions.form-wrapper>input {
-        height: 3.1rem;
-        background-size: 2.5rem;
-        width: 3rem;
+        height: 3.05rem;
+        background-size: 2.2rem;
+        padding-right: 3rem;
     }
 
-
-    #busquedaX {
-        position: absolute;
-        left: -28rem;
-        top: 4%;
-        width: 50px;
-        height: 8px;
-        background-color: black;
-        margin: 16px 29rem;
-        transition: .4s;
-        opacity: 0;
+    #busqueda {
+        display: none;
     }
-
-    #busquedaX1 {
-        position: absolute;
-        left: -28rem;
-        top: 4%;
-        width: 50px;
-        height: 8px;
-        background-color: black;
-        margin: 44px 29rem;
-        transition: .4s;
-        opacity: 0;
-
-    }
-
-    .changeb #busquedaX {
-        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-        transform: rotate(-45deg) translate(-13px, 6px);
-        transition-delay: .2s;
-        opacity: 1;
-    }
-
-    .changeb #busquedaX1 {
-        -webkit-transform: rotate(45deg) translate(-8px, -8px);
-        transform: rotate(45deg) translate(-13px, -8px);
-        transition-delay: .2s;
-        opacity: 1;
-    }
-
-    .changeb #busqueda>img {
-        opacity: 0 !important;
-    }
-
-    .changeb #block-search-form {
-        transform: scaleX(1);
-    }
-
-    .changeb #logo {
-        opacity: 0;
-        transition: opacity 0.3s;
-    }    
-    
 
     /* MENÚ SECUNDARIO NOSOTROS , CONTACTOS ... */
 
     #block-menu-menu-men-secundario {
         position: relative;
-        top: 30.5rem;
+        top: 35.5rem;
         margin-left: 5rem;
         width: 100%
     }
@@ -876,7 +814,7 @@ div.view.view-library .field.field-name-field-autor.field-type-text.field-label-
         transition: .5s;
         opacity: 90%;
     }
-    
+
 
 
     input.form-radio {
@@ -884,11 +822,11 @@ div.view.view-library .field.field-name-field-autor.field-type-text.field-label-
         height: 2rem;
         opacity: 1 !important;
     }
-    
-    div.form-item.form-type-textfield.form-item-populate > input {
+
+    div.form-item.form-type-textfield.form-item-populate>input {
         width: 30rem;
     }
-    
+
     #block-views-exp-library-page-1 #edit-submit-library {
         width: 5rem;
         height: 5rem;
@@ -909,12 +847,12 @@ div.view.view-library .field.field-name-field-autor.field-type-text.field-label-
         transform: rotate(-45deg);
         transition: 0.5s;
     }
-    
-    
+
+
     .open #sidebar-first {
         width: 40rem;
     }
-    
+
     .open .side {
         transform: rotate(-225deg);
         left: 38rem;
@@ -924,22 +862,21 @@ div.view.view-library .field.field-name-field-autor.field-type-text.field-label-
 
     .page-biblioteca {
         font-size: 2em;
-      /*  text-align: center;*/
+        /*  text-align: center;*/
 
     }
 
     .page-biblioteca .views-row {
-        margin-left: 2rem;
-        margin-right: 2rem;
         text-align: justify;
+        margin-right: 4rem;
     }
-    
-        .page-biblioteca .views-row > img {
+
+    .page-biblioteca .views-row>img {
         width: 2rem;
-        
+
     }
-    
-    
+
+
 
 
     .page-biblioteca #page-title {
@@ -950,56 +887,69 @@ div.view.view-library .field.field-name-field-autor.field-type-text.field-label-
         width: 4em;
 
     }
-    
-    .field-item .even{
-        width: 5rem;
-        height: 5rem;
-        
-    }
-    
-    div.view.view-library .field.field-name-field-imagen-portada.field-type-image.field-label-hidden.portada_min > div > div > a > img {
-    width: 7em;
-    height: 11em;
-    }
-    
-    div.view.view-library .field.field-name-field-imagen-portada.field-type-image.field-label-hidden.portada_min {
-    width: 7.5em;
-    height: 11.5em;
-    float: left;
-}
 
-div.view.view-library .field.field-name-field-autor.field-type-text.field-label-inline.clearfix, div.view.view-library .field.field-name-field-editorial.field-type-text.field-label-inline.clearfix, div.view.view-library .field.field-name-field-a-o-de-publicaci-n.field-type-text.field-label-inline.clearfix, div.view.view-library .field.field-name-field-rating.field-type-fivestar.field-label-inline.clearfix {
-    float: none;
-    display: table-row;
-    line-height: 2rem;
-}
- 
-    
-    
-.one-sidebar #content {
-     width: 100%;
-}
+    .field-item .even {
+        width: 6rem;
+        height: 5rem;
+
+    }
+
+    div.view.view-library .field.field-name-field-imagen-portada.field-type-image.field-label-hidden.portada_min>div>div>a>img {
+        width: 7em;
+        height: 11em;
+    }
+
+    div.view.view-library .field.field-name-field-imagen-portada.field-type-image.field-label-hidden.portada_min {
+        width: 7.5em;
+        height: 11.5em;
+        float: left;
+    }
+
+    div.view.view-library .field.field-name-field-autor.field-type-text.field-label-inline.clearfix,
+    div.view.view-library .field.field-name-field-editorial.field-type-text.field-label-inline.clearfix,
+    div.view.view-library .field.field-name-field-a-o-de-publicaci-n.field-type-text.field-label-inline.clearfix,
+    div.view.view-library .field.field-name-field-rating.field-type-fivestar.field-label-inline.clearfix {
+        float: none;
+        display: table-row;
+        line-height: 2rem;
+    }
+
+    .section {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+
+    .one-sidebar #content {
+        width: 100%;
+    }
 
 
 
 
     .sticky {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1;
-    }
-    
-    .sticky + .clearfix {
-      padding-top: 10rem;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
     }
 
-    
+    .sticky+.clearfix {
+        padding-top: 10rem;
+    }
+
+
+
+
 }
 
 /*Smartphones LANDSCAPE*/
 
 @media (max-height:479px) and (orientation: landscape) {
+
+    #main {
+        margin-bottom: 0;
+    }
 
     .bloqueshomepage {
         display: flex;
@@ -1008,6 +958,7 @@ div.view.view-library .field.field-name-field-autor.field-type-text.field-label-
         align-items: center;
         margin-left: 10rem;
         margin-right: 10rem;
+        margin-bottom: 0;
     }
 
     .bloqueshomepage>div {
@@ -1015,6 +966,7 @@ div.view.view-library .field.field-name-field-autor.field-type-text.field-label-
         height: 18rem;
         margin: 1.5rem 1.5rem 1.5rem 1.5rem;
         padding: 2rem 2rem 2rem 2rem;
+        margin-bottom: 0;
     }
 
     .bloqueshomepage>div>p {
@@ -1194,6 +1146,7 @@ div.view.view-library .field.field-name-field-autor.field-type-text.field-label-
         transition: transform .5s ease-in-out;
     }
 
+    #edit-search-block-form--2 {}
 
 
     #block-search-form>div>form>div>div>div.form-item.form-type-textfield.form-item-search-block-form>input {
@@ -1305,14 +1258,14 @@ div.view.view-library .field.field-name-field-autor.field-type-text.field-label-
         width: 2rem;
     }
 
-    .show #block-system-user-menu { 
+    .show #block-system-user-menu {
         display: inline-block !important;
-    }    
-    
-    
+    }
+
+
     /* BIBLIOTECA */
-    
-       #sidebar-first {
+
+    #sidebar-first {
         text-align: initial;
         font-size: 2rem;
         width: 0;
@@ -1326,7 +1279,7 @@ div.view.view-library .field.field-name-field-autor.field-type-text.field-label-
         transition: .5s;
         opacity: 90%;
     }
-    
+
 
 
     input.form-radio {
@@ -1334,18 +1287,18 @@ div.view.view-library .field.field-name-field-autor.field-type-text.field-label-
         height: 1.5rem;
         opacity: 1 !important;
     }
-    
-    div.form-item.form-type-textfield.form-item-populate > input {
+
+    div.form-item.form-type-textfield.form-item-populate>input {
         width: 30rem;
     }
-    
+
     #block-views-exp-library-page-1 #edit-submit-library {
-           width: 4rem;
-           height: 4rem;
-           background-size: 3.25rem;
-           position: relative;
-           top: -1.65rem;
-           left: 22rem;
+        width: 4rem;
+        height: 4rem;
+        background-size: 3.25rem;
+        position: relative;
+        top: -1.65rem;
+        left: 22rem;
     }
 
     .side {
@@ -1359,16 +1312,27 @@ div.view.view-library .field.field-name-field-autor.field-type-text.field-label-
         transform: rotate(-45deg);
         transition: 0.5s;
     }
-    
-    
+
+
     .open #sidebar-first {
         width: 40rem;
     }
-    
+
     .open .side {
         transform: rotate(-225deg);
         left: 38rem;
     }
-    
-}   
- 
+
+}
+
+/*Widescreen*/
+
+@media (min-width: 1024px) {
+    /*    .bloqueshomepage>div {
+        width: 30%;
+        height: 22rem;
+        margin-left: .5rem;
+        padding: 1rem 5rem 1rem 2rem;
+        margin-bottom: 0;
+    }*/
+}
