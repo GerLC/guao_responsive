@@ -585,13 +585,12 @@ margin: 10px 0px !important;
     /* MENÚ HAMBURGER */
     #header {
         border-bottom: 1px outset black;
-        height: 47rem;
-        min-height: 8rem;
-        /*max-height: 50rem;*/
+        height: 43rem;
+        min-height: 7.5rem;
         max-height: 0;
         outline: none;
         overflow: hidden;
-        transition: max-height 0.6s ease-out;
+        transition: max-height .6s ease-out;
     }
 
     #hamburgerid {
@@ -712,21 +711,37 @@ margin: 10px 0px !important;
 
     /* BÚSQUEDA  */
 
-    .block.block-search {
+    #block-search-form {
+        transform: scaleX(0);
         position: relative;
-        top: 34rem !important;
-        right: 33rem !important;
+        right: 41rem;
+        bottom: 2.3rem;
+        width: 49rem !important;
+        overflow: visible;
+        transition: transform 0.3s ease-out;
+        height: auto;
+        transform-origin: right;
     }
 
-    #block-search-form {
-        width: 300rem !important;
-        margin-left: 52% !important;
-        margin-top: -105px !important;
-        transform: scaleX(1) !important;
+    #block-search-form>element.style {
+        transform: scaleX(0) !important;
     }
+
+    #busqueda {
+        display: block !important;
+        position: absolute;
+        top: 1.29rem;
+        left: 64.5rem;
+        z-index: 1;
+        -webkit-transition: -webkit-transform .5s ease-in-out;
+        -ms-transition: -ms-transform .5s ease-in-out;
+        transition: transform .5s ease-in-out;
+    }
+
+
 
     #block-search-form>div>form>div>div>div.form-item.form-type-textfield.form-item-search-block-form>input {
-        width: 58rem !important;
+        width: 44rem !important;
     }
 
     #search-form input#edit-keys,
@@ -736,20 +751,69 @@ margin: 10px 0px !important;
 
 
     #block-search-form>div>form>div>div>div.form-actions.form-wrapper>input {
-        height: 3.05rem;
-        background-size: 2.2rem;
-        padding-right: 3rem;
+        height: 3.1rem;
+        background-size: 2.5rem;
+        width: 3rem;
     }
 
-    #busqueda {
-        display: none;
+
+    #busquedaX {
+        position: absolute;
+        left: -28rem;
+        top: 4%;
+        width: 50px;
+        height: 8px;
+        background-color: black;
+        margin: 16px 29rem;
+        transition: .4s;
+        opacity: 0;
     }
+
+    #busquedaX1 {
+        position: absolute;
+        left: -28rem;
+        top: 4%;
+        width: 50px;
+        height: 8px;
+        background-color: black;
+        margin: 44px 29rem;
+        transition: .4s;
+        opacity: 0;
+
+    }
+
+    .changeb #busquedaX {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-13px, 6px);
+        transition-delay: .2s;
+        opacity: 1;
+    }
+
+    .changeb #busquedaX1 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-13px, -8px);
+        transition-delay: .2s;
+        opacity: 1;
+    }
+
+    .changeb #busqueda>img {
+        opacity: 0 !important;
+    }
+
+    .changeb #block-search-form {
+        transform: scaleX(1);
+    }
+
+    .changeb #logo {
+        opacity: 0;
+        transition: opacity 0.3s;
+    }    
 
     /* MENÚ SECUNDARIO NOSOTROS , CONTACTOS ... */
 
     #block-menu-menu-men-secundario {
         position: relative;
-        top: 35.5rem;
+        top: 30.5rem;
         margin-left: 5rem;
         width: 100%
     }
