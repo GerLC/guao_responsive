@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/*
 #busqueda {
     display: none;
 }
@@ -15,7 +16,7 @@
 
 #login {
     display: none;
-}
+}*/
 
 
 
@@ -861,7 +862,7 @@ margin: 10px 0px !important;
 
 
     .page-biblioteca {
-        font-size: 2em;
+        /* font-size: 1em;*/
         /*  text-align: center;*/
 
     }
@@ -888,11 +889,11 @@ margin: 10px 0px !important;
 
     }
 
-    .field-item .even {
+    /*  .field-item .even{
         width: 6rem;
         height: 5rem;
-
-    }
+        
+    }*/
 
     div.view.view-library .field.field-name-field-imagen-portada.field-type-image.field-label-hidden.portada_min>div>div>a>img {
         width: 7em;
@@ -919,7 +920,93 @@ margin: 10px 0px !important;
         margin-right: 4rem;
     }
 
+    /**DETALLE LIBRO**/
+    .node-type-libro-de-biblioteca #page-title {
+        color: #16A89A;
+        font-size: 5em;
+        text-align: center;
+    }
 
+    .node-libro-de-biblioteca {
+        font-size: 2.5em;
+    }
+
+
+    .node.node-libro-de-biblioteca .field.field-name-field-imagen-portada.field-type-image.field-label-hidden.portada_max>div>div>img {
+        width: 10em;
+        height: 13em;
+
+    }
+
+    .node.node-libro-de-biblioteca .field.field-name-field-imagen-portada.field-type-image.field-label-hidden.portada_max {
+        width: 11em;
+        height: 14em;
+    }
+
+
+    .node.node-libro-de-biblioteca .field.field-name-field-autor.field-type-text.field-label-inline.clearfix,
+    .node.node-libro-de-biblioteca .field.field-name-field-editorial.field-type-text.field-label-inline.clearfix,
+    .node.node-libro-de-biblioteca .field.field-name-field-a-o-de-publicaci-n.field-type-text.field-label-inline.clearfix,
+    .node.node-libro-de-biblioteca .field.field-name-field-rating.field-type-fivestar.field-label-inline.clearfix {
+
+        float: inherit;
+        display: table-row;
+        line-height: 2.5rem;
+    }
+
+    .field-type-text-long {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .field-name-field-descargar-libro>.field-label {
+        color: #16A89A;
+        font-size: 1.3em;
+        margin-top: 8px;
+        margin-bottom: 32px;
+        width: max-content;
+    }
+
+    .field-name-field-descargar-libro>.field-items>.field-item {
+        width: 50rem;
+    }
+
+
+    .region.region-help>div>div.content {
+        margin: 0px;
+        font-size: 1.25em;
+    }
+
+
+    #bloque_compartir {
+        font-size: 1em;
+        width: 10rem;
+    }
+
+    #bloque_comentar {
+        font-size: 1em;
+        width: 12rem;
+    }
+
+    .region.region-help>div#block-block-20 .content {
+        width: 10rem;
+
+    }
+
+
+
+    #block-block-21 {
+        font-size: 2.5em;
+        display: block;
+    }
+
+
+    .comment-form .form-type-textarea label {
+        float: none;
+        width: 8em;
+    }
+
+    /********************************  **/
     .one-sidebar #content {
         width: 100%;
     }
@@ -958,7 +1045,7 @@ margin: 10px 0px !important;
         align-items: center;
         margin-left: 10rem;
         margin-right: 10rem;
-        margin-bottom: 0;
+        /*margin-bottom: 0;*/
     }
 
     .bloqueshomepage>div {
@@ -966,7 +1053,7 @@ margin: 10px 0px !important;
         height: 18rem;
         margin: 1.5rem 1.5rem 1.5rem 1.5rem;
         padding: 2rem 2rem 2rem 2rem;
-        margin-bottom: 0;
+        /*   margin-bottom: 0;*/
     }
 
     .bloqueshomepage>div>p {
