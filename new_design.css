@@ -472,7 +472,7 @@ margin: 10px 0px !important;
     }
 
     .bloqueshomepage>div {
-        width: 15%;
+        width: 30%;
         height: 22rem;
         margin-left: .5rem;
         padding: 1rem 5rem 1rem 2rem;
@@ -1477,7 +1477,7 @@ margin: 10px 0px !important;
 }
 
 /*Widescreen*/
-
+/*
 @media (min-width: 1024px) {
     /*    .bloqueshomepage>div {
         width: 30%;
@@ -1485,5 +1485,5 @@ margin: 10px 0px !important;
         margin-left: .5rem;
         padding: 1rem 5rem 1rem 2rem;
         margin-bottom: 0;
-    }*/
-}
+    
+}}*/
