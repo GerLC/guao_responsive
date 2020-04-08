@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/*
+
 #busqueda {
     display: none;
 }
@@ -16,7 +16,7 @@
 
 #login {
     display: none;
-}*/
+}
 
 
 
@@ -516,20 +516,6 @@ margin: 10px 0px !important;
         font-size: 1.3em;
         text-align: center;
     }
-    
-    #busqueda{
-    	display: none;
-    }
-    
-    #login{
-    	display: none;
-    }
-    
-    #redes{
-    	display: none;
-    }
-
-
 
 
 }
