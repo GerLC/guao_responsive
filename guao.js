@@ -81,11 +81,10 @@ document.getElementById("hamburgerid").appendChild(div);
 
  /* REDES SOCIALES EN FOOTER  MOBILE PORTRAIT*/
  
- var divfooter = document.createElement('div');  
+/* var divfooter = document.createElement('div');  
  divfooter.id = "redes";
  document.getElementById("footer").appendChild(divfooter);
-  
- /* FACEBOOK */
+
  var a = document.createElement('a');  
  var img = document.createElement('img');  
  img.src="/sites/default/files/icon_fb_0.jpg";
@@ -93,7 +92,7 @@ document.getElementById("hamburgerid").appendChild(div);
  a.href = "https://www.facebook.com/pages/GUAO/462321470499657?fref=ts";  
  document.getElementById("redes").appendChild(a);
 
- /* TWITTER */
+
  var a = document.createElement('a');  
  var img = document.createElement('img');  
  img.src="/sites/default/files/icon_t_0.jpg";
@@ -101,7 +100,7 @@ document.getElementById("hamburgerid").appendChild(div);
  a.href = "https://twitter.com/Educacionguao";  
  document.getElementById("redes").appendChild(a);
 
- /* YOUTUBE */
+
  var a = document.createElement('a');  
  var img = document.createElement('img');  
  img.src="/sites/default/files/icon_yt_0.jpg";
@@ -109,13 +108,18 @@ document.getElementById("hamburgerid").appendChild(div);
  a.href = "http://www.youtube.com/user/PROYECTOGUAO";  
  document.getElementById("redes").appendChild(a);
 
- /* INSTAGRAM */
+
  var a = document.createElement('a');  
  var img = document.createElement('img');  
  img.src="/sites/default/files/icon_ig_0.jpg";
  a.appendChild(img);
  a.href = "https://instagram.com/educacionguao/";  
  document.getElementById("redes").appendChild(a);
+ */
+ 
+ 
+ var redes = document.getElementById("block-block-6");
+ document.getElementById("footer").appendChild(redes);
  
  /*  FIN */ 
 
@@ -180,36 +184,37 @@ to.insertBefore (what, to.firstChild);
 
 
   /* BIBLIOTECA */
- 
+ /*
  var side =  document.createElement("div");
  side.classList = "side";
  side.id = "side";
  side.onclick = function () {
-   /* var x = document.getElementsByClassName("section")[1];*/
+
     var x = document.getElementById("main");
-  /*  var y = document.getElementById("side");*/
-
-  /* if ( y.style.transform == "rotate(-225deg)") {
-   x.style.width = "0";
-  y.style.transform = "rotate(-45deg)";
-  y.style.left = "1rem"
-   }else {
-
-
-  x.style.width = "40rem";
-    y.style.transform = "rotate(-225deg)";
-    y.style.left = "38rem"
-     
-   }*/
   x.classList.toggle("open");
 };
- document.getElementById("main").appendChild(side);
+ document.getElementById("main").appendChild(side);*/
 /*
 var what = document.getElementById("side");
 var to = document.getElementById ("page-title");
 to.insertBefore (what, to.firstChild);
 */
-/*
+/*span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>*/
+
+
+ var side = document.createElement("span");
+ side.id = "side";
+ side.classList = "side";
+ var t = document.createTextNode("☰ Menu ⏩"); 
+ side.appendChild(t);
+ side.style.fontSize = "2rem";
+ side.onclick = function () {
+    var x = document.getElementById("main");
+  x.classList.toggle("open");
+};
+
+ document.getElementById("main").appendChild(side);
+
 
 
 
@@ -228,6 +233,7 @@ function scrollfuction() {
 }
 
 
+
 /*
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
@@ -239,3 +245,6 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }*/
+/*
+var l = document.getElementById("block-system-user-menu");
+document.getElementById("page").appendChild(l);*/
