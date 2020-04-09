@@ -18,10 +18,6 @@
     display: none;
 }
 
-    #side {
-        display: none;
-    }
-
 
 
 @media (max-width: 1024px) {
@@ -457,27 +453,6 @@ margin: 10px 0px !important;
         width: 100%;
     }
 
-    .page-biblioteca #side {
-        display: inline-block;
-    }
-
-    #side {
-        position: relative;
-        bottom: 203rem;
-        font-size: 2rem;
-        left: 2rem;
-    }
-    
-    .side:hover {
-      background-color: lightblue;
-      color: white;
-    }
-        
-    .open #sidebar-first {
-        width: 50rem;
-    }
-    
-    
 
 }
 
@@ -539,8 +514,6 @@ margin: 10px 0px !important;
         font-size: 1.3em;
         text-align: center;
     }
-    
-    
 
 
 }
@@ -852,13 +825,22 @@ margin: 10px 0px !important;
     /* REDES SOCIALES SE QUITO DEL HEADER Y SE COLOCO
    EN EL FOOTER */
 
-
     .rteright {
-        display: none;
+        display: block;
+        position: relative;
+        text-align: center;
     }
 
+    .rteright>a {
+        margin: 1rem;
+        width: 3rem;
+    }    
+
+    .rteright>a>img {
+        width: 3rem;
+    }
     
-    #redes {
+   /* #redes {
         display: block;
         position: relative;
         text-align: center;
@@ -871,8 +853,11 @@ margin: 10px 0px !important;
 
     #redes>a>img {
         width: 3rem;
-    }
+    }*/
 
+    #redesmensaje {
+        display: none;
+    }
 
     #terminos {
         font-size: 2rem;
@@ -922,19 +907,13 @@ margin: 10px 0px !important;
         top: -3rem;
         left: 22rem;
     }
-    
-    
 
-    
-    .page-biblioteca #side {
-        display: inline-block;
-    }
 
     #side {
         position: relative;
-        bottom: 269rem;
-        font-size: 2rem;
+        bottom: 281rem;
         left: 2rem;
+        font-size: 3em;
     }
     
     .side:hover {
@@ -1010,6 +989,10 @@ margin: 10px 0px !important;
         margin-left: 4rem;
         margin-right: 4rem;
     }
+    
+    .item-list .pager {
+    font-size: 2.5em;
+}
 
     /**DETALLE LIBRO**/
     .node-type-libro-de-biblioteca #page-title {
@@ -1479,7 +1462,7 @@ margin: 10px 0px !important;
         left: 22rem;
     }
 
-/*    .side {
+    .side {
         position: fixed;
         z-index: 2 !important;
         left: 1rem;
@@ -1499,34 +1482,24 @@ margin: 10px 0px !important;
     .open .side {
         transform: rotate(-225deg);
         left: 38rem;
-    }*/
-    .page-biblioteca #side {
-        display: inline-block;
-    }
-
-    #side {
-        position: relative;
-        bottom: 1rem;
-        font-size: 2rem;
-        left: 2rem;
     }
     
-    .side:hover {
-      background-color: lightblue;
-      color: white;
-    }
-        
-    .open #sidebar-first {
-        width: 40rem;
-    }
-    
-    .section{
-        margin-left: 2rem;
-        margin-right: 2rem;
-        width: 100%;
-    }
+#content .section {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
     
     /*Detalle LIBRO*/
+    .one-sidebar #content {
+    width: 100%;
+}
+    .node.node-libro-de-biblioteca .field.field-name-field-autor.field-type-text.field-label-inline.clearfix, .node.node-libro-de-biblioteca .field.field-name-field-editorial.field-type-text.field-label-inline.clearfix, .node.node-libro-de-biblioteca .field.field-name-field-a-o-de-publicaci-n.field-type-text.field-label-inline.clearfix, .node.node-libro-de-biblioteca .field.field-name-field-rating.field-type-fivestar.field-label-inline.clearfix {
+    font-size: 1.5em;
+}
+.node.node-libro-de-biblioteca .field.field-name-field-descripcion.field-type-text-long.field-label-hidden {
+    font-size: 1.5em;
+}
+    
     
     .node-type-libro-de-biblioteca h1#page-title {
     color: #16A89A;
