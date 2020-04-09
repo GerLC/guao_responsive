@@ -891,7 +891,7 @@ margin: 10px 0px !important;
         text-align: initial;
         font-size: 3rem;
         width: 0;
-        max-width: 40rem;
+        max-width: 50rem;
         height: 100%;
         position: fixed;
         z-index: 1;
@@ -943,7 +943,7 @@ margin: 10px 0px !important;
     }
         
     .open #sidebar-first {
-        width: 40rem;
+        width: 50rem;
     }
 
 
@@ -1446,7 +1446,7 @@ margin: 10px 0px !important;
         text-align: initial;
         font-size: 2rem;
         width: 0;
-        max-width: 40rem;
+        max-width: 50rem;
         height: 100%;
         position: fixed;
         z-index: 1;
