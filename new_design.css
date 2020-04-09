@@ -338,8 +338,6 @@ margin: 10px 0px !important;
     #login {
         display: block !important;
         position: relative;
-        /*  top: .8rem;
-        left: 15rem;*/
         bottom: 32.9rem;
         left: 71rem;
     }
@@ -828,10 +826,21 @@ margin: 10px 0px !important;
    EN EL FOOTER */
 
     .rteright {
-        display: none;
+        display: block;
+        position: relative;
+        text-align: center;
     }
 
-    #redes {
+    .rteright>a {
+        margin: 1rem;
+        width: 3rem;
+    }    
+
+    .rteright>a>img {
+        width: 3rem;
+    }
+    
+   /* #redes {
         display: block;
         position: relative;
         text-align: center;
@@ -844,7 +853,7 @@ margin: 10px 0px !important;
 
     #redes>a>img {
         width: 3rem;
-    }
+    }*/
 
     #redesmensaje {
         display: none;
@@ -899,27 +908,24 @@ margin: 10px 0px !important;
         left: 22rem;
     }
 
-    .side {
-        position: fixed;
-        z-index: 2 !important;
-        left: 1rem;
-        border: solid black;
-        border-width: 0px .3rem .3rem 0;
-        display: inline-block;
-        padding: .6rem;
-        transform: rotate(-45deg);
-        transition: 0.5s;
+
+    #side {
+        position: relative;
+        bottom: 269rem;
+        left: 2rem;
     }
-
-
+    
+    .side:hover {
+      background-color: lightblue;
+      color: white;
+    }
+        
     .open #sidebar-first {
         width: 40rem;
     }
 
-    .open .side {
-        transform: rotate(-225deg);
-        left: 38rem;
-    }
+
+
 
 
 
