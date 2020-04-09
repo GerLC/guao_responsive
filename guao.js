@@ -12,7 +12,7 @@ jQuery(document).ready(function(){
                   /* LISTENER */  
         /* CLICK AFUERA PARA QUITAR LA VENTANA*/
                     /*  SIBEBAR  */
-/*window.addEventListener('click', function(event) {
+window.addEventListener('click', function(event) {
          if (!event.target.matches('.side') ) {
     var sidebar = document.getElementsByClassName("clearfix");
     var i;
@@ -23,7 +23,7 @@ jQuery(document).ready(function(){
       }
     }
   }
-});*/
+});
                     /*  INICIO SESION  */
 window.addEventListener('click', function(event) {
   if (!event.target.matches('.login')) {
@@ -80,8 +80,8 @@ document.getElementById("hamburgerid").appendChild(div);
  /* FIN */
 
  /* REDES SOCIALES EN FOOTER  MOBILE PORTRAIT*/
- 
-/* var divfooter = document.createElement('div');  
+
+ var divfooter = document.createElement('div');  
  divfooter.id = "redes";
  document.getElementById("footer").appendChild(divfooter);
 
@@ -115,11 +115,8 @@ document.getElementById("hamburgerid").appendChild(div);
  a.appendChild(img);
  a.href = "https://instagram.com/educacionguao/";  
  document.getElementById("redes").appendChild(a);
- */
- 
- 
- var redes = document.getElementById("block-block-6");
- document.getElementById("footer").appendChild(redes);
+
+
  
  /*  FIN */ 
 
@@ -207,7 +204,6 @@ to.insertBefore (what, to.firstChild);
  side.classList = "side";
  var t = document.createTextNode("☰ Menu ⏩"); 
  side.appendChild(t);
- side.style.fontSize = "2rem";
  side.onclick = function () {
     var x = document.getElementById("main");
   x.classList.toggle("open");
