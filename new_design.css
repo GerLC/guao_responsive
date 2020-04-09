@@ -944,6 +944,7 @@ margin: 10px 0px !important;
 
     .page-biblioteca #page-title {
         text-align: center;
+        font-size: 6em;
     }
 
     .page-biblioteca>img {
@@ -1470,6 +1471,20 @@ margin: 10px 0px !important;
     .open .side {
         transform: rotate(-225deg);
         left: 38rem;
+    }
+    
+    .section{
+        margin-left: 2rem;
+        margin-right: 2rem;
+        width: 100%;
+    }
+    
+    /*Detalle LIBRO*/
+    
+    .node-type-libro-de-biblioteca h1#page-title {
+    color: #16A89A;
+    font-size: 4em;
+    text-align: center;
     }
 
 }
