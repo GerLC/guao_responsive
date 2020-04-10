@@ -1441,6 +1441,15 @@ margin: 10px 0px !important;
 
     /* BIBLIOTECA */
 
+.page-biblioteca #page-title {
+    font-size: 4em;
+    text-align: center;
+}
+
+.item-list .pager {
+    font-size: 1.3em;
+}
+
     #sidebar-first {
         text-align: initial;
         font-size: 2rem;
