@@ -899,7 +899,7 @@ margin: 10px 0px !important;
         text-align: initial;
         font-size: 3rem;
         width: 0;
-        max-width: 50rem;
+        max-width: 49rem;
         height: 100%;
         position: fixed;
         z-index: 1;
@@ -907,15 +907,27 @@ margin: 10px 0px !important;
         overflow-x: hidden;
         overflow-y: scroll;
         transition: .5s;
-        opacity: 90%;
+        opacity: 95%;
     }
 
-
+    #sidebar-first  .section {
+        margin-left: 0 ;
+        margin-right: 0 ;
+        padding: 0 ;
+    }
+    
+    #sidebar-first .option  {
+        display: inline-block !important; 
+        margin-left: 1rem !important;
+    }
+    
+    .sidebar .block {
+        padding-left: 2.3rem;
+    }
 
     input.form-radio {
         width: 2rem;
         height: 2rem;
-        opacity: 1 !important;
     }
 
     div.form-item.form-type-textfield.form-item-populate>input {
@@ -943,15 +955,13 @@ margin: 10px 0px !important;
     }
     
     .side:hover {
-      background-color: lightblue;
+      background-color: #16A89A;
       color: white;
     }
         
     .open #sidebar-first {
         width: 50rem;
     }
-
-
 
 
 
