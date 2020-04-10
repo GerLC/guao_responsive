@@ -92,7 +92,7 @@ margin: 10px 0px !important;
 
     .bloqueshomepage>div>ul {
         width: 30rem;
-        font-size: 2em;
+        font-size: 1em;
     }
 
     #bloque03_fondo {
@@ -474,6 +474,16 @@ margin: 10px 0px !important;
         
     .open #sidebar-first {
         width: 50rem;
+    }
+    
+    
+    /****** Detalle libro *********/
+    #sidebar-first > div.section {
+        display: none;
+}
+
+    #content .section, .sidebar .section {
+        font-size: 2em;
     }
 
 }
@@ -1466,6 +1476,12 @@ margin: 10px 0px !important;
         .one-sidebar #content {
         width: 100%;
     }
+    
+    #content h2 {
+    margin-bottom: 2px;
+    font-size: 2em;
+    line-height: 1.4;
+}
 
 .page-biblioteca #page-title {
     font-size: 4em;
