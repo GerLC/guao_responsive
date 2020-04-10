@@ -489,6 +489,7 @@ margin: 10px 0px !important;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        margin-bottom: 0;
     }
 
     .bloqueshomepage>div {
@@ -1081,6 +1082,10 @@ margin: 10px 0px !important;
         width: 10rem;
 
     }
+    #edit-actions input {
+    margin-right: 0.6em;
+    margin-left: 27rem;
+}
 
 
 
@@ -1094,6 +1099,22 @@ margin: 10px 0px !important;
         float: none;
         width: 8em;
     }
+    
+     /*   #widgets-element-widgets_custom-markup {
+        font-size: 1em;
+        margin-left: 6.8rem;
+}*/
+
+
+    #comments {
+        margin-top: 0;
+    }
+/*  .link-wrapper {
+        margin-left: 17rem;
+}*/
+    #widgets-element-socialmedia_share-default {
+        margin-top: 0;
+}
 
     /********************************  **/
     .one-sidebar #content {
@@ -1140,7 +1161,7 @@ margin: 10px 0px !important;
     .bloqueshomepage>div {
         width: 35%;
         height: 18rem;
-        margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+        margin-left: 1rem;
         padding: 2rem 2rem 2rem 2rem;
         /*   margin-bottom: 0;*/
     }
@@ -1152,6 +1173,7 @@ margin: 10px 0px !important;
     #bloque03_fondo {
         width: 100%;
         background-position: 9rem 6rem;
+        padding-right: 31px;
     }
 
     #logo {
@@ -1440,6 +1462,10 @@ margin: 10px 0px !important;
 
 
     /* BIBLIOTECA */
+    
+        .one-sidebar #content {
+        width: 100%;
+    }
 
 .page-biblioteca #page-title {
     font-size: 4em;
@@ -1531,11 +1557,13 @@ margin: 10px 0px !important;
     padding-left: 4rem;
     padding-right: 4rem;
 }
-    
-    /*Detalle LIBRO*/
-    .one-sidebar #content {
-    width: 100%;
+.node.node-libro-de-biblioteca.node-promoted.node-full.clearfix .field.field-name-field-rating.field-type-fivestar.field-label-inline.clearfix {
+     height: 0; 
 }
+
+/****Detalle libro******/
+    
+
     .node.node-libro-de-biblioteca .field.field-name-field-autor.field-type-text.field-label-inline.clearfix, .node.node-libro-de-biblioteca .field.field-name-field-editorial.field-type-text.field-label-inline.clearfix, .node.node-libro-de-biblioteca .field.field-name-field-a-o-de-publicaci-n.field-type-text.field-label-inline.clearfix, .node.node-libro-de-biblioteca .field.field-name-field-rating.field-type-fivestar.field-label-inline.clearfix {
     font-size: 1.5em;
 }
@@ -1549,6 +1577,27 @@ margin: 10px 0px !important;
     font-size: 4em;
     text-align: center;
     }
+    
+    #widgets-element-widgets_custom-markup {
+        margin-left: 11.5rem;
+}
+
+    .link-wrapper {
+        margin-left: 20rem;
+}
+
+#comments {
+    margin-top: 0;
+}
+
+    #edit-actions input {
+    margin-right: 0.6em;
+    margin-left: 30.61rem;
+}
+
+    #widgets-element-socialmedia_share-default {
+        margin-top: 0;
+}
 
 }
 
