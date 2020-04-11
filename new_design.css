@@ -487,7 +487,7 @@ margin: 10px 0px !important;
     }
 
     .node-libro-de-biblioteca {
-      /*  font-size: 2.5em;*/
+       /* font-size: 1.2em;*/
     }
 
 
@@ -1702,6 +1702,21 @@ margin: 10px 0px !important;
 .node.node-libro-de-biblioteca.node-promoted.node-full.clearfix .field.field-name-field-rating.field-type-fivestar.field-label-inline.clearfix {
      height: 0; 
 }
+
+
+    div.view.view-library .field.field-name-field-imagen-portada.field-type-image.field-label-hidden.portada_min>div>div>a>img {
+        width: 9em;
+        height: 14em;
+    }
+
+    div.view.view-library .field.field-name-field-imagen-portada.field-type-image.field-label-hidden.portada_min {
+        width: 9.5em;
+        height: 15em;
+        float: left;
+    }
+
+
+
 
 /****Detalle libro******/
     
