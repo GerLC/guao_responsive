@@ -999,9 +999,10 @@ margin: 10px 0px !important;
         font-size: 3rem;
         width: 0;
         max-width: 49rem;
-        height: 100%;
+        top: 0;
         position: fixed;
         z-index: 1;
+        height: 100%;
         left: 0;
         overflow-x: hidden;
         overflow-y: scroll;
@@ -1047,8 +1048,8 @@ margin: 10px 0px !important;
     }
 
     #side {
-        position: relative;
-        bottom: 281rem;
+        position: absolute;
+        bottom: 37rem;
         left: 2rem;
         font-size: 3em;
     }
@@ -1610,12 +1611,12 @@ margin: 10px 0px !important;
         position: fixed;
         z-index: 1;
         left: 0;
+        top: 0;
         overflow-x: hidden;
         overflow-y: scroll;
         transition: .5s;
-        opacity: 90%;
+        opacity: 95%;
     }
-
 
 
     input.form-radio {
@@ -1661,6 +1662,22 @@ margin: 10px 0px !important;
     .page-biblioteca #side {
         display: inline-block;
     }
+    
+        #sidebar-first  .section {
+        margin-left: 0 ;
+        margin-right: 0 ;
+        padding: 0 ;
+    }
+    
+    #sidebar-first .option  {
+        display: inline-block !important; 
+        margin-left: 1rem !important;
+    }
+    
+    .sidebar .block {
+        padding-left: 2.3rem;
+    }
+
 
     #side {
         position: relative;

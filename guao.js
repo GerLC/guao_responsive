@@ -202,7 +202,7 @@ to.insertBefore (what, to.firstChild);
  var side = document.createElement("span");
  side.id = "side";
  side.classList = "side";
- var t = document.createTextNode("☰ Menu ⏩"); 
+ var t = document.createTextNode("🚭 Menu ⚙"); 
  side.appendChild(t);
  side.onclick = function () {
     var x = document.getElementById("main");
