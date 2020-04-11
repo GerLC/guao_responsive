@@ -74,6 +74,11 @@ margin: 10px 0px !important;
 ##Screen = B/w 768px to 1024px
 */
 @media (min-width: 768px) and (max-width: 1024px) and (min-height: 479px) and (orientation: portrait) {
+    
+    .bloqueshomepage{
+        margin: 6rem 0 0 0;
+    }
+    
     .bloqueshomepage>div {
         width: 80%;
         height: 37.5rem;
@@ -1118,7 +1123,7 @@ margin: 10px 0px !important;
     div.view.view-library .field.field-name-field-rating.field-type-fivestar.field-label-inline.clearfix {
         float: none;
         display: table-row;
-        line-height: 2rem;
+        line-height: 2.5rem;
     }
 
     .section {
@@ -1283,17 +1288,28 @@ margin: 10px 0px !important;
         height: 18rem;
         margin-left: 1rem;
         padding: 2rem 2rem 2rem 2rem;
+        font-size: 1.2em;
         /*   margin-bottom: 0;*/
     }
 
     .bloqueshomepage>div>p {
-        font-size: 2rem;
+        font-size: 2em;
     }
+    
+    
+    #bloque01 {
+    background-size: 10rem 11rem;
+}
+
+#bloque02 {
+    background-size: 12rem 12rem;
+}
 
     #bloque03_fondo {
         width: 100%;
-        background-position: 9rem 6rem;
+        background-position: 9rem 7rem;
         padding-right: 31px;
+            background-size: 12rem 15rem;
     }
 
     #logo {
@@ -1758,6 +1774,29 @@ margin: 10px 0px !important;
 
 }
 
+@media (max-height: 320px) and (orientation: landscape) {
+    
+        div.view.view-library .field.field-name-field-imagen-portada.field-type-image.field-label-hidden.portada_min>div>div>a>img {
+        width: 6em;
+        height: 9em;
+    }
+
+    div.view.view-library .field.field-name-field-imagen-portada.field-type-image.field-label-hidden.portada_min {
+        width: 6.5em;
+        height: 9.5em;
+        float: left;
+    }
+    
+        .node.node-libro-de-biblioteca .field.field-name-field-autor.field-type-text.field-label-inline.clearfix, .node.node-libro-de-biblioteca .field.field-name-field-editorial.field-type-text.field-label-inline.clearfix, .node.node-libro-de-biblioteca .field.field-name-field-a-o-de-publicaci-n.field-type-text.field-label-inline.clearfix, .node.node-libro-de-biblioteca .field.field-name-field-rating.field-type-fivestar.field-label-inline.clearfix {
+    font-size: 1em;
+}
+        #content h2 {
+    margin-bottom: 2px;
+    font-size: 1.5em;
+    line-height: 1.4;
+}
+
+}
 /*Widescreen*/
 /*
 @media (min-width: 1024px) {
