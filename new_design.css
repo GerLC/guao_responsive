@@ -395,16 +395,9 @@ margin: 10px 0px !important;
         display: none;
     }
 
-    .page-biblioteca {
-        font-size: 1.6em;
-        /*  text-align: center;*/
-
-    }
-
     .page-biblioteca .views-row {
-        margin-left: 2rem;
-        margin-right: 4rem;
         text-align: justify;
+        margin-right: 1rem;
     }
 
     .page-biblioteca .views-row>img {
@@ -412,7 +405,10 @@ margin: 10px 0px !important;
 
     }
 
-
+    .section{
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
 
 
     .page-biblioteca #page-title {
@@ -485,6 +481,109 @@ margin: 10px 0px !important;
     #content .section, .sidebar .section {
         font-size: 2em;
     }
+    
+        .node-type-libro-de-biblioteca #page-title {
+        text-align: center;
+    }
+
+    .node-libro-de-biblioteca {
+      /*  font-size: 2.5em;*/
+    }
+
+
+    .node.node-libro-de-biblioteca .field.field-name-field-imagen-portada.field-type-image.field-label-hidden.portada_max>div>div>img {
+        width: 10em;
+        height: 13em;
+
+    }
+
+    .node.node-libro-de-biblioteca .field.field-name-field-imagen-portada.field-type-image.field-label-hidden.portada_max {
+        width: 11em;
+        height: 14em;
+    }
+
+
+    .node.node-libro-de-biblioteca .field.field-name-field-autor.field-type-text.field-label-inline.clearfix,
+    .node.node-libro-de-biblioteca .field.field-name-field-editorial.field-type-text.field-label-inline.clearfix,
+    .node.node-libro-de-biblioteca .field.field-name-field-a-o-de-publicaci-n.field-type-text.field-label-inline.clearfix,
+    .node.node-libro-de-biblioteca .field.field-name-field-rating.field-type-fivestar.field-label-inline.clearfix {
+
+        float: inherit;
+        display: table-row;
+        line-height: 2.5rem;
+    }
+
+    .field-type-text-long {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .field-name-field-descargar-libro>.field-label {
+        color: #16A89A;
+        font-size: 1.3em;
+        margin-top: 8px;
+        margin-bottom: 32px;
+        width: max-content;
+    }
+
+    .field-name-field-descargar-libro>.field-items>.field-item {
+        width: 50rem;
+    }
+
+
+    .region.region-help>div>div.content {
+        margin: 0px;
+        font-size: 0.6em;
+    }
+
+
+    #bloque_compartir {
+        font-size: 1em;
+        width: 10rem;
+    }
+
+    #bloque_comentar {
+        font-size: 1em;
+        width: 12rem;
+    }
+
+    .region.region-help>div#block-block-20 .content {
+        width: 8rem;
+
+    }
+    #edit-actions input {
+    margin-right: 0.6em;
+    margin-left: 27rem;
+}
+
+
+
+    #block-block-21 {
+        font-size: 2.5em;
+        display: block;
+    }
+
+
+    .comment-form .form-type-textarea label {
+        float: none;
+        width: 8em;
+    }
+    
+     /*   #widgets-element-widgets_custom-markup {
+        font-size: 1em;
+        margin-left: 6.8rem;
+}*/
+
+
+    #comments {
+        margin-top: 0;
+    }
+/*  .link-wrapper {
+        margin-left: 17rem;
+}*/
+    #widgets-element-socialmedia_share-default {
+        margin-top: 0;
+}
 
 }
 
