@@ -1247,6 +1247,32 @@ margin: 10px 0px !important;
 }
 
     /********************************  **/
+    
+    
+    
+    div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
+    display: table-row;
+    width: 30rem;
+    height: 16rem;
+    margin: 0 0 20px 0;
+    float: none;
+}
+
+div.node.node-buenas-pr-cticas > div > div.field.field-name-field-portada-buenas-practicas.field-type-image.field-label-hidden.buenas_practicas_resumen > div > div > a > img {
+    width: 100%;
+    height: 20rem;
+}
+
+div.view.view-buenas-pr-cticas > div.view-content > div > div > div.content {
+    font-size: 1em;
+    margin-top: 0px;
+    width: 25rem;
+}
+
+
+/*******                    ********************/
+    
+    
     .one-sidebar #content {
         width: 100%;
     }
@@ -1787,6 +1813,23 @@ margin: 10px 0px !important;
     #widgets-element-socialmedia_share-default {
         margin-top: 0;
 }
+
+
+/*******     ******************** /
+
+
+/******INNOVACIONES LANDSCAPE TLF ************/
+
+div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
+    display: table-row;
+    width: 30rem;
+    height: 16rem;
+    margin: 0 0 20px 0;
+    float: none;
+}
+
+
+/*******                    ********************/
 
 }
 
