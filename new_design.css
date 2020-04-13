@@ -396,9 +396,70 @@ margin: 10px 0px !important;
     /**Biblioteca**/
 
 
-    .page-biblioteca #sidebar-first {
-        display: none;
+    #sidebar-first {
+        text-align: initial;
+        width: 0;
+        max-width: 52rem;
+        top: 0;
+        position: fixed;
+        z-index: 1;
+        height: 100%;
+        left: 0;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        transition: .5s;
+        opacity: 95%;
     }
+    
+     #sidebar-first  #content .section, .sidebar .section {
+        font-size: 3rem !important;
+        }
+    
+
+
+	#sidebar-first  .section {
+        margin-left: 0 ;
+        margin-right: 0 ;
+        padding: 0 ;
+    }
+    
+    #sidebar-first .option  {
+        display: inline-block !important; 
+        margin-left: 1rem !important;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .views-exposed-form .form-item, .views-exposed-form .form-submit {
+    margin-top: 3rem;
+	}
+
+	.views-exposed-form label {
+	    font-weight: bolder;
+	}
+	    
+    .sidebar .block {
+        padding-left: 2.3rem;
+    }
+    
+    input.form-radio {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    div.form-item.form-type-textfield.form-item-populate>input {
+        width: 30rem;
+    }
+
+    #block-views-exp-library-page-1 #edit-submit-library {
+        width: 5rem;
+        height: 5rem;
+        background-size: 3.55rem;
+        position: relative;
+        top: -2rem;
+        left: 22rem;
+    }
+
 
     .page-biblioteca .views-row {
         text-align: justify;
@@ -463,7 +524,6 @@ margin: 10px 0px !important;
 
     #side {
         position: relative;
-        bottom: 204rem;
         left: 2rem;
         font-size: 3rem;
     }
@@ -479,9 +539,9 @@ margin: 10px 0px !important;
     
     
     /****** Detalle libro *********/
-    #sidebar-first > div.section {
+   /* #sidebar-first > div.section {
         display: none;
-}
+}*/
 
     #content .section, .sidebar .section {
         font-size: 2em;
@@ -571,9 +631,9 @@ margin: 10px 0px !important;
         width: 8em;
     }
     
-.form-actions {
-    text-align: center;
-}
+	.form-actions {
+	    text-align: center;
+	}
 
 
     .node.node-libro-de-biblioteca .field-name-field-videoteca > div > div > iframe {
@@ -589,6 +649,39 @@ margin: 10px 0px !important;
     #widgets-element-socialmedia_share-default {
         margin-top: 0;
 }
+
+
+		
+		
+  
+ /* INNOVACIONES SIDEBAR */
+ 
+ .page-buenas-practicas #side {
+ 		display: inline-block;
+ }
+ 
+ div.form-item.form-type-textfield>input {
+    width: 30rem !important;
+}
+
+
+ .views-exposed-form .views-exposed-widget .form-submit {
+    	width: 5rem !important;
+	    height: 5rem !important;
+	    background-size: 3.55rem !important;
+	    position: relative;
+	    top: -2rem;
+	    left: 22rem;
+
+ }
+ 
+ /* PORTAFOLIO SIDEBAR */
+
+ .page-portafolio-docente #side {
+ 		display: inline-block;
+ }
+
+
 
 }
 
@@ -999,11 +1092,11 @@ margin: 10px 0px !important;
 
     /* SIDEBARS */
 
-    #sidebar-first {
+ #sidebar-first {
         text-align: initial;
         font-size: 3rem;
         width: 0;
-        max-width: 49rem;
+        max-width: 52rem;
         top: 0;
         position: fixed;
         z-index: 1;
@@ -1024,15 +1117,25 @@ margin: 10px 0px !important;
     #sidebar-first .option  {
         display: inline-block !important; 
         margin-left: 1rem !important;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
     }
     
+    .views-exposed-form .form-item, .views-exposed-form .form-submit {
+    margin-top: 3rem;
+	}
+
+	.views-exposed-form label {
+	    font-weight: bolder;
+	}
+	    
     .sidebar .block {
         padding-left: 2.3rem;
     }
 
     input.form-radio {
-        width: 2rem;
-        height: 2rem;
+        width: 2.5rem;
+        height: 2.5rem;
     }
 
     div.form-item.form-type-textfield.form-item-populate>input {
@@ -1042,9 +1145,9 @@ margin: 10px 0px !important;
     #block-views-exp-library-page-1 #edit-submit-library {
         width: 5rem;
         height: 5rem;
-        background-size: 4.55rem;
+        background-size: 3.55rem;
         position: relative;
-        top: -3rem;
+        top: -2rem;
         left: 22rem;
     }
 
@@ -1053,10 +1156,10 @@ margin: 10px 0px !important;
     }
 
     #side {
-        position: absolute;
-        bottom: 37rem;
-        left: 2rem;
-        font-size: 3em;
+	    position: relative;
+	    left: 2rem;
+	    font-size: 3em;
+
     }
     
     .side:hover {
@@ -1065,8 +1168,9 @@ margin: 10px 0px !important;
     }
         
     .open #sidebar-first {
-        width: 50rem;
+        width: 52rem;
     }
+
 
 
 
@@ -1294,7 +1398,33 @@ div.view.view-buenas-pr-cticas > div.view-content > div > div > div.content {
 
 
 
+ /* INNOVACIONES */
+ 
+ .page-buenas-practicas #side {
+ 		display: inline-block;
+ }
+ 
+ div.form-item.form-type-textfield>input {
+    width: 30rem !important;
+}
 
+
+ .views-exposed-form .views-exposed-widget .form-submit {
+    	width: 5rem !important;
+	    height: 5rem !important;
+	    background-size: 3.55rem !important;
+	    position: relative;
+	    top: -2rem;
+	    left: 22rem;
+ 
+ }
+ 
+ /* PORTAFOLIO */
+
+ .page-portafolio-docente #side {
+ 		display: inline-block;
+ }
+ 
 }
 
 /*Smartphones LANDSCAPE*/
@@ -1653,7 +1783,7 @@ div.view.view-buenas-pr-cticas > div.view-content > div > div > div.content {
     font-size: 1.3em;
 }
 
-    #sidebar-first {
+   #sidebar-first {
         text-align: initial;
         font-size: 2rem;
         width: 0;
@@ -1671,9 +1801,8 @@ div.view.view-buenas-pr-cticas > div.view-content > div > div > div.content {
 
 
     input.form-radio {
-        width: 1.5rem;
-        height: 1.5rem;
-        opacity: 1 !important;
+        width: 2rem;
+        height: 2rem;
     }
 
     div.form-item.form-type-textfield.form-item-populate>input {
@@ -1681,35 +1810,15 @@ div.view.view-buenas-pr-cticas > div.view-content > div > div > div.content {
     }
 
     #block-views-exp-library-page-1 #edit-submit-library {
-        width: 4rem;
-        height: 4rem;
-        background-size: 3.25rem;
-        position: relative;
-        top: -1.65rem;
-        left: 22rem;
-    }
-
-/*    .side {
-        position: fixed;
-        z-index: 2 !important;
-        left: 1rem;
-        border: solid black;
-        border-width: 0px .3rem .3rem 0;
-        display: inline-block;
-        padding: .6rem;
-        transform: rotate(-45deg);
-        transition: 0.5s;
+	    width: 4rem;
+	    height: 4rem;
+	    background-size: 2.60rem;
+	    position: relative;
+	    top: -1.05rem;
+	    left: 22rem;
     }
 
 
-    .open #sidebar-first {
-        width: 40rem;
-    }
-
-    .open .side {
-        transform: rotate(-225deg);
-        left: 38rem;
-    }*/
     .page-biblioteca #side {
         display: inline-block;
     }
@@ -1723,18 +1832,28 @@ div.view.view-buenas-pr-cticas > div.view-content > div > div > div.content {
     #sidebar-first .option  {
         display: inline-block !important; 
         margin-left: 1rem !important;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
     }
     
     .sidebar .block {
         padding-left: 2.3rem;
     }
+    
+    .views-exposed-form .form-item, .views-exposed-form .form-submit {
+    margin-top: 3rem;
+	}
+
+	.views-exposed-form label {
+	    font-weight: bolder;
+	}
 
 
     #side {
         position: relative;
-        bottom: 120.5rem;
-        font-size: 2rem;
-        left: 59rem;
+	    bottom: 1rem;
+	    font-size: 2rem;
+	    left: 5rem;
     }
     
     .side:hover {
@@ -1831,6 +1950,37 @@ div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
 
 
 /*******                    ********************/
+
+
+
+ /* INNOVACIONES SIDEBAR */
+ 
+ .page-buenas-practicas #side {
+ 		display: inline-block;
+ }
+ 
+ div.form-item.form-type-textfield>input {
+    width: 30rem !important;
+}
+
+
+ .views-exposed-form .views-exposed-widget .form-submit {
+    	width: 4rem !important;
+	    height: 4rem !important;
+	    background-size: 2.60rem !important;
+	    position: relative;
+	    top: -1.05rem;
+	    left: 22rem;
+
+ }
+ 
+ /* PORTAFOLIO SIDEBAR */
+
+ .page-portafolio-docente #side {
+ 		display: inline-block;
+ }
+
+
 
 }
 
