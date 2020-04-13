@@ -1353,14 +1353,41 @@ margin: 10px 0px !important;
     /********************************  **/
     
     
-    
+ /*   
     div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
     display: table-row;
     width: 30rem;
     height: 16rem;
     margin: 0 0 20px 0;
     float: none;
+}*/
+
+
+    div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
+    display: inline-table;
+    width: 65rem;
+    height: 70rem;
+    margin-bottom: 6rem;
+    float: none;
 }
+
+    div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
+	margin-left: 0 !important;
+	}
+
+   #buenas_practicas_top {
+    height: 29rem;
+    font-size: 1.7rem;
+    margin-bottom: 4rem;
+    width: 66rem;
+}
+  
+   #buenas_practicas_top > div#right > img {
+    width: 31.7167rem;
+    height: 29rem;
+}
+
+
 
 div.node.node-buenas-pr-cticas > div > div.field.field-name-field-portada-buenas-practicas.field-type-image.field-label-hidden.buenas_practicas_resumen > div > div > a > img {
     width: 100%;
@@ -1950,6 +1977,35 @@ div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
 
 
 /*******                    ********************/
+
+
+/*   GERMAN */
+
+    div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
+    display: inline-table;
+    width: 31rem;
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+    height: 20rem;
+}
+
+    div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
+	margin-left: 0 !important;
+	}
+
+   #buenas_practicas_top {
+    height: 29rem;
+    font-size: 1.7rem;
+    margin-bottom: 4rem;
+    width: 66rem;
+}
+  
+   #buenas_practicas_top > div#right > img {
+    width: 31.7167rem;
+    height: 29rem;
+}
+
+
 
 
 
