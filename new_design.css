@@ -1986,7 +1986,7 @@ div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
     width: 31rem;
     margin-bottom: 3rem;
     margin-right: 2rem;
-    height: 20rem;
+    height: 37rem;
 }
 
     div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
@@ -2005,8 +2005,14 @@ div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
     height: 29rem;
 }
 
+div.node.node-buenas-pr-cticas > div > div.field.field-name-field-portada-buenas-practicas.field-type-image.field-label-hidden.buenas_practicas_resumen > div > div > a > img {
+    height: 20rem;
+}
 
-
+div.view.view-buenas-pr-cticas > div.view-content > div > div > div.content {
+    font-size: 1.2rem;
+    margin-top: 0px;
+}
 
 
  /* INNOVACIONES SIDEBAR */
