@@ -752,7 +752,7 @@ div.node.node-buenas-pr-cticas > div > div.field.field-name-field-portada-buenas
     width: 29rem;
     margin-bottom: 3rem;
     margin-right: 2rem;
-    height: 35rem;
+    height: 37rem;
     float: none;
 }
 
@@ -765,6 +765,9 @@ div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-1,
     text-align: justify;
 }
 
+div.node.node-portafolio-docente > div > div.field.field-name-field-portada-portafolio.field-type-image.field-label-hidden.portafolio_docente_resumen > div > div > a > img {
+    height: 21rem;
+}
 
 
 }
