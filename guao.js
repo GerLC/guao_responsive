@@ -129,18 +129,18 @@ document.getElementById("hamburgerid").appendChild(div);
  busqueda.appendChild(imgb);
  busqueda.onclick = function () {
     var x = document.getElementById("page-wrapper");
-    var focus = document.getElementById('edit-search-block-form--2').focus();
+    var focus = document.getElementById('edit-search-block-form--2');
    if ( x.style.transform == "scaleX(0)") {
    
 
    x.classList.toggle("changeb");
-  
+
    
 
    }else {
 
     x.classList.toggle("changeb");
-
+   focus.focus();
     }
  
 };
@@ -202,7 +202,7 @@ to.insertBefore (what, to.firstChild);
  var side = document.createElement("span");
  side.id = "side";
  side.classList = "side";
- var t = document.createTextNode("🚭 Menu ⚙"); 
+ var t = document.createTextNode("🚭 Categoria ⚙"); 
  side.appendChild(t);
  side.onclick = function () {
     var x = document.getElementById("main");
@@ -211,7 +211,9 @@ to.insertBefore (what, to.firstChild);
 
  document.getElementById("main").appendChild(side);
 
-
+ var what = document.getElementById("side");
+ var to = document.getElementById ("main");
+ to.insertBefore (what, to.firstChild);
 
 
 /* PARA QUE SE QUEDE AL BAJAR LA PANTALLA*/
@@ -244,3 +246,5 @@ window.onscroll = function() {
 /*
 var l = document.getElementById("block-system-user-menu");
 document.getElementById("page").appendChild(l);*/
+
+

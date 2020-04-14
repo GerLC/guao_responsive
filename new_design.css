@@ -720,6 +720,49 @@ margin: 10px 0px !important;
  }
 
 
+ /******PORTAFOLIOS************/
+ 
+#portafolio_docente_top > div#right {
+    float: right;
+}
+
+#portafolio_docente_top  > div#left > p#titulo {
+    font-size: 1.5em;
+}
+
+#portafolio_docente_top  > div#left {
+    width: 38rem;
+    height: 14rem;
+}
+
+#portafolio_docente_top  > div#left > p#contenido {
+    font-size: 0.8em;
+}
+
+#portafolio_docente_top > div#right > img {
+    width: 21rem;
+    height: 16.5rem;
+}
+
+    div.view.view-portafolio-docente > div.view-content > div.views-row {
+	display: inline-table;
+    width: 29rem;
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+    height: 35rem;
+    float: none;
+}
+
+div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-1, div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-3, div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-5, div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-7, div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-9 {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+#content h2{
+    text-align: justify;
+}
+
+
 
 }
 
@@ -1469,7 +1512,7 @@ div.view.view-buenas-pr-cticas > div.view-content > div > div > div.content {
 
 
 
- /* INNOVACIONES */
+ /* INNOVACIONES sidebar*/
  
  .page-buenas-practicas #side {
         display: inline-block;
@@ -1490,11 +1533,54 @@ div.view.view-buenas-pr-cticas > div.view-content > div > div > div.content {
  
  }
  
- /* PORTAFOLIO */
+ /* PORTAFOLIO sidebar*/
 
  .page-portafolio-docente #side {
         display: inline-block;
  }
+ 
+ 
+  
+ /* PORTAFOLIO */
+ 
+ div.view.view-portafolio-docente > div.view-content > div.views-row {
+    display: inline-table;
+    width: 65rem;
+    height: 70rem;
+    margin-bottom: 6rem;
+    float: none;
+}
+ 
+ div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-1, div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-3, div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-5, div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-7, div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-9 {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+
+div.view.view-portafolio-docente > div.view-content > div > div > div.content {
+    font-size: 3em;
+    margin-top: 0px;
+    width: 100%;
+}
+ 
+div.node.node-portafolio-docente > div > div.field.field-name-field-portada-portafolio.field-type-image.field-label-hidden.portafolio_docente_resumen > div > div > a > img {
+    width: 100%;
+    height: 40rem;
+}
+
+
+   #portafolio_docente_top {
+    height: 29rem;
+    font-size: 1.7rem;
+    margin-bottom: 4rem;
+    width: 66rem;
+}
+  
+   #portafolio_docente_top > div#right > img {
+    width: 31.7167rem;
+    height: 29rem;
+}
  
 }
 
@@ -1941,6 +2027,7 @@ div.view.view-buenas-pr-cticas > div.view-content > div > div > div.content {
     padding-left: 4rem;
     padding-right: 4rem;
 }
+
 .node.node-libro-de-biblioteca.node-promoted.node-full.clearfix .field.field-name-field-rating.field-type-fivestar.field-label-inline.clearfix {
      height: 0; 
 }
@@ -2035,7 +2122,9 @@ div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
 }
 
     div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
-    margin-left: 0 !important;
+    margin-left: 1rem;
+    margin-right: 0;
+ 
     }
 
    #buenas_practicas_top {
@@ -2082,6 +2171,54 @@ div.view.view-buenas-pr-cticas > div.view-content > div > div > div.content {
         left: 22rem;
 
  }
+ 
+ 
+ /* PORTAFOLIO */
+ 
+ div.view.view-portafolio-docente > div.view-content > div.views-row {
+    display: inline-table;
+    width: 31rem;
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+    height: 37rem;
+    float: none;
+}
+ 
+ div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-1, div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-3, div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-5, div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-7, div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-9 {
+    margin-left: 1rem;
+	margin-right: 2rem;
+}
+
+
+
+div.view.view-portafolio-docente > div.view-content > div > div > div.content {
+    font-size: 1.2rem;
+    margin-top: 0px;
+}
+ 
+div.node.node-portafolio-docente > div > div.field.field-name-field-portada-portafolio.field-type-image.field-label-hidden.portafolio_docente_resumen > div > div > a > img {
+    height: 20rem;
+}
+
+
+   #portafolio_docente_top {
+    height: 29rem;
+    font-size: 1.7rem;
+    margin-bottom: 4rem;
+    width: 66rem;
+}
+  
+   #portafolio_docente_top > div#right > img {
+    width: 31.7167rem;
+    height: 29rem;
+}
+ 
+ .page-portafolio-docente #content .section, .page-buenas-practicas #content .section{
+    padding-left: 4rem;
+    padding-right: 0rem;
+}
+
+ 
  
  /* PORTAFOLIO SIDEBAR */
 
