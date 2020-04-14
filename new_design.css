@@ -417,7 +417,7 @@ margin: 10px 0px !important;
     
 
 
-	#sidebar-first  .section {
+    #sidebar-first  .section {
         margin-left: 0 ;
         margin-right: 0 ;
         padding: 0 ;
@@ -432,12 +432,12 @@ margin: 10px 0px !important;
     
     .views-exposed-form .form-item, .views-exposed-form .form-submit {
     margin-top: 3rem;
-	}
+    }
 
-	.views-exposed-form label {
-	    font-weight: bolder;
-	}
-	    
+    .views-exposed-form label {
+        font-weight: bolder;
+    }
+        
     .sidebar .block {
         padding-left: 2.3rem;
     }
@@ -631,9 +631,9 @@ margin: 10px 0px !important;
         width: 8em;
     }
     
-	.form-actions {
-	    text-align: center;
-	}
+    .form-actions {
+        text-align: center;
+    }
 
 
     .node.node-libro-de-biblioteca .field-name-field-videoteca > div > div > iframe {
@@ -651,13 +651,13 @@ margin: 10px 0px !important;
 }
 
 
-		
-		
+        
+        
   
  /* INNOVACIONES SIDEBAR */
  
  .page-buenas-practicas #side {
- 		display: inline-block;
+        display: inline-block;
  }
  
  div.form-item.form-type-textfield>input {
@@ -666,19 +666,57 @@ margin: 10px 0px !important;
 
 
  .views-exposed-form .views-exposed-widget .form-submit {
-    	width: 5rem !important;
-	    height: 5rem !important;
-	    background-size: 3.55rem !important;
-	    position: relative;
-	    top: -2rem;
-	    left: 22rem;
+        width: 5rem !important;
+        height: 5rem !important;
+        background-size: 3.55rem !important;
+        position: relative;
+        top: -2rem;
+        left: 22rem;
 
  }
+ 
+ 
+ 
+ /******INNOVACIONES************/
+ 
+#buenas_practicas_top > div#right {
+    float: right;
+}
+
+#buenas_practicas_top > div#left > p#titulo {
+    font-size: 1.5em;
+}
+
+#buenas_practicas_top > div#left {
+    width: 38rem;
+    height: 14rem;
+}
+
+#buenas_practicas_top > div#left > p#contenido {
+    font-size: 0.8em;
+}
+
+#buenas_practicas_top > div#right > img {
+    width: 21rem;
+    height: 16.5rem;
+}
+
+    div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
+    display: inline-table;
+    width: 20rem;
+    margin-bottom: 3rem;
+   /* margin-right: 2rem;*/
+    height: 35rem;
+}
+#content h2{
+    text-align: justify;
+}
+
  
  /* PORTAFOLIO SIDEBAR */
 
  .page-portafolio-docente #side {
- 		display: inline-block;
+        display: inline-block;
  }
 
 
@@ -1123,12 +1161,12 @@ margin: 10px 0px !important;
     
     .views-exposed-form .form-item, .views-exposed-form .form-submit {
     margin-top: 3rem;
-	}
+    }
 
-	.views-exposed-form label {
-	    font-weight: bolder;
-	}
-	    
+    .views-exposed-form label {
+        font-weight: bolder;
+    }
+        
     .sidebar .block {
         padding-left: 2.3rem;
     }
@@ -1156,9 +1194,9 @@ margin: 10px 0px !important;
     }
 
     #side {
-	    position: relative;
-	    left: 2rem;
-	    font-size: 3em;
+        position: relative;
+        left: 2rem;
+        font-size: 3em;
 
     }
     
@@ -1188,6 +1226,8 @@ margin: 10px 0px !important;
 
     .page-biblioteca .views-row>img {
         width: 2rem;
+
+
 
     }
 
@@ -1372,8 +1412,8 @@ margin: 10px 0px !important;
 }
 
     div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
-	margin-left: 0 !important;
-	}
+    margin-left: 0 !important;
+    }
 
    #buenas_practicas_top {
     height: 29rem;
@@ -1387,6 +1427,10 @@ margin: 10px 0px !important;
     height: 29rem;
 }
 
+div.view.view-buenas-pr-cticas .field.field-name-title-field, div.view.view-buenas-pr-cticas .field.field-name-field-autor-buenas-practicas.field-type-text.field-label-inline.clearfix.buenas_practicas_resumen, div.view.view-buenas-pr-cticas .field.field-name-field-fecha-buenas-practicas.field-type-text.field-label-inline.clearfix.buenas_practicas_resumen {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
 
 
 div.node.node-buenas-pr-cticas > div > div.field.field-name-field-portada-buenas-practicas.field-type-image.field-label-hidden.buenas_practicas_resumen > div > div > a > img {
@@ -1428,7 +1472,7 @@ div.view.view-buenas-pr-cticas > div.view-content > div > div > div.content {
  /* INNOVACIONES */
  
  .page-buenas-practicas #side {
- 		display: inline-block;
+        display: inline-block;
  }
  
  div.form-item.form-type-textfield>input {
@@ -1437,19 +1481,19 @@ div.view.view-buenas-pr-cticas > div.view-content > div > div > div.content {
 
 
  .views-exposed-form .views-exposed-widget .form-submit {
-    	width: 5rem !important;
-	    height: 5rem !important;
-	    background-size: 3.55rem !important;
-	    position: relative;
-	    top: -2rem;
-	    left: 22rem;
+        width: 5rem !important;
+        height: 5rem !important;
+        background-size: 3.55rem !important;
+        position: relative;
+        top: -2rem;
+        left: 22rem;
  
  }
  
  /* PORTAFOLIO */
 
  .page-portafolio-docente #side {
- 		display: inline-block;
+        display: inline-block;
  }
  
 }
@@ -1799,6 +1843,7 @@ div.view.view-buenas-pr-cticas > div.view-content > div > div > div.content {
     margin-bottom: 2px;
     font-size: 2em;
     line-height: 1.4;
+    text-align: justify;
 }
 
 .page-biblioteca #page-title {
@@ -1837,12 +1882,12 @@ div.view.view-buenas-pr-cticas > div.view-content > div > div > div.content {
     }
 
     #block-views-exp-library-page-1 #edit-submit-library {
-	    width: 4rem;
-	    height: 4rem;
-	    background-size: 2.60rem;
-	    position: relative;
-	    top: -1.05rem;
-	    left: 22rem;
+        width: 4rem;
+        height: 4rem;
+        background-size: 2.60rem;
+        position: relative;
+        top: -1.05rem;
+        left: 22rem;
     }
 
 
@@ -1869,18 +1914,18 @@ div.view.view-buenas-pr-cticas > div.view-content > div > div > div.content {
     
     .views-exposed-form .form-item, .views-exposed-form .form-submit {
     margin-top: 3rem;
-	}
+    }
 
-	.views-exposed-form label {
-	    font-weight: bolder;
-	}
+    .views-exposed-form label {
+        font-weight: bolder;
+    }
 
 
     #side {
         position: relative;
-	    bottom: 1rem;
-	    font-size: 2rem;
-	    left: 5rem;
+        bottom: 1rem;
+        font-size: 2rem;
+        left: 5rem;
     }
     
     .side:hover {
@@ -1990,8 +2035,8 @@ div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
 }
 
     div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
-	margin-left: 0 !important;
-	}
+    margin-left: 0 !important;
+    }
 
    #buenas_practicas_top {
     height: 29rem;
@@ -2018,7 +2063,7 @@ div.view.view-buenas-pr-cticas > div.view-content > div > div > div.content {
  /* INNOVACIONES SIDEBAR */
  
  .page-buenas-practicas #side {
- 		display: inline-block;
+        display: inline-block;
  }
  
  div.form-item.form-type-textfield>input {
@@ -2026,20 +2071,22 @@ div.view.view-buenas-pr-cticas > div.view-content > div > div > div.content {
 }
 
 
+
+
  .views-exposed-form .views-exposed-widget .form-submit {
-    	width: 4rem !important;
-	    height: 4rem !important;
-	    background-size: 2.60rem !important;
-	    position: relative;
-	    top: -1.05rem;
-	    left: 22rem;
+        width: 4rem !important;
+        height: 4rem !important;
+        background-size: 2.60rem !important;
+        position: relative;
+        top: -1.05rem;
+        left: 22rem;
 
  }
  
  /* PORTAFOLIO SIDEBAR */
 
  .page-portafolio-docente #side {
- 		display: inline-block;
+        display: inline-block;
  }
 
 
