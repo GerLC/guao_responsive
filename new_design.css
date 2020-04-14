@@ -712,6 +712,9 @@ margin: 10px 0px !important;
     text-align: justify;
 }
 
+div.node.node-buenas-pr-cticas > div > div.field.field-name-field-portada-buenas-practicas.field-type-image.field-label-hidden.buenas_practicas_resumen > div > div > a > img{
+    height: 15erem;
+}
  
  /* PORTAFOLIO SIDEBAR */
 
