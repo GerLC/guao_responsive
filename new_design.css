@@ -1465,15 +1465,23 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     }
 
    #buenas_practicas_top {
-    height: 29rem;
-    font-size: 1.7rem;
+    height: 37rem;
     margin-bottom: 4rem;
     width: 66rem;
 }
+  #buenas_practicas_top > div#left > p#titulo {
+    text-align: center;
+    font-size: 4em;
+}
+
+#buenas_practicas_top > div#left > p#contenido {
+    text-align: justify;
+    font-size: 2.5em;
+}
   
    #buenas_practicas_top > div#right > img {
-    width: 31.7167rem;
-    height: 29rem;
+    width: 31.94rem;
+    height: 37rem;
 }
 
 div.view.view-buenas-pr-cticas .field.field-name-title-field, div.view.view-buenas-pr-cticas .field.field-name-field-autor-buenas-practicas.field-type-text.field-label-inline.clearfix.buenas_practicas_resumen, div.view.view-buenas-pr-cticas .field.field-name-field-fecha-buenas-practicas.field-type-text.field-label-inline.clearfix.buenas_practicas_resumen {
@@ -1492,6 +1500,7 @@ div.view.view-buenas-pr-cticas > div.view-content > div > div > div.content {
     margin-top: 0px;
     width: 100%;
 }
+
 
 
 
@@ -1565,7 +1574,7 @@ div.view.view-buenas-pr-cticas > div.view-content > div > div > div.content {
 
 
 div.view.view-portafolio-docente > div.view-content > div > div > div.content {
-    font-size: 3em;
+    font-size: 2.5em;
     margin-top: 0px;
     width: 100%;
 }
@@ -1577,15 +1586,34 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
 
 
    #portafolio_docente_top {
-    height: 29rem;
-    font-size: 1.7rem;
+    height: 34rem;
+    font-size: 2.5em;
     margin-bottom: 4rem;
-    width: 66rem;
+    width: 67rem;
 }
+
+	#portafolio_docente_top > p {
+		font-size:2.5em;
+	}
   
    #portafolio_docente_top > div#right > img {
-    width: 31.7167rem;
-    height: 29rem;
+    width: 33rem;
+    height: 34rem;
+}
+
+
+#portafolio_docente_top > div#left {
+    width: 28rem;
+}
+
+div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-portafolio-docente .field.field-name-field-autor-portafolio.field-type-text.field-label-inline.clearfix.portafolio_docente_resumen, div.view.view-portafolio-docente .field.field-name-field-fecha-portafolio.field-type-text.field-label-inline.clearfix.portafolio_docente_resumen {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: justify;
+}
+
+#portafolio_docente_top > div#left > p#titulo {
+    text-align: center;
 }
  
 }
