@@ -1698,6 +1698,12 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
  .node-portafolio-docente .field.field-name-field-archivo-portafolio {
     width: 80%;
 }
+
+.node-type-portafolio-docente .field-name-field-video-portafolio > div > div > iframe {
+    width: 60rem;
+    height: 35rem;
+    margin-bottom: 2rem;
+}
  
 }
 
