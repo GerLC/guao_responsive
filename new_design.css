@@ -812,6 +812,57 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     height: 21rem;
 }
 
+ /******CONCURSO************/
+
+ .page-node-16097 .field-name-body .concurso_header {
+    width: 141%;
+    height: 100rem;
+    background-size: 91rem 100%;
+    position: relative;
+    right: 10rem;
+}
+
+.page-node-16097 .field-name-body .concurso_header > div > div img, .page-node-18556 .field-name-body .concurso_header > div > div img {
+    width: 16rem;
+    height: auto;
+}
+
+
+
+.page-node-16097 .field-name-share-buttons #widgets-element-socialmedia_share-default, .page-node-18556 .field-name-share-buttons #widgets-element-socialmedia_share-default {
+    width: 28rem;
+}
+ 
+ 
+ .page-node-16097 .field-name-share-buttons #widgets-element-socialmedia_share-default #widgets-element-socialmedia_socialmedia-facebook-share-button > a > img, .page-node-18556 .field-name-share-buttons #widgets-element-socialmedia_share-default #widgets-element-socialmedia_socialmedia-facebook-share-button > a > img {
+    background: url(/sites/default/files/concurso/icon_facebook.png) no-repeat top left;
+    background-size: 6rem;
+    width: 4rem;
+    height: auto;
+    padding: 16px;
+}
+.page-node-16097 .field-name-share-buttons #widgets-element-socialmedia_share-default #widgets-element-socialmedia_socialmedia-twitter-share-button > a > img, .page-node-18556 .field-name-share-buttons #widgets-element-socialmedia_share-default #widgets-element-socialmedia_socialmedia-twitter-share-button > a > img {
+    background: url(/sites/default/files/concurso/icon_twitter.png) no-repeat top left;
+    background-size: 6rem;
+    width: 4rem;
+    height: auto;
+    padding: 16px;
+}
+.page-node-16097 .field-name-share-buttons #widgets-element-socialmedia_share-default #widgets-element-socialmedia_socialmedia-linkedin-share-button > a > img, .page-node-18556 .field-name-share-buttons #widgets-element-socialmedia_share-default #widgets-element-socialmedia_socialmedia-linkedin-share-button > a > img {
+    background: url(/sites/default/files/concurso/icon_linkeding.png) no-repeat top left;
+    background-size: 6rem;
+    width: 4rem;
+    height: auto;
+    padding: 16px;
+}
+
+.page-node-16097 .field-name-share-buttons #widgets-element-socialmedia_share-default #widgets-element-widgets_custom-markup > a > img, .page-node-18556 .field-name-share-buttons #widgets-element-socialmedia_share-default #widgets-element-widgets_custom-markup > a > img {
+    background: url(/sites/default/files/concurso/icon_mail.png) no-repeat top left;
+    background-size: 6rem;
+    width: 4rem;
+    height: auto;
+    padding: 16px;
+}
 
 }
 
@@ -1704,7 +1755,82 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
     height: 35rem;
     margin-bottom: 2rem;
 }
+
+
+ /******CONCURSO************/
+
+ .page-node-16097 .field-name-body .concurso_header {
+    width: 141%;
+    height: 100rem;
+    background-size: 100rem 100%;
+    position: relative;
+    right: 10rem;
+}
+
+.page-node-16097 .field-name-body .concurso_header > div > div img, .page-node-18556 .field-name-body .concurso_header > div > div img {
+    width: 16rem;
+    height: auto;
+}
+
+
+.page-node-16097 .field-name-share-buttons a > img {
+    background: url(/sites/default/files/concurso/icon_facebook.png) no-repeat top left;
+    background-size: 32rem;
+    width: 0px;
+    height: 0px;
+    padding: 16px;
+}
+
+
+.page-node-16097 .field-name-share-buttons #widgets-element-socialmedia_share-default, .page-node-18556 .field-name-share-buttons #widgets-element-socialmedia_share-default {
+    width: 28rem;
+}
  
+ 
+ .page-node-16097 .field-name-share-buttons #widgets-element-socialmedia_share-default #widgets-element-socialmedia_socialmedia-facebook-share-button > a > img, .page-node-18556 .field-name-share-buttons #widgets-element-socialmedia_share-default #widgets-element-socialmedia_socialmedia-facebook-share-button > a > img {
+    background: none;
+    background-size: 6rem;
+    width: 4rem;
+    height: auto;
+    padding: 16px;
+}
+.page-node-16097 .field-name-share-buttons #widgets-element-socialmedia_share-default #widgets-element-socialmedia_socialmedia-twitter-share-button > a > img, .page-node-18556 .field-name-share-buttons #widgets-element-socialmedia_share-default #widgets-element-socialmedia_socialmedia-twitter-share-button > a > img {
+    background: none;
+    background-size: 6rem;
+    width: 4rem;
+    height: auto;
+    padding: 16px;
+}
+.page-node-16097 .field-name-share-buttons #widgets-element-socialmedia_share-default #widgets-element-socialmedia_socialmedia-linkedin-share-button > a > img, .page-node-18556 .field-name-share-buttons #widgets-element-socialmedia_share-default #widgets-element-socialmedia_socialmedia-linkedin-share-button > a > img {
+    background: none;
+    width: 4rem;
+    height: auto;
+    padding: 16px;
+}
+
+.page-node-16097 .field-name-share-buttons #widgets-element-socialmedia_share-default #widgets-element-widgets_custom-markup > a > img, .page-node-18556 .field-name-share-buttons #widgets-element-socialmedia_share-default #widgets-element-widgets_custom-markup > a > img {
+    background: none;
+    background-size: 6rem;
+    width: 4rem;
+    height: auto;
+    padding: 16px;
+}
+
+
+/**** FOOTER ****/
+
+ #page {
+    display: flex;
+    flex-direction: column;
+    min-height: 310vh;
+ }
+
+ #main-wrapper {
+     flex: 1;
+ }
+
+
+
 }
 
 /*Smartphones LANDSCAPE*/
@@ -2240,15 +2366,19 @@ div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
     display: inline-table;
     width: 31rem;
     margin-bottom: 3rem;
-    margin-right: 2rem;
     height: 37rem;
 }
 
     div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
-    margin-left: 1rem;
+    margin-left: 1.2rem;
     margin-right: 0;
  
     }
+    
+    div.view.view-buenas-pr-cticas > div.view-content > div.views-row.views-row-2, div.view.view-buenas-pr-cticas > div.view-content > div.views-row.views-row-5, div.view.view-buenas-pr-cticas > div.view-content > div.views-row.views-row-8, div.view.view-buenas-pr-cticas > div.view-content > div.views-row.views-row-11 {
+    margin-left: 23px !important;
+    margin-right: 0;
+}
 
    #buenas_practicas_top {
     height: 29rem;
@@ -2348,6 +2478,8 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
  .page-portafolio-docente #side {
         display: inline-block;
  }
+
+
 
 
 
