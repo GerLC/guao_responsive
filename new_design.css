@@ -815,9 +815,9 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
  /******CONCURSO************/
 
  .page-node-16097 .field-name-body .concurso_header {
-    width: 141%;
-    height: 100rem;
-    background-size: 91rem 100%;
+    width: 144%;
+    height: 67rem;
+    background-size: 68rem 100%;
     position: relative;
     right: 10rem;
 }
@@ -1760,9 +1760,9 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
  /******CONCURSO************/
 
  .page-node-16097 .field-name-body .concurso_header {
-    width: 141%;
-    height: 100rem;
-    background-size: 100rem 100%;
+    width: 142%;
+    height: 62rem;
+    background-size: 66rem 100%;
     position: relative;
     right: 10rem;
 }
@@ -2479,7 +2479,13 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         display: inline-block;
  }
 
-
+ /* CONCURSO */
+ .page-node-16097 .field-name-body .concurso_header {
+    width: 108%;
+    height: 500px;
+    background: url(/sites/default/files/concurso/portada_concurso_v6.jpg) no-repeat;
+    background-size: 855px 100%;
+}
 
 
 
