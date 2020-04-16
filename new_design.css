@@ -1570,8 +1570,8 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
 }
 
 div.view.view-buenas-pr-cticas .field.field-name-title-field, div.view.view-buenas-pr-cticas .field.field-name-field-autor-buenas-practicas.field-type-text.field-label-inline.clearfix.buenas_practicas_resumen, div.view.view-buenas-pr-cticas .field.field-name-field-fecha-buenas-practicas.field-type-text.field-label-inline.clearfix.buenas_practicas_resumen {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 
@@ -1835,7 +1835,7 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
 
 }
 
-/*Smartphones LANDSCAPE*/
+/*##Device = Smartphones Most of the Smartphones (Landscape)*/
 
 @media (max-height:479px) and (orientation: landscape) {
 
@@ -2172,7 +2172,7 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
     }
 
     .page-biblioteca #page-title {
-        font-size: 4em;
+        font-size: 3.5em;
         text-align: center; 
     }
 
@@ -2220,7 +2220,7 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
         display: inline-block;
     }
     
-        #sidebar-first  .section {
+    #sidebar-first  .section {
         margin-left: 0 ;
         margin-right: 0 ;
         padding: 0 ;
@@ -2282,6 +2282,16 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
         height: 15em;
         float: left;
     }
+    
+    div.view.view-library {
+        margin-top: 16px;
+        font-size: 0.9em;
+    }
+    
+    #content h2 {
+        font-size: 1em;
+        text-align: justify;
+    }
 
 
 /****Fin biblioteca landscape tlf******/
@@ -2290,6 +2300,12 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
     .node-libro-de-biblioteca{
         font-size: 1.5em;
      }
+     
+    .node-type-libro-de-biblioteca h1#page-title {
+        color: #16A89A;
+        font-size: 3em;
+        text-align: center;
+    }
  
     .node.node-libro-de-biblioteca .field-name-field-videoteca > div > div > iframe {
         width: 50rem;
@@ -2335,13 +2351,14 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
         width: 40rem;
     }
     
-    h1#page-title {
-        font-size: 3em;
-        text-align: center;
-    }
-    
     #buenas_practicas_top > div#left > p#titulo {
         text-align: center;
+        font-size: 2em;
+    }
+    
+    #buenas_practicas_top > div#left > p#contenido {
+        text-align: justify;
+        font-size: 1em;
     }
     
     div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
@@ -2425,6 +2442,11 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
         margin-bottom: 30px;
         text-align: center;
     }   
+    
+    div.view.view-portafolio-docente .field.field-name-title-field > div > div > h2 > a {
+        font-size: 1.2em;
+        text-align: justify;
+    }
  
     div.view.view-portafolio-docente > div.view-content > div.views-row {
         display: inline-table;
@@ -2450,7 +2472,7 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
     }
     
    #portafolio_docente_top {
-        height: 29rem;
+        height: 26rem;
         font-size: 1.7rem;
         margin-bottom: 4rem;
         width: 66rem;
@@ -2458,7 +2480,7 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
     
    #portafolio_docente_top > div#right > img {
         width: 31.7167rem;
-        height: 29rem;
+        height: 26rem;
     }
  
     .page-portafolio-docente #content .section, .page-buenas-practicas #content .section{
@@ -2504,7 +2526,17 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
     }
 }
 
-@media (max-height: 320px) and (orientation: landscape) {
+/****Low Resolution Smartphones Landscape*****/
+@media (max-width: 480px) and (orientation: landscape) {
+    
+    div.view.view-portafolio-docente > div.view-content > div.views-row {
+    display: inline-table;
+    width: 28rem;
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+    height: 37rem;
+    float: none;
+}
     /*
         div.view.view-library .field.field-name-field-imagen-portada.field-type-image.field-label-hidden.portada_min>div>div>a>img {
         width: 6em;
