@@ -67,9 +67,14 @@ margin: 10px 0px !important;
         display: none;
     }
     
-        #comments div.comment.clearfix > div.comment-text > h3 {
-    margin-top: 1rem;
-}
+    #comments div.comment.clearfix > div.comment-text > h3 {
+        margin-top: 1rem;
+    }
+    
+    .node.node-libro-de-biblioteca .field-name-field-videoteca {
+        width: 100%;
+        border-right-style: none;
+    }
 
 }
 
@@ -2910,34 +2915,26 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
 /****Low Resolution Smartphones Landscape*****/
 @media (max-width: 480px) and (orientation: landscape) {
     
+    
+/****Detalle libro landscape*******/
     div.view.view-portafolio-docente > div.view-content > div.views-row {
-    display: inline-table;
-    width: 28rem;
-    margin-bottom: 3rem;
-    margin-right: 2rem;
-    height: 37rem;
-    float: none;
-}
-    /*
-        div.view.view-library .field.field-name-field-imagen-portada.field-type-image.field-label-hidden.portada_min>div>div>a>img {
-        width: 6em;
-        height: 9em;
+        display: inline-table;
+        width: 28rem;
+        margin-bottom: 3rem;
+        margin-right: 2rem;
+        height: 37rem;
+        float: none;
     }
 
-    div.view.view-library .field.field-name-field-imagen-portada.field-type-image.field-label-hidden.portada_min {
-        width: 6.5em;
-        height: 9.5em;
-        float: left;
+    div.view.view-library .field.field-name-field-autor.field-type-text.field-label-inline.clearfix, div.view.view-library .field.field-name-field-editorial.field-type-text.field-label-inline.clearfix, div.view.view-library .field.field-name-field-a-o-de-publicaci-n.field-type-text.field-label-inline.clearfix, div.view.view-library .field.field-name-field-rating.field-type-fivestar.field-label-inline.clearfix {
+            line-height: 1.2em;
     }
     
-        .node.node-libro-de-biblioteca .field.field-name-field-autor.field-type-text.field-label-inline.clearfix, .node.node-libro-de-biblioteca .field.field-name-field-editorial.field-type-text.field-label-inline.clearfix, .node.node-libro-de-biblioteca .field.field-name-field-a-o-de-publicaci-n.field-type-text.field-label-inline.clearfix, .node.node-libro-de-biblioteca .field.field-name-field-rating.field-type-fivestar.field-label-inline.clearfix {
-    font-size: 1em;
+    .node.node-libro-de-biblioteca .field.field-name-field-autor.field-type-text.field-label-inline.clearfix, .node.node-libro-de-biblioteca .field.field-name-field-editorial.field-type-text.field-label-inline.clearfix, .node.node-libro-de-biblioteca .field.field-name-field-a-o-de-publicaci-n.field-type-text.field-label-inline.clearfix, .node.node-libro-de-biblioteca .field.field-name-field-rating.field-type-fivestar.field-label-inline.clearfix {
+        line-height: 1.5rem;
 }
-        #content h2 {
-    margin-bottom: 2px;
-    font-size: 1.5em;
-    line-height: 1.4;
-}*/
+    
+/*******Fin detalle libro landscape*****/
 
 }
 /*Widescreen*/
