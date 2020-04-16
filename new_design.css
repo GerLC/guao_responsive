@@ -1818,20 +1818,134 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
     padding: 16px;
 }
 
+ /****** FIN CONCURSO************/
+
+
+/****** PRIMER/QUINTO -- GRADO/AÑO MATERIA MOBILE Portrait******/
+ 
+ /* BODYCUERPO */
+ 
+ .page-primer-grado #side,.page-segundo-grado #side,.page-tercer-grado #side,.page-cuarto-grado #side,.page-quinto-grado #side,.page-sexto-grado #side,.page-primer-ano #side,.page-segundo-ano #side,.page-tercer-ano #side,.page-cuarto-ano #side,.page-quinto-ano #side {
+        display: inline-block;
+ }
+ 
+ 
+ 
+ .page-primer-grado-educacion-estetica #content, .page-segundo-grado-educacion-estetica #content, .page-tercer-grado-educacion-estetica #content, .page-cuarto-grado-educacion-estetica #content, .page-quinto-grado-educacion-estetica #content, .page-sexto-grado-educacion-estetica #content, .page-tercer-ano-quimica #content, .page-cuarto-ano-quimica #content, .page-quinto-ano-quimica #content, .page-tercer-ano-fisica #content, .page-cuarto-ano-fisica #content, .page-quinto-ano-fisica #content, .page-primer-grado-ciencias-sociales #content, .page-segundo-grado-ciencias-sociales #content, .page-tercer-grado-ciencias-sociales #content, .page-cuarto-grado-ciencias-sociales #content, .page-quinto-grado-ciencias-sociales #content, .page-sexto-grado-ciencias-sociales #content, .page-quinto-ano-ciencias-de-la-tierra #content, .page-primer-grado-educacion-fisica-y-deporte #content, .page-segundo-grado-educacion-fisica-y-deporte #content, .page-tercer-grado-educacion-fisica-y-deporte #content, .page-cuarto-grado-educacion-fisica-y-deporte #content, .page-quinto-grado-educacion-fisica-y-deporte #content, .page-sexto-grado-educacion-fisica-y-deporte #content, .page-primer-ano-estudios-de-la-naturaleza #content, .page-segundo-ano-biologia #content, .page-tercer-ano-biologia #content, .page-cuarto-ano-biologia #content, .page-quinto-ano-biologia #content, .page-primer-grado-ciencias-naturales #content, .page-segundo-grado-ciencias-naturales #content, .page-tercer-grado-ciencias-naturales #content, .page-cuarto-grado-ciencias-naturales #content, .page-quinto-grado-ciencias-naturales #content, .page-sexto-grado-ciencias-naturales #content, .page-primer-grado-lengua #content, .page-segundo-grado-lengua #content, .page-tercer-grado-lengua #content, .page-cuarto-grado-lengua #content, .page-quinto-grado-lengua #content, .page-sexto-grado-lengua #content, .page-primer-grado-matematica #content, .page-segundo-grado-matematica #content, .page-tercer-grado-matematica #content, .page-cuarto-grado-matematica #content, .page-quinto-grado-matematica #content, .page-sexto-grado-matematica #content, .page-primer-ano-castellano-y-literatura #content, .page-segundo-ano-castellano-y-literatura #content, .page-tercer-ano-castellano-y-literatura #content, .page-cuarto-ano-lengua-y-literatura #content, .page-quinto-ano-lengua-y-literatura #content, .page-primer-ano-historia-de-venezuela #content, .page-segundo-ano-historia-de-venezuela #content, .page-primer-ano-matematica #content, .page-segundo-ano-matematica #content, .page-tercer-ano-matematica #content, .page-cuarto-ano-matematica #content, .page-quinto-ano-matematica #content {
+    margin-left: 0;
+}
+
+ .vista-materia .view-content > h3 {
+    height: 4rem;
+    font-size: 2.7em;
+ }
+
+ .views-row > .views-accordion-header > .field-content > a {
+    font-size: 3.3em;
+    padding-left: 96px;
+    padding-top: 20px;
+ }
+ 
+ .vista-materia.estilo-08 .views-row > .views-accordion-header > .ui-icon {
+    background-size: 5rem;
+}
+ 
+ .views-row > .views-accordion-header > .ui-icon {
+    width: 5rem;
+    height: 7rem;
+}
+ 
+ .ui-accordion .ui-accordion-content {
+    zoom: 2;
+}
+ 
+ /* SIDEBAR DERECHA */
+  
+ #block-block-13  {
+     height: 100rem;
+     width: 35rem;
+     margin-top: 0;
+ }
+ 
+ #block-block-8 {
+     height: 100rem;
+     width: 35rem;
+     margin-top: 0;    
+ }
+ 
+ #sidebar-first {
+     transition-timing-function: ease-in;
+ }
+ 
+ .lateral_izq_bloque01 > li > a, .lateral_izq_bloque02 > li > a, .lateral_izq_bloque03 > li > a {
+    padding: 5px 12px 5px 100px;
+}
+ 
+ 
+ /* view_bloque_lateral IZQUIERDA */
+ 
+    .view_bloque_lateral {
+        text-align: initial;
+        font-size: 3rem;
+        width: 0;
+        max-width: 52rem;
+        top: 0;
+        position: fixed;
+        z-index: 1;
+        height: 100%;
+        right: 0;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        transition: .5s;
+        opacity: 95%; 
+        margin-left: 0;
+        margin-top: 0;
+        -webkit-font-smoothing: antialiased;
+        transform: translateZ(0);
+    }
+     
+
+    .view_bloque_lateral > div.top > a > img {
+        width: 17rem;
+        height: auto;
+        transform: translateZ(0);
+    }
+
+    #titulo {
+        transform: translateZ(0);
+    }
+    .open .view_bloque_lateral {
+         width: 38rem;
+         transform: translateZ(0);
+    }
+ 
+    .view_bloque_lateral > div.content {
+        -webkit-font-smoothing: antialiased;
+        font-size: 1em;
+        transform: translateZ(0);
+        
+    }
+
+    .view_bloque_lateral > div.content a {
+        -webkit-font-smoothing: antialiased;
+        font-size: 0.5em;
+        transform: translateZ(0);
+        
+    }
+
+/******FIN  PRIMER/QUINTO -- GRADO/AÑO MATERIA MOBILE Portrait******/
 
 /**** FOOTER ****/
-
+/*
  #page {
     display: flex;
     flex-direction: column;
-    min-height: 310vh;
+    min-height: 409vh;
  }
 
  #main-wrapper {
      flex: 1;
- }
-
-
+ }*/
 
 }
 
