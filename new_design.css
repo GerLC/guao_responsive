@@ -1609,6 +1609,8 @@ div.node.node-buenas-pr-cticas > div > div.field.field-name-field-descripcion.fi
     margin-bottom: 2rem;
 }
 
+
+
  .node-buenas-pr-cticas{
     font-size: 2.5em;
  }
@@ -2168,27 +2170,24 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
     }
 
 
-    /* BIBLIOTECA */
+/****Biblioteca landscape tlf******/
     
-        .one-sidebar #content {
+    .one-sidebar #content {
         width: 100%;
     }
     
-    #content h2 {
-    margin-bottom: 2px;
-    font-size: 2em;
-    line-height: 1.4;
-    text-align: justify;
-}
+    div.view.view-library .field.field-name-title-field > div > div > h2 > a {
+        font-size: 1.5em;
+    }
 
-.page-biblioteca #page-title {
-    font-size: 4em;
-    text-align: center;
-}
+    .page-biblioteca #page-title {
+        font-size: 4em;
+        text-align: center; 
+    }
 
-.item-list .pager {
-    font-size: 1.3em;
-}
+    .item-list .pager {
+        font-size: 1.3em;
+    }
 
    #sidebar-first {
         text-align: initial;
@@ -2296,199 +2295,222 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
 
 
 
-/****Detalle libro******/
-    
+/****Detalle libro landscape tlf******/
+    .node-libro-de-biblioteca{
+        font-size: 1.5em;
+     }
+ 
+    .node.node-libro-de-biblioteca .field-name-field-videoteca > div > div > iframe {
+        width: 50rem;
+        height: 25rem;
+        margin-left: 7rem;
+    }
 
-    .node.node-libro-de-biblioteca .field.field-name-field-autor.field-type-text.field-label-inline.clearfix, .node.node-libro-de-biblioteca .field.field-name-field-editorial.field-type-text.field-label-inline.clearfix, .node.node-libro-de-biblioteca .field.field-name-field-a-o-de-publicaci-n.field-type-text.field-label-inline.clearfix, .node.node-libro-de-biblioteca .field.field-name-field-rating.field-type-fivestar.field-label-inline.clearfix {
-    font-size: 1.5em;
-}
-.node.node-libro-de-biblioteca .field.field-name-field-descripcion.field-type-text-long.field-label-hidden {
-    font-size: 1.5em;
-}
-    
-    
-    .node-type-libro-de-biblioteca h1#page-title {
-    color: #16A89A;
-    font-size: 4em;
-    text-align: center;
+    #comments {
+        margin-top: 0;
+    }
+
+    .form-actions {
+        text-align: center;
     }
     
-    .node.node-libro-de-biblioteca .field-name-field-videoteca > div > div > iframe {
-    width: 50rem;
-    height: 25rem;
-    margin-left: 7rem;
-}
-
-
-
-
-    
-   /* #widgets-element-widgets_custom-markup {
-        margin-left: 11.5rem;
-}
-
-    .link-wrapper {
-        margin-left: 20rem;
-}*/
-
-#comments {
-    margin-top: 0;
-}
-
-.form-actions {
-    text-align: center;
-}
     #widgets-element-socialmedia_share-default {
         margin-top: 0;
-}
-
-
-/*******     ******************** /
-
-
-/******INNOVACIONES LANDSCAPE TLF ************/
-
-div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
-    display: table-row;
-    width: 30rem;
-    height: 16rem;
-    margin: 0 0 20px 0;
-    float: none;
-}
-
-
-/*******                    ********************/
-
-
-/*   GERMAN */
-
-    div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
-    display: inline-table;
-    width: 31rem;
-    margin-bottom: 3rem;
-    height: 37rem;
-}
-
-    div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
-    margin-left: 1.2rem;
-    margin-right: 0;
- 
     }
     
+    .node.node-libro-de-biblioteca .field-name-field-descargar-libro > div.field-items > div.field-item {
+        width: 40rem;
+    }
+/****Fin detalle libro landscape tlf******/
+
+
+/****Innovaciones landscape tlf******/
+
+    div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
+        display: table-row;
+        width: 30rem;
+        height: 16rem;
+        margin: 0 0 20px 0;
+        float: none;
+    }
+
     div.view.view-buenas-pr-cticas > div.view-content > div.views-row.views-row-2, div.view.view-buenas-pr-cticas > div.view-content > div.views-row.views-row-5, div.view.view-buenas-pr-cticas > div.view-content > div.views-row.views-row-8, div.view.view-buenas-pr-cticas > div.view-content > div.views-row.views-row-11 {
-    margin-left: 23px !important;
-    margin-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .node-buenas-pr-cticas .field-name-field-archivo-buenas-practicas > div.field-items > div.field-item {
+        margin-top: 8px;
+        width: 40rem;
+    }
+    
+    h1#page-title {
+        font-size: 3em;
+        text-align: center;
+    }
+    
+    #buenas_practicas_top > div#left > p#titulo {
+        text-align: center;
+    }
+    
+    div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
+        display: inline-table;
+        width: 31rem;
+        margin-bottom: 3rem;
+        height: 37rem;
+        margin-left: 1.2rem;
+        margin-right: 0;
+    }
+        
+    div.view.view-buenas-pr-cticas > div.view-content > div.views-row.views-row-2, div.view.view-buenas-pr-cticas > div.view-content > div.views-row.views-row-5, div.view.view-buenas-pr-cticas > div.view-content > div.views-row.views-row-8, div.view.view-buenas-pr-cticas > div.view-content > div.views-row.views-row-11 {
+        margin-left: 23px;
+        margin-right: 0;
 }
 
-   #buenas_practicas_top {
-    height: 29rem;
-    font-size: 1.7rem;
-    margin-bottom: 4rem;
-    width: 66rem;
-}
+    #buenas_practicas_top {
+        height: 29rem;
+        font-size: 1.7rem;
+        margin-bottom: 4rem;
+        width: 66rem;
+    }
   
-   #buenas_practicas_top > div#right > img {
-    width: 31.7167rem;
-    height: 29rem;
-}
+    #buenas_practicas_top > div#right > img {
+        width: 31.7167rem;
+        height: 29rem;  
+    }
 
-div.node.node-buenas-pr-cticas > div > div.field.field-name-field-portada-buenas-practicas.field-type-image.field-label-hidden.buenas_practicas_resumen > div > div > a > img {
-    height: 20rem;
-}
+    div.node.node-buenas-pr-cticas > div > div.field.field-name-field-portada-buenas-practicas.field-type-image.field-label-hidden.buenas_practicas_resumen > div > div > a > img {
+        height: 20rem;
+    }
 
-div.view.view-buenas-pr-cticas > div.view-content > div > div > div.content {
-    font-size: 1.2rem;
-    margin-top: 0px;
-}
+    div.view.view-buenas-pr-cticas > div.view-content > div > div > div.content {
+        font-size: 1.2rem;
+        margin-top: 0px;
+    }
 
+/****Fin innnovaciones landscape tlf******/
 
- /* INNOVACIONES SIDEBAR */
+/****Detalle innnovaciones landscape tlf******/
+
+    .node-buenas-pr-cticas{
+        font-size: 1.5em;
+    }
+    
+    .node-buenas-pr-cticas .field-name-field-video {
+        border-right-style: none;
+    }
+    
+    .node-buenas-pr-cticas .field-name-field-video > div > div > iframe {
+        width: 60rem;
+        height: 30rem;
+    }
+
+/****Fin detalle innnovaciones landscape tlf******/
  
- .page-buenas-practicas #side {
+/****Innovaciones sidebar landscape tlf******/
+ 
+    .page-buenas-practicas #side {
         display: inline-block;
- }
+    }
  
- div.form-item.form-type-textfield>input {
-    width: 30rem !important;
-}
+    div.form-item.form-type-textfield>input {
+        width: 30rem !important;    
+    }
 
-
-
-
- .views-exposed-form .views-exposed-widget .form-submit {
+    .views-exposed-form .views-exposed-widget .form-submit {
         width: 4rem !important;
         height: 4rem !important;
         background-size: 2.60rem !important;
         position: relative;
         top: -1.05rem;
         left: 22rem;
+    }
+/****Innovaciones sidebar landscape tlf******/
 
- }
+/****Portafolio landscape tlf****/
  
+    #portafolio_docente_top > div#left > p#titulo {
+        font-size: 2em;
+        margin-bottom: 30px;
+        text-align: center;
+    }   
  
- /* PORTAFOLIO */
+    div.view.view-portafolio-docente > div.view-content > div.views-row {
+        display: inline-table;
+        width: 31rem;
+        margin-bottom: 3rem;
+        margin-right: 2rem;
+        height: 37rem;
+        float: none;
+    }
  
- div.view.view-portafolio-docente > div.view-content > div.views-row {
-    display: inline-table;
-    width: 31rem;
-    margin-bottom: 3rem;
-    margin-right: 2rem;
-    height: 37rem;
-    float: none;
-}
+    div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-1, div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-3, div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-5, div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-7, div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-9 {
+        margin-left: 1rem;
+        margin-right: 2rem;
+    }
+
+    div.view.view-portafolio-docente > div.view-content > div > div > div.content {
+        font-size: 1.2rem;
+        margin-top: 0px;
+    }
  
- div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-1, div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-3, div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-5, div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-7, div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-9 {
-    margin-left: 1rem;
-    margin-right: 2rem;
-}
-
-
-
-div.view.view-portafolio-docente > div.view-content > div > div > div.content {
-    font-size: 1.2rem;
-    margin-top: 0px;
-}
- 
-div.node.node-portafolio-docente > div > div.field.field-name-field-portada-portafolio.field-type-image.field-label-hidden.portafolio_docente_resumen > div > div > a > img {
-    height: 20rem;
-}
-
-
+    div.node.node-portafolio-docente > div > div.field.field-name-field-portada-portafolio.field-type-image.field-label-hidden.portafolio_docente_resumen > div > div > a > img {
+        height: 20rem;
+    }
+    
    #portafolio_docente_top {
-    height: 29rem;
-    font-size: 1.7rem;
-    margin-bottom: 4rem;
-    width: 66rem;
-}
-  
+        height: 29rem;
+        font-size: 1.7rem;
+        margin-bottom: 4rem;
+        width: 66rem;
+    }
+    
    #portafolio_docente_top > div#right > img {
-    width: 31.7167rem;
-    height: 29rem;
-}
+        width: 31.7167rem;
+        height: 29rem;
+    }
  
- .page-portafolio-docente #content .section, .page-buenas-practicas #content .section{
-    padding-left: 4rem;
-    padding-right: 0rem;
-}
+    .page-portafolio-docente #content .section, .page-buenas-practicas #content .section{
+        padding-left: 4rem;
+        padding-right: 0rem;
+    }
+/****Fin portafolio landscape tlf****/
 
- 
+/****Portafolio detalle landscape tlf****/
+
+    .node-portafolio-docente{
+        font-size: 1.5em;
+    }
+    
+    .node-portafolio-docente .field.field-name-field-archivo-portafolio > div.field-items > div.field-item {
+        margin-top: 8px;
+        width: 40rem;
+    }
+
+    .node-type-portafolio-docente .field-name-field-video-portafolio {
+        border-right-style: none;
+    }
+    
+    .node-type-portafolio-docente .field-name-field-video-portafolio > div > div > iframe {
+        width: 60rem;
+        height: 30rem;
+        margin-bottom: 2rem;
+}
+/****Fin portafolio detalle landscape tlf****/
  
  /* PORTAFOLIO SIDEBAR */
 
- .page-portafolio-docente #side {
+    .page-portafolio-docente #side {
         display: inline-block;
- }
+    }
 
  /* CONCURSO */
- .page-node-16097 .field-name-body .concurso_header {
-    width: 108%;
-    height: 500px;
-    background: url(/sites/default/files/concurso/portada_concurso_v6.jpg) no-repeat;
-    background-size: 855px 100%;
-}
-
-
-
+    .page-node-16097 .field-name-body .concurso_header {
+        width: 108%;
+        height: 500px;
+        background: url(/sites/default/files/concurso/portada_concurso_v6.jpg) no-repeat;
+        background-size: 855px 100%;
+    }
 }
 
 @media (max-height: 320px) and (orientation: landscape) {
