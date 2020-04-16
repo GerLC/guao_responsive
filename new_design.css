@@ -1867,16 +1867,16 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
     }
     
     .bloqueshomepage > div > ul {
-    padding-left: 0;
-}
+        padding-left: 0;
+    }
     
     #bloque01 {
-    background-size: 11.5rem 12rem;
-}
+        background-size: 11.5rem 12rem;
+    }
 
-#bloque02 {
-    background-size: 13rem 15rem;
-}
+    #bloque02 {
+        background-size: 13rem 15rem;
+    }
 
     #bloque03_fondo {
         width: 100%;
@@ -1916,7 +1916,6 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
         background-color: green;
         margin: 6px 30rem;
         transition: 0.4s;
-
     }
 
     #hamburger2 {
@@ -1940,7 +1939,6 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
         margin: 34px 30rem;
         transition: 0.4s;
     }
-
 
     .change #hamburger1 {
         -webkit-transform: rotate(-45deg) translate(-9px, 6px);
@@ -1968,8 +1966,6 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
         font-size: 1rem;
         width: 100%;
     }
-
-
 
     /* MENÚ SECUNDARIO NOSOTROS , CONTACTOS ... */
 
@@ -2124,12 +2120,9 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
     #block-system-user-menu {
         position: relative;
         display: none;
-
-
     }
 
     #block-system-user-menu>div.content {
-
         position: absolute;
         left: 4rem;
         background-color: #f1f1f1;
@@ -2142,7 +2135,6 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
     #block-system-user-menu>div.content>ul>li.first>a {
         background-image: none;
     }
-
 
     #block-system-user-menu>div.content>ul>li.last>a {}
 
@@ -2168,7 +2160,6 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
     .show #block-system-user-menu {
         display: inline-block !important;
     }
-
 
 /****Biblioteca landscape tlf******/
     
@@ -2271,14 +2262,14 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
         width: 40rem;
     }
     
-#content .section {
-    padding-left: 4rem;
-    padding-right: 4rem;
-}
+    #content .section {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
 
-.node.node-libro-de-biblioteca.node-promoted.node-full.clearfix .field.field-name-field-rating.field-type-fivestar.field-label-inline.clearfix {
-     height: 0; 
-}
+    .node.node-libro-de-biblioteca.node-promoted.node-full.clearfix .field.field-name-field-rating.field-type-fivestar.field-label-inline.clearfix {
+         height: 0; 
+    }
 
 
     div.view.view-library .field.field-name-field-imagen-portada.field-type-image.field-label-hidden.portada_min>div>div>a>img {
@@ -2293,7 +2284,7 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
     }
 
 
-
+/****Fin biblioteca landscape tlf******/
 
 /****Detalle libro landscape tlf******/
     .node-libro-de-biblioteca{
