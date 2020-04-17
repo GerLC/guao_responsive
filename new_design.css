@@ -2915,6 +2915,22 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
 /****Low Resolution Smartphones Landscape*****/
 @media (max-width: 480px) and (orientation: landscape) {
     
+/***Homepage *********/
+
+    .bloqueshomepage > div {
+        width: 40%;
+        height: 20rem;
+        margin: 1rem 1rem 1rem 0rem;
+    }
+    
+    .bloqueshomepage > div > ul > li > a {
+        font-size: .5em;
+    }
+
+
+/***Fin homepage*****/
+
+
     
 /****Detalle libro landscape*******/
     div.view.view-portafolio-docente > div.view-content > div.views-row {
