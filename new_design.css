@@ -1072,8 +1072,8 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     }
     
     .section {
-        margin-left: 4rem;
-        margin-right: 4rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
     }
     
     
@@ -2144,7 +2144,7 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
 /*****Fin de resultados de busqueda mobile portrait***/
 
 
-}
+
 
 /*##Device = Smartphones Most of the Smartphones (Landscape)*/
 
