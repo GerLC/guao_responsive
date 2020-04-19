@@ -421,7 +421,7 @@ margin: 10px 0px !important;
     }
     
      #sidebar-first  #content .section, .sidebar .section {
-        font-size: 3rem !important;
+        font-size: 3rem;
         }
     
 
@@ -559,11 +559,6 @@ margin: 10px 0px !important;
         .node-type-libro-de-biblioteca #page-title {
         text-align: center;
     }
-
-    .node-libro-de-biblioteca {
-       /* font-size: 1.2em;*/
-    }
-
 
     .node.node-libro-de-biblioteca .field.field-name-field-imagen-portada.field-type-image.field-label-hidden.portada_max>div>div>img {
         width: 10em;
@@ -1072,17 +1067,46 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
+    #content .section, .sidebar .section {
+        font-size: 2.5em;
+    }
+    
+    .section {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    
+    
+    h1#page-title {
+        text-align: center;
+    }
+    
+    .one-sidebar #content {
+        width: 100%;
+    }
 
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .sticky+.clearfix {
+        padding-top: 10rem;
+    }
+    
+/*********Home portrait mobile*******/
     .bloqueshomepage>div {
         width: 80%;
         height: 39rem;
         margin: 1.5rem 0px;
-        padding: 2rem 4rem 4rem 4rem;
+        padding: 2rem 4rem 8rem 4rem;
     }
 
     .bloqueshomepage>div>ul>li:before {
-        left: -0.5rem;
-        top: 2rem;
+        left: -0.6rem;
+        top: 2.5rem;
     }
 
     .bloqueshomepage {
@@ -1091,12 +1115,12 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     }
 
     .bloqueshomepage>div>p {
-        font-size: 6rem;
+      font-size: 5rem;
     }
 
     .bloqueshomepage>div>ul {
         width: 30rem;
-        font-size: 2em;
+        font-size: 1em;
     }
 
     #bloque03_fondo {
@@ -1117,10 +1141,10 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         background-position: 34rem 11.5rem;
         background-size: 30rem;
     }
+    
+/******Fin Home*******/
 
-    /* Cambios de German */
-
-    /* MENÚ HAMBURGER */
+/**********MENÚ HAMBURGER *******/
     #header {
         border-bottom: 1px outset black;
         height: 43rem;
@@ -1186,9 +1210,9 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-13px, -8px);
     }
+/**********FIN MENÚ HAMBURGER *******/
 
-
-    /* MENÚ TU AULA / BIBLIOTECA ... */
+/************ MENÚ TU AULA / BIBLIOTECA ... */
 
     #main-menu-links li {
         font-weight: bold;
@@ -1201,12 +1225,9 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     #block-system-user-menu {
         position: relative;
         display: none;
-
-
     }
 
     #block-system-user-menu>div.content {
-
         position: absolute;
         left: 4rem;
         top: -1rem;
@@ -1220,8 +1241,6 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     #block-system-user-menu>div.content>ul>li.first>a {
         background-image: none;
     }
-
-
     #block-system-user-menu>div.content>ul>li.last>a {}
 
     #block-system-user-menu>div.content>ul>li>a {
@@ -1275,9 +1294,6 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         -ms-transition: -ms-transform .5s ease-in-out;
         transition: transform .5s ease-in-out;
     }
-
-
-
     #block-search-form>div>form>div>div>div.form-item.form-type-textfield.form-item-search-block-form>input {
         width: 44rem !important;
     }
@@ -1293,7 +1309,6 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         background-size: 2.5rem;
         width: 3rem;
     }
-
 
     #busquedaX {
         position: absolute;
@@ -1346,8 +1361,9 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         opacity: 0;
         transition: opacity 0.3s;
     }    
+/************FIN MENÚ TU AULA / BIBLIOTECA ... */
 
-    /* MENÚ SECUNDARIO NOSOTROS , CONTACTOS ... */
+/******** MENÚ SECUNDARIO NOSOTROS , CONTACTOS ... */
 
     #block-menu-menu-men-secundario {
         position: relative;
@@ -1362,11 +1378,9 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         color: black;
     }
 
+/********FIN MENÚ SECUNDARIO NOSOTROS , CONTACTOS ... */
 
-
-    /* REDES SOCIALES SE QUITO DEL HEADER Y SE COLOCO
-   EN EL FOOTER */
-
+/******** FOOTER PORTRAIT MOBILE*****/
     .rteright {
         display: none;
     }
@@ -1399,14 +1413,12 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     #footer {
         margin-top: 0;
     }
+/*********FIN FOOTER********/
 
-
-
-    /* SIDEBARS */
-
+/******** SIDEBARS ************/
  #sidebar-first {
         text-align: initial;
-        font-size: 3rem;
+        font-size: 1.5em;
         width: 0;
         max-width: 52rem;
         top: 0;
@@ -1434,7 +1446,7 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     }
     
     .views-exposed-form .form-item, .views-exposed-form .form-submit {
-    margin-top: 3rem;
+    margin-top: 3.5rem;
     }
 
     .views-exposed-form label {
@@ -1483,47 +1495,26 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         width: 52rem;
     }
 
+/******FIN SIDEBAR*****/
 
 
-
-
-    .page-biblioteca {
-        /* font-size: 1em;*/
-        /*  text-align: center;*/
-
-    }
-
+/*******Biblioteca portrait mobile********/
     .page-biblioteca .views-row {
         text-align: justify;
         margin-right: 4rem;
     }
-
     .page-biblioteca .views-row>img {
         width: 2rem;
-
-
-
     }
-
-
-
-
     .page-biblioteca #page-title {
         text-align: center;
-        font-size: 6em;
+        font-size: 3em;
     }
 
     .page-biblioteca>img {
         width: 4em;
-
     }
-
-    /*  .field-item .even{
-        width: 6rem;
-        height: 5rem;
-        
-    }*/
-
+    
     div.view.view-library .field.field-name-field-imagen-portada.field-type-image.field-label-hidden.portada_min>div>div>a>img {
         width: 7em;
         height: 11em;
@@ -1543,32 +1534,17 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         display: table-row;
         line-height: 2.5rem;
     }
+/****Fin biblioteca*****/
 
-    .section {
-        margin-left: 4rem;
-        margin-right: 4rem;
-    }
-    
-    .item-list .pager {
-    font-size: 2.5em;
-}
-
-    /**DETALLE LIBRO**/
+/******DETALLE LIBRO PORTRAIT MOBILE*****/
     .node-type-libro-de-biblioteca #page-title {
-        color: #16A89A;
-        font-size: 5em;
+        font-size: 2.5em;
         text-align: center;
     }
-
-    .node-libro-de-biblioteca {
-        font-size: 2.5em;
-    }
-
 
     .node.node-libro-de-biblioteca .field.field-name-field-imagen-portada.field-type-image.field-label-hidden.portada_max>div>div>img {
         width: 10em;
         height: 13em;
-
     }
 
     .node.node-libro-de-biblioteca .field.field-name-field-imagen-portada.field-type-image.field-label-hidden.portada_max {
@@ -1576,12 +1552,10 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         height: 14em;
     }
 
-
     .node.node-libro-de-biblioteca .field.field-name-field-autor.field-type-text.field-label-inline.clearfix,
     .node.node-libro-de-biblioteca .field.field-name-field-editorial.field-type-text.field-label-inline.clearfix,
     .node.node-libro-de-biblioteca .field.field-name-field-a-o-de-publicaci-n.field-type-text.field-label-inline.clearfix,
     .node.node-libro-de-biblioteca .field.field-name-field-rating.field-type-fivestar.field-label-inline.clearfix {
-
         float: inherit;
         display: table-row;
         line-height: 2.5rem;
@@ -1604,40 +1578,34 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         width: 50rem;
     }
 
-
     .region.region-help>div>div.content {
         margin: 0px;
         font-size: 1.25em;
     }
 
-
     #bloque_compartir {
-        font-size: 1em;
+        font-size: 0.5em;
         width: 10rem;
     }
 
     #bloque_comentar {
-        font-size: 1em;
+        font-size: 0.5em;
         width: 12rem;
     }
     
-
-
     .region.region-help>div#block-block-20 .content {
-        width: 10rem;
+        width: 12rem;
+        font-size: 0.6em;
 
     }
-.form-actions {
-    text-align: center;
-}
-
-
+    .form-actions {
+        text-align: center;
+    }
 
     #block-block-21 {
         font-size: 2.5em;
         display: block;
     }
-
 
     .comment-form .form-type-textarea label {
         float: none;
@@ -1648,30 +1616,19 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         margin-top: 0;
 }
 
-.node.node-libro-de-biblioteca .field-name-field-videoteca > div > div > iframe {
-    width: 54rem;
-    height: 372px;
-    margin-left: 5.5rem;
+    .node.node-libro-de-biblioteca .field-name-field-videoteca > div > div > iframe {
+        width: 54rem;
+        height: 372px;
+        margin-left: 5.5rem;
 }
 
-    /******Innovaciones portrait tlf*****************  **/
-    
-    
- /*   
-    div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
-    display: table-row;
-    width: 30rem;
-    height: 16rem;
-    margin: 0 0 20px 0;
-    float: none;
-}*/
+/******Innovaciones portrait tlf*******************/
 
     div.view.view-buenas-pr-cticas .field.field-name-title-field > div > div > h2 {
             margin: 0px;
             text-align: justify;
             font-size: 0.8em;
     }
-
 
     div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
     display: inline-table;
@@ -1687,21 +1644,25 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
 
    #buenas_practicas_top {
     height: 37rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3.5rem;
     width: 66rem;
 }
+
+#buenas_practicas_top > div#left {
+    width: 35rem;
+}
+
   #buenas_practicas_top > div#left > p#titulo {
     text-align: center;
-    font-size: 4em;
+    font-size: 2em;
 }
 
 #buenas_practicas_top > div#left > p#contenido {
     text-align: justify;
-    font-size: 2.5em;
 }
   
    #buenas_practicas_top > div#right > img {
-    width: 31.94rem;
+    width: 25rem;
     height: 37rem;
 }
 
@@ -1709,7 +1670,6 @@ div.view.view-buenas-pr-cticas .field.field-name-title-field, div.view.view-buen
     margin-left: 2rem;
     margin-right: 2rem;
 }
-
 
 div.node.node-buenas-pr-cticas > div > div.field.field-name-field-portada-buenas-practicas.field-type-image.field-label-hidden.buenas_practicas_resumen > div > div > a > img {
     width: 100%;
@@ -1722,19 +1682,6 @@ div.view.view-buenas-pr-cticas > div.view-content > div > div > div.content {
     width: 100%;
 }
 
-h1#page-title {
-    font-size: 5em;
-    text-align: center;
-}
-/*
-div.node.node-buenas-pr-cticas > div > div.field.field-name-field-autor-buenas-practicas.field-type-text.field-label-inline.clearfix.buenas_practicas_full {
-    font-size: 2.5em;
-}
-
-div.node.node-buenas-pr-cticas > div > div.field.field-name-field-descripcion.field-type-text-long.field-label-hidden.buenas_practicas_full {
-    font-size: 2.5em;
-}*/
-
 .node-buenas-pr-cticas .field-name-field-archivo-buenas-practicas {
     width: 80%;
 }
@@ -1745,48 +1692,14 @@ div.node.node-buenas-pr-cticas > div > div.field.field-name-field-descripcion.fi
     margin-bottom: 2rem;
 }
 
-
-
- .node-buenas-pr-cticas{
-    font-size: 2.5em;
- }
-
 #comments div.comment.clearfix > div.comment-text > div.content {
     margin: 0px;
     text-align: justify;
     width: 82%;
-
 }
 
 
-
-
-.node .node-buenas-pr-cticas .node-full .clearfix{
-    font-size: 2.5em;
-}
-
-/*******                    ********************/
-    
-    
-    .one-sidebar #content {
-        width: 100%;
-    }
-
-
-
-
-    .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 1;
-    }
-
-    .sticky+.clearfix {
-        padding-top: 10rem;
-    }
-
-
+/*******Fin innovaciones********************/
 
  /* INNOVACIONES sidebar*/
  
@@ -1795,10 +1708,8 @@ div.node.node-buenas-pr-cticas > div > div.field.field-name-field-descripcion.fi
  }
  
  div.form-item.form-type-textfield>input {
-    width: 30rem !important;
+    width: 30rem;
 }
-
-
  .views-exposed-form .views-exposed-widget .form-submit {
         width: 5rem !important;
         height: 5rem !important;
@@ -1808,6 +1719,8 @@ div.node.node-buenas-pr-cticas > div > div.field.field-name-field-descripcion.fi
         left: 22rem;
  
  }
+ /* FIN INNOVACIONES sidebar*/ 
+ 
  
  /* PORTAFOLIO sidebar*/
 
@@ -1817,7 +1730,7 @@ div.node.node-buenas-pr-cticas > div > div.field.field-name-field-descripcion.fi
  
  
   
- /* PORTAFOLIO */
+ /******* PORTAFOLIO *********/
  
  div.view.view-portafolio-docente > div.view-content > div.views-row {
     display: inline-table;
@@ -1835,7 +1748,7 @@ div.node.node-buenas-pr-cticas > div > div.field.field-name-field-descripcion.fi
 
 
 div.view.view-portafolio-docente > div.view-content > div > div > div.content {
-    font-size: 1.3em;
+    font-size: 0.5em;
     margin-top: 0px;
     width: 100%;
 }
@@ -1845,10 +1758,9 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     height: 40rem;
 }
 
-
    #portafolio_docente_top {
     height: 34rem;
-    font-size: 2.5em;
+    font-size: 1em;
     margin-bottom: 4rem;
     width: 67rem;
 }
@@ -1858,13 +1770,12 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     }
   
    #portafolio_docente_top > div#right > img {
-    width: 33rem;
+    width: 26rem;
     height: 34rem;
 }
 
-
 #portafolio_docente_top > div#left {
-    width: 28rem;
+    width: 35rem;
 }
 
 div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-portafolio-docente .field.field-name-field-autor-portafolio.field-type-text.field-label-inline.clearfix.portafolio_docente_resumen, div.view.view-portafolio-docente .field.field-name-field-fecha-portafolio.field-type-text.field-label-inline.clearfix.portafolio_docente_resumen {
@@ -1880,10 +1791,6 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
 
 /****** Portafolio Detalle ****/
 
-
-.node-portafolio-docente{
-    font-size: 2.5em;
-}
  .node-portafolio-docente .field.field-name-field-archivo-portafolio {
     width: 80%;
 }
@@ -1894,11 +1801,10 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
     margin-bottom: 2rem;
 }
 
-
  /******CONCURSO************/
 
  .page-node-16097 .field-name-body .concurso_header {
-    width: 142%;
+    width: 136%;
     height: 62rem;
     background-size: 66rem 100%;
     position: relative;
@@ -1973,11 +1879,9 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
 
  .vista-materia .view-content > h3 {
     height: 4rem;
-    font-size: 2.7em;
  }
 
  .views-row > .views-accordion-header > .field-content > a {
-    font-size: 3.3em;
     padding-left: 96px;
     padding-top: 20px;
  }
@@ -1989,10 +1893,6 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
  .views-row > .views-accordion-header > .ui-icon {
     width: 5rem;
     height: 7rem;
-}
- 
- .ui-accordion .ui-accordion-content {
-    font-size: 2em;
 }
 
 .field-name-field-icono img, .views-field-field-icono img {
@@ -2006,7 +1906,7 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
 }
 
 .field-type-image img, .user-picture img {
-    margin: 0 0 -1.2em;
+    margin: 0 0 0.8em;
 }
  
  /* SIDEBAR DERECHA */
@@ -2029,6 +1929,7 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
  
  .lateral_izq_bloque01 > li > a, .lateral_izq_bloque02 > li > a, .lateral_izq_bloque03 > li > a {
     padding: 5px 12px 5px 100px;
+    font-size: 0.8em;
 }
  
  
@@ -2036,7 +1937,7 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
  
     .view_bloque_lateral {
         text-align: initial;
-        font-size: 3rem;
+        font-size: 2em;
         width: 0;
         max-width: 52rem;
         top: 0;
@@ -2095,8 +1996,8 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
 }
 
  .vista-efemerides .view-content > h3 {
-    font-size: 3em;
-    height: 8rem;
+    font-size: 1.2em;
+    height: 4rem;
 }
 
 
@@ -2109,8 +2010,6 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
     width: 100%;
     margin-top: 4rem;
 }
-
-
 
 .page-celebraciones-escolares .section,.node-type-celebraciones-escolares .section {
     margin-left: 0;
@@ -2129,15 +2028,17 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
 
 
 #block-block-24 > .content > ul > li > a, #block-block-24 > .content > ul > li > a, #block-block-24 > .content > ul > li > a ,.node-type-celebraciones-escolares #block-block-25 {
-
-    font-size: 2.4em;
+    
 }
 
 
 .page-celebraciones-escolares div.view-Celebraciones-Escolares > div.view-content ,.node-type-celebraciones-escolares div.field-name-field-item-de-celebraciones > div.field-items ,.page-lista-escolar div.view-lista-escolar-guao > div.view-content{
-
     column-count: 1;
     padding: 12px 63px 72px 55px;
+}
+
+#block-block-24 > .content > ul, #block-block-24 > .content > ul, #block-block-24 > .content > ul {
+    font-size: 0.9em;
 }
 
 .page-celebraciones-escolares div.view-Celebraciones-Escolares > div.view-content > div.views-row ,
@@ -2151,8 +2052,8 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
 }
 
 .page-celebraciones-escolares div.view-Celebraciones-Escolares > div.view-content > div.views-row > span > span > a ,.node-type-celebraciones-escolares div.field-name-field-item-de-celebraciones > div.field-items > div.field-item a {
-    font-size: 3em;
     line-height: 1.5em;
+    font-size: 1.3em;
 }
 
 .page-celebraciones-escolares div.view-Celebraciones-Escolares > div.view-content > div.views-row > div.views-field.views-field-nothing {
@@ -2161,7 +2062,7 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
 }
 
 .page-celebraciones-escolares div.view-Celebraciones-Escolares > div.view-content > div.views-row > div.views-field-field-fecha-celebracion a {
-    font-size: 2.5em;
+    font-size: 1.3em;
 }
 
 
@@ -2208,7 +2109,7 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
 }
 
 .page-lista-escolar div.view-lista-escolar-guao > div.view-content > div.views-row > span > span > a {
-    font-size: 4.5em;
+    font-size: 2em;
 }
 
 .page-lista-escolar div.view-lista-escolar-guao > div.view-content > div.views-row {
@@ -2232,30 +2133,13 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
      flex: 1;
  }*/
 
-/*****Resultados de busqueda mobile portrait*****/
-    ol.search-results {
-        padding-left: 0;
-        font-size: 2.5em;
-    }
-    
-    #content h2 {
-        font-size: 2.5em;
-        line-height: 3.2rem;
-    }
-    
-    div.view.view-library .field.field-name-title-field > div > div > h2 > a {
-    color: #16A89A;
-        font-size: 0.6em;
-}
-    
-    #edit-basic{
-        font-size: 2.5em;
-    }
+/*****Resultados de busqueda portrait mobile*****/
     
     .breadcrumb {
-    font-size: 2.5em;
-    font-weight: bold;
+    font-size: 2em;
+    }
 }
+    
 
 /*****Fin de resultados de busqueda mobile portrait***/
 
