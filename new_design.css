@@ -2232,6 +2232,34 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
      flex: 1;
  }*/
 
+/*****Resultados de busqueda mobile portrait*****/
+    ol.search-results {
+        padding-left: 0;
+        font-size: 2.5em;
+    }
+    
+    #content h2 {
+        font-size: 2.5em;
+        line-height: 3.2rem;
+    }
+    
+    div.view.view-library .field.field-name-title-field > div > div > h2 > a {
+    color: #16A89A;
+        font-size: 0.6em;
+}
+    
+    #edit-basic{
+        font-size: 2.5em;
+    }
+    
+    .breadcrumb {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/*****Fin de resultados de busqueda mobile portrait***/
+
+
 }
 
 /*##Device = Smartphones Most of the Smartphones (Landscape)*/
