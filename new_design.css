@@ -1864,6 +1864,125 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
  /****** FIN CONCURSO************/
 
 
+/**********  VARIOS - MOBILE Portrait ***********/
+
+/**********  Venezuela - MOBILE Portrait ***********/
+
+.page-venezuela-le-habla-a-la-educacion #main-wrapper > #main {
+    width: 100%;
+}
+
+#content .section, .sidebar .section {
+    font-size: 2.5em !important;
+}
+
+/**********  Venezuela INICIO ***********/
+
+/* Parte superior */
+.view.view-venezuela-le-habla-a-la-educaci-n .view-header img {
+    width: 67rem;
+    transform: translateZ(0);
+}
+
+/* Parte Contenido Despues de Inicio, personaje ..*/
+
+.view.view-venezuela-le-habla-a-la-educaci-n .views-field.views-field-title {
+    width: 65rem;
+    height: 5rem;
+}
+
+.view.view-venezuela-le-habla-a-la-educaci-n .views-field.views-field-created > span {
+    font-size: unset;
+}
+
+/*video 1*/
+.view.view-venezuela-le-habla-a-la-educaci-n .views-field.views-field-field-video-vhe > div > iframe {
+        width: 50rem;
+        height: 25rem;
+        margin-left: 10rem;
+        backface-visibility: hidden;
+    }
+    
+/* Ellos tambien le hablaron*/
+.view.view-venezuela-le-habla-a-la-educaci-n .view.view-venezuela-le-habla-a-la-educaci-n-2 .views-row {
+    float: left;
+    width: 30rem;
+    height: 45rem;
+    margin: 5px 26px 25px 13px;
+}    
+
+.view.view-venezuela-le-habla-a-la-educaci-n .view.view-venezuela-le-habla-a-la-educaci-n-2 .views-row .views-field.views-field-field-portada-vhe img {
+    width: 100%;
+    height: auto;
+}
+
+
+/**********  Venezuela PERSONAJE ***********/
+
+.page-venezuela-le-habla-a-la-educacion-personajes .view-header img {
+    width: 67rem;
+    transform: translateZ(0);
+}
+
+
+.views-exposed-form .form-item, .views-exposed-form .form-submit {
+    margin-top: 0;
+    width: 32rem;
+}
+
+.page-venezuela-le-habla-a-la-educacion-personajes .view-filters > form > div > div > div.views-exposed-widgets > div > div > div > input {
+    width: 31rem!important;
+    height: auto;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+}
+
+.page-venezuela-le-habla-a-la-educacion-personajes .view-filters .views-submit-button > input {
+    position: initial;
+    height: 3.425rem !important;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+/* Al selecionar una personaje */
+.node-type-venezuela-le-habla-a-la-educaci- #block-block-22 > div.content img, .node-type-venezuela-le-habla-a-la-educaci- #block-block-23 > div.content img {
+    width: 60rem;
+    transform: translateZ(0);
+}
+
+.node-type-venezuela-le-habla-a-la-educaci- #page-title {
+    width: 51rem;
+    height: auto;
+}
+
+
+
+
+/**********  Venezuela CAMAPAÑA ***********/
+
+.page-venezuela-le-habla-a-la-educacion-campanas .view-header img{
+    width: 67rem;
+    transform: translateZ(0);    
+}
+
+.page-venezuela-le-habla-a-la-educacion-campanas .view-filters > form > div > div > div.views-exposed-widgets > div > div > div > input{
+    width: 31rem!important;
+    height: auto;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+}
+
+.page-venezuela-le-habla-a-la-educacion-campanas .view-filters .views-submit-button > input {
+    position: initial;
+    height: 3.425rem !important;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;    
+}
+
+/**********  FIN Venezuela - MOBILE Portrait ***********/
+
+
+
 /****** PRIMER/QUINTO -- GRADO/AÑO MATERIA MOBILE Portrait******/
  
  /* BODYCUERPO */
@@ -1883,7 +2002,7 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
  }
 
  .views-row > .views-accordion-header > .field-content > a {
-    padding-left: 96px;
+    padding-left: 110px;
     padding-top: 20px;
  }
  
@@ -1907,7 +2026,7 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
 }
 
 .field-type-image img, .user-picture img {
-    margin: 0 0 0.8em;
+    margin: 0 0 -0.8em;
 }
  
  /* SIDEBAR DERECHA */
@@ -1929,8 +2048,7 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
  }
  
  .lateral_izq_bloque01 > li > a, .lateral_izq_bloque02 > li > a, .lateral_izq_bloque03 > li > a {
-    padding: 5px 12px 5px 100px;
-    font-size: 0.8em;
+    padding: 16px 12px 5px 100px;
 }
  
  
@@ -2069,23 +2187,20 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
 
 .node-type-celebraciones-escolares div.node-celebraciones-escolares > div > div.field-name-field-portada-celebracion {
     height: 21rem;
-
 }
 
 .node-type-celebraciones-escolares div.field-name-field-fecha-celebracion {
-    font-size: 3.25em;
     height: 10rem;
 }
 
 .node-type-celebraciones-escolares div.node.node-celebraciones-escolares > div.content.clearfix > div.field-name-title-field {
-    font-size: 2.5em;
     height: 11rem;
 }
 
 .node-type-celebraciones-escolares div.node-celebraciones-escolares > div > div.field-name-field-portada-celebracion > div > div > img {
     height: auto;
-    width: 75%;
-    max-height : 100rem;
+    width: 116%;
+    max-height: 21rem;
 }
 
 /**********FIN CELEBRACIONES - MOBILE Portrait ***********/
@@ -2121,6 +2236,7 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
 /**********LISTA ESCOLAR - MOBILE Portrait ***********/
 
 /********** FIN VARIOS - MOBILE Portrait ***********/
+
 
 /**** FOOTER ****/
 /*
