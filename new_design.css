@@ -2135,14 +2135,120 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
  }*/
 
 /*****Resultados de busqueda portrait mobile*****/
-    
     .breadcrumb {
     font-size: 2em;
     }
+/*****Fin resultados de busqueda portrait mobile*****/
+    
+/*****Nosotros portrait mobile****/
+#node-9243{
+    margin-left: -4rem;
+    margin-right: -4rem;
 }
     
+    
+/****Voluntariado portrait mobile*********/
 
-/*****Fin de resultados de busqueda mobile portrait***/
+#node-1740{
+    margin-left: -4rem;
+    margin-right: -4rem;
+}
+#node-1740 #bloque_central {
+    background: url(/sites/default/files/fondo_voluntariado.png) no-repeat center top;
+    height: 182rem;
+    background-size: 63rem 36rem;
+}
+
+#node-1740 #bloque_central > #contenedor > h1 {
+    color: #8E12A0;
+    font-weight: bold;
+    margin-bottom: 24rem;
+    font-size: 2em;
+}
+
+#node-1740 #boton > input {
+    width: 33rem;
+}
+
+
+/****Fin voluntariado portrait mobile*****/
+    
+/****Donaciones portrait mobile ****/
+
+    #node-1735{
+        margin-left: -4rem;
+        margin-right: -4rem;
+    }
+
+    #node-1735 #bloque_central {
+        text-align: center;
+        background: url(/sites/default/files/fondo_donaciones.png) no-repeat center top;
+        background-size: 188rem;
+        height: 156rem;
+    }
+    
+    #node-1735 #boton > input {
+        width: 26rem;
+        height: 7rem;
+    }
+    
+    #node-1735 #bloque_central > #contenedor > h1 {
+        margin-top: 29rem;
+}
+
+/*****Fin donaciones portrait mobile*****/  
+
+/******Noticias portrait mobile ***/
+
+    div.view.view-Noticias > div.view-content > div.views-row {
+        margin-left: -15rem;
+        margin-right: -15rem;
+    }
+    
+    div.view.view-Noticias .views-field-title {
+        text-align: justify;
+    }
+    
+    div.view.view-Noticias .views-field-field-portada-noticias img {
+        width: 61rem;
+        height: 30rem;
+    }
+    
+    .rtejustify > span{
+      font-size: 1em !important;
+    }
+
+    div.view.view-Noticias > div.view-header h1 {
+        color: white;
+        font-size: 2em;
+        line-height: 1;
+        margin: 0;
+        text-align: center;
+    }
+
+/********Contacto portrait mobile *****/
+    #contact-site-form {
+       /* margin-left: 8rem;
+        margin-right: 8rem;*/
+    }
+    
+    .captcha {
+        margin-left: -8rem;
+         width: 45rem;
+    }
+    #contact-site-form > div > div.form-type-select.form-item-cid > select, #contact-site-form > div > div.form-item-message > div > textarea {
+        margin-left: -8rem;
+        width: 45rem !important;
+    }
+    
+    #contact-site-form > div > div.form-item-name > input, #contact-site-form > div > div.form-item-mail > input, #contact-site-form > div > div.form-item-subject > input {
+        margin-left: -8rem;
+        width: 45rem !important;
+    }
+    fieldset .fieldset-description {
+    margin-top: 5rem;
+    }
+}
 
 
 
