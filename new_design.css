@@ -1782,6 +1782,7 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
     margin-left: 2rem;
     margin-right: 2rem;
     text-align: justify;
+    font-size: 2.5em;
 }
 
 #portafolio_docente_top > div#left > p#titulo {
