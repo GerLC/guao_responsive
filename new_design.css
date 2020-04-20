@@ -1183,7 +1183,7 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
 ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
     #content .section, .sidebar .section {
         font-size: 2.5em;
     }
@@ -1625,7 +1625,7 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     }
     .page-biblioteca #page-title {
         text-align: center;
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     .page-biblioteca>img {
@@ -2499,7 +2499,11 @@ div.view.view-Noticias > div.view-header {
     #main {
         margin-bottom: 0;
     }
-
+    
+    #content .section, .sidebar .section {
+        font-size: 1.5em;
+    }
+/*****Home landscape mobile*-***/
     .bloqueshomepage {
         display: flex;
         flex-direction: row;
@@ -2515,7 +2519,7 @@ div.view.view-Noticias > div.view-header {
         height: 18rem;
         margin-left: 1rem;
         padding: 2rem 2rem 4rem 2rem;
-        font-size: 1.2em;
+        font-size: 0.9em;
         /*   margin-bottom: 0;*/
     }
 
@@ -2612,7 +2616,6 @@ div.view.view-Noticias > div.view-header {
     }
 
     /* MENU PRIMARIO TU AULA, BIBLIOTECA... */
-
     #main-menu-links {
         position: relative;
         top: 2rem;
@@ -2823,23 +2826,19 @@ div.view.view-Noticias > div.view-header {
     .one-sidebar #content {
         width: 100%;
     }
-    
-    div.view.view-library .field.field-name-title-field > div > div > h2 > a {
-        font-size: 1.5em;
-    }
 
     .page-biblioteca #page-title {
-        font-size: 3.5em;
+        font-size: 1.5em;
         text-align: center; 
     }
-
-    .item-list .pager {
-        font-size: 1.3em;
+    
+    div.view.view-library .field.field-name-field-autor.field-type-text.field-label-inline.clearfix, div.view.view-library .field.field-name-field-editorial.field-type-text.field-label-inline.clearfix, div.view.view-library .field.field-name-field-a-o-de-publicaci-n.field-type-text.field-label-inline.clearfix, div.view.view-library .field.field-name-field-rating.field-type-fivestar.field-label-inline.clearfix {
+            line-height: 2.5rem;
     }
 
    #sidebar-first {
         text-align: initial;
-        font-size: 2rem;
+        font-size: 1.5em;
         width: 0;
         max-width: 50rem;
         height: 100%;
@@ -2945,24 +2944,19 @@ div.view.view-Noticias > div.view-header {
         font-size: 0.9em;
     }
     
-    #content h2 {
-        font-size: 1em;
-        text-align: justify;
-    }
 
 
 /****Fin biblioteca landscape tlf******/
 
 /****Detalle libro landscape tlf******/
-    .node-libro-de-biblioteca{
-        font-size: 1.5em;
-     }
-     
     .node-type-libro-de-biblioteca h1#page-title {
-        color: #16A89A;
-        font-size: 3em;
+        font-size: 2em;
         text-align: center;
     }
+    
+    .node.node-libro-de-biblioteca .field.field-name-field-autor.field-type-text.field-label-inline.clearfix, .node.node-libro-de-biblioteca .field.field-name-field-editorial.field-type-text.field-label-inline.clearfix, .node.node-libro-de-biblioteca .field.field-name-field-a-o-de-publicaci-n.field-type-text.field-label-inline.clearfix, .node.node-libro-de-biblioteca .field.field-name-field-rating.field-type-fivestar.field-label-inline.clearfix {
+    line-height: 3rem;
+}
  
     .node.node-libro-de-biblioteca .field-name-field-videoteca > div > div > iframe {
         width: 50rem;
@@ -2972,6 +2966,18 @@ div.view.view-Noticias > div.view-header {
 
     #comments {
         margin-top: 0;
+    }
+    
+    #bloque_compartir{
+        font-size: 0.75em;
+    }
+        
+    #bloque_comentar{
+        font-size: 0.75em;
+    }
+    
+    #block-block-20{
+        font-size: 0.75em;
     }
 
     .form-actions {
@@ -3004,7 +3010,6 @@ div.view.view-Noticias > div.view-header {
     }
 
     div.view.view-buenas-pr-cticas .field.field-name-title-field > div > div > h2 > a {
-    font-size: 1.3em;
     text-align: justify;
 }
     
@@ -3015,12 +3020,12 @@ div.view.view-Noticias > div.view-header {
     
     #buenas_practicas_top > div#left > p#titulo {
         text-align: center;
-        font-size: 2em;
+        font-size: 1.5em;
     }
     
     #buenas_practicas_top > div#left > p#contenido {
         text-align: justify;
-        font-size: 1em;
+        font-size: 0.9em;
     }
     
     div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
@@ -3038,7 +3043,7 @@ div.view.view-Noticias > div.view-header {
 }
 
     #buenas_practicas_top {
-        height: 29rem;
+        height: 23rem;
         font-size: 1.7rem;
         margin-bottom: 4rem;
         width: 66rem;
@@ -3046,7 +3051,7 @@ div.view.view-Noticias > div.view-header {
   
     #buenas_practicas_top > div#right > img {
         width: 31.7167rem;
-        height: 29rem;  
+        height: 23rem;  
     }
 
     div.node.node-buenas-pr-cticas > div > div.field.field-name-field-portada-buenas-practicas.field-type-image.field-label-hidden.buenas_practicas_resumen > div > div > a > img {
@@ -3061,11 +3066,6 @@ div.view.view-Noticias > div.view-header {
 /****Fin innnovaciones landscape tlf******/
 
 /****Detalle innnovaciones landscape tlf******/
-
-    .node-buenas-pr-cticas{
-        font-size: 1.5em;
-    }
-    
     .node-buenas-pr-cticas .field-name-field-video {
         border-right-style: none;
     }
@@ -3077,7 +3077,7 @@ div.view.view-Noticias > div.view-header {
     
     .node-type-buenas-pr-cticas h1#page-title {
         text-align: center;
-        font-size: 3em;
+        font-size: 2em;
     }
 
 /****Fin detalle innnovaciones landscape tlf******/
@@ -3104,18 +3104,17 @@ div.view.view-Noticias > div.view-header {
     .node-buenas-pr-cticas .field-name-field-archivo-buenas-practicas {
         float: inherit;
     }
-/****Innovaciones sidebar landscape tlf******/
 
 /****Portafolio landscape tlf****/
  
     #portafolio_docente_top > div#left > p#titulo {
-        font-size: 2em;
+        font-size: 1.5em;
         margin-bottom: 30px;
         text-align: center;
     }   
     
     div.view.view-portafolio-docente .field.field-name-title-field > div > div > h2 > a {
-        font-size: 1.2em;
+        /*font-size: 1.2em;*/
         text-align: justify;
     }
  
@@ -3134,7 +3133,7 @@ div.view.view-Noticias > div.view-header {
     }
 
     div.view.view-portafolio-docente > div.view-content > div > div > div.content {
-        font-size: 1.2rem;
+        font-size: 0.9em;
         margin-top: 0px;
     }
  
@@ -3143,32 +3142,33 @@ div.view.view-Noticias > div.view-header {
     }
     
    #portafolio_docente_top {
-        height: 26rem;
+        height: 23rem;
         font-size: 1.7rem;
         margin-bottom: 4rem;
         width: 66rem;
     }
     
    #portafolio_docente_top > div#right > img {
-        width: 31.7167rem;
-        height: 26rem;
+        width: 29.77rem;
+        height: 23rem;
     }
  
     .page-portafolio-docente #content .section, .page-buenas-practicas #content .section{
         padding-left: 4rem;
         padding-right: 0rem;
     }
+    
+    #portafolio_docente_top > div#left {
+    width: 32rem;
+    margin-right: 0;
+}
 /****Fin portafolio landscape tlf****/
 
 /****Portafolio detalle landscape tlf****/
 
-    .node-portafolio-docente{
-        font-size: 1.5em;
-    }
-    
     .node-type-portafolio-docente h1#page-title {
         text-align: center;
-        font-size: 3em;
+        font-size: 2em;
     }   
     
     .node-portafolio-docente .field.field-name-field-archivo-portafolio > div.field-items > div.field-item {
@@ -3200,6 +3200,9 @@ div.view.view-Noticias > div.view-header {
         background: url(/sites/default/files/concurso/portada_concurso_v6.jpg) no-repeat;
         background-size: 855px 100%;
     }
+    h1#page-title {
+        text-align: center;
+}
     
  /****** PRIMER/QUINTO -- GRADO/AÑO MATERIA MOBILE landscape******/
  
@@ -3217,11 +3220,13 @@ div.view.view-Noticias > div.view-header {
 
  .vista-materia .view-content > h3 {
     height: 4rem;
-    font-size: 2.7em;
+    font-size: 2em;
  }
+    #block-block-16{
+        font-size: 0.7em;
+    }
 
  .views-row > .views-accordion-header > .field-content > a {
-    font-size: 2em;
     padding-left: 96px;
     padding-top: 20px;
  }
@@ -3234,10 +3239,7 @@ div.view.view-Noticias > div.view-header {
     width: 4rem;
     height: 5rem;
 }
- 
- .ui-accordion .ui-accordion-content {
-    font-size: 1.5em;
-}
+
 
 .field-name-field-icono img, .views-field-field-icono img {
     height: auto;
@@ -3330,90 +3332,7 @@ div.view.view-Noticias > div.view-header {
 
 }
 
-/****Low Resolution Smartphones Landscape*****/
-@media (max-width: 480px) and (orientation: landscape) {
-    
-/***Homepage landscape tlf low res*********/
 
-    .bloqueshomepage > div {
-        width: 31rem;
-        height: 20rem;
-        margin: 1rem 1rem 1rem 0rem;
-    }
-    
-    .bloqueshomepage > div > ul > li > a {
-        font-size: .5em;
-    }
-
-    .bloqueshomepage>div>ul {
-        width: 50%;
-        font-size: 1.5em;
-    }
-    
-    .bloqueshomepage {
-        margin-left: 0rem;
-        margin-right: 0rem;
-    }
-    
-    #content .section {
-        padding-left: 0rem;
-        padding-right: 0rem;
-    }
-
-/***Fin homepage*****/
-
-
-    
-/****Detalle libro tlf low res landscape*******/
-    div.view.view-portafolio-docente > div.view-content > div.views-row {
-        display: inline-table;
-        width: 28rem;
-        margin-bottom: 3rem;
-        margin-right: 2rem;
-        height: 37rem;
-        float: none;
-    }
-
-    div.view.view-library .field.field-name-field-autor.field-type-text.field-label-inline.clearfix, div.view.view-library .field.field-name-field-editorial.field-type-text.field-label-inline.clearfix, div.view.view-library .field.field-name-field-a-o-de-publicaci-n.field-type-text.field-label-inline.clearfix, div.view.view-library .field.field-name-field-rating.field-type-fivestar.field-label-inline.clearfix {
-            line-height: 1.2em;
-    }
-    
-    .node.node-libro-de-biblioteca .field.field-name-field-autor.field-type-text.field-label-inline.clearfix, .node.node-libro-de-biblioteca .field.field-name-field-editorial.field-type-text.field-label-inline.clearfix, .node.node-libro-de-biblioteca .field.field-name-field-a-o-de-publicaci-n.field-type-text.field-label-inline.clearfix, .node.node-libro-de-biblioteca .field.field-name-field-rating.field-type-fivestar.field-label-inline.clearfix {
-        line-height: 1.5rem;
-}
-    
-/*******Fin detalle libro landscape low res*****/
-
-/****Innovaciones landscape low res*****/
-    .node-buenas-pr-cticas .field-name-field-archivo-buenas-practicas {
-        float: left;
-    }
-    div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
-
-        width: 33rem;
-    }
-/****Innovaciones landscape low res*****/
-
-/***Portafolio landscape*****/
-
-    .page-portafolio-docente #content .section, .page-buenas-practicas #content .section {
-        padding-left: 0rem;
-        padding-right: 0rem;
-    }
-    
-    #portafolio_docente_top > div#right > img {
-        width: 32.15rem;
-    }
-
-    div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-1, div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-3, div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-5, div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-7, div.view.view-portafolio-docente > div.view-content > div.views-row.views-row-9 {
-        margin-left: 4rem;
-        margin-right: 2rem;
-    }
-    
-
-/*****Fin portafolio landscape****/
-
-}
 /*Widescreen*/
 /*
 @media (min-width: 1024px) {
