@@ -3329,6 +3329,108 @@ div.view.view-Noticias > div.view-header {
         
     }
     
+    /*****Nosotros portrait ipad****/
+#node-9243{
+    margin-left: -4rem;
+    margin-right: -4rem;
+}
+/****Voluntariado portrait ipad*********/
+
+#node-1740{
+    margin-left: -5rem;
+    margin-right: -5rem;
+}
+
+#bloque_central > p {
+    background-color: white;
+}
+#node-1740 #bloque_central > #contenedor > h1 {
+    margin-bottom: 1rem;
+    font-size: 2em;
+    margin-top: -0.5rem;
+    text-align: center;
+}
+#node-1740 #bloque_central {
+    height: 70rem;
+    background-size: 111rem 72rem;
+}
+
+#node-1740 #boton > input {
+    width: 33rem;
+}
+
+/****Donaciones portrait ipad ****/
+#node-1735{
+        margin-left: -5rem;
+        margin-right: -5rem;
+    }
+    
+        #node-1735 #bloque_central {
+        background-size: 82rem;
+}
+
+/******Noticias portrait ipad ***/
+
+    div.view.view-Noticias > div.view-header {
+        height: 5rem;
+        text-align: center;
+        width: 34rem;
+        margin-left: -3rem;
+    }
+    
+    div.view.view-Noticias > div.view-header > h3 {
+        margin-top: 1rem;
+    }
+
+    div.view.view-Noticias > div.view-content > div.views-row {
+        margin-left: -15rem;
+        margin-right: -15rem;
+    }
+    
+    div.view.view-Noticias .views-field-title {
+        text-align: justify;
+    }
+    
+    div.view.view-Noticias .views-field-field-portada-noticias img {
+        width: 61rem;
+        height: 30rem;
+    }
+    
+    .rtejustify > span{
+      font-size: 1em !important;
+    }
+
+    div.view.view-Noticias > div.view-header h1 {
+        color: white;
+        font-size: 2em;
+        line-height: 1;
+        margin: 0;
+        text-align: center;
+    }
+
+/********Contacto portrait ipad *****/
+    #contact-site-form {
+       /* margin-left: 8rem;
+        margin-right: 8rem;*/
+    }
+    
+    .captcha {
+        margin-left: -8rem;
+         width: 45rem;
+    }
+    #contact-site-form > div > div.form-type-select.form-item-cid > select, #contact-site-form > div > div.form-item-message > div > textarea {
+        margin-left: -8rem;
+        width: 45rem !important;
+    }
+    
+    #contact-site-form > div > div.form-item-name > input, #contact-site-form > div > div.form-item-mail > input, #contact-site-form > div > div.form-item-subject > input {
+        margin-left: -8rem;
+        width: 45rem !important;
+    }
+    fieldset .fieldset-description {
+    margin-top: 5rem;
+    }
+    
 
 }
 
