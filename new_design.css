@@ -2487,6 +2487,27 @@ div.view.view-Noticias > div.view-header {
     fieldset .fieldset-description {
     margin-top: 5rem;
     }
+    
+    
+    /********Registrarse portrait mobile *****/
+.page-user-register #main-wrapper {
+
+    background-size: 171rem;
+    margin-top: 16px;
+}    
+    
+    
+ #highlighted {
+    width: 24rem;
+}    
+
+.page-user-register #content > div.section {
+    padding: 0;
+}
+
+#block-system-main {
+}
+    
 }
 
 
