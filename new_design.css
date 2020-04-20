@@ -989,6 +989,123 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
 
 /******FIN  PRIMER/QUINTO -- GRADO/AÑO MATERIA TABLET Portrait******/
 
+
+   .breadcrumb {
+    font-size: 2em;
+    }
+    
+/*****Nosotros portrait ipad****/
+#node-9243{
+    margin-left: -4rem;
+    margin-right: -4rem;
+}
+/****Voluntariado portrait ipad*********/
+
+#node-1740{
+    margin-left: -8rem;
+    margin-right: -8rem;
+}
+
+#bloque_central > p {
+    background-color: white;
+}
+#node-1740 #bloque_central > #contenedor > h1 {
+    margin-bottom: 0rem;
+    font-size: 2em;
+    margin-top: -0.5rem;
+}
+#node-1740 #bloque_central {
+    height: 95rem;
+    background-size: 132rem 112rem;
+}
+
+#node-1740 #boton > input {
+    width: 33rem;
+}
+
+/****Donaciones portrait ipad ****/
+
+    #node-1735{
+        margin-left: -4rem;
+        margin-right: -4rem;
+    }
+
+    #node-1735 #bloque_central {
+        background-size: 207rem;
+        height: 85rem;
+    }
+    
+    #node-1735 #boton > input {
+        width: 26rem;
+        height: 7rem;
+    }
+    
+    #node-1735 #bloque_central > #contenedor > h1 {
+        margin-top: 29rem;
+}
+
+/******Noticias portrait ipad ***/
+
+    div.view.view-Noticias > div.view-header {
+        height: 8rem;
+        text-align: center;
+        width: 34rem;
+        margin-left: -3rem;
+    }
+    
+    div.view.view-Noticias > div.view-header > h3 {
+        margin-top: 1rem;
+    }
+
+    div.view.view-Noticias > div.view-content > div.views-row {
+        margin-left: -15rem;
+        margin-right: -15rem;
+    }
+    
+    div.view.view-Noticias .views-field-title {
+        text-align: justify;
+    }
+    
+    div.view.view-Noticias .views-field-field-portada-noticias img {
+        width: 61rem;
+        height: 30rem;
+    }
+    
+    .rtejustify > span{
+      font-size: 1em !important;
+    }
+
+    div.view.view-Noticias > div.view-header h1 {
+        color: white;
+        font-size: 2em;
+        line-height: 1;
+        margin: 0;
+        text-align: center;
+    }
+
+/********Contacto portrait ipad *****/
+    #contact-site-form {
+       /* margin-left: 8rem;
+        margin-right: 8rem;*/
+    }
+    
+    .captcha {
+        margin-left: -8rem;
+         width: 45rem;
+    }
+    #contact-site-form > div > div.form-type-select.form-item-cid > select, #contact-site-form > div > div.form-item-message > div > textarea {
+        margin-left: -8rem;
+        width: 45rem !important;
+    }
+    
+    #contact-site-form > div > div.form-item-name > input, #contact-site-form > div > div.form-item-mail > input, #contact-site-form > div > div.form-item-subject > input {
+        margin-left: -8rem;
+        width: 45rem !important;
+    }
+    fieldset .fieldset-description {
+    margin-top: 5rem;
+    }
+
 }
 
 /* 
@@ -2261,8 +2378,6 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
     margin-left: -4rem;
     margin-right: -4rem;
 }
-    
-    
 /****Voluntariado portrait mobile*********/
 
 #node-1740{
@@ -2296,12 +2411,10 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
         margin-right: -4rem;
     }
 
-    #node-1735 #bloque_central {
-        text-align: center;
-        background: url(/sites/default/files/fondo_donaciones.png) no-repeat center top;
-        background-size: 188rem;
-        height: 156rem;
-    }
+#node-1735 #bloque_central {
+    background-size: 177rem;
+    height: 136rem;
+}
     
     #node-1735 #boton > input {
         width: 26rem;
@@ -2315,6 +2428,16 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
 /*****Fin donaciones portrait mobile*****/  
 
 /******Noticias portrait mobile ***/
+div.view.view-Noticias > div.view-header {
+    height: 8rem;
+    text-align: center;
+    width: 44rem;
+    margin-left: -7.5rem;
+}
+    
+    div.view.view-Noticias > div.view-header > h3 {
+        margin-top: 1rem;
+    }
 
     div.view.view-Noticias > div.view-content > div.views-row {
         margin-left: -15rem;
