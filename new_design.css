@@ -2237,7 +2237,7 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
 }
 
 
-/******FIN  EFEMERIDES MATERIA MOBILE Portrait******/
+/******FIN  EFEMERIDES  MOBILE Portrait******/
 
 /********** CELEBRACIONES - MOBILE Portrait ***********/
 
@@ -2490,24 +2490,139 @@ div.view.view-Noticias > div.view-header {
     
     
     /********Registrarse portrait mobile *****/
+    
+    /* background img libro*/
 .page-user-register #main-wrapper {
-
-    background-size: 171rem;
+    background-size: 175rem;
     margin-top: 16px;
 }    
-    
+    /* FORM */
+div.form-item.form-type-textfield>input {
+    width: 37rem;
+}
+
+    /* Si ya estas registrado */
+#block-block-32 {
+    background-color: none;
+}
     
  #highlighted {
     width: 24rem;
 }    
 
+    /* Tipo de Usuario */
 .page-user-register #content > div.section {
     padding: 0;
 }
 
-#block-system-main {
+#edit-user-roles {
+    width: 23rem !important;
+    font-size: .8em;
 }
-    
+
+#edit-user-roles >option {
+    font-size: .5em;
+}
+
+
+   /* PASSWORD */
+
+#user-register-form .form-item-pass > .form-item {
+    height: 97px;
+    width: 100%;
+}
+
+.password-strength {
+    width: 17em;
+    float: initial;
+    position: absolute;
+}
+
+#user-register-form .form-item-pass > .form-item-pass-pass1 > .password-strength {
+    margin-top: 4rem;
+}
+
+.page-user-register .form-item-pass > div.form-item-pass-pass2 > div.password-confirm {
+    margin-right: -7.5rem;
+}
+
+
+/* Fecha nacimiento */
+
+#user-register-form .field-name-field-fecha-nac > div > fieldset > div > div > div > div select, #user-profile-form .field-name-field-fecha-nac > div > fieldset > div > div > div > div select {
+    height: 4rem;
+    font-size: .8em;
+    margin-left: 1rem;
+}
+
+#user-register-form .field-name-field-fecha-nac > div > fieldset > legend, #user-profile-form .field-name-field-fecha-nac > div > fieldset > legend {
+    position: relative;
+    line-height: 0.5;
+}
+
+/* OPCIONES fecha nacimiento */
+.container-inline-date .form-item input, .container-inline-date .form-item select, .container-inline-date .form-item option {
+    font-size: .6em;
+}
+
+
+
+/* INICIO SESION */
+
+#block-block-33 {
+    margin-bottom: 25px;
+    width: 34rem;
+    margin-left: -2.5rem;
+}
+
+input.form-text, textarea.form-textarea, select.form-select {
+    width: 37rem;
+}
+
+
+
+/* MI CUENTA - EDIT */
+
+
+
+/* Contraseñaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+#user-profile-form .form-item-pass > .form-item {
+    height: 5rem;
+    width: 36rem;
+}
+
+#user-profile-form .form-item-pass > .form-item-pass-pass1 > .password-strength {
+    margin-top: 7rem;
+}
+
+div.password-confirm {
+    margin-top: 3.2em;
+    width: 20em;
+}
+
+/* Subir imagen */
+
+#user-profile-form #edit-picture > legend {
+    margin-bottom: 14rem !important;
+    line-height: 12.5 !important;
+}
+
+
+/* OPCIONES */
+
+
+#user-register-form .field-name-field-fecha-nac > div > fieldset > div > div > div > div select, #user-profile-form .field-name-field-fecha-nac > div > fieldset > div > div > div > div select {
+    width: 9rem;
+}
+
+#edit-field-pa-s-und {
+    font-size: 1em; 
+}
+
+#edit-field-pa-s-und > option {
+    font-size: .4em;
+}
+
 }
 
 
@@ -3453,6 +3568,118 @@ div.view.view-Noticias > div.view-header {
     }
     
 
+/********* VARIOS LANDSCAPE ***************/
+
+    /* CELEBRACIONES */
+.node-type-celebraciones-escolares #block-block-25 {
+    width: 23rem;
+}
+
+/********** CELEBRACIONES - MOBILE LANDSCAPE ***********/
+
+/* TITULO */
+.page-celebraciones-escolares #page-title ,.node-type-celebraciones-escolares #page-title,.node-type-celebraciones-escolares #block-block-25,.page-lista-escolar #page-title {
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.page-celebraciones-escolares .section,.node-type-celebraciones-escolares .section {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.page-celebraciones-escolares #main-wrapper > #main ,.node-type-celebraciones-escolares #main-wrapper > #main{
+    width: 100%;
+}
+
+#content .section, .sidebar .section {
+    padding: 0;
+}
+
+/* CONTENIDO IMAGENES VIEW CONTENT ROW */
+
+
+#block-block-24 > .content > ul > li > a, #block-block-24 > .content > ul > li > a, #block-block-24 > .content > ul > li > a ,.node-type-celebraciones-escolares #block-block-25 {
+    
+}
+
+
+.page-celebraciones-escolares div.view-Celebraciones-Escolares > div.view-content ,.node-type-celebraciones-escolares div.field-name-field-item-de-celebraciones > div.field-items ,.page-lista-escolar div.view-lista-escolar-guao > div.view-content{
+    column-count: 1;
+    padding: 12px 63px 72px 55px;
+}
+
+#block-block-24 > .content > ul, #block-block-24 > .content > ul, #block-block-24 > .content > ul {
+    font-size: 0.9em;
+}
+
+.page-celebraciones-escolares div.view-Celebraciones-Escolares > div.view-content > div.views-row ,
+.node-type-celebraciones-escolares div.field-name-field-item-de-celebraciones > div.field-items > div.field-item {
+    display: block;
+    width: auto;
+    padding: 10px;
+    text-align: center;
+    margin: 5rem 0px 0px 0px;
+    padding-bottom: 15px;
+}
+
+.page-celebraciones-escolares div.view-Celebraciones-Escolares > div.view-content > div.views-row > span > span > a ,.node-type-celebraciones-escolares div.field-name-field-item-de-celebraciones > div.field-items > div.field-item a {
+    line-height: 1.5em;
+    font-size: 1.3em;
+}
+
+.page-celebraciones-escolares div.view-Celebraciones-Escolares > div.view-content > div.views-row > div.views-field.views-field-nothing {
+    height: .3rem;
+    width: 21rem;
+}
+
+.page-celebraciones-escolares div.view-Celebraciones-Escolares > div.view-content > div.views-row > div.views-field-field-fecha-celebracion a {
+    font-size: 1.3em;
+}
+
+
+.node-type-celebraciones-escolares div.node-celebraciones-escolares > div > div.field-name-field-portada-celebracion {
+    height: 21rem;
+}
+
+.node-type-celebraciones-escolares div.field-name-field-fecha-celebracion {
+    height: 10rem;
+}
+
+.node-type-celebraciones-escolares div.node.node-celebraciones-escolares > div.content.clearfix > div.field-name-title-field {
+    height: 11rem;
+}
+
+.node-type-celebraciones-escolares div.node-celebraciones-escolares > div > div.field-name-field-portada-celebracion > div > div > img {
+    height: auto;
+    width: 116%;
+    max-height: 21rem;
+}
+
+/**********FIN CELEBRACIONES - MOBILE LANDSCAPE ***********/
+
+
+        /* ENFEMERIDES */
+ .page-efemerides #content {
+    margin-left: 0;
+}
+
+ .vista-efemerides .view-content > h3 {
+    font-size: 1.2em;
+    height: 4rem;
+}
+    
+/********* FIN VARIOS LANDSCAPE ***************/
+
+
+/********* MI CUENTA LANDSCAPE ***************/
+    
+    #user-register-form .field-name-field-fecha-nac > div > fieldset > div > div > div > div select, #user-profile-form .field-name-field-fecha-nac > div > fieldset > div > div > div > div select {
+    margin-top: 1rem;
+}
+    
+
+/********* FIN MI CUENTA LANDSCAPE ***************/
 }
 
 
