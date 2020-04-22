@@ -864,6 +864,8 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     padding: 16px;
 }
 
+
+
 /****** PRIMER/QUINTO -- GRADO/AÑO MATERIA TABLET Portrait******/
  
  /* BODYCUERPO */
@@ -916,13 +918,13 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
  /* SIDEBAR DERECHA */
   
  #block-block-13  {
-     height: 100rem;
+     height: 32rem;
      width: 35rem;
      margin-top: 0;
  }
  
  #block-block-8 {
-     height: 100rem;
+     height: 32rem;
      width: 35rem;
      margin-top: 0;    
  }
@@ -943,11 +945,11 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         font-size: 3rem;
         width: 0;
         max-width: 52rem;
-        top: 0;
+        top: 33rem;
         position: fixed;
         z-index: 1;
         height: 100%;
-        right: 0;
+        left: 0;
         overflow-x: hidden;
         overflow-y: scroll;
         transition: .5s;
@@ -966,8 +968,13 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     }
 
     #titulo {
+    	text-align: center;
         transform: translateZ(0);
     }
+    
+    .lateral_izq_bloque01 > li, .lateral_izq_bloque02 > li, .lateral_izq_bloque03 > li {
+		margin-left: -3rem;
+	}
     .open .view_bloque_lateral {
          width: 38rem;
          transform: translateZ(0);
@@ -1537,7 +1544,7 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         text-align: initial;
         font-size: 1.5em;
         width: 0;
-        max-width: 52rem;
+        max-width: 57rem;
         top: 0;
         position: fixed;
         z-index: 1;
@@ -1562,8 +1569,11 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         margin-top: 1rem;
     }
     
-    .views-exposed-form .form-item, .views-exposed-form .form-submit {
-    margin-top: 3.5rem;
+    .page-biblioteca .views-exposed-form .form-item,.page-biblioteca .views-exposed-form .form-submit     ,.page-buenas-practicas .views-exposed-form .form-item,
+.page-buenas-practicas .views-exposed-form .form-submit, .page-portafolio-docente .views-exposed-form .form-item,
+.page-portafolio-docente .views-exposed-form .form-submit{
+    margin-top: 3.5rem ;
+    width: 54rem ;
     }
 
     .views-exposed-form label {
@@ -1586,9 +1596,9 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     #block-views-exp-library-page-1 #edit-submit-library {
         width: 5rem;
         height: 5rem;
-        background-size: 3.55rem;
+        background-size: 3.7rem !important;
         position: relative;
-        top: -2rem;
+        top: -2.1567rem;
         left: 22rem;
     }
 
@@ -1609,7 +1619,7 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     }
         
     .open #sidebar-first {
-        width: 52rem;
+        width: 57rem;
     }
 
 /******FIN SIDEBAR*****/
@@ -1824,9 +1834,10 @@ div.view.view-buenas-pr-cticas > div.view-content > div > div > div.content {
         display: inline-block;
  }
  
- div.form-item.form-type-textfield>input {
+ .page-buenas-practicas div.form-item.form-type-textfield>input {
     width: 30rem;
 }
+
  .views-exposed-form .views-exposed-widget .form-submit {
         width: 5rem !important;
         height: 5rem !important;
@@ -1906,6 +1917,11 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
     text-align: center;
 }
 
+/* sidebar */
+.page-portafolio-docente div.form-item.form-type-textfield.form-item-field-autor-value > input, div.form-item.form-type-textfield.form-item-title > input {
+    width: 30rem;
+
+}
 
 /****** Portafolio Detalle ****/
 
@@ -1976,6 +1992,10 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
     width: 4rem;
     height: auto;
     padding: 16px;
+}
+
+.page-node-16261 .concurso-content > .row, .page-node-18695 .concurso-content > .row {
+    width: 24rem;
 }
 
  /****** FIN CONCURSO************/
@@ -2056,7 +2076,8 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
 
 .page-venezuela-le-habla-a-la-educacion-personajes .view-filters .views-submit-button > input {
     position: initial;
-    height: 3.425rem !important;
+    height: 2.592rem !important;
+    background-size: 2.55rem !important;
     border-top-right-radius: 35px;
     border-bottom-right-radius: 35px;
 }
@@ -2073,6 +2094,9 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
 }
 
 
+.node-type-venezuela-le-habla-a-la-educaci- #block-block-22 > div.content ul, .node-type-venezuela-le-habla-a-la-educaci- #block-block-23 > div.content ul {
+	width: 42rem;
+}
 
 
 /**********  Venezuela CAMAPAÑA ***********/
@@ -2091,10 +2115,17 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
 
 .page-venezuela-le-habla-a-la-educacion-campanas .view-filters .views-submit-button > input {
     position: initial;
-    height: 3.425rem !important;
+    height: 2.592rem !important;
+    background-size: 2.55rem !important;
     border-top-right-radius: 35px;
     border-bottom-right-radius: 35px;    
 }
+
+
+.node-type-venezuela-le-habla-a-la-educaci- #block-block-23 > div.content ul {
+	width: 42rem;
+}
+
 
 /**********  FIN Venezuela - MOBILE Portrait ***********/
 
@@ -2149,19 +2180,19 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
  /* SIDEBAR DERECHA */
   
  #block-block-13  {
-     height: 100rem;
-     width: 35rem;
+     height: 50rem;
+     width: 41rem;
      margin-top: 0;
  }
  
  #block-block-8 {
-     height: 100rem;
-     width: 35rem;
+     height: 50rem;
+     width: 41rem;
      margin-top: 0;    
  }
  
- #sidebar-first {
-     transition-timing-function: ease-in;
+ .lateral_izq_bloque01 > li, .lateral_izq_bloque02 > li, .lateral_izq_bloque03 > li {
+      margin-left: -7rem;
  }
  
  .lateral_izq_bloque01 > li > a, .lateral_izq_bloque02 > li > a, .lateral_izq_bloque03 > li > a {
@@ -2176,14 +2207,14 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
         font-size: 2em;
         width: 0;
         max-width: 52rem;
-        top: 0;
+        top: 50rem;
         position: fixed;
         z-index: 1;
         height: 100%;
-        right: 0;
+        left: 0;
         overflow-x: hidden;
         overflow-y: scroll;
-        transition: .5s;
+        transition: .3s;
         opacity: 95%; 
         margin-left: 0;
         margin-top: 0;
@@ -2200,9 +2231,10 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
 
     #titulo {
         transform: translateZ(0);
+        text-align: center;
     }
     .open .view_bloque_lateral {
-         width: 38rem;
+         width: 44rem;
          transform: translateZ(0);
     }
  
@@ -2549,6 +2581,10 @@ div.form-item.form-type-textfield>input {
 
 /* Fecha nacimiento */
 
+#user-register-form .field-name-field-fecha-nac > div > fieldset > div > div > div > div, #user-profile-form .field-name-field-fecha-nac > div > fieldset > div > div > div > div {
+    width: 32rem;
+}
+
 #user-register-form .field-name-field-fecha-nac > div > fieldset > div > div > div > div select, #user-profile-form .field-name-field-fecha-nac > div > fieldset > div > div > div > div select {
     height: 4rem;
     font-size: .8em;
@@ -2637,7 +2673,9 @@ div.password-confirm {
     position: relative;
 }
 
+
 }
+
 
 
 
@@ -3704,12 +3742,67 @@ div.password-confirm {
 
 #edit-submit-venezuela-le-habla-a-la-educaci-n-personajes {
     width: 4rem !important;
-    height: 4rem !important;
+    height: 2.75rem !important;
     background-size: 2.60rem !important;
     position: relative;
-    top: -1.05rem;
+    top: 0rem;
     left: 0rem;
 }
+
+
+
+.views-exposed-form .form-item, .views-exposed-form .form-submit {
+    margin-top: 0;
+}
+
+.page-venezuela-le-habla-a-la-educacion-personajes .view-filters > form > div > div > div.views-exposed-widgets > div > div > div > input {
+    width: 31rem!important;
+    height: 2.5rem;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+}
+
+.page-venezuela-le-habla-a-la-educacion-personajes .view-filters .views-submit-button > input {
+    position: initial;
+    height: 2.592rem !important;
+    background-size: 2.55rem !important;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+/* Al selecionar una personaje */
+.node-type-venezuela-le-habla-a-la-educaci- #block-block-22 > div.content img, .node-type-venezuela-le-habla-a-la-educaci- #block-block-23 > div.content img {
+    width: 60rem;
+    transform: translateZ(0);
+}
+
+.node-type-venezuela-le-habla-a-la-educaci- #page-title {
+    width: 51rem;
+    height: auto;
+}
+
+
+
+
+/**********  Venezuela CAMAPAÑA ***********/
+
+.page-venezuela-le-habla-a-la-educacion-campanas .view-filters > form > div > div > div.views-exposed-widgets > div > div > div > input{
+    width: 31rem!important;
+    height: 2.5rem;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+}
+
+.page-venezuela-le-habla-a-la-educacion-campanas .view-filters .views-submit-button > input {
+    position: initial;
+    height: 2.79rem !important;
+    background-size: 2.55rem !important;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;    
+}
+
+
+
 
 /********* FIN VARIOS LANDSCAPE ***************/
 
