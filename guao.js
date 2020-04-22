@@ -9,13 +9,14 @@ jQuery(document).ready(function(){
 });
 
 
+
                   /* LISTENER */  
         /* CLICK AFUERA PARA QUITAR LA VENTANA*/
                     /*  SIBEBAR  */
 window.addEventListener('click', function(event) {
          if (!event.target.matches('.side') ) {
     var sidebar = document.getElementsByClassName("clearfix");
-    var i;
+    
     for (i = 0; i < sidebar.length; i++) {
       var openDropdown = sidebar[i];
       if (openDropdown.classList.contains('open')) {
@@ -202,7 +203,7 @@ to.insertBefore (what, to.firstChild);
  var side = document.createElement("span");
  side.id = "side";
  side.classList = "side";
- var t = document.createTextNode("🚭 Categoria ⚙"); 
+ var t = document.createTextNode("Menu ⚙"); 
  side.appendChild(t);
  side.onclick = function () {
     var x = document.getElementById("main");

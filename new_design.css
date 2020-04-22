@@ -2623,6 +2623,20 @@ div.password-confirm {
     font-size: .4em;
 }
 
+#edit-actions {
+    margin-left: -6rem;
+    margin-top: 6rem;
+}
+
+.page-user .tabs {
+
+    width: 63rem;
+}
+
+#user-profile-form #edit-picture > legend {
+    position: relative;
+}
+
 }
 
 
@@ -3605,8 +3619,9 @@ div.password-confirm {
 
 
 .page-celebraciones-escolares div.view-Celebraciones-Escolares > div.view-content ,.node-type-celebraciones-escolares div.field-name-field-item-de-celebraciones > div.field-items ,.page-lista-escolar div.view-lista-escolar-guao > div.view-content{
-    column-count: 1;
+    column-count: 2;
     padding: 12px 63px 72px 55px;
+    column-gap: 2rem;
 }
 
 #block-block-24 > .content > ul, #block-block-24 > .content > ul, #block-block-24 > .content > ul {
@@ -3619,7 +3634,7 @@ div.password-confirm {
     width: auto;
     padding: 10px;
     text-align: center;
-    margin: 5rem 0px 0px 0px;
+    margin: 0 0px 0px 0px;
     padding-bottom: 15px;
 }
 
@@ -3662,13 +3677,40 @@ div.password-confirm {
         /* ENFEMERIDES */
  .page-efemerides #content {
     margin-left: 0;
+
+}
+
+ .page-efemerides #content .section {
+    padding-right: 4rem;
+    padding-left: 4rem;
+
 }
 
  .vista-efemerides .view-content > h3 {
     font-size: 1.2em;
     height: 4rem;
 }
-    
+
+
+            /* VENEZUELA LE HABLA */
+
+.view.view-venezuela-le-habla-a-la-educaci-n .view.view-venezuela-le-habla-a-la-educaci-n-2 .views-row {
+    width: 18rem;
+    height: 24rem;
+    margin: 0px 12px 20px 8px;
+}
+
+
+
+#edit-submit-venezuela-le-habla-a-la-educaci-n-personajes {
+    width: 4rem !important;
+    height: 4rem !important;
+    background-size: 2.60rem !important;
+    position: relative;
+    top: -1.05rem;
+    left: 0rem;
+}
+
 /********* FIN VARIOS LANDSCAPE ***************/
 
 
@@ -3678,6 +3720,9 @@ div.password-confirm {
     margin-top: 1rem;
 }
     
+    #edit-the-user-does-not-have-access {
+        padding-left: 2rem;
+    }
 
 /********* FIN MI CUENTA LANDSCAPE ***************/
 }
