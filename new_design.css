@@ -830,7 +830,7 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     height: 21rem;
 }
 
- /******CONCURSO************/
+ /******CONCURSO IPAD************/
 
  .page-node-16097 .field-name-body .concurso_header {
     width: 144%;
@@ -880,6 +880,94 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     width: 4rem;
     height: auto;
     padding: 16px;
+}
+
+
+/* Base concurso */
+.page-node-16239 .rtejustify > span >span {
+    font-size: 1em !important;
+}
+
+/* Patronizantes */
+.page-node-16408  .rtejustify > span >span {
+    font-size: 1em !important;
+}
+
+.page-node-16408 .field-name-body, .page-node-18696 .field-name-body {
+    padding: 0;
+}
+
+.page-node-16408 .logo >img {
+    width: 20rem !important;
+    height: auto !important;
+}
+
+
+/* Preguntas frecuentes */
+
+.page-node-16242 .rtejustify > span >span{
+    font-size: 1em !important;
+
+}
+
+.page-node-16242 button.guao_accordion {
+    font-size: 1em;
+}
+
+.page-node-16242 #main-wrapper > #main {
+    width: 100%;
+}
+
+/*concursante */
+.page-concurso-buenas-practicas-educativas-concursante div.view-concurso-mis-videos > div.view-empty form > input, .concurso-concursante > div.view-empty form > input {
+    width: 20rem;
+    height: auto;
+}
+
+
+/* Propuesta */
+
+.page-concurso-buenas-practicas-educativas-propuestas #block-views-exp-concurso-galer-a-page-1 div.views-submit-button input,.page-concurso-buenas-practicas-educativas-propuestas #block-views-exp-concurso-galer-a-page div.views-submit-button input {
+    width: 12rem !important;
+    height: auto !important;
+    position: relative;
+    left: 11rem;
+}
+
+.page-concurso-buenas-practicas-educativas-propuestas #block-views-exp-concurso-galer-a-page-1 div.views-widget-filter-combine input, .page-concurso-buenas-practicas-educativas-propuestas #block-views-exp-concurso-galer-a-page-1 div.views-widget-filter-field_concurso_serial_0_value input {
+    width: 40rem;
+    height: auto;
+}
+
+.page-concurso-buenas-practicas-educativas-propuestas #block-views-exp-concurso-galer-a-page div.views-submit-button input {
+    left: 7rem;
+    top: 1rem;
+}
+
+.page-concurso-buenas-practicas-educativas-propuestas #block-views-exp-concurso-galer-a-page, .concurso-propuesta #block-views-exp-concurso-2-galer-a-page {
+    padding-left: 20rem;
+}
+
+.page-concurso-buenas-practicas-educativas-propuestas #block-views-exp-concurso-galer-a-page div.views-widget-filter-term_node_tid_depth_join select {
+    width: 33rem;
+    font-size: 1em;
+    position: relative;
+    left: -5rem;
+}
+
+.page-concurso-buenas-practicas-educativas-propuestas .views-exposed-widgets {
+    margin-bottom: 1.5em;
+    margin-left: -12rem;
+}
+
+#edit-term-node-tid-depth-join > option {
+    font-size: .2em;
+}
+
+
+.page-concurso-buenas-practicas-educativas-propuestas div.view-concurso-galer-a > div > div.views-row, .concurso-propuesta > div > div.views-row {
+    width: 18rem;
+    margin: 2rem 10px;
 }
 
 
@@ -1025,14 +1113,14 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     margin-right: -4rem;
 }
 
-  .page-nosotros #side {
-        display: inline-block !important;
-    }
+.page-node-9243 #side {
+    display: inline-block !important;
+}
 
-    #node-9243 #side {
-        display: inline-block !important;
-    }
-    
+.page-node-9243 .lateral_izq_nosotros > li > a {
+    padding-left: 6rem;
+}
+
     /*
     #block-block-12 {
     height: 800px;
@@ -2045,7 +2133,7 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
     margin-bottom: 2rem;
 }
 
- /******CONCURSO************/
+ /******CONCURSO PORTRAIT MOBILE************/
 
  .page-node-16097 .field-name-body .concurso_header {
     width: 136%;
@@ -2106,6 +2194,94 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
 
 .page-node-16261 .concurso-content > .row, .page-node-18695 .concurso-content > .row {
     width: 24rem;
+}
+
+
+/* Base concurso */
+.page-node-16239 .rtejustify > span >span {
+    font-size: 1em !important;
+}
+
+/* Patronizantes */
+.page-node-16408  .rtejustify > span >span {
+    font-size: 1em !important;
+}
+
+.page-node-16408 .field-name-body, .page-node-18696 .field-name-body {
+    padding: 0;
+}
+
+.page-node-16408 .logo >img {
+    width: 20rem !important;
+    height: auto !important;
+}
+
+
+/* Preguntas frecuentes */
+
+.page-node-16242 .rtejustify > span >span{
+    font-size: 1em !important;
+
+}
+
+.page-node-16242 button.guao_accordion {
+    font-size: 1em;
+}
+
+.page-node-16242 #main-wrapper > #main {
+    width: 100%;
+}
+
+/* Concursante */
+
+.page-concurso-buenas-practicas-educativas-concursante div.view-concurso-mis-videos > div.view-empty form > input, .concurso-concursante > div.view-empty form > input {
+    width: 20rem;
+    height: auto;
+}
+
+/* Propuesta */
+
+.page-concurso-buenas-practicas-educativas-propuestas #block-views-exp-concurso-galer-a-page-1 div.views-submit-button input,.page-concurso-buenas-practicas-educativas-propuestas #block-views-exp-concurso-galer-a-page div.views-submit-button input {
+    width: 12rem !important;
+    height: auto !important;
+    position: relative;
+    left: 11rem;
+}
+
+.page-concurso-buenas-practicas-educativas-propuestas #block-views-exp-concurso-galer-a-page-1 div.views-widget-filter-combine input, .page-concurso-buenas-practicas-educativas-propuestas #block-views-exp-concurso-galer-a-page-1 div.views-widget-filter-field_concurso_serial_0_value input {
+    width: 40rem;
+    height: auto;
+}
+
+.page-concurso-buenas-practicas-educativas-propuestas #block-views-exp-concurso-galer-a-page div.views-submit-button input {
+    left: 7rem;
+    top: 1rem;
+}
+
+.page-concurso-buenas-practicas-educativas-propuestas #block-views-exp-concurso-galer-a-page, .concurso-propuesta #block-views-exp-concurso-2-galer-a-page {
+    padding-left: 20rem;
+}
+
+.page-concurso-buenas-practicas-educativas-propuestas #block-views-exp-concurso-galer-a-page div.views-widget-filter-term_node_tid_depth_join select {
+    width: 33rem;
+    font-size: 1em;
+    position: relative;
+    left: -5rem;
+}
+
+.page-concurso-buenas-practicas-educativas-propuestas .views-exposed-widgets {
+    margin-bottom: 1.5em;
+    margin-left: -12rem;
+}
+
+#edit-term-node-tid-depth-join > option {
+    font-size: .2em;
+}
+
+
+.page-concurso-buenas-practicas-educativas-propuestas div.view-concurso-galer-a > div > div.views-row, .concurso-propuesta > div > div.views-row {
+    width: 24rem;
+    margin: 2rem 10px;
 }
 
  /****** FIN CONCURSO************/
@@ -2520,6 +2696,18 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
     margin-left: -4rem;
     margin-right: -4rem;
 }
+
+
+.page-node-9243 #side {
+    display: inline-block !important;
+}
+
+.page-node-9243 .lateral_izq_nosotros > li > a {
+
+    padding-left:6rem;
+
+}
+
 /****Voluntariado portrait mobile*********/
 
 #node-1740{
@@ -3491,7 +3679,7 @@ div.password-confirm {
         display: inline-block;
     }
 
- /* CONCURSO */
+ /* CONCURSO  LANDSCAPE*/
     .page-node-16097 .field-name-body .concurso_header {
         width: 108%;
         height: 500px;
@@ -3501,6 +3689,94 @@ div.password-confirm {
     h1#page-title {
         text-align: center;
 }
+
+/* Base concurso */
+.page-node-16239 .rtejustify > span >span {
+    font-size: 1em !important;
+}
+
+/* Patronizantes */
+.page-node-16408  .rtejustify > span >span {
+    font-size: 1em !important;
+}
+
+.page-node-16408 .field-name-body, .page-node-18696 .field-name-body {
+    padding: 0;
+}
+
+.page-node-16408 .logo >img {
+    width: 20rem !important;
+    height: auto !important;
+}
+
+
+/* Preguntas frecuentes */
+
+.page-node-16242 .rtejustify > span >span{
+    font-size: 1em !important;
+
+}
+
+.page-node-16242 button.guao_accordion {
+    font-size: 1em;
+}
+
+.page-node-16242 #main-wrapper > #main {
+    width: 100%;
+}
+
+/* concursante */
+
+.page-concurso-buenas-practicas-educativas-concursante div.view-concurso-mis-videos > div.view-empty form > input, .concurso-concursante > div.view-empty form > input {
+    width: 20rem;
+    height: auto;
+}
+
+/* Propuesta */
+
+.page-concurso-buenas-practicas-educativas-propuestas #block-views-exp-concurso-galer-a-page-1 div.views-submit-button input,.page-concurso-buenas-practicas-educativas-propuestas #block-views-exp-concurso-galer-a-page div.views-submit-button input {
+    width: 12rem !important;
+    height: auto !important;
+    position: relative;
+    left: 11rem;
+}
+
+.page-concurso-buenas-practicas-educativas-propuestas #block-views-exp-concurso-galer-a-page-1 div.views-widget-filter-combine input, .page-concurso-buenas-practicas-educativas-propuestas #block-views-exp-concurso-galer-a-page-1 div.views-widget-filter-field_concurso_serial_0_value input {
+    width: 40rem;
+    height: auto;
+}
+
+.page-concurso-buenas-practicas-educativas-propuestas #block-views-exp-concurso-galer-a-page div.views-submit-button input {
+    left: 40rem;
+    top: 0;
+}
+
+.page-concurso-buenas-practicas-educativas-propuestas #block-views-exp-concurso-galer-a-page, .concurso-propuesta #block-views-exp-concurso-2-galer-a-page {
+    padding-left: 20rem;
+}
+
+.page-concurso-buenas-practicas-educativas-propuestas #block-views-exp-concurso-galer-a-page div.views-widget-filter-term_node_tid_depth_join select {
+    width: 33rem;
+    font-size: 1em;
+    position: relative;
+    left: -5rem;
+}
+
+.page-concurso-buenas-practicas-educativas-propuestas .views-exposed-widgets {
+    margin-bottom: 1.5em;
+    margin-left: -12rem;
+}
+
+#edit-term-node-tid-depth-join > option {
+    font-size: .2em;
+}
+
+
+.page-concurso-buenas-practicas-educativas-propuestas div.view-concurso-galer-a > div > div.views-row, .concurso-propuesta > div > div.views-row {
+    width: 18rem;
+    margin: 2rem 10px;
+}
+    
     
  /****** PRIMER/QUINTO -- GRADO/AÑO MATERIA MOBILE landscape******/
  
@@ -3627,12 +3903,24 @@ div.password-confirm {
         
     }
     
-    /*****Nosotros portrait ipad****/
+    /*****Nosotros portrait landscape****/
 #node-9243{
     margin-left: -4rem;
     margin-right: -4rem;
 }
-/****Voluntariado portrait ipad*********/
+
+.page-node-9243 #side {
+    display: inline-block !important;
+}
+
+.page-node-9243 .lateral_izq_nosotros > li > a {
+
+    padding-left:6rem;
+
+}
+
+
+/****Voluntariado portrait landscape*********/
 
 #node-1740{
     margin-left: -5rem;
@@ -3657,7 +3945,7 @@ div.password-confirm {
     width: 33rem;
 }
 
-/****Donaciones portrait ipad ****/
+/****Donaciones portrait landscape ****/
 #node-1735{
         margin-left: -5rem;
         margin-right: -5rem;
@@ -3667,7 +3955,7 @@ div.password-confirm {
         background-size: 82rem;
 }
 
-/******Noticias portrait ipad ***/
+/******Noticias portrait landscape ***/
 
     div.view.view-Noticias > div.view-header {
         height: 5rem;
@@ -3706,7 +3994,7 @@ div.password-confirm {
         text-align: center;
     }
 
-/********Contacto portrait ipad *****/
+/********Contacto portrait landscape *****/
     #contact-site-form {
        /* margin-left: 8rem;
         margin-right: 8rem;*/
