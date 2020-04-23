@@ -419,10 +419,10 @@ margin: 10px 0px !important;
         transition: .5s;
         opacity: 95%;
     }
-    
+   /* 
      #sidebar-first  #content .section, .sidebar .section {
         font-size: 3rem;
-        }
+        }*/
     
 
 
@@ -439,8 +439,9 @@ margin: 10px 0px !important;
         margin-top: 1rem;
     }
     
-    .views-exposed-form .form-item, .views-exposed-form .form-submit {
+    .page-portafolio-docente .views-exposed-form .form-item, .views-exposed-form .form-submit {
     margin-top: 3rem;
+    width: 39rem;
     }
 
     .views-exposed-form label {
@@ -459,15 +460,24 @@ margin: 10px 0px !important;
     div.form-item.form-type-textfield.form-item-populate>input {
         width: 30rem;
     }
-
+/*
     #block-views-exp-library-page-1 #edit-submit-library {
         width: 5rem;
         height: 5rem;
-        background-size: 3.55rem;
+        background-size: 2.4rem !important;
         position: relative;
-        top: -2rem;
+        top: -0.8rem;
         left: 22rem;
-    }
+    }*/
+    
+    .views-exposed-form .views-exposed-widget .form-submit {
+        width: 5rem !important;
+        height: 5rem !important;
+        background-size: 2.4rem !important;
+        position: relative;
+        top: -0.8rem;
+        left: 22rem;
+}
 
 
     .page-biblioteca .views-row {
@@ -531,10 +541,18 @@ margin: 10px 0px !important;
         display: inline-block;
     }
 
+
     #side {
         position: relative;
         left: 2rem;
-        font-size: 3rem;
+        font-size: 3em;
+        margin-bottom: 2rem;
+    }
+    
+    .side {
+		background-color: white;
+		color: black;
+		border: 2px solid #4CAF50; 
     }
     
     .side:hover {
@@ -668,7 +686,7 @@ margin: 10px 0px !important;
     width: 30rem !important;
 }
 
-
+/*
  .views-exposed-form .views-exposed-widget .form-submit {
         width: 5rem !important;
         height: 5rem !important;
@@ -678,7 +696,7 @@ margin: 10px 0px !important;
         left: 22rem;
 
  }
- 
+ */
  
  
  /******INNOVACIONES************/
@@ -1006,6 +1024,22 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     margin-left: -4rem;
     margin-right: -4rem;
 }
+
+  .page-nosotros #side {
+        display: inline-block !important;
+    }
+
+    #node-9243 #side {
+        display: inline-block !important;
+    }
+    
+    /*
+    #block-block-12 {
+    height: 800px;
+    background: #00bce4;
+    margin-top: 0px;
+}
+*/
 /****Voluntariado portrait ipad*********/
 
 #node-1740{
@@ -1112,6 +1146,79 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     fieldset .fieldset-description {
     margin-top: 5rem;
     }
+    
+    
+    /* VARIOS */
+    
+    .page-venezuela-le-habla-a-la-educacion #main-wrapper > #main {
+    width: 1062px;
+	}
+	
+    .view.view-venezuela-le-habla-a-la-educaci-n .views-field.views-field-title {
+    width: 41rem;
+    height: auto;
+
+	}
+
+
+.view.view-venezuela-le-habla-a-la-educaci-n .view.view-venezuela-le-habla-a-la-educaci-n-2 .views-row {
+
+    width: 17rem;
+    height: 33rem;
+	}
+
+
+/* Personaje */
+
+.node-type-venezuela-le-habla-a-la-educaci- #page-title {
+    width: 40rem;
+    height: auto;
+
+}
+
+.views-exposed-form .form-item, .views-exposed-form .form-submit {
+    margin-top: 0;
+    width: 32rem;
+}
+
+.page-venezuela-le-habla-a-la-educacion-personajes .view-filters > form > div > div > div.views-exposed-widgets > div > div > div > input {
+    width: 31rem!important;
+    height: auto;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+}
+
+.page-venezuela-le-habla-a-la-educacion-personajes .view-filters .views-submit-button > input {
+    position: initial;
+    height: 2.2rem !important;
+    background-size: 2rem !important;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+/**********  Venezuela CAMAPAÑA ***********/
+
+
+.page-venezuela-le-habla-a-la-educacion-campanas .view-filters > form > div > div > div.views-exposed-widgets > div > div > div > input{
+    width: 31rem!important;
+    height: auto;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+}
+
+.page-venezuela-le-habla-a-la-educacion-campanas .view-filters .views-submit-button > input {
+    position: initial;
+    height: 2.2rem !important;
+    background-size: 2rem !important;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;    
+}
+
+
+.node-type-venezuela-le-habla-a-la-educaci- #block-block-23 > div.content ul {
+	width: 42rem;
+}
+
 
 }
 
