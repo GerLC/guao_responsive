@@ -550,9 +550,9 @@ margin: 10px 0px !important;
     }
     
     .side {
-		background-color: white;
-		color: black;
-		border: 2px solid #4CAF50; 
+        background-color: white;
+        color: black;
+        border: 2px solid #4CAF50; 
     }
     
     .side:hover {
@@ -986,13 +986,13 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     }
 
     #titulo {
-    	text-align: center;
+        text-align: center;
         transform: translateZ(0);
     }
     
     .lateral_izq_bloque01 > li, .lateral_izq_bloque02 > li, .lateral_izq_bloque03 > li {
-		margin-left: -3rem;
-	}
+        margin-left: -3rem;
+    }
     .open .view_bloque_lateral {
          width: 38rem;
          transform: translateZ(0);
@@ -1152,20 +1152,20 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     
     .page-venezuela-le-habla-a-la-educacion #main-wrapper > #main {
     width: 1062px;
-	}
-	
+    }
+    
     .view.view-venezuela-le-habla-a-la-educaci-n .views-field.views-field-title {
     width: 41rem;
     height: auto;
 
-	}
+    }
 
 
 .view.view-venezuela-le-habla-a-la-educaci-n .view.view-venezuela-le-habla-a-la-educaci-n-2 .views-row {
 
     width: 17rem;
     height: 33rem;
-	}
+    }
 
 
 /* Personaje */
@@ -1216,7 +1216,7 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
 
 
 .node-type-venezuela-le-habla-a-la-educaci- #block-block-23 > div.content ul {
-	width: 42rem;
+    width: 42rem;
 }
 
 
@@ -1300,6 +1300,9 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
 @media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
     #content .section, .sidebar .section {
         font-size: 2.5em;
+    }
+    #main-wrapper {
+    min-height: 277vh;
     }
     
     .section {
@@ -2202,7 +2205,7 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
 
 
 .node-type-venezuela-le-habla-a-la-educaci- #block-block-22 > div.content ul, .node-type-venezuela-le-habla-a-la-educaci- #block-block-23 > div.content ul {
-	width: 42rem;
+    width: 42rem;
 }
 
 
@@ -2230,7 +2233,7 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
 
 
 .node-type-venezuela-le-habla-a-la-educaci- #block-block-23 > div.content ul {
-	width: 42rem;
+    width: 42rem;
 }
 
 
