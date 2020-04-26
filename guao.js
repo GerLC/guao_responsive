@@ -59,7 +59,8 @@ divclass.onclick = function () {
   
   }
 };
-document.getElementById("header").appendChild(divclass);
+document.getElementsByClassName("section")[0].appendChild(divclass);
+/*document.getElementById("header").appendChild(divclass);*/
  
 var div = document.createElement("div");
 div.id ="hamburger1";
@@ -136,17 +137,17 @@ document.getElementById("hamburgerid").appendChild(div);
 
    x.classList.toggle("changeb");
 
-   
+      focus.focus();
 
    }else {
 
     x.classList.toggle("changeb");
-   focus.focus();
+
     }
  
 };
-
- document.getElementById("header").appendChild(busqueda);
+ document.getElementsByClassName("section")[0].appendChild(busqueda);
+ /*document.getElementById("header").appendChild(busqueda);*/
  
  var div = document.createElement("div");
  div.id ="busquedaX";
@@ -155,10 +156,11 @@ document.getElementById("hamburgerid").appendChild(div);
  var div = document.createElement("div");
  div.id ="busquedaX1";
  document.getElementById("busqueda").appendChild(div);
-
+ 
+/*
 var what = document.getElementById("busqueda");
 var to = document.getElementById ("header");
-to.insertBefore (what, to.firstChild);
+to.insertBefore (what, to.firstChild);*/
 
  
   /* INICIO SESION DROPDOWN */
@@ -177,28 +179,11 @@ to.insertBefore (what, to.firstChild);
  imglogin.src="/sites/default/files/login0.png";
  imglogin.classList = "login";
  login.appendChild(imglogin);
- document.getElementById("header").appendChild(login);
-
-
+ document.getElementsByClassName("section")[0].appendChild(login);
+/* document.getElementById("header").appendChild(login);
+*/
 
   /* BIBLIOTECA */
- /*
- var side =  document.createElement("div");
- side.classList = "side";
- side.id = "side";
- side.onclick = function () {
-
-    var x = document.getElementById("main");
-  x.classList.toggle("open");
-};
- document.getElementById("main").appendChild(side);*/
-/*
-var what = document.getElementById("side");
-var to = document.getElementById ("page-title");
-to.insertBefore (what, to.firstChild);
-*/
-/*span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>*/
-
 
  var side = document.createElement("span");
  side.id = "side";
@@ -216,7 +201,6 @@ to.insertBefore (what, to.firstChild);
  var to = document.getElementById ("main");
  to.insertBefore (what, to.firstChild);
 
-
 /* PARA QUE SE QUEDE AL BAJAR LA PANTALLA*/
 window.onscroll = function() {scrollfuction()};
 
@@ -232,6 +216,9 @@ function scrollfuction() {
 }
 
 
+ var what = document.getElementById("block-search-form");
+ var to = document.getElementById ("main");
+ to.insertBefore (what, to.firstChild);
 
 /*
 var prevScrollpos = window.pageYOffset;

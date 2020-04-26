@@ -322,7 +322,7 @@ margin: 10px 0px !important;
     #block-system-user-menu {
         position: relative;
         display: none;
-
+        z-index: 2;
 
     }
 
@@ -1547,6 +1547,7 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     #block-system-user-menu {
         position: relative;
         display: none;
+        z-index: 2;
     }
 
     #block-system-user-menu>div.content {
@@ -1589,10 +1590,10 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     }
 
     /* BÚSQUEDA  */
-
+/*
     #block-search-form {
         transform: scaleX(0);
-        position: relative;
+        position: fixed;
         right: 41rem;
         bottom: 2.3rem;
         width: 49rem !important;
@@ -1601,9 +1602,25 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         height: auto;
         transform-origin: right;
     }
+*/
 
+    #block-search-form {
+        transform: scaleY(0);
+        position: fixed;
+        width: 75rem !important;
+        overflow: visible;
+        transition: transform 0.3s ease-out;
+        height: auto;
+        transform-origin: top;
+        top: 13.9rem;
+        left: -55rem;
+        z-index: 1;
+        background-color: white;
+        height: 10rem;
+    }
+    
     #block-search-form>element.style {
-        transform: scaleX(0) !important;
+        transform: scaleY(0) !important;
     }
 
     #busqueda {
@@ -1616,8 +1633,10 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         -ms-transition: -ms-transform .5s ease-in-out;
         transition: transform .5s ease-in-out;
     }
+    
     #block-search-form>div>form>div>div>div.form-item.form-type-textfield.form-item-search-block-form>input {
-        width: 44rem !important;
+        width: 68rem !important;
+        font-size: 3em;
     }
 
     #search-form input#edit-keys,
@@ -1627,9 +1646,22 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
 
 
     #block-search-form>div>form>div>div>div.form-actions.form-wrapper>input {
-        height: 3.1rem;
-        background-size: 2.5rem;
-        width: 3rem;
+        height: 3.8rem;
+        background-size: 3.5rem;
+        width: 5rem;
+        margin-top: 3rem;
+    }
+    
+    #edit-actions {
+        margin-left: -2rem !important;
+    }
+    
+    #block-search-form > div > form > div > div > div.form-item.form-type-textfield.form-item-search-block-form > input {
+        margin-top: 3rem;
+}
+    
+    #autocomplete {
+        font-size: 3em;
     }
 
     #busquedaX {
@@ -1656,6 +1688,8 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         opacity: 0;
 
     }
+    
+
 
     .changeb #busquedaX {
         -webkit-transform: rotate(-45deg) translate(-9px, 6px);
@@ -1676,13 +1710,13 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     }
 
     .changeb #block-search-form {
-        transform: scaleX(1);
+        transform: scaleY(1);
     }
-
+/*
     .changeb #logo {
         opacity: 0;
         transition: opacity 0.3s;
-    }    
+    }    */
 /************FIN MENÚ TU AULA / BIBLIOTECA ... */
 
 /******** MENÚ SECUNDARIO NOSOTROS , CONTACTOS ... */
@@ -3266,6 +3300,7 @@ div.password-confirm {
     #block-system-user-menu {
         position: relative;
         display: none;
+        z-index: 2;
     }
 
     #block-system-user-menu>div.content {
