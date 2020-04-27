@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-
 #busqueda {
     display: none;
 }
@@ -3074,8 +3073,14 @@ div.password-confirm {
 
 @media (max-height:479px) and (orientation: landscape) {
 
+
     #main {
         margin-bottom: 0;
+    }
+    
+    .section{
+        margin-left: 4rem;
+        margin-right: 4rem;
     }
     
     #content .section, .sidebar .section {
@@ -3716,10 +3721,13 @@ div.password-confirm {
         font-size: 1.5em;
         margin-bottom: 30px;
         text-align: center;
-    }   
+    }
+    .view.view-portafolio-docente {
+    margin-left: 0;
+    margin-right: -1rem;
+}
     
     div.view.view-portafolio-docente .field.field-name-title-field > div > div > h2 > a {
-        /*font-size: 1.2em;*/
         text-align: justify;
     }
  
@@ -3758,11 +3766,6 @@ div.password-confirm {
         height: 23rem;
     }
  
-    .page-portafolio-docente #content .section, .page-buenas-practicas #content .section{
-        padding-left: 4rem;
-        padding-right: 0rem;
-    }
-    
     #portafolio_docente_top > div#left {
     width: 32rem;
     margin-right: 0;
@@ -4064,7 +4067,7 @@ div.password-confirm {
     width: 33rem;
 }
 
-/****Donaciones portrait landscape ****/
+/****Donaciones mobile landscape ****/
 #node-1735{
         margin-left: -5rem;
         margin-right: -5rem;
@@ -4074,7 +4077,7 @@ div.password-confirm {
         background-size: 82rem;
 }
 
-/******Noticias portrait landscape ***/
+/******Noticias mobile landscape ***/
 
     div.view.view-Noticias > div.view-header {
         height: 5rem;
@@ -4113,7 +4116,7 @@ div.password-confirm {
         text-align: center;
     }
 
-/********Contacto portrait landscape *****/
+/********Contacto mobile landscape *****/
     #contact-site-form {
        /* margin-left: 8rem;
         margin-right: 8rem;*/
@@ -4319,7 +4322,11 @@ div.password-confirm {
 }
 
 
-
+/****LISTA ESCOLAR  MOBIEL LANDSCAPE **/
+    .view-lista-escolar-guao{
+        margin-left: -5rem;
+        margin-right: -3rem;
+    }
 
 /********* FIN VARIOS LANDSCAPE ***************/
 
