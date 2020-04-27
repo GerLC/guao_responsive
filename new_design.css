@@ -23,6 +23,7 @@
 }
 
 
+
 @media (max-width: 1024px) {
 
     html,
@@ -271,6 +272,7 @@ margin: 10px 0px !important;
     }
 
     #busquedaX {
+        display: none;
         position: absolute;
         left: -28rem;
         top: 4%;
@@ -283,6 +285,7 @@ margin: 10px 0px !important;
     }
 
     #busquedaX1 {
+        display: none;
         position: absolute;
         left: -28rem;
         top: 4%;
@@ -296,6 +299,7 @@ margin: 10px 0px !important;
     }
 
     .changeb #busquedaX {
+        display: block;
         -webkit-transform: rotate(-45deg) translate(-9px, 6px);
         transform: rotate(-45deg) translate(-13px, 6px);
         transition-delay: .2s;
@@ -303,14 +307,19 @@ margin: 10px 0px !important;
     }
 
     .changeb #busquedaX1 {
+        display: block;
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-13px, -8px);
         transition-delay: .2s;
         opacity: 1;
     }
 
-    .changeb #busqueda>img {
+    .changeb #busquedaimg>img {
         opacity: 0 !important;
+    }
+
+    .changeb #busquedaimg>img {
+       display: none;
     }
 
     .changeb #block-search-form {
@@ -319,17 +328,23 @@ margin: 10px 0px !important;
 
     /* INICIAR SESIÓN */
 
+    .element-invisible {
+    image-rendering: pixelated;
+    transform: translateZ(0);
+}
+
     #block-system-user-menu {
-        position: relative;
+        position: fixed;
         display: none;
         z-index: 2;
-
+        top: 16rem;
+        right: 7rem;
     }
 
     #block-system-user-menu>div.content {
-
         position: absolute;
         left: 4rem;
+        top: -1rem;
         background-color: #f1f1f1;
         min-width: 1rem;
         overflow: hidden;
@@ -339,17 +354,27 @@ margin: 10px 0px !important;
 
     #block-system-user-menu>div.content>ul>li.first>a {
         background-image: none;
+        border: 1px solid black;
     }
+    #block-system-user-menu>div.content>ul>li.last>a {
+        border: 1px solid black;
 
-
-    #block-system-user-menu>div.content>ul>li.last>a {}
+    }
+    
+    #block-system-user-menu > div.content > ul > li.last {
+    float: none;
+}
+    
 
     #block-system-user-menu>div.content>ul>li>a {
         color: black;
-        padding: .5rem 2rem;
+        padding: 1.5rem 1.25rem;
         text-decoration: none;
         display: block;
-        font-size: 1rem;
+        font-size: 3em;
+        width: 16rem;
+        height: 3rem;
+        padding-top: 3rem;
     }
 
     #login {
@@ -1544,10 +1569,17 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
 
     /* INICIAR SESIÓN */
 
+    .element-invisible {
+    image-rendering: pixelated;
+    transform: translateZ(0);
+}
+
     #block-system-user-menu {
-        position: relative;
+        position: fixed;
         display: none;
         z-index: 2;
+        top: 16rem;
+        right: 15rem;
     }
 
     #block-system-user-menu>div.content {
@@ -1563,15 +1595,27 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
 
     #block-system-user-menu>div.content>ul>li.first>a {
         background-image: none;
+        border: 1px solid black;
     }
-    #block-system-user-menu>div.content>ul>li.last>a {}
+    #block-system-user-menu>div.content>ul>li.last>a {
+        border: 1px solid black;
+
+    }
+    
+    #block-system-user-menu > div.content > ul > li.last {
+    float: none;
+}
+    
 
     #block-system-user-menu>div.content>ul>li>a {
         color: black;
-        padding: .5rem 2rem;
+        padding: 1.5rem 1.25rem;
         text-decoration: none;
         display: block;
-        font-size: 1rem;
+        font-size: 5em;
+        width: 25rem;
+        height: 4rem;
+        padding-top: 3rem;
     }
 
     #login {
@@ -1603,8 +1647,10 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         transform-origin: right;
     }
 */
+  
 
-    #block-search-form {
+
+    #block-search-form{
         transform: scaleY(0);
         position: fixed;
         width: 75rem !important;
@@ -1613,13 +1659,14 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         height: auto;
         transform-origin: top;
         top: 13.9rem;
-        left: -55rem;
+        left: -56.5rem;
         z-index: 1;
         background-color: white;
         height: 10rem;
+        border-bottom: 1px solid black;
     }
     
-    #block-search-form>element.style {
+    #block-search-form1>element.style {
         transform: scaleY(0) !important;
     }
 
@@ -1646,7 +1693,7 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
 
 
     #block-search-form>div>form>div>div>div.form-actions.form-wrapper>input {
-        height: 3.8rem;
+        height: 3.4rem;
         background-size: 3.5rem;
         width: 5rem;
         margin-top: 3rem;
@@ -1658,10 +1705,13 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     
     #block-search-form > div > form > div > div > div.form-item.form-type-textfield.form-item-search-block-form > input {
         margin-top: 3rem;
+        margin-left: 2rem;
 }
     
     #autocomplete {
         font-size: 3em;
+        margin-top: 3rem;
+        margin-left: 2rem;
     }
 
     #busquedaX {
@@ -1674,6 +1724,7 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         margin: 16px 29rem;
         transition: .4s;
         opacity: 0;
+        display: none;
     }
 
     #busquedaX1 {
@@ -1686,27 +1737,33 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         margin: 44px 29rem;
         transition: .4s;
         opacity: 0;
-
+        display: none;
     }
-    
-
 
     .changeb #busquedaX {
+        display: block;
         -webkit-transform: rotate(-45deg) translate(-9px, 6px);
         transform: rotate(-45deg) translate(-13px, 6px);
         transition-delay: .2s;
         opacity: 1;
+
     }
 
     .changeb #busquedaX1 {
+        display: block;
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-13px, -8px);
         transition-delay: .2s;
         opacity: 1;
+
     }
 
-    .changeb #busqueda>img {
+    .changeb #busquedaimg>img {
         opacity: 0 !important;
+    }
+    
+    .changeb #busquedaimg {
+        display: none !important;
     }
 
     .changeb #block-search-form {
@@ -3258,6 +3315,7 @@ div.password-confirm {
         margin: 16px 29rem;
         transition: .4s;
         opacity: 0;
+        display: none;
     }
 
     #busquedaX1 {
@@ -3270,10 +3328,11 @@ div.password-confirm {
         margin: 44px 29rem;
         transition: .4s;
         opacity: 0;
-
+        display: none;
     }
 
     .changeb #busquedaX {
+        display: block;
         -webkit-transform: rotate(-45deg) translate(-9px, 6px);
         transform: rotate(-45deg) translate(-13px, 6px);
         transition-delay: .2s;
@@ -3281,14 +3340,19 @@ div.password-confirm {
     }
 
     .changeb #busquedaX1 {
+        display: block;
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-13px, -8px);
         transition-delay: .2s;
         opacity: 1;
     }
 
-    .changeb #busqueda>img {
+    .changeb #busquedaimg>img {
         opacity: 0 !important;
+    }
+
+    .changeb #busquedaimg>img {
+       display: none;
     }
 
     .changeb #block-search-form {
@@ -3297,15 +3361,23 @@ div.password-confirm {
 
     /* INICIAR SESIÓN */
 
+    .element-invisible {
+    image-rendering: pixelated;
+    transform: translateZ(0);
+}
+
     #block-system-user-menu {
-        position: relative;
+        position: fixed;
         display: none;
-        z-index: 2;
+        z-index: 3;
+        top: 16rem;
+        right: 2rem;
     }
 
     #block-system-user-menu>div.content {
         position: absolute;
         left: 4rem;
+        top: -1rem;
         background-color: #f1f1f1;
         min-width: 1rem;
         overflow: hidden;
@@ -3315,16 +3387,27 @@ div.password-confirm {
 
     #block-system-user-menu>div.content>ul>li.first>a {
         background-image: none;
+        border: 1px solid black;
     }
+    #block-system-user-menu>div.content>ul>li.last>a {
+        border: 1px solid black;
 
-    #block-system-user-menu>div.content>ul>li.last>a {}
+    }
+    
+    #block-system-user-menu > div.content > ul > li.last {
+    float: none;
+}
+    
 
     #block-system-user-menu>div.content>ul>li>a {
         color: black;
-        padding: .5rem 2rem;
+        padding: 2.5rem 1.25rem;
         text-decoration: none;
         display: block;
-        font-size: 1rem;
+        font-size: 2em;
+        width: 10rem;
+        height: 1rem;
+        padding-top: 1rem;
     }
 
     #login {

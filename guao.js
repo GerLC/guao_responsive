@@ -126,28 +126,16 @@ document.getElementById("hamburgerid").appendChild(div);
  var busqueda = document.createElement('div');  
  busqueda.id = "busqueda";
  busqueda.classList = "busqueda";
+ 
+ document.getElementsByClassName("section")[0].appendChild(busqueda);
+ 
+ var busquedaimg = document.createElement('div');  
+ busquedaimg.id = "busquedaimg";
+ document.getElementById("busqueda").appendChild(busquedaimg);
  var imgb = document.createElement('img');  
  imgb.src="/sites/default/files/home_search.png";
- busqueda.appendChild(imgb);
- busqueda.onclick = function () {
-    var x = document.getElementById("page-wrapper");
-    var focus = document.getElementById('edit-search-block-form--2');
-   if ( x.style.transform == "scaleX(0)") {
-   
-
-   x.classList.toggle("changeb");
-
-      focus.focus();
-
-   }else {
-
-    x.classList.toggle("changeb");
-
-    }
+ busquedaimg.appendChild(imgb);
  
-};
- document.getElementsByClassName("section")[0].appendChild(busqueda);
- /*document.getElementById("header").appendChild(busqueda);*/
  
  var div = document.createElement("div");
  div.id ="busquedaX";
@@ -156,12 +144,33 @@ document.getElementById("hamburgerid").appendChild(div);
  var div = document.createElement("div");
  div.id ="busquedaX1";
  document.getElementById("busqueda").appendChild(div);
+ div.onclick = function () {
+    var x = document.getElementById("page-wrapper").classList.toggle("changeb");;
+ }
  
-/*
-var what = document.getElementById("busqueda");
-var to = document.getElementById ("header");
-to.insertBefore (what, to.firstChild);*/
+ busquedaimg.onclick = function () {
+    var x = document.getElementById("page-wrapper");
+    var y = document.getElementById("busquedaimg");
+    var focus = document.getElementById('edit-search-block-form--2');
 
+/*
+   if ( y.style.transform == "scaleY(0)") */
+  if ( y.style.display == "none") {
+   
+   x.classList.toggle("changeb");
+            focus.blur();
+ 
+
+   }else {
+
+    x.classList.toggle("changeb");
+
+          focus.focus();
+    }
+ 
+};
+ 
+ 
  
   /* INICIO SESION DROPDOWN */
  var bloquelogin = document.getElementById("block-system-user-menu");
@@ -214,11 +223,20 @@ function scrollfuction() {
     header.classList.remove("sticky");
   }
 }
+/*
+var clone = document.getElementById("block-search-form");
+var cln = clone.cloneNode(true);
+document.getElementById("main").appendChild(cln);
 
-
+var search = document.getElementsByClassName("block-search")[1];
+search.id = "block-search-form1";
+*/
+/*
  var what = document.getElementById("block-search-form");
  var to = document.getElementById ("main");
  to.insertBefore (what, to.firstChild);
+*/
+
 
 /*
 var prevScrollpos = window.pageYOffset;
