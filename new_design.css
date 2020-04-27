@@ -462,11 +462,12 @@ margin: 10px 0px !important;
         margin-left: 1rem !important;
         margin-bottom: 1rem;
         margin-top: 1rem;
+        font-size: 1.2em;
     }
     
-    .page-portafolio-docente .views-exposed-form .form-item, .views-exposed-form .form-submit {
-    margin-top: 3rem;
-    width: 39rem;
+  .page-biblioteca .views-exposed-form .form-item,  .page-buenas-practicas .views-exposed-form .form-item, .page-portafolio-docente .views-exposed-form .form-item, .views-exposed-form .form-submit {
+    margin-top: 1.5rem;
+    width: 48rem;
     }
 
     .views-exposed-form label {
@@ -1862,7 +1863,7 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
 .page-buenas-practicas .views-exposed-form .form-submit, .page-portafolio-docente .views-exposed-form .form-item,
 .page-portafolio-docente .views-exposed-form .form-submit{
     margin-top: 3.5rem ;
-    width: 54rem ;
+    width: 68rem ;
     }
 
     .views-exposed-form label {

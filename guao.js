@@ -194,7 +194,7 @@ document.getElementById("hamburgerid").appendChild(div);
 
   /* BIBLIOTECA */
 
- var side = document.createElement("span");
+ var side = document.createElement("button");
  side.id = "side";
  side.classList = "side";
  var t = document.createTextNode("Menu ⚙"); 
