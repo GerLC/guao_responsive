@@ -9,12 +9,12 @@ jQuery(document).ready(function(){
 });
 
 
-
                   /* LISTENER */  
         /* CLICK AFUERA PARA QUITAR LA VENTANA*/
                     /*  SIBEBAR  */
+
 window.addEventListener('click', function(event) {
-         if (!event.target.matches('.side') ) {
+         if (!event.target.matches('.side') && !event.target.matches('.form-text') && !event.target.matches('.region-sidebar-first') && !event.target.matches('.views-exposed-widgets')  && !event.target.matches('.block')   && !event.target.matches('.block-views') && !event.target.matches('.views-exposed-form')  && !event.target.matches('.views-widget-filter-populate')    ) {
     var sidebar = document.getElementsByClassName("clearfix");
     
     for (i = 0; i < sidebar.length; i++) {
@@ -194,15 +194,16 @@ document.getElementById("hamburgerid").appendChild(div);
 
   /* BIBLIOTECA */
 
- var side = document.createElement("button");
+ var side = document.createElement("span");
  side.id = "side";
  side.classList = "side";
- var t = document.createTextNode("Menu ⚙"); 
+ var t = document.createTextNode("⚙"); 
  side.appendChild(t);
  side.onclick = function () {
     var x = document.getElementById("main");
   x.classList.toggle("open");
 };
+
 
  document.getElementById("main").appendChild(side);
 

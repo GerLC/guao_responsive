@@ -570,15 +570,9 @@ margin: 10px 0px !important;
     #side {
         position: relative;
         left: 2rem;
-        font-size: 3em;
-        margin-bottom: 2rem;
+        font-size: 5em;
     }
     
-    .side {
-        background-color: white;
-        color: black;
-        border: 2px solid #4CAF50; 
-    }
     
     .side:hover {
       background-color: lightblue;
@@ -1142,9 +1136,23 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     display: inline-block !important;
 }
 
-.page-node-9243 .lateral_izq_nosotros > li > a {
-    padding-left: 6rem;
+
+.page-node-9243 .lateral_izq_nosotros > li > a, .page-node-9244 .lateral_izq_nosotros > li > a, .page-nosotros-aliados .lateral_izq_nosotros > li > a {
+
+    padding-left:6rem;
+
 }
+
+
+/* Mision y Aliados */
+.page-node-9244 #side {
+    display: inline-block !important;
+}
+
+.page-nosotros-aliados #side {
+    display: inline-block !important;
+}
+
 
     /*
     #block-block-12 {
@@ -1898,7 +1906,7 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     #side {
         position: relative;
         left: 2rem;
-        font-size: 3em;
+        font-size: 5em;
 
     }
     
@@ -2793,11 +2801,22 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
     display: inline-block !important;
 }
 
-.page-node-9243 .lateral_izq_nosotros > li > a {
+.page-node-9243 .lateral_izq_nosotros li > a, .page-node-9244 .lateral_izq_nosotros li > a, .page-nosotros-aliados .lateral_izq_nosotros > li > a {
 
     padding-left:6rem;
 
 }
+
+
+/* Mision y Aliados */
+.page-node-9244 #side {
+    display: inline-block !important;
+}
+
+.page-nosotros-aliados #side {
+    display: inline-block !important;
+}
+
 
 /****Voluntariado portrait mobile*********/
 
@@ -3515,7 +3534,7 @@ div.password-confirm {
     #side {
         position: relative;
         bottom: 1rem;
-        font-size: 2rem;
+        font-size: 4em;
         left: 5rem;
     }
     
@@ -4035,12 +4054,27 @@ div.password-confirm {
     display: inline-block !important;
 }
 
-.page-node-9243 .lateral_izq_nosotros > li > a {
+
+
+.page-node-9243 .lateral_izq_nosotros li > a, .page-node-9244 .lateral_izq_nosotros li > a, .page-nosotros-aliados .lateral_izq_nosotros > li > a {
 
     padding-left:6rem;
 
 }
 
+.page-node-9243 #sidebar-first {
+	height: 160%;
+}
+
+
+/* Mision y Aliados */
+.page-node-9244 #side {
+    display: inline-block !important;
+}
+
+.page-nosotros-aliados #side {
+    display: inline-block !important;
+}
 
 /****Voluntariado portrait landscape*********/
 
