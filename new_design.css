@@ -86,8 +86,7 @@ margin: 10px 0px !important;
     
     .bloqueshomepage{
         margin: 6rem 0 0 0;
-    }
-    
+    } 
     .bloqueshomepage>div {
         width: 80%;
         height: 37.5rem;
@@ -1374,6 +1373,16 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
  #edit-comment-body-und-0-value {
  	height: 12rem !important;
  }
+ 
+ 
+ /**Lista escolar iPad Portrait**/
+ .page-lista-escolar #page-title {
+	width: 30rem;
+ }
+	.page-lista-escolar #widgets-element-socialmedia_share-default {
+    padding-left: 0;
+}
+
 
 }
 
@@ -1383,6 +1392,8 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) and (min-height: 479px) {
+	
+	
     .bloqueshomepage {
         display: flex;
         flex-direction: row;
@@ -1436,6 +1447,12 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         font-size: 1.3em;
         text-align: center;
     }
+    
+    /*Lista escolar*/
+	.page-lista-escolar #widgets-element-socialmedia_share-default {
+    	padding-left: 0;
+	}
+
 
 
 }
@@ -2045,6 +2062,13 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         font-size: 0.5em;
         width: 10rem;
     }
+
+	div.region.region-help > div#block-block-14 {
+    margin-right: 2rem;
+	}
+	div.region.region-help > div#block-block-19 {
+    margin-right: 2rem;
+}
 
     #bloque_comentar {
         font-size: 0.5em;
@@ -2793,11 +2817,6 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
     width: 100%;
 }
 
-.page-lista-escolar #widgets-element-socialmedia_share-default {
-    padding-left: 594px;
-    margin-bottom: 3rem;
-}
-
 .page-lista-escolar div.view-lista-escolar-guao > div.view-content > div.views-row img {
     width: 100%;
     height: auto;
@@ -2816,6 +2835,10 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
 }
 
 /**********LISTA ESCOLAR - MOBILE Portrait ***********/
+	.page-lista-escolar #widgets-element-socialmedia_share-default {
+    padding-left: 0;
+}
+
 
 /********** FIN VARIOS - MOBILE Portrait ***********/
 
@@ -4323,7 +4346,6 @@ div.password-confirm {
 
 .page-celebraciones-escolares div.view-Celebraciones-Escolares > div.view-content > div.views-row > div.views-field.views-field-nothing {
     height: .3rem;
-    width: 21rem;
 }
 
 .page-celebraciones-escolares div.view-Celebraciones-Escolares > div.view-content > div.views-row > div.views-field-field-fecha-celebracion a {
@@ -4447,6 +4469,11 @@ div.password-confirm {
         margin-left: -5rem;
         margin-right: -3rem;
     }
+    
+	.page-lista-escolar #widgets-element-socialmedia_share-default {
+    padding-left: 0;
+}
+
 
 /********* FIN VARIOS LANDSCAPE ***************/
 
@@ -4477,16 +4504,3 @@ div.password-confirm {
 
 /********* FIN MI CUENTA LANDSCAPE ***************/
 }
-
-
-/*Widescreen*/
-/*
-@media (min-width: 1024px) {
-    /*    .bloqueshomepage>div {
-        width: 30%;
-        height: 22rem;
-        margin-left: .5rem;
-        padding: 1rem 5rem 1rem 2rem;
-        margin-bottom: 0;
-    
-}}*/
