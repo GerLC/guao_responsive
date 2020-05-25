@@ -1370,6 +1370,11 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
 }
 
 
+ /*Detalles*/
+ #edit-comment-body-und-0-value {
+ 	height: 12rem !important;
+ }
+
 }
 
 /* 
@@ -3149,6 +3154,9 @@ div.password-confirm {
 	    margin-left: -1rem;
 	}
 
+ #edit-comment-body-und-0-value {
+ 	height: 15rem !important;
+ }
 
 }
 
@@ -4461,6 +4469,11 @@ div.password-confirm {
        height: 2rem;
   	   padding: 22px 4rem 23px;
 }
+
+
+ #edit-comment-body-und-0-value {
+ 	height: 12rem !important;
+ }
 
 /********* FIN MI CUENTA LANDSCAPE ***************/
 }
