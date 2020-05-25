@@ -154,44 +154,44 @@ margin: 10px 0px !important;
     #hamburger1 {
         position: absolute;
         left: -28rem;
-        top: 4%;
+        top: 6%;
         width: 50px;
         height: 8px;
         background-color: black;
         margin: 6px 30rem;
         transition: .4s;
-        background-color: #8e11a0;
+
     }
 
     #hamburger2 {
         position: absolute;
         left: -28rem;
-        top: 4%;
+        top: 6%;
         width: 50px;
         height: 8px;
         background-color: black;
         margin: 20px 30rem;
         transition: .4s;
-        background-color:  #fa3754;
+
     }
 
     #hamburger3 {
         position: absolute;
         left: -28rem;
-        top: 4%;
+        top: 6%;
         width: 50px;
         height: 8px;
         background-color: black;
         margin: 34px 30rem;
         transition: .4s;
-        background-color: #ffc208;
+
     }
+    
 
 
     .change #hamburger1 {
         -webkit-transform: rotate(-45deg) translate(-9px, 6px);
         transform: rotate(-45deg) translate(-13px, 6px);
-        background-color: #2accda;
     }
 
     .change #hamburger2 {
@@ -201,7 +201,6 @@ margin: 10px 0px !important;
     .change #hamburger3 {
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-13px, -8px);
-        background-color: #9ACD32
     }
 
     /* MENÚ TU AULA / BIBLIOTECA ... */
@@ -664,7 +663,6 @@ margin: 10px 0px !important;
 
 
     #block-block-21 {
-        font-size: 1.5em;
         display: block;
     }
 
@@ -701,7 +699,7 @@ margin: 10px 0px !important;
 #widgets-element-socialmedia_share-default #widgets-element-socialmedia_socialmedia-facebook-share-button > a > img,#widgets-element-socialmedia_share-default #widgets-element-socialmedia_socialmedia-twitter-share-button > a > img,#widgets-element-socialmedia_share-default #widgets-element-socialmedia_socialmedia-linkedin-share-button > a > img,#widgets-element-socialmedia_share-default #widgets-element-widgets_custom-markup > a > img {
 	    background-size: 11rem;
 	    height: 3rem;
-	    padding: 22px 6rem 23px;
+	    padding: 22px 5rem 23px;
 }
 
 
@@ -2058,14 +2056,15 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     }
 
     #block-block-21 {
-        font-size: 1.5em;
         display: block;
+        height: 54rem;
     }
 
     .comment-form .form-type-textarea label {
         float: none;
         width: 8em;
     }
+    
     
     #widgets-element-socialmedia_share-default {
         margin-top: 0;
@@ -2774,9 +2773,12 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
 
 .node-type-celebraciones-escolares div.node-celebraciones-escolares > div > div.field-name-field-portada-celebracion > div > div > img {
     height: auto;
-    width: 116%;
+    width: 100%;
     max-height: 21rem;
 }
+
+
+
 
 /**********FIN CELEBRACIONES - MOBILE Portrait ***********/
 
@@ -3137,7 +3139,7 @@ div.password-confirm {
 #widgets-element-socialmedia_share-default #widgets-element-socialmedia_socialmedia-facebook-share-button > a > img,#widgets-element-socialmedia_share-default #widgets-element-socialmedia_socialmedia-twitter-share-button > a > img,#widgets-element-socialmedia_share-default #widgets-element-socialmedia_socialmedia-linkedin-share-button > a > img,#widgets-element-socialmedia_share-default #widgets-element-widgets_custom-markup > a > img {
 	    background-size: 11rem;
 	    height: 3rem;
-	    padding: 22px 6rem 23px;
+	    padding: 22px 5rem 23px;
 }
 
 
@@ -3239,10 +3241,10 @@ div.password-confirm {
     #hamburger1 {
         position: absolute;
         left: -28rem;
-        top: 10%;
+        top: 8%;
         width: 45px;
         height: 7px;
-        background-color: green;
+        background-color: black;
         margin: 6px 30rem;
         transition: 0.4s;
     }
@@ -3250,10 +3252,10 @@ div.password-confirm {
     #hamburger2 {
         position: absolute;
         left: -28rem;
-        top: 10%;
+        top: 8%;
         width: 45px;
         height: 7px;
-        background-color: blue;
+        background-color: black;
         margin: 20px 30rem;
         transition: 0.4s;
     }
@@ -3261,10 +3263,10 @@ div.password-confirm {
     #hamburger3 {
         position: absolute;
         left: -28rem;
-        top: 10%;
+        top: 8%;
         width: 45px;
         height: 7px;
-        background-color: purple;
+        background-color: black;
         margin: 34px 30rem;
         transition: 0.4s;
     }
@@ -4335,7 +4337,7 @@ div.password-confirm {
 
 .node-type-celebraciones-escolares div.node-celebraciones-escolares > div > div.field-name-field-portada-celebracion > div > div > img {
     height: auto;
-    width: 116%;
+    width: 100%;
     max-height: 21rem;
 }
 
@@ -4450,6 +4452,15 @@ div.password-confirm {
     #edit-the-user-does-not-have-access {
         padding-left: 2rem;
     }
+    
+    
+  /*Detalles*/
+  
+  #widgets-element-socialmedia_share-default #widgets-element-socialmedia_socialmedia-facebook-share-button > a > img,#widgets-element-socialmedia_share-default #widgets-element-socialmedia_socialmedia-twitter-share-button > a > img,#widgets-element-socialmedia_share-default #widgets-element-socialmedia_socialmedia-linkedin-share-button > a > img,#widgets-element-socialmedia_share-default #widgets-element-widgets_custom-markup > a > img {
+	   background-size: 9rem;
+       height: 2rem;
+  	   padding: 22px 4rem 23px;
+}
 
 /********* FIN MI CUENTA LANDSCAPE ***************/
 }
