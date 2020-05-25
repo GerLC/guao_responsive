@@ -160,7 +160,7 @@ margin: 10px 0px !important;
         background-color: black;
         margin: 6px 30rem;
         transition: .4s;
-        background-color: green;
+        background-color: #8e11a0;
     }
 
     #hamburger2 {
@@ -172,7 +172,7 @@ margin: 10px 0px !important;
         background-color: black;
         margin: 20px 30rem;
         transition: .4s;
-        background-color: blue;
+        background-color:  #fa3754;
     }
 
     #hamburger3 {
@@ -184,13 +184,14 @@ margin: 10px 0px !important;
         background-color: black;
         margin: 34px 30rem;
         transition: .4s;
-        background-color: purple;
+        background-color: #ffc208;
     }
 
 
     .change #hamburger1 {
         -webkit-transform: rotate(-45deg) translate(-9px, 6px);
         transform: rotate(-45deg) translate(-13px, 6px);
+        background-color: #2accda;
     }
 
     .change #hamburger2 {
@@ -200,6 +201,7 @@ margin: 10px 0px !important;
     .change #hamburger3 {
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-13px, -8px);
+        background-color: #9ACD32
     }
 
     /* MENÚ TU AULA / BIBLIOTECA ... */
@@ -662,7 +664,7 @@ margin: 10px 0px !important;
 
 
     #block-block-21 {
-        font-size: 2.5em;
+        font-size: 1.5em;
         display: block;
     }
 
@@ -690,6 +692,19 @@ margin: 10px 0px !important;
     #widgets-element-socialmedia_share-default {
         margin-top: 0;
 }
+
+
+	.comment-form label {
+		width: 12rem;
+	}
+
+#widgets-element-socialmedia_share-default #widgets-element-socialmedia_socialmedia-facebook-share-button > a > img,#widgets-element-socialmedia_share-default #widgets-element-socialmedia_socialmedia-twitter-share-button > a > img,#widgets-element-socialmedia_share-default #widgets-element-socialmedia_socialmedia-linkedin-share-button > a > img,#widgets-element-socialmedia_share-default #widgets-element-widgets_custom-markup > a > img {
+	    background-size: 11rem;
+	    height: 3rem;
+	    padding: 22px 6rem 23px;
+}
+
+
 
 
         
@@ -1040,6 +1055,9 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     margin: 0 0 -1.2em;
 }
  
+ 
+ 
+ 
  /* SIDEBAR DERECHA */
   
  #block-block-13  {
@@ -1118,6 +1136,12 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         transform: translateZ(0);
         
     }
+    
+        .node-type-video .field.field-name-body> div > div > iframe{
+    width: 60rem;
+    height: 30rem;
+    margin-bottom: 2rem;
+    }
 
 /******FIN  PRIMER/QUINTO -- GRADO/AÑO MATERIA TABLET Portrait******/
 
@@ -1137,9 +1161,9 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
 }
 
 
-.page-node-9243 .lateral_izq_nosotros > li > a, .page-node-9244 .lateral_izq_nosotros > li > a, .page-nosotros-aliados .lateral_izq_nosotros > li > a {
+.page-node-9243 .lateral_izq_nosotros > li > a, .page-node-9244 .lateral_izq_nosotros > li > a, .page-nosotros-aliados .lateral_izq_nosotros > li > a,.node-type-aliados .lateral_izq_nosotros > li > a  {
 
-    padding-left:6rem;
+    padding-left:4rem;
 
 }
 
@@ -1152,6 +1176,13 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
 .page-nosotros-aliados #side {
     display: inline-block !important;
 }
+
+.node-type-aliados #side {
+    display: inline-block !important;	
+}
+
+
+
 
 
     /*
@@ -1524,7 +1555,7 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         background-color: black;
         margin: 6px 30rem;
         transition: .4s;
-        background-color: green;
+  
     }
 
     #hamburger2 {
@@ -1536,7 +1567,7 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         background-color: black;
         margin: 20px 30rem;
         transition: .4s;
-        background-color: blue;
+ 
     }
 
     #hamburger3 {
@@ -1548,7 +1579,7 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         background-color: black;
         margin: 34px 30rem;
         transition: .4s;
-        background-color: purple;
+       
     }
 
 
@@ -2027,7 +2058,7 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     }
 
     #block-block-21 {
-        font-size: 2.5em;
+        font-size: 1.5em;
         display: block;
     }
 
@@ -2045,6 +2076,8 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         height: 372px;
         margin-left: 5.5rem;
 }
+
+
 
 /******Innovaciones portrait tlf*******************/
 
@@ -2562,6 +2595,8 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
     margin: 0 0 -0.8em;
 }
  
+  /*  aqui estoy  */
+
  /* SIDEBAR DERECHA */
   
  #block-block-13  {
@@ -2635,6 +2670,12 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
         font-size: 0.5em;
         transform: translateZ(0);
         
+    }
+    
+        .node-type-video .field.field-name-body> div > div > iframe{
+    width: 60rem;
+    height: 30rem;
+    margin-bottom: 2rem;
     }
 
 /******FIN  PRIMER/QUINTO -- GRADO/AÑO MATERIA MOBILE Portrait******/
@@ -2801,7 +2842,7 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
     display: inline-block !important;
 }
 
-.page-node-9243 .lateral_izq_nosotros li > a, .page-node-9244 .lateral_izq_nosotros li > a, .page-nosotros-aliados .lateral_izq_nosotros > li > a {
+.page-node-9243 .lateral_izq_nosotros li > a, .page-node-9244 .lateral_izq_nosotros li > a, .page-nosotros-aliados .lateral_izq_nosotros > li > a , .node-type-aliados .lateral_izq_nosotros > li > a {
 
     padding-left:6rem;
 
@@ -2816,6 +2857,11 @@ div.view.view-portafolio-docente .field.field-name-title-field, div.view.view-po
 .page-nosotros-aliados #side {
     display: inline-block !important;
 }
+
+.node-type-aliados #side {
+    display: inline-block !important;	
+}
+
 
 
 /****Voluntariado portrait mobile*********/
@@ -3029,7 +3075,7 @@ input.form-text, textarea.form-textarea, select.form-select {
 
 
 
-/* Contraseñaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+/* Contraseña*/
 #user-profile-form .form-item-pass > .form-item {
     height: 5rem;
     width: 36rem;
@@ -3080,6 +3126,26 @@ div.password-confirm {
 #user-profile-form #edit-picture > legend {
     position: relative;
 }
+
+
+/* DETALLES EN COMENTARIOS */
+
+	.comment-form label {
+		width: 12rem;
+	}
+
+#widgets-element-socialmedia_share-default #widgets-element-socialmedia_socialmedia-facebook-share-button > a > img,#widgets-element-socialmedia_share-default #widgets-element-socialmedia_socialmedia-twitter-share-button > a > img,#widgets-element-socialmedia_share-default #widgets-element-socialmedia_socialmedia-linkedin-share-button > a > img,#widgets-element-socialmedia_share-default #widgets-element-widgets_custom-markup > a > img {
+	    background-size: 11rem;
+	    height: 3rem;
+	    padding: 22px 6rem 23px;
+}
+
+
+	#block-block-16 .content {
+	    font-size: 0.65em;
+	    width: 12rem;
+	    margin-left: -1rem;
+	}
 
 
 }
@@ -3927,6 +3993,12 @@ div.password-confirm {
         display: inline-block;
  }
  
+     .node-type-video .field.field-name-body> div > div > iframe{
+    width: 60rem;
+    height: 30rem;
+    margin-bottom: 2rem;
+    }
+ 
  
  
  .page-primer-grado-educacion-estetica #content, .page-segundo-grado-educacion-estetica #content, .page-tercer-grado-educacion-estetica #content, .page-cuarto-grado-educacion-estetica #content, .page-quinto-grado-educacion-estetica #content, .page-sexto-grado-educacion-estetica #content, .page-tercer-ano-quimica #content, .page-cuarto-ano-quimica #content, .page-quinto-ano-quimica #content, .page-tercer-ano-fisica #content, .page-cuarto-ano-fisica #content, .page-quinto-ano-fisica #content, .page-primer-grado-ciencias-sociales #content, .page-segundo-grado-ciencias-sociales #content, .page-tercer-grado-ciencias-sociales #content, .page-cuarto-grado-ciencias-sociales #content, .page-quinto-grado-ciencias-sociales #content, .page-sexto-grado-ciencias-sociales #content, .page-quinto-ano-ciencias-de-la-tierra #content, .page-primer-grado-educacion-fisica-y-deporte #content, .page-segundo-grado-educacion-fisica-y-deporte #content, .page-tercer-grado-educacion-fisica-y-deporte #content, .page-cuarto-grado-educacion-fisica-y-deporte #content, .page-quinto-grado-educacion-fisica-y-deporte #content, .page-sexto-grado-educacion-fisica-y-deporte #content, .page-primer-ano-estudios-de-la-naturaleza #content, .page-segundo-ano-biologia #content, .page-tercer-ano-biologia #content, .page-cuarto-ano-biologia #content, .page-quinto-ano-biologia #content, .page-primer-grado-ciencias-naturales #content, .page-segundo-grado-ciencias-naturales #content, .page-tercer-grado-ciencias-naturales #content, .page-cuarto-grado-ciencias-naturales #content, .page-quinto-grado-ciencias-naturales #content, .page-sexto-grado-ciencias-naturales #content, .page-primer-grado-lengua #content, .page-segundo-grado-lengua #content, .page-tercer-grado-lengua #content, .page-cuarto-grado-lengua #content, .page-quinto-grado-lengua #content, .page-sexto-grado-lengua #content, .page-primer-grado-matematica #content, .page-segundo-grado-matematica #content, .page-tercer-grado-matematica #content, .page-cuarto-grado-matematica #content, .page-quinto-grado-matematica #content, .page-sexto-grado-matematica #content, .page-primer-ano-castellano-y-literatura #content, .page-segundo-ano-castellano-y-literatura #content, .page-tercer-ano-castellano-y-literatura #content, .page-cuarto-ano-lengua-y-literatura #content, .page-quinto-ano-lengua-y-literatura #content, .page-primer-ano-historia-de-venezuela #content, .page-segundo-ano-historia-de-venezuela #content, .page-primer-ano-matematica #content, .page-segundo-ano-matematica #content, .page-tercer-ano-matematica #content, .page-cuarto-ano-matematica #content, .page-quinto-ano-matematica #content {
@@ -4056,9 +4128,9 @@ div.password-confirm {
 
 
 
-.page-node-9243 .lateral_izq_nosotros li > a, .page-node-9244 .lateral_izq_nosotros li > a, .page-nosotros-aliados .lateral_izq_nosotros > li > a {
+.page-node-9243 .lateral_izq_nosotros li > a, .page-node-9244 .lateral_izq_nosotros li > a, .page-nosotros-aliados .lateral_izq_nosotros > li > a ,.node-type-aliados .lateral_izq_nosotros > li > a {
 
-    padding-left:6rem;
+    padding-left:4.5rem;
 
 }
 
@@ -4074,6 +4146,10 @@ div.password-confirm {
 
 .page-nosotros-aliados #side {
     display: inline-block !important;
+}
+
+.node-type-aliados #side {
+    display: inline-block !important;	
 }
 
 /****Voluntariado portrait landscape*********/
@@ -4287,7 +4363,7 @@ div.password-confirm {
             /* VENEZUELA LE HABLA */
 
 .view.view-venezuela-le-habla-a-la-educaci-n .view.view-venezuela-le-habla-a-la-educaci-n-2 .views-row {
-    width: 18rem;
+    width: 15rem;
     height: 24rem;
     margin: 0px 12px 20px 8px;
 }
