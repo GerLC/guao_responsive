@@ -72,18 +72,11 @@
         width: 100%;
         border-right-style: none;
     }
-
-	#footer-wrapper {
-	    position: fixed;
-	    bottom: 0;
-	    left: 0;
-	    background-color: white;
+    
+    div.view.view-Aliados > div.view-content > div.views-row {
+    	width: 100%;
+    	text-align: justify;
 	}
-	
-	#main-wrapper{
-		margin-bottom: 3rem;
-	}
-
 }
 
 /* 
@@ -209,6 +202,18 @@
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-13px, -8px);
     }
+    
+    	#footer-wrapper {
+	    position: fixed;
+	    bottom: 0;
+	    left: 0;
+	    background-color: white;
+	}
+	
+	#main-wrapper{
+		margin-bottom: 3rem;
+	}
+
 
     /* MENÚ TU AULA / BIBLIOTECA ... */
 
@@ -568,6 +573,7 @@
 
     .one-sidebar #content {
         width: 100%;
+        margin-top:-8rem;
     }
 
     .page-biblioteca #side {
@@ -1485,6 +1491,18 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     min-height: 277vh;
     }
     
+    	#footer-wrapper {
+	    position: fixed;
+	    bottom: 0;
+	    left: 0;
+	    background-color: white;
+	}
+	
+	#main-wrapper{
+		margin-bottom: 3rem;
+	}
+
+
     .section {
         margin-left: 4rem;
         margin-right: 4rem;
@@ -1497,6 +1515,7 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     
     .one-sidebar #content {
         width: 100%;
+        margin-top: -8rem;
     }
 
     .sticky {
@@ -3561,6 +3580,7 @@ div.password-confirm {
     
     .one-sidebar #content {
         width: 100%;
+        margin-top: -6rem;
     }
 
     .page-biblioteca #page-title {
@@ -4512,3 +4532,5 @@ div.password-confirm {
 
 /********* FIN MI CUENTA LANDSCAPE ***************/
 }
+
+
