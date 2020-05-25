@@ -208,6 +208,7 @@
 	    bottom: 0;
 	    left: 0;
 	    background-color: white;
+	    width:100%;
 	}
 	
 	#main-wrapper{
@@ -573,7 +574,6 @@
 
     .one-sidebar #content {
         width: 100%;
-        margin-top:-8rem;
     }
 
     .page-biblioteca #side {
@@ -1496,6 +1496,7 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
 	    bottom: 0;
 	    left: 0;
 	    background-color: white;
+	    width:100%;
 	}
 	
 	#main-wrapper{
@@ -1515,7 +1516,6 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     
     .one-sidebar #content {
         width: 100%;
-        margin-top: -8rem;
     }
 
     .sticky {
@@ -3580,7 +3580,6 @@ div.password-confirm {
     
     .one-sidebar #content {
         width: 100%;
-        margin-top: -6rem;
     }
 
     .page-biblioteca #page-title {
