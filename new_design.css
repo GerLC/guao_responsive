@@ -715,7 +715,14 @@
 	    padding: 22px 5rem 23px;
 }
 
-
+	div.fivestar-widget-static .star {
+		width: 3rem;
+		height: 2.1rem;
+	}
+	
+	div.fivestar-widget-static .star span.on,div.fivestar-widget-static .star span.off  {
+		background-size: 2rem;	
+	}
 
 
         
@@ -1466,6 +1473,7 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
 	.page-lista-escolar #widgets-element-socialmedia_share-default {
     	padding-left: 0;
 	}
+	
 
 
 
@@ -2131,6 +2139,16 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         height: 372px;
         margin-left: 5.5rem;
 }
+
+
+	div.fivestar-widget-static .star {
+		width: 3rem;
+		height: 2.1rem;
+	}
+	
+	div.fivestar-widget-static .star span.on,div.fivestar-widget-static .star span.off  {
+		background-size: 2rem;	
+	}
 
 
 
@@ -3746,6 +3764,22 @@ div.password-confirm {
     .node.node-libro-de-biblioteca .field-name-field-descargar-libro > div.field-items > div.field-item {
         width: 40rem;
     }
+    
+    
+    	div.fivestar-widget-static .star {
+		width: 1.5rem;
+		height: 1rem;
+		margin-top: 0.5rem;
+	}
+	
+	div.fivestar-widget-static .star span.on,div.fivestar-widget-static .star span.off  {
+		background-size: rem;	
+	}
+	
+	.node-type-libro-de-biblioteca div.fivestar-widget-static {
+    display: block;
+    margin-top: 0.5rem;
+}
 /****Fin detalle libro landscape tlf******/
 
 
