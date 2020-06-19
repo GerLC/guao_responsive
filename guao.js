@@ -198,7 +198,7 @@ document.getElementById("hamburgerid").appendChild(div);
  var side = document.createElement("span");
  side.id = "side";
  side.classList = "side";
- var t = document.createTextNode("⚙"); 
+ var t = document.createTextNode("✏➤"); 
  side.appendChild(t);
  side.onclick = function () {
     var x = document.getElementById("main");

@@ -143,7 +143,7 @@
 
     #header {
         border-bottom: 1px outset black;
-        height: 43rem;
+        height: 49rem;
         min-height: 7.5rem;
         max-height: 0;
         outline: none;
@@ -228,7 +228,7 @@
 
     #block-menu-menu-men-secundario {
         position: relative;
-        top: 31rem;
+        top: 36rem;
         margin-left: 4rem;
         width: 110%
     }
@@ -393,7 +393,7 @@
     #login {
         display: block !important;
         position: relative;
-        bottom: 32.9rem;
+        bottom: 37.9rem;
         left: 71rem;
     }
 
@@ -1588,7 +1588,7 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
 /**********MENÚ HAMBURGER *******/
     #header {
         border-bottom: 1px outset black;
-        height: 43rem;
+        height: 50rem;
         min-height: 7.5rem;
         max-height: 0;
         outline: none;
@@ -1598,7 +1598,7 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
 
     #hamburgerid {
         position: relative;
-        bottom: 34.2rem;
+        bottom: 38.5rem;
     }
 
     #hamburger1 {
@@ -1715,7 +1715,7 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     #login {
         display: block !important;
         position: relative;
-        bottom: 34.6rem;
+        bottom: 39.5rem;
         left: 71rem;
     }
 
@@ -1874,7 +1874,7 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
 
     #block-menu-menu-men-secundario {
         position: relative;
-        top: 30.5rem;
+        top: 36.5rem;
         margin-left: 5rem;
         width: 100%
     }
@@ -3306,7 +3306,7 @@ div.password-confirm {
 
     #header {
         border-bottom: 1px outset black;
-        height: 35rem;
+        height: 40rem;
         min-height: 8rem;
         max-height: 0;
         outline: none;
@@ -3377,7 +3377,7 @@ div.password-confirm {
 
     #block-menu-menu-men-secundario {
         position: relative;
-        top: 24.7rem;
+        top: 28.7rem;
         margin-left: 14rem;
         width: 100%
     }
@@ -3582,7 +3582,7 @@ div.password-confirm {
     #login {
         display: block !important;
         position: relative;
-        bottom: 25.3rem;
+        bottom: 28.89rem;
         left: 71rem;
     }
 
