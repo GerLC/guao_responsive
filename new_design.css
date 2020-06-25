@@ -109,9 +109,15 @@
         font-size: 1em;
     }
 
-    #bloque03_fondo {
-        display: none;
-    }
+	#bloque03_fondo {
+	    width: 100%;
+	    background-position: 18rem 7rem;
+	    padding-right: 4rem;
+	    background-size: 50rem;
+	    padding-bottom: 25rem;
+	    top: -32rem;
+	    z-index: 0;
+	}
 
     #bloque01 {
         background-size: 30rem;
@@ -121,12 +127,9 @@
         background-size: 30rem;
     }
 
-    #bloque03 {
-        background-image: url(/sites/default/files/home_otros.png);
-        background-repeat: no-repeat;
-        background-position: 34rem 11rem;
-        background-size: 30rem;
-    }
+	#bloque03 {
+	    margin-bottom: 6rem;
+	}
 
     /* MENÚ HAMBURGER */
 
@@ -1446,7 +1449,7 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     }
 
     #bloque01 {
-        background-size: 13rem;
+        background-size: 12rem;
         ;
     }
 
@@ -1454,10 +1457,12 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         background-size: 13rem;
     }
 
-    #bloque03_fondo {
-        padding-right: 5rem;
-        background-position: 9.8rem 5.5rem;
-    }
+	#bloque03_fondo {
+	    padding-right: 7rem;
+	    background-position: 5.8rem 7.5rem;
+	    background-size: 23rem;
+	    padding-bottom: 5rem;
+	}
 
     .bloqueshomepage>div>ul>li>a {
         color: white;
@@ -1564,10 +1569,15 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
         font-size: 1em;
     }
 
-    #bloque03_fondo {
-        display: none;
-    }
-
+	#bloque03_fondo {
+	    width: 100%;
+	    background-position: 22rem 7rem;
+	    padding-right: 11rem;
+	    background-size: 50rem;
+	    padding-bottom: 25rem;
+	    top: -36rem;
+	    z-index: 0;
+	}
     #bloque01 {
         background-size: 30rem;
     }
@@ -1577,10 +1587,7 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
     }
 
     #bloque03 {
-        background-image: url(/sites/default/files/home_otros.png);
-        background-repeat: no-repeat;
-        background-position: 34rem 11.5rem;
-        background-size: 30rem;
+		margin-bottom: 5rem;
     }
     
 /******Fin Home*******/
@@ -3287,9 +3294,9 @@ div.password-confirm {
 
     #bloque03_fondo {
         width: 100%;
-        background-position: 10rem 7rem;
-        padding-right: 31px;
-            background-size: 12rem 16rem;
+        background-position: 8rem 7rem;
+        padding-right: 5rem;
+        background-size: 22rem;
     }
 
     #logo {
