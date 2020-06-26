@@ -1777,6 +1777,8 @@
      #bloque01 {
         background-size: 0;
         max-height: 2rem;
+        transition: background-size .6s;
+        transition: max-height .6s ease-out;
     }
     
 	#bloque01 > ul{
@@ -1788,37 +1790,115 @@
     #bloque02 {
         background-size: 0;
         max-height: 2rem; 
+        transition: background-size 2s ease-in;
+        transition: max-height .6s ease-out;
     }
 	#bloque02 > ul{
-		display: none;
+		  visibility: hidden;
+		  opacity: 0;
+		  transition: visibility 0s, opacity 0.5s linear;
     }
 
     #bloque03 {
 		margin-bottom: 5rem;
         max-height: 2rem;
+		transition: max-height .6s ease-out;
     }
 	#bloque03 > ul{
-		display: none;
+		  visibility: hidden;
+		  opacity: 0;
+		  transition: visibility 0s, opacity 0.5s linear;
+
     }
 
     
     #bloque03_fondo {
-    	display: none;
+		 display: none;
     }
     
 
-    .open #bloque01 {
+    .open1 #bloque01 {
     	background-size: 30rem;
 		max-height: 50rem;
 		transition: max-height .6s ease-out;
+		transition: background-size .6s ease-in;
     }
     
-    .open #bloque01 > ul{
+    .open1 #bloque01 > ul{
 		  visibility: visible;
 		  opacity: 1;
 		  transition: visibility 0s, opacity 0.5s linear;
     }
     
+    .open2 #bloque02 {
+    	background-size: 30rem;
+		max-height: 50rem;
+		transition: max-height .6s ease-out;
+		transition: background-size .6s ease-in;
+    }
+    
+    .open2 #bloque02 > ul{
+		  visibility: visible;
+		  opacity: 1;
+		  transition: visibility 0s, opacity 0.5s linear;
+    }
+    
+    .open3 #bloque03 {
+
+		max-height: 50rem;
+		transition: max-height .6s ease-out;
+    }
+    
+    .open3 #bloque03 > ul{
+		  visibility: visible;
+		  opacity: 1;
+		  transition: visibility 0s, opacity 0.5s linear;
+    }
+    
+    
+    .open3 #bloque03_fondo {
+		 display: block;
+    }
+    
+    
+    #blockbuttonid1 {
+    	position: relative;
+	    bottom: 50rem;
+	    height: 13rem;
+	    width: 58rem;
+	    right: 4rem;
+	    background-color: Transparent;
+	    background-repeat:no-repeat;
+	    border: none;
+	    overflow: hidden;
+	    outline:none;
+    }
+    
+    #blockbuttonid2 {
+    	position: relative;
+	    bottom: 44rem;
+	    height: 13rem;
+	    width: 58rem;
+	    right: 4rem;
+	    background-color: Transparent;
+	    background-repeat:no-repeat;
+	    border: none;
+	    overflow: hidden;
+	    outline:none;
+    }
+    
+    #blockbuttonid3 {
+    	position: relative;
+	    bottom: 48rem;
+	    height: 13rem;
+	    width: 58rem;
+	    right: 4rem;
+	    background-color: Transparent;
+	    background-repeat:no-repeat;
+	    border: none;
+	    overflow: hidden;
+	    outline:none;	    
+    }
     
     div.homepage_menu_guao > div > a > img, div.docente_menu_guao > div > a > img {
     	
