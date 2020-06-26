@@ -225,6 +225,39 @@ function scrollfuction() {
     header.classList.remove("sticky");
   }
 }
+
+
+/* HOME BLOCKS */
+
+
+var block1 =  document.getElementsByClassName("bloqueshomepage")[0];
+block1.onclick = function () {
+	block1.classList.toggle("open");
+}
+/*
+var block1 =  document.getElementById("bloque01");
+var block1detail =  block1.querySelectorAll("#bloque01 ul");
+block1.onclick = function () {
+	
+	if (block1.style.maxHeight < "5rem") {
+		
+		block1.style.maxHeight = "50rem";
+		block1.style.backgroundSize = "30rem";
+		block1detail.style.display = "block";
+		
+	} else if (block1.style.maxHeight = "50rem"){
+		
+		block1.style.maxHeight = "2rem";
+		block1.style.backgroundSize = "0";
+		
+	}
+};*/
+
+
+
+
+
+
 /*
 var clone = document.getElementById("block-search-form");
 var cln = clone.cloneNode(true);

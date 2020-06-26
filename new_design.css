@@ -1579,16 +1579,59 @@ div.node.node-portafolio-docente > div > div.field.field-name-field-portada-port
 	    z-index: 0;
 	}
     #bloque01 {
-        background-size: 30rem;
+        background-size: 0;
+        max-height: 2rem;
+    }
+    
+	#bloque01 > ul{
+		  visibility: hidden;
+		  opacity: 0;
+		  transition: visibility 0s, opacity 0.5s linear;
     }
 
     #bloque02 {
-        background-size: 30rem;
+        background-size: 0;
+        max-height: 2rem; 
+    }
+	#bloque02 > ul{
+		display: none;
     }
 
     #bloque03 {
 		margin-bottom: 5rem;
+        max-height: 2rem;
     }
+	#bloque03 > ul{
+		display: none;
+    }
+
+    
+    #bloque03_fondo {
+    	display: none;
+    }
+    
+
+    .open #bloque01 {
+    	background-size: 30rem;
+		max-height: 50rem;
+		transition: max-height .6s ease-out;
+    }
+    
+    .open #bloque01 > ul{
+		  visibility: visible;
+		  opacity: 1;
+		  transition: visibility 0s, opacity 0.5s linear;
+    }
+    
+    
+    div.homepage_menu_guao > div > a > img, div.docente_menu_guao > div > a > img {
+    	
+    	width: 15rem !important;
+		height: auto!important;
+    }
+    
+    
+    
     
 /******Fin Home*******/
 
