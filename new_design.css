@@ -21,6 +21,10 @@
   display: none;
 }
 
+#blockbuttonid1, #blockbuttonid2, #blockbuttonid3 {
+	display: none;
+} 
+
 @media (max-width: 1024px) {
   html,
   body {
@@ -1774,11 +1778,13 @@
     top: -36rem;
     z-index: 0;
   }
+  
+  
      #bloque01 {
-        background-size: 0;
+        background-size: 10rem;
         max-height: 2rem;
-        transition: background-size .6s;
-        transition: max-height .6s ease-out;
+		transition: max-height .6s ease-out,background-size .7s;
+        
     }
     
 	#bloque01 > ul{
@@ -1788,10 +1794,9 @@
     }
 
     #bloque02 {
-        background-size: 0;
+        background-size: 10rem;
         max-height: 2rem; 
-        transition: background-size 2s ease-in;
-        transition: max-height .6s ease-out;
+		transition: max-height .6s ease-out,background-size .7s;
     }
 	#bloque02 > ul{
 		  visibility: hidden;
@@ -1799,11 +1804,19 @@
 		  transition: visibility 0s, opacity 0.5s linear;
     }
 
-    #bloque03 {
-		margin-bottom: 5rem;
-        max-height: 2rem;
-		transition: max-height .6s ease-out;
     }
+    
+    #bloque03 {
+    margin-bottom: 5rem;
+    background-image: url(/sites/default/files/home_otros_v2.png);
+    background-repeat: no-repeat;
+    background-size: 0;
+    background-position: 27rem 14rem;
+    max-height: 2rem;
+	transition: max-height .6s ease-out,background-size .7s;
+	}
+
+
 	#bloque03 > ul{
 		  visibility: hidden;
 		  opacity: 0;
@@ -1816,12 +1829,15 @@
 		 display: none;
     }
     
-
+	#blockbuttonid1, #blockbuttonid2, #blockbuttonid3 {
+		display: block;
+	} 
+	
     .open1 #bloque01 {
     	background-size: 30rem;
 		max-height: 50rem;
-		transition: max-height .6s ease-out;
-		transition: background-size .6s ease-in;
+		transition: max-height .6s ease-out,background-size .7s;
+	
     }
     
     .open1 #bloque01 > ul{
@@ -1833,8 +1849,7 @@
     .open2 #bloque02 {
     	background-size: 30rem;
 		max-height: 50rem;
-		transition: max-height .6s ease-out;
-		transition: background-size .6s ease-in;
+		transition: max-height .6s ease-out,background-size .7s;
     }
     
     .open2 #bloque02 > ul{
@@ -1844,9 +1859,9 @@
     }
     
     .open3 #bloque03 {
-
+		background-size: 47rem;
 		max-height: 50rem;
-		transition: max-height .6s ease-out;
+		transition: max-height .6s ease-out,background-size .7s;
     }
     
     .open3 #bloque03 > ul{
@@ -1857,9 +1872,11 @@
     
     
     .open3 #bloque03_fondo {
-		 display: block;
+		 background-size:50rem;
+		 transition: background-size .7s;
     }
     
+
     
     #blockbuttonid1 {
     	position: relative;
@@ -1902,6 +1919,11 @@
     
     div.homepage_menu_guao > div > a > img, div.docente_menu_guao > div > a > img {
     	
+    	width: 15rem !important;
+		height: auto!important;
+    }
+    
+    #bloque2_ano1 > div > a:nth-child(3) > img {
     	width: 15rem !important;
 		height: auto!important;
     }

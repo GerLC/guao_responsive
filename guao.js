@@ -241,22 +241,29 @@ document.getElementById("bloque03").appendChild(blockbutton3);
 
 
 var block1 =  document.getElementsByClassName("bloqueshomepage")[0];
+var subblock =  document.getElementsByClassName("homepage_menu_guao homepage_menu_guao_bloque1")[0];
+var subblock1 =  document.getElementById("bloque2_ano1");
+
+
 
 blockbutton1.onclick = function () {
 	block1.classList.toggle("open1");
 	block1.classList.remove('open2');
 	block1.classList.remove('open3');
+	subblock1.style.display = "none";
 }
 
 blockbutton2.onclick = function () {
 	block1.classList.toggle("open2");
 	block1.classList.remove('open1');
 	block1.classList.remove('open3');
+	subblock1.style.display = "none";
 }
 blockbutton3.onclick = function () {
 	block1.classList.toggle("open3");
 	block1.classList.remove('open1');
 	block1.classList.remove('open2');
+	subblock1.style.display = "none";
 }
 
 
