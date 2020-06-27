@@ -198,7 +198,7 @@ document.getElementById("hamburgerid").appendChild(div);
  var side = document.createElement("span");
  side.id = "side";
  side.classList = "side";
- var t = document.createTextNode("✏➤"); 
+ var t = document.createTextNode("✏"); 
  side.appendChild(t);
  side.onclick = function () {
     var x = document.getElementById("main");
@@ -260,24 +260,6 @@ blockbutton3.onclick = function () {
 }
 
 
-/*
-var block1 =  document.getElementById("bloque01");
-var block1detail =  block1.querySelectorAll("#bloque01 ul");
-block1.onclick = function () {
-	
-	if (block1.style.maxHeight < "5rem") {
-		
-		block1.style.maxHeight = "50rem";
-		block1.style.backgroundSize = "30rem";
-		block1detail.style.display = "block";
-		
-	} else if (block1.style.maxHeight = "50rem"){
-		
-		block1.style.maxHeight = "2rem";
-		block1.style.backgroundSize = "0";
-		
-	}
-};*/
 
 
 
