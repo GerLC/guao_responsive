@@ -4,9 +4,16 @@ meta.setAttribute("content", "width=device-width")
 head = document.getElementsByTagName("head")[0]
 head.append(meta)
 
+/*
 jQuery(document).ready(function(){
   console.log("jQuery disponible.");
 });
+*/
+
+var block = document.createElement("button");
+block.id = "bloqueprueba";
+/*document.getElementById("bloqueD03").appendChild(block);*/
+document.getElementById("bloque03").appendChild(block);
 
 
                   /* LISTENER */  
@@ -258,8 +265,6 @@ blockbutton3.onclick = function () {
 	block1.classList.remove('open1');
 	block1.classList.remove('open2');
 }
-
-
 
 
 

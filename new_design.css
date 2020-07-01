@@ -1786,6 +1786,7 @@
      #bloque01 {
         background-size: 10rem;
         max-height: 2rem;
+        background-position: 33rem;
 		transition: max-height .6s ease-out,background-size .7s;
         
     }
@@ -1811,9 +1812,10 @@
     margin-bottom: 5rem;
     background-image: url(/sites/default/files/home_otros_v2.png);
     background-repeat: no-repeat;
-    background-size: 0;
-    background-position: 27rem 14rem;
+    background-size: 18rem;
+	background-position: 28rem ;
     max-height: 2rem;
+    transition-timing-function: linear;
 	transition: max-height .6s ease-out,background-size .7s;
 	}
 	
@@ -1833,6 +1835,7 @@
 	 .open1 #bloque01 {
     	background-size: 30rem;
 		max-height: 50rem;
+		    background-position: 28rem 10rem;
 		transition: max-height .6s ease-out,background-size .7s;
 	
     }
@@ -1856,9 +1859,11 @@
     }
     
     .open3 #bloque03 {
-		background-size: 47rem;
+		background-size: 42rem;
 		max-height: 50rem;
+		background-position: 28rem;
 		transition: max-height .6s ease-out,background-size .7s;
+
     }
     
     .open3 #bloque03 > ul{
