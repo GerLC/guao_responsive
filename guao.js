@@ -3,18 +3,11 @@ meta.setAttribute("name", "viewport")
 meta.setAttribute("content", "width=device-width")
 head = document.getElementsByTagName("head")[0]
 head.append(meta)
-
 /*
 jQuery(document).ready(function(){
   console.log("jQuery disponible.");
 });
 */
-
-var block = document.createElement("button");
-block.id = "bloqueprueba";
-/*document.getElementById("bloqueD03").appendChild(block);*/
-document.getElementById("bloque03").appendChild(block);
-
 
                   /* LISTENER */  
         /* CLICK AFUERA PARA QUITAR LA VENTANA*/
@@ -209,7 +202,7 @@ document.getElementById("hamburgerid").appendChild(div);
  side.appendChild(t);
  side.onclick = function () {
     var x = document.getElementById("main");
-  x.classList.toggle("open");
+	x.classList.toggle("open");
 };
 
 
@@ -236,18 +229,23 @@ function scrollfuction() {
 
 /* HOME BLOCKS */
 
+
+var blockbutton = document.createElement("div");
+blockbutton.classList = "blockbuttonhome"
+document.getElementsByClassName("content clearfix")[0].appendChild(blockbutton);
+
 var blockbutton1 = document.createElement("button");
 blockbutton1.id = "blockbuttonid1";
-document.getElementById("bloque01").appendChild(blockbutton1);
+document.getElementsByClassName("blockbuttonhome")[0].appendChild(blockbutton1);
 var blockbutton2 = document.createElement("button");
 blockbutton2.id = "blockbuttonid2";
-document.getElementById("bloque02").appendChild(blockbutton2);
+document.getElementsByClassName("blockbuttonhome")[0].appendChild(blockbutton2);
 var blockbutton3 = document.createElement("button");
 blockbutton3.id = "blockbuttonid3";
-document.getElementById("bloque03").appendChild(blockbutton3);
+document.getElementsByClassName("blockbuttonhome")[0].appendChild(blockbutton3);
 
 
-var block1 =  document.getElementsByClassName("bloqueshomepage")[0];
+var block1 =  document.getElementsByClassName("content clearfix")[0];
 
 blockbutton1.onclick = function () {
 	block1.classList.toggle("open1");
@@ -267,38 +265,5 @@ blockbutton3.onclick = function () {
 }
 
 
-
-
-
-
-/*
-var clone = document.getElementById("block-search-form");
-var cln = clone.cloneNode(true);
-document.getElementById("main").appendChild(cln);
-
-var search = document.getElementsByClassName("block-search")[1];
-search.id = "block-search-form1";
-*/
-/*
- var what = document.getElementById("block-search-form");
- var to = document.getElementById ("main");
- to.insertBefore (what, to.firstChild);
-*/
-
-
-/*
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("page-title").style.top = "0";
-  } else {
-    document.getElementById("page-title").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-}*/
-/*
-var l = document.getElementById("block-system-user-menu");
-document.getElementById("page").appendChild(l);*/
 
 

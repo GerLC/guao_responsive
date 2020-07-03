@@ -1779,52 +1779,35 @@
     z-index: 0;
   }
   
-  #blockbuttonid1, #blockbuttonid2, #blockbuttonid3 {
+  .page-node-494 #blockbuttonid1,.page-node-494 #blockbuttonid2, .page-node-494 #blockbuttonid3 {
 	display: block;
 } 
 
-     #bloque01 {
-        background-size: 10rem;
+     #bloque01, #bloque02 {
+        background-size: 0;
         max-height: 2rem;
-        background-position: 33rem;
 		transition: max-height .6s ease-out,background-size .7s;
         
     }
     
-	#bloque01 > ul{
+	#bloque01 > ul, 	#bloque02 > ul,	#bloque03 > ul{
 		  visibility: hidden;
 		  opacity: 0;
 		  transition: visibility 0s, opacity 0.5s linear;
     }
-    
-    #bloque02 {
-        background-size: 10rem;
-        max-height: 2rem; 
-		transition: max-height .6s ease-out,background-size .7s;
-    }
-	#bloque02 > ul{
-		  visibility: hidden;
-		  opacity: 0;
-		  transition: visibility 0s, opacity 0.5s linear;
-    }
+
 
  #bloque03 {
     margin-bottom: 5rem;
     background-image: url(/sites/default/files/home_otros_v2.png);
     background-repeat: no-repeat;
-    background-size: 18rem;
-	background-position: 28rem ;
+    background-size: 0;
+	background-position: 24rem 12rem;
     max-height: 2rem;
     transition-timing-function: linear;
 	transition: max-height .6s ease-out,background-size .7s;
 	}
 	
-	#bloque03 > ul{
-		  visibility: hidden;
-		  opacity: 0;
-		  transition: visibility 0s, opacity 0.5s linear;
-
-    }
 
     
     #bloque03_fondo {
@@ -1832,51 +1815,35 @@
     }
     
 
-	 .open1 #bloque01 {
+	 .open1 #bloque01, .open2 #bloque02{
     	background-size: 30rem;
 		max-height: 50rem;
-		    background-position: 28rem 10rem;
 		transition: max-height .6s ease-out,background-size .7s;
 	
     }
     
-    .open1 #bloque01 > ul{
+    .open1 #bloque01 > ul, .open2 #bloque02 > ul,   .open3 #bloque03 > ul{
 		  visibility: visible;
 		  opacity: 1;
-		  transition: visibility 0s, opacity 0.5s linear;
+		  transition: visibility 0s, opacity 0.7s linear;
     }
-    
-    .open2 #bloque02 {
-    	background-size: 30rem;
-		max-height: 50rem;
-		transition: max-height .6s ease-out,background-size .7s;
-    }
-    
-    .open2 #bloque02 > ul{
-		  visibility: visible;
-		  opacity: 1;
-		  transition: visibility 0s, opacity 0.5s linear;
-    }
-    
+
+
     .open3 #bloque03 {
 		background-size: 42rem;
 		max-height: 50rem;
-		background-position: 28rem;
+		background-position: 27rem 16rem;
 		transition: max-height .6s ease-out,background-size .7s;
 
     }
     
-    .open3 #bloque03 > ul{
-		  visibility: visible;
-		  opacity: 1;
-		  transition: visibility 0s, opacity 0.5s linear;
-    }
+
     #blockbuttonid1 {
     	position: relative;
-	    bottom: 50rem;
-	    height: 13rem;
+	    bottom: 48rem;
+	    height: 12rem;
 	    width: 58rem;
-	    right: 4rem;
+	    right: -2rem;
 	    background-color: Transparent;
 	    background-repeat:no-repeat;
 	    border: none;
@@ -1886,10 +1853,10 @@
     
     #blockbuttonid2 {
     	position: relative;
-	    bottom: 44rem;
-	    height: 13rem;
+	    bottom: 45rem;
+	    height: 12rem;
 	    width: 58rem;
-	    right: 4rem;
+	    right: -2rem;
 	    background-color: Transparent;
 	    background-repeat:no-repeat;
 	    border: none;
@@ -1899,16 +1866,62 @@
     
     #blockbuttonid3 {
     	position: relative;
-	    bottom: 48rem;
-	    height: 13rem;
+	    bottom: 41rem;
+	    height: 12rem;
 	    width: 58rem;
-	    right: 4rem;
+	    right: -2rem;
 	    background-color: Transparent;
 	    background-repeat:no-repeat;
 	    border: none;
 	    overflow: hidden;
 	    outline:none;	    
     }
+    
+    
+     .open1 #blockbuttonid1, .open2 #blockbuttonid1,.open3 #blockbuttonid1 {
+    	position: relative;
+	    bottom: 84rem;
+	    height: 12rem;
+	    width: 58rem;
+	    right: -2rem;
+	    background-color: Transparent;
+	    background-repeat:no-repeat;
+	    border: none;
+	    overflow: hidden;
+	    outline:none;
+    }
+    
+    
+      .open2 #blockbuttonid2, .open3 #blockbuttonid2 {
+    	position: relative;
+	    bottom: 81rem;
+	    height: 12rem;
+	    width: 58rem;
+	    right: -2rem;
+	    background-color: Transparent;
+	    background-repeat:no-repeat;
+	    border: none;
+	    overflow: hidden;
+	    outline:none;
+    }
+    
+         .open3 #blockbuttonid3 {
+    	position: relative;
+	    bottom: 78rem;
+	    height: 12rem;
+	    width: 58rem;
+	    right: -2rem;
+	    background-color: Transparent;
+	    background-repeat:no-repeat;
+	    border: none;
+	    overflow: hidden;
+	    outline:none;
+    }
+    
+    .blockbuttonhome {
+    	height: 0;
+    }
+
     
     div.homepage_menu_guao > div > a > img, div.docente_menu_guao > div > a > img {
     	
@@ -1921,7 +1934,7 @@
 		height: auto!important;
     }
     
-    
+   
 
   /******Fin Home*******/
 
@@ -3934,22 +3947,124 @@
   }
 
   /*Docentes portrait mobile*/
-  #bloqueD01 {
-    background-size: 30rem;
+  #bloqueD01,  #bloqueD02 {
+        background-size: 0;
+        max-height: 2rem;
+		transition: max-height .6s ease-out,background-size .7s;
   }
 
-  #bloqueD02 {
-    background-size: 30rem;
+  #bloqueD03 {
+        max-height: 2rem;
+		transition: max-height .6s ease-out,background-size .7s;
   }
 
-  #bloqueD03_fondo {
-    bottom: -7rem;
-    right: 3rem;
-    height: 31rem;
-    width: 54rem;
-    z-index: 0;
-    background-size: 53.5rem;
+  .page-node-20656 #bloqueD03_fondo {
+	    background-size: 0;
   }
+  
+
+    
+    #bloqueD01 > ul, #bloqueD02 > ul, 	#bloqueD03 > ul{
+		  visibility: hidden;
+		  opacity: 0;
+		  transition: visibility 0s, opacity 0.7s linear;
+    }
+    
+    
+    .page-node-20656 #blockbuttonid1 {
+    	display: block;
+	    bottom: 28rem;
+	    height: 12rem;
+	    width: 52rem;
+	    right: -5rem;
+    }
+    
+    
+    .page-node-20656 #blockbuttonid2 {  
+    display: block;
+    bottom: 25rem;
+    height: 12rem;
+    width: 53rem;
+    right: -5rem;
+    }
+    
+    
+    .page-node-20656 #blockbuttonid3 {
+        	display: block;
+		    bottom: 68rem;
+		    height: 12rem;
+		    width: 53rem;
+		    right: -5rem;
+    }
+    
+   .open1 #bloqueD01, .open2 #bloqueD02{
+    	background-size: 30rem;
+		max-height: 50rem;
+		transition: max-height .6s ease-out,background-size .7s;
+	
+    }
+    
+     .open3 #bloqueD03{
+		max-height: 50rem;
+		transition: max-height .6s ease-out,background-size .7s;
+	
+    }
+    
+    
+    .page-node-20656 .open3 #bloqueD03_fondo {
+		    bottom: 29.8rem;
+		    right: 3rem;
+		    height: 31rem;
+		    width: 54rem;
+		    z-index: 0;
+		    background-size: 53.5rem;
+		   	transition: background-size .7s;
+  }
+  
+    
+    .page-node-20656 .open1 #blockbuttonid1,  .page-node-20656 .open2 #blockbuttonid1  {
+		    bottom: 66rem;
+		    height: 12rem;
+		    width: 52rem;
+		    right: -5rem;
+    }
+    
+    .page-node-20656 .open3 #blockbuttonid1 {
+    	bottom: 28rem;
+    }
+    
+    
+    .page-node-20656 .open2 #blockbuttonid2  {
+    	bottom: 62rem;
+    }
+    
+     .page-node-20656 .open3 #blockbuttonid2 {
+	    bottom: 25rem;
+
+    }
+    
+       .page-node-20656  .open1 #blockbuttonid3, .page-node-20656  .open2 #blockbuttonid3 ,.page-node-20656  .open3 #blockbuttonid3 {
+	    bottom: 105rem;
+    }
+    
+    
+    .open1 #bloqueD01 > ul, .open2 #bloqueD02 > ul,   .open3 #bloqueD03 > ul{
+		  visibility: visible;
+		  opacity: 1;
+		  transition: visibility 0s, opacity 0.7s linear;
+    }
+
+	/* DOCENTE CURSO */
+	#block-views-exp-cursos-page #edit-submit-cursos {
+	    width: 11rem !important;
+	    height: 6rem !important;
+	    top: -4rem;
+	    left: 0rem;
+	}
+	
+ .page-node-20656 div.form-item.form-type-textfield.form-item-field-autor-value > input, div.form-item.form-type-textfield.form-item-title > input {
+    width: 26rem;
+ }
 }
 
 /*##Device = Smartphones Most of the Smartphones (Landscape)*/
