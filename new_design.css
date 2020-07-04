@@ -1840,87 +1840,64 @@
 
     #blockbuttonid1 {
     	position: relative;
-	    bottom: 48rem;
+	    bottom: -4rem;
 	    height: 12rem;
 	    width: 58rem;
-	    right: -2rem;
+	    right: -6rem;
 	    background-color: Transparent;
 	    background-repeat:no-repeat;
 	    border: none;
 	    overflow: hidden;
 	    outline:none;
+	    z-index: 1;
     }
     
     #blockbuttonid2 {
     	position: relative;
-	    bottom: 45rem;
+	    bottom: -7rem;
 	    height: 12rem;
 	    width: 58rem;
-	    right: -2rem;
+	    right: -6rem;
 	    background-color: Transparent;
 	    background-repeat:no-repeat;
 	    border: none;
 	    overflow: hidden;
 	    outline:none;
+	    z-index: 1;
     }
     
     #blockbuttonid3 {
     	position: relative;
-	    bottom: 41rem;
+	    bottom: -10rem;
 	    height: 12rem;
 	    width: 58rem;
-	    right: -2rem;
+	    right: -6rem;
 	    background-color: Transparent;
 	    background-repeat:no-repeat;
 	    border: none;
 	    overflow: hidden;
-	    outline:none;	    
+	    outline:none;	 
+	    z-index: 1;
     }
     
     
-     .open1 #blockbuttonid1, .open2 #blockbuttonid1,.open3 #blockbuttonid1 {
-    	position: relative;
-	    bottom: 84rem;
-	    height: 12rem;
-	    width: 58rem;
-	    right: -2rem;
-	    background-color: Transparent;
-	    background-repeat:no-repeat;
-	    border: none;
-	    overflow: hidden;
-	    outline:none;
-    }
-    
-    
+    	
+     .open1 #blockbuttonid2 {
+    		bottom: -43rem;
+    	}
+    	
+     .open1 #blockbuttonid3, .open2 #blockbuttonid3 {
+     	bottom: -47rem;
+     }
+    	
       .open2 #blockbuttonid2, .open3 #blockbuttonid2 {
-    	position: relative;
-	    bottom: 81rem;
-	    height: 12rem;
-	    width: 58rem;
-	    right: -2rem;
-	    background-color: Transparent;
-	    background-repeat:no-repeat;
-	    border: none;
-	    overflow: hidden;
-	    outline:none;
+	    bottom: -7rem;
     }
     
-         .open3 #blockbuttonid3 {
-    	position: relative;
-	    bottom: 78rem;
-	    height: 12rem;
-	    width: 58rem;
-	    right: -2rem;
-	    background-color: Transparent;
-	    background-repeat:no-repeat;
-	    border: none;
-	    overflow: hidden;
-	    outline:none;
-    }
-    
-    .blockbuttonhome {
-    	height: 0;
-    }
+
+	    .blockbuttonhome {
+	    	height: 0;
+	    }
 
     
     div.homepage_menu_guao > div > a > img, div.docente_menu_guao > div > a > img {
@@ -3959,7 +3936,9 @@
   }
 
   .page-node-20656 #bloqueD03_fondo {
+  		position: relative;
 	    background-size: 0;
+	    z-index: -1;
   }
   
 
@@ -3973,28 +3952,28 @@
     
     .page-node-20656 #blockbuttonid1 {
     	display: block;
-	    bottom: 28rem;
+	    bottom: -25rem;
 	    height: 12rem;
 	    width: 52rem;
-	    right: -5rem;
+	    right: -9rem;
     }
     
     
     .page-node-20656 #blockbuttonid2 {  
     display: block;
-    bottom: 25rem;
+    bottom: -28.33rem;
     height: 12rem;
     width: 53rem;
-    right: -5rem;
+    right: -9rem;
     }
     
     
     .page-node-20656 #blockbuttonid3 {
         	display: block;
-		    bottom: 68rem;
+		    bottom: 14rem;
 		    height: 12rem;
 		    width: 53rem;
-		    right: -5rem;
+		    right: -8rem;
     }
     
    .open1 #bloqueD01, .open2 #bloqueD02{
@@ -4004,7 +3983,7 @@
 	
     }
     
-     .open3 #bloqueD03{
+    .open3 #bloqueD03{
 		max-height: 50rem;
 		transition: max-height .6s ease-out,background-size .7s;
 	
@@ -4012,6 +3991,7 @@
     
     
     .page-node-20656 .open3 #bloqueD03_fondo {
+    	    display: block;
 		    bottom: 29.8rem;
 		    right: 3rem;
 		    height: 31rem;
@@ -4023,30 +4003,30 @@
   
     
     .page-node-20656 .open1 #blockbuttonid1,  .page-node-20656 .open2 #blockbuttonid1  {
-		    bottom: 66rem;
+		    bottom: -25rem;
 		    height: 12rem;
 		    width: 52rem;
-		    right: -5rem;
+		    right: -9rem;
     }
     
     .page-node-20656 .open3 #blockbuttonid1 {
-    	bottom: 28rem;
+    	bottom: -62rem;
     }
     
     
+    .page-node-20656 .open1 #blockbuttonid2  {
+    	bottom: -65.33rem;
+    }
+    
     .page-node-20656 .open2 #blockbuttonid2  {
-    	bottom: 62rem;
+    	bottom: -28rem;
     }
     
      .page-node-20656 .open3 #blockbuttonid2 {
-	    bottom: 25rem;
+	    bottom: -65rem;
+    }
+    
 
-    }
-    
-       .page-node-20656  .open1 #blockbuttonid3, .page-node-20656  .open2 #blockbuttonid3 ,.page-node-20656  .open3 #blockbuttonid3 {
-	    bottom: 105rem;
-    }
-    
     
     .open1 #bloqueD01 > ul, .open2 #bloqueD02 > ul,   .open3 #bloqueD03 > ul{
 		  visibility: visible;

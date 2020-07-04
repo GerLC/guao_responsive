@@ -209,7 +209,7 @@ document.getElementById("hamburgerid").appendChild(div);
  document.getElementById("main").appendChild(side);
 
  var what = document.getElementById("side");
- var to = document.getElementById ("main");
+ var to = document.getElementById("main");
  to.insertBefore (what, to.firstChild);
 
 /* PARA QUE SE QUEDE AL BAJAR LA PANTALLA*/
@@ -231,8 +231,12 @@ function scrollfuction() {
 
 
 var blockbutton = document.createElement("div");
-blockbutton.classList = "blockbuttonhome"
-document.getElementsByClassName("content clearfix")[0].appendChild(blockbutton);
+blockbutton.classList = "blockbuttonhome";
+document.getElementById("main").appendChild(blockbutton);
+
+ var what = document.getElementsByClassName("blockbuttonhome")[0];
+ var to = document.getElementById("main");
+ to.insertBefore (what, to.firstChild);
 
 var blockbutton1 = document.createElement("button");
 blockbutton1.id = "blockbuttonid1";
@@ -245,7 +249,7 @@ blockbutton3.id = "blockbuttonid3";
 document.getElementsByClassName("blockbuttonhome")[0].appendChild(blockbutton3);
 
 
-var block1 =  document.getElementsByClassName("content clearfix")[0];
+var block1 =  document.getElementById("main-wrapper");
 
 blockbutton1.onclick = function () {
 	block1.classList.toggle("open1");
