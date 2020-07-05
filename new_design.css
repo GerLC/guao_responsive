@@ -21,9 +21,11 @@
   display: none;
 }
 
-#blockbuttonid1, #blockbuttonid2, #blockbuttonid3 {
-	display: none;
-} 
+#blockbuttonid1,
+#blockbuttonid2,
+#blockbuttonid3 {
+  display: none;
+}
 
 @media (max-width: 1024px) {
   html,
@@ -1778,140 +1780,135 @@
     top: -36rem;
     z-index: 0;
   }
-  
-  .page-node-494 #blockbuttonid1,.page-node-494 #blockbuttonid2, .page-node-494 #blockbuttonid3 {
-	display: block;
-} 
 
-     #bloque01, #bloque02 {
-        background-size: 0;
-        max-height: 2rem;
-		transition: max-height .6s ease-out,background-size .7s;
-        
-    }
-    
-	#bloque01 > ul, 	#bloque02 > ul,	#bloque03 > ul{
-		  visibility: hidden;
-		  opacity: 0;
-		  transition: visibility 0s, opacity 0.5s linear;
-    }
+  .page-node-494 #blockbuttonid1,
+  .page-node-494 #blockbuttonid2,
+  .page-node-494 #blockbuttonid3 {
+    display: block;
+  }
 
+  #bloque01,
+  #bloque02 {
+    background-size: 0;
+    max-height: 2rem;
+    transition: max-height 0.6s ease-out, background-size 0.7s;
+  }
 
- #bloque03 {
+  #bloque01 > ul,
+  #bloque02 > ul,
+  #bloque03 > ul {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+
+  #bloque03 {
     margin-bottom: 5rem;
     background-image: url(/sites/default/files/home_otros_v2.png);
     background-repeat: no-repeat;
     background-size: 0;
-	background-position: 24rem 12rem;
+    background-position: 24rem 12rem;
     max-height: 2rem;
     transition-timing-function: linear;
-	transition: max-height .6s ease-out,background-size .7s;
-	}
-	
+    transition: max-height 0.6s ease-out, background-size 0.7s;
+  }
 
-    
-    #bloque03_fondo {
-		 display: none;
-    }
-    
+  #bloque03_fondo {
+    display: none;
+  }
 
-	 .open1 #bloque01, .open2 #bloque02{
-    	background-size: 30rem;
-		max-height: 50rem;
-		transition: max-height .6s ease-out,background-size .7s;
-	
-    }
-    
-    .open1 #bloque01 > ul, .open2 #bloque02 > ul,   .open3 #bloque03 > ul{
-		  visibility: visible;
-		  opacity: 1;
-		  transition: visibility 0s, opacity 0.7s linear;
-    }
+  .open1 #bloque01,
+  .open2 #bloque02 {
+    background-size: 30rem;
+    max-height: 50rem;
+    transition: max-height 0.6s ease-out, background-size 0.7s;
+  }
 
+  .open1 #bloque01 > ul,
+  .open2 #bloque02 > ul,
+  .open3 #bloque03 > ul {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.7s linear;
+  }
 
-    .open3 #bloque03 {
-		background-size: 42rem;
-		max-height: 50rem;
-		background-position: 27rem 16rem;
-		transition: max-height .6s ease-out,background-size .7s;
+  .open3 #bloque03 {
+    background-size: 42rem;
+    max-height: 50rem;
+    background-position: 27rem 16rem;
+    transition: max-height 0.6s ease-out, background-size 0.7s;
+  }
 
-    }
-    
+  #blockbuttonid1 {
+    position: relative;
+    bottom: -4rem;
+    height: 12rem;
+    width: 58rem;
+    right: -6rem;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    overflow: hidden;
+    outline: none;
+    z-index: 1;
+  }
 
-    #blockbuttonid1 {
-    	position: relative;
-	    bottom: -4rem;
-	    height: 12rem;
-	    width: 58rem;
-	    right: -6rem;
-	    background-color: Transparent;
-	    background-repeat:no-repeat;
-	    border: none;
-	    overflow: hidden;
-	    outline:none;
-	    z-index: 1;
-    }
-    
-    #blockbuttonid2 {
-    	position: relative;
-	    bottom: -7rem;
-	    height: 12rem;
-	    width: 58rem;
-	    right: -6rem;
-	    background-color: Transparent;
-	    background-repeat:no-repeat;
-	    border: none;
-	    overflow: hidden;
-	    outline:none;
-	    z-index: 1;
-    }
-    
-    #blockbuttonid3 {
-    	position: relative;
-	    bottom: -10rem;
-	    height: 12rem;
-	    width: 58rem;
-	    right: -6rem;
-	    background-color: Transparent;
-	    background-repeat:no-repeat;
-	    border: none;
-	    overflow: hidden;
-	    outline:none;	 
-	    z-index: 1;
-    }
-    
-    
-    	
-     .open1 #blockbuttonid2 {
-    		bottom: -43rem;
-    	}
-    	
-     .open1 #blockbuttonid3, .open2 #blockbuttonid3 {
-     	bottom: -47rem;
-     }
-    	
-      .open2 #blockbuttonid2, .open3 #blockbuttonid2 {
-	    bottom: -7rem;
-    }
-    
+  #blockbuttonid2 {
+    position: relative;
+    bottom: -7rem;
+    height: 12rem;
+    width: 58rem;
+    right: -6rem;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    overflow: hidden;
+    outline: none;
+    z-index: 1;
+  }
 
-	    .blockbuttonhome {
-	    	height: 0;
-	    }
+  #blockbuttonid3 {
+    position: relative;
+    bottom: -10rem;
+    height: 12rem;
+    width: 58rem;
+    right: -6rem;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    overflow: hidden;
+    outline: none;
+    z-index: 1;
+  }
 
-    
-    div.homepage_menu_guao > div > a > img, div.docente_menu_guao > div > a > img {
-    	
-    	width: 15rem !important;
-		height: auto!important;
-    }
-    
-    #bloque2_ano1 > div > a:nth-child(3) > img {
-    	width: 15rem !important;
-		height: auto!important;
-    }
-    
-   
+  .open1 #blockbuttonid2 {
+    bottom: -43rem;
+  }
+
+  .open1 #blockbuttonid3,
+  .open2 #blockbuttonid3 {
+    bottom: -47rem;
+  }
+
+  .open2 #blockbuttonid2,
+  .open3 #blockbuttonid2 {
+    bottom: -7rem;
+  }
+
+  .blockbuttonhome {
+    height: 0;
+  }
+
+  div.homepage_menu_guao > div > a > img,
+  div.docente_menu_guao > div > a > img {
+    width: 15rem !important;
+    height: auto !important;
+  }
+
+  #bloque2_ano1 > div > a:nth-child(3) > img {
+    width: 15rem !important;
+    height: auto !important;
+  }
 
   /******Fin Home*******/
 
@@ -3924,127 +3921,125 @@
   }
 
   /*Docentes portrait mobile*/
-  #bloqueD01,  #bloqueD02 {
-        background-size: 0;
-        max-height: 2rem;
-		transition: max-height .6s ease-out,background-size .7s;
+  #bloqueD01,
+  #bloqueD02 {
+    background-size: 0;
+    max-height: 2rem;
+    transition: max-height 0.6s ease-out, background-size 0.7s;
   }
 
   #bloqueD03 {
-        max-height: 2rem;
-		transition: max-height .6s ease-out,background-size .7s;
+    max-height: 2rem;
+    transition: max-height 0.6s ease-out, background-size 0.7s;
   }
 
   .page-node-20656 #bloqueD03_fondo {
-  		position: relative;
-	    background-size: 0;
-	    z-index: -1;
+    position: relative;
+    background-size: 0;
+    z-index: -1;
   }
-  
 
-    
-    #bloqueD01 > ul, #bloqueD02 > ul, 	#bloqueD03 > ul{
-		  visibility: hidden;
-		  opacity: 0;
-		  transition: visibility 0s, opacity 0.7s linear;
-    }
-    
-    
-    .page-node-20656 #blockbuttonid1 {
-    	display: block;
-	    bottom: -25rem;
-	    height: 12rem;
-	    width: 52rem;
-	    right: -9rem;
-    }
-    
-    
-    .page-node-20656 #blockbuttonid2 {  
+  #bloqueD01 > ul,
+  #bloqueD02 > ul,
+  #bloqueD03 > ul {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.7s linear;
+  }
+
+  .page-node-20656 #blockbuttonid1 {
+    display: block;
+    bottom: -25rem;
+    height: 12rem;
+    width: 52rem;
+    right: -9rem;
+  }
+
+  .page-node-20656 #blockbuttonid2 {
     display: block;
     bottom: -28.33rem;
     height: 12rem;
     width: 53rem;
     right: -9rem;
-    }
-    
-    
-    .page-node-20656 #blockbuttonid3 {
-        	display: block;
-		    bottom: 14rem;
-		    height: 12rem;
-		    width: 53rem;
-		    right: -8rem;
-    }
-    
-   .open1 #bloqueD01, .open2 #bloqueD02{
-    	background-size: 30rem;
-		max-height: 50rem;
-		transition: max-height .6s ease-out,background-size .7s;
-	
-    }
-    
-    .open3 #bloqueD03{
-		max-height: 50rem;
-		transition: max-height .6s ease-out,background-size .7s;
-	
-    }
-    
-    
-    .page-node-20656 .open3 #bloqueD03_fondo {
-    	    display: block;
-		    bottom: 29.8rem;
-		    right: 3rem;
-		    height: 31rem;
-		    width: 54rem;
-		    z-index: 0;
-		    background-size: 53.5rem;
-		   	transition: background-size .7s;
   }
-  
-    
-    .page-node-20656 .open1 #blockbuttonid1,  .page-node-20656 .open2 #blockbuttonid1  {
-		    bottom: -25rem;
-		    height: 12rem;
-		    width: 52rem;
-		    right: -9rem;
-    }
-    
-    .page-node-20656 .open3 #blockbuttonid1 {
-    	bottom: -62rem;
-    }
-    
-    
-    .page-node-20656 .open1 #blockbuttonid2  {
-    	bottom: -65.33rem;
-    }
-    
-    .page-node-20656 .open2 #blockbuttonid2  {
-    	bottom: -28rem;
-    }
-    
-     .page-node-20656 .open3 #blockbuttonid2 {
-	    bottom: -65rem;
-    }
-    
 
-    
-    .open1 #bloqueD01 > ul, .open2 #bloqueD02 > ul,   .open3 #bloqueD03 > ul{
-		  visibility: visible;
-		  opacity: 1;
-		  transition: visibility 0s, opacity 0.7s linear;
-    }
+  .page-node-20656 #blockbuttonid3 {
+    display: block;
+    bottom: 14rem;
+    height: 12rem;
+    width: 53rem;
+    right: -8rem;
+  }
 
-	/* DOCENTE CURSO */
-	#block-views-exp-cursos-page #edit-submit-cursos {
-	    width: 11rem !important;
-	    height: 6rem !important;
-	    top: -4rem;
-	    left: 0rem;
-	}
-	
- .page-node-20656 div.form-item.form-type-textfield.form-item-field-autor-value > input, div.form-item.form-type-textfield.form-item-title > input {
+  .open1 #bloqueD01,
+  .open2 #bloqueD02 {
+    background-size: 30rem;
+    max-height: 50rem;
+    transition: max-height 0.6s ease-out, background-size 0.7s;
+  }
+
+  .open3 #bloqueD03 {
+    max-height: 50rem;
+    transition: max-height 0.6s ease-out, background-size 0.7s;
+  }
+
+  .page-node-20656 .open3 #bloqueD03_fondo {
+    display: block;
+    bottom: 29.8rem;
+    right: 3rem;
+    height: 31rem;
+    width: 54rem;
+    z-index: 0;
+    background-size: 53.5rem;
+    transition: background-size 0.7s;
+  }
+
+  .page-node-20656 .open1 #blockbuttonid1,
+  .page-node-20656 .open2 #blockbuttonid1 {
+    bottom: -25rem;
+    height: 12rem;
+    width: 52rem;
+    right: -9rem;
+  }
+
+  .page-node-20656 .open3 #blockbuttonid1 {
+    bottom: -62rem;
+  }
+
+  .page-node-20656 .open1 #blockbuttonid2 {
+    bottom: -65.33rem;
+  }
+
+  .page-node-20656 .open2 #blockbuttonid2 {
+    bottom: -28rem;
+  }
+
+  .page-node-20656 .open3 #blockbuttonid2 {
+    bottom: -65rem;
+  }
+
+  .open1 #bloqueD01 > ul,
+  .open2 #bloqueD02 > ul,
+  .open3 #bloqueD03 > ul {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.7s linear;
+  }
+
+  /* DOCENTE CURSO */
+  #block-views-exp-cursos-page #edit-submit-cursos {
+    width: 11rem !important;
+    height: 6rem !important;
+    top: -4rem;
+    left: 0rem;
+  }
+
+  .page-node-20656
+    div.form-item.form-type-textfield.form-item-field-autor-value
+    > input,
+  div.form-item.form-type-textfield.form-item-title > input {
     width: 26rem;
- }
+  }
 }
 
 /*##Device = Smartphones Most of the Smartphones (Landscape)*/
@@ -4092,7 +4087,7 @@
   }
 
   #bloque01 {
-    background-size: 11.5rem 12rem;
+    background-size: 10.5rem 15rem;
   }
 
   #bloque02 {
@@ -4101,8 +4096,9 @@
 
   #bloque03_fondo {
     width: 100%;
-    background-position: 8rem 7rem;
+    background-position: 8rem 8rem;
     padding-right: 5rem;
+    padding-bottom: 5rem;
     background-size: 22rem;
   }
 
