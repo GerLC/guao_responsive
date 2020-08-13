@@ -84,7 +84,7 @@
 ##Device = Tablets, Ipads (portrait)
 ##Screen = B/w 768px to 1024px
 */
-@media (min-width: 768px) and (max-width: 1024px) and (min-height: 479px) and (orientation: portrait) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .bloqueshomepage {
     margin: 6rem 0 0 0;
   }
@@ -1624,7 +1624,7 @@
 ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) and (min-height: 479px) {
+@media (orientation: landscape) and (min-height: 479px) {
   .bloqueshomepage {
     display: flex;
     flex-direction: row;
@@ -1691,15 +1691,16 @@
 ##Screen = B/w 481px to 767px
 */
 
-@media (min-width: 481px) and (max-width: 767px) {
-}
-
 /* 
 ##Device = Most of the Smartphones Mobiles (Portrait)
 ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+@media (max-width: 767px) and (min-height: 480px) and (orientation: portrait) {
+  .tabs ul.primary {
+    font-size: 1.5rem;
+  }
+
   #content .section,
   .sidebar .section {
     font-size: 2.5em;
