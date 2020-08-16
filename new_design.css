@@ -152,6 +152,7 @@
     outline: none;
     overflow: hidden;
     transition: max-height 0.6s ease-out;
+    z-index: 2;
   }
 
   #hamburger1 {
@@ -598,6 +599,7 @@
 
   .open #sidebar-first {
     width: 50rem;
+    z-index: 3;
   }
 
   /****** Detalle libro *********/
@@ -1624,7 +1626,7 @@
 ##Screen = B/w 768px to 1024px
 */
 
-@media (orientation: landscape) and (min-height: 479px) {
+@media (orientation: landscape) and (min-height: 479px) and (max-width: 1024px)  {
   .bloqueshomepage {
     display: flex;
     flex-direction: row;
@@ -1696,7 +1698,7 @@
 ##Screen = B/w 320px to 479px
 */
 
-@media (max-width: 767px) and (min-height: 480px) and (orientation: portrait) {
+@media (max-width: 767px)  and (orientation: portrait) {
   .tabs ul.primary {
     font-size: 1.5rem;
   }
@@ -1922,6 +1924,7 @@
     outline: none;
     overflow: hidden;
     transition: max-height 0.6s ease-out;
+    z-index: 2; 
   }
 
   #hamburgerid {
@@ -2339,6 +2342,7 @@
 
   .open #sidebar-first {
     width: 57rem;
+    z-index: 3;
   }
 
   /******FIN SIDEBAR*****/
@@ -4041,6 +4045,55 @@
   div.form-item.form-type-textfield.form-item-title > input {
     width: 26rem;
   }
+  
+  /*ADMIN USER*/
+  
+  html body.admin-menu {
+    margin-top: 67px !important;
+}
+
+ .page-admin #admin-menu {
+    font-size: 0.7em;
+    height: 9.5%;
+}
+
+ .page-admin div.admin .right, .page-admin div.admin .left {
+    width: 100%;
+}
+
+
+ /*Panel de Control*/
+ 
+
+
+ #branding {
+    width: 100%;
+}
+
+ #dashboard {
+     display: flex;
+     flex-flow: column wrap;
+     justify-content: center;
+
+ }
+
+ #dashboard div#dashboard_main {
+    width: 100%;
+    margin-right: 1%;
+    order: 2;
+    display: flex;
+    align-self: center;
+}
+
+#dashboard div#dashboard_sidebar {
+    width: 65%;
+    float: none;
+    order: 1;
+    display: flex;
+    align-self: center;
+}
+
+  
 }
 
 /*##Device = Smartphones Most of the Smartphones (Landscape)*/
@@ -4122,6 +4175,7 @@
     outline: none;
     overflow: hidden;
     transition: max-height 0.6s ease-out;
+    z-index: 2;
   }
 
   #hamburger1 {
@@ -4508,6 +4562,7 @@
 
   .open #sidebar-first {
     width: 40rem;
+    z-index: 3;
   }
 
   #content .section {
