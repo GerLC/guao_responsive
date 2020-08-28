@@ -55,7 +55,7 @@ var divclass =  document.createElement("div");
 divclass.classList = "hamburger";
 divclass.id = "hamburgerid";
 divclass.onclick = function () {
-    var x = document.getElementById("header");
+  /*  var x = document.getElementById("header");
 
   if (x.style.maxHeight ) {
 
@@ -66,7 +66,28 @@ divclass.onclick = function () {
     x.style.maxHeight = 50+ "rem";
   x.classList.toggle("change");
   
+  }*/
+  
+  /* nuevo menu */
+  
+  var x = document.getElementById("main");
+  var y = document.getElementById("header");
+  var z = document.getElementById("main-wrapper");
+  
+  if (z.style.marginLeft) {
+  
+  z.style.marginLeft = null;
+  x.classList.toggle("change");
+  y.classList.toggle("change");
+  
+  } else {
+      
+  z.style.marginLeft = "54rem";
+  x.classList.toggle("change");
+  y.classList.toggle("change");
   }
+  
+  
 };
 document.getElementsByClassName("section")[0].appendChild(divclass);
 /*document.getElementById("header").appendChild(divclass);*/
@@ -211,7 +232,7 @@ document.getElementById("hamburgerid").appendChild(div);
  side.appendChild(t);
  side.onclick = function () {
     var x = document.getElementById("main");
-	x.classList.toggle("open");
+  x.classList.toggle("open");
 };
 
 
@@ -261,29 +282,60 @@ document.getElementsByClassName("blockbuttonhome")[0].appendChild(blockbutton3);
 var block1 =  document.getElementById("main-wrapper");
 
 blockbutton1.onclick = function () {
-	block1.classList.toggle("open1");
-	block1.classList.remove('open2');
-	block1.classList.remove('open3');
+  block1.classList.toggle("open1");
+  block1.classList.remove('open2');
+  block1.classList.remove('open3');
 }
 
 blockbutton2.onclick = function () {
-	block1.classList.toggle("open2");
-	block1.classList.remove('open1');
-	block1.classList.remove('open3');
+  block1.classList.toggle("open2");
+  block1.classList.remove('open1');
+  block1.classList.remove('open3');
 }
 blockbutton3.onclick = function () {
-	block1.classList.toggle("open3");
-	block1.classList.remove('open1');
-	block1.classList.remove('open2');
+  block1.classList.toggle("open3");
+  block1.classList.remove('open1');
+  block1.classList.remove('open2');
 }
 
+
+var mainmenu = document.getElementById("main-menu").cloneNode(true);
+mainmenu.id = "mainmenu";
+
+var usermenu = document.getElementById("block-system-user-menu").cloneNode(true);
+usermenu.id = "usermenu";
+
+var secmenu = document.getElementById("block-menu-menu-men-secundario").cloneNode(true);
+secmenu.id = "secmenu";
+
+
+var sidenav = document.createElement("div");
+sidenav.id = "sidebar";
+sidenav.classList = "navigation";
+document.getElementById("main").appendChild(sidenav);
+document.getElementById("main").insertBefore(sidenav,document.getElementById("main").firstChild);
+
+sidenav.insertBefore(usermenu,sidenav.firstChild);
+sidenav.insertBefore(mainmenu,sidenav.firstChild);
+
+
+
 if(document.URL.indexOf("https://guao.org/biblioteca") >= 0){ 
+    
+    var sidebarfirst = document.getElementById("sidebar-first").cloneNode(true);
+    sidebarfirst.id = "sidebarfirst";
+
+    sidenav.appendChild(sidebarfirst);
     var biblio_title = document.createElement("h2");
     biblio_title.id = "title_biblioteca";
     biblio_title.innerHTML = "Biblioteca"
     var biblio = document.getElementById("block-views-exp-library-page-1")
     biblio.insertBefore(biblio_title,biblio.firstChild)
 }
+
+sidenav.appendChild(secmenu);
+
+
 if(document.URL.indexOf("https://guao.org/buenas_practicas") >= 0){ 
     const innovaciones = document.getElementById("block-views-exp-buenas-pr-cticas-page-1")
     const innovaciones_title = document.createElement("h2")
