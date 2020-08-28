@@ -476,6 +476,7 @@
     margin-bottom: 1rem;
     margin-top: 1rem;
     font-size: 1.2em;
+    width: 80%;
   }
 
   .page-biblioteca .views-exposed-form .form-item,
@@ -492,6 +493,8 @@
 
   .sidebar .block {
     padding-left: 2.3rem;
+    background-color:#f2f2f2 !important;
+    color:black !important;
   }
 
   input.form-radio {
@@ -1699,6 +1702,18 @@
 */
 
 @media (max-width: 767px)  and (orientation: portrait) {
+    
+    .views-exposed-widgets {
+    margin-bottom: -3rem;
+    margin-top: -5rem;
+}
+.sidebar h2 {
+        font-size: 1.5em;
+        margin-top: 2rem;
+        font-weight: bold;
+}
+
+    
   .tabs ul.primary {
     font-size: 1.5rem;
   }
@@ -2287,6 +2302,7 @@
     margin-left: 1rem !important;
     margin-bottom: 1rem;
     margin-top: 1rem;
+    width: 60%;
   }
 
   .page-biblioteca .views-exposed-form .form-item,
@@ -2304,7 +2320,9 @@
   }
 
   .sidebar .block {
-    padding-left: 2.3rem;
+    padding-left: 5rem;
+    background-color:#f2f2f2 !important;
+    color: black !important;
   }
 
   input.form-radio {
@@ -4533,10 +4551,11 @@
     margin-left: 1rem !important;
     margin-bottom: 1rem;
     margin-top: 1rem;
+    width: 60%;
   }
 
   .sidebar .block {
-    padding-left: 2.3rem;
+    padding-left: 5rem;
   }
 
   .views-exposed-form .form-item,

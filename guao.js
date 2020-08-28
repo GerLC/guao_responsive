@@ -1,14 +1,23 @@
-meta = document.createElement("meta")
+var meta = document.createElement("meta")
 meta.setAttribute("name", "viewport")
 meta.setAttribute("content", "width=device-width")
-head = document.getElementsByTagName("head")[0]
+var head = document.getElementsByTagName("head")[0]
 head.append(meta)
-/*
-jQuery(document).ready(function(){
-  console.log("jQuery disponible.");
-});
-*/
 
+/*
+var jQueryScript = document.createElement('script');  
+jQueryScript.setAttribute('src','https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js');
+document.head.appendChild(jQueryScript);
+    
+    function appendText() {
+  var txt1 = "<p>Text.</p>";               // Create element with HTML 
+  var txt2 = $("<p></p>").text("Text.");   // Create with jQuery
+  var txt3 = document.createElement("p");  // Create with DOM
+  txt3.innerHTML = "Text.";
+  $("#blockbuttonid1").append(txt1, txt2, txt3);      // Append the new elements
+}
+
+appendText()*/
                   /* LISTENER */  
         /* CLICK AFUERA PARA QUITAR LA VENTANA*/
                     /*  SIBEBAR  */
@@ -268,6 +277,26 @@ blockbutton3.onclick = function () {
 	block1.classList.remove('open2');
 }
 
+if(document.URL.indexOf("https://guao.org/biblioteca") >= 0){ 
+    var biblio_title = document.createElement("h2");
+    biblio_title.id = "title_biblioteca";
+    biblio_title.innerHTML = "Biblioteca"
+    var biblio = document.getElementById("block-views-exp-library-page-1")
+    biblio.insertBefore(biblio_title,biblio.firstChild)
+}
+if(document.URL.indexOf("https://guao.org/buenas_practicas") >= 0){ 
+    const innovaciones = document.getElementById("block-views-exp-buenas-pr-cticas-page-1")
+    const innovaciones_title = document.createElement("h2")
+    innovaciones_title.id = "title_innovaciones"
+    innovaciones_title.innerHTML = "Innovaciones Educativas"
+    innovaciones.insertBefore(innovaciones_title, innovaciones.firstChild)
+}
 
 
-
+if(document.URL.indexOf("https://guao.org/portafolio-docente") >= 0){ 
+    const portafolio = document.getElementById("block-views-exp-portafolio-docente-page-1")
+    const portafolio_title = document.createElement("h2")
+    portafolio_title.id = "title_portafolio"
+    portafolio_title.innerHTML = "Portafolio Docente"
+    portafolio.insertBefore(portafolio_title, portafolio.firstChild)
+}
