@@ -72,7 +72,7 @@ divclass.onclick = function () {
   
   var x = document.getElementById("main");
   var y = document.getElementById("header");
-  var z = document.getElementById("main-wrapper");
+  var z = document.getElementById("page");
   
   if (z.style.marginLeft) {
   
@@ -82,7 +82,7 @@ divclass.onclick = function () {
   
   } else {
       
-  z.style.marginLeft = "54rem";
+  z.style.marginLeft = "95%";
   x.classList.toggle("change");
   y.classList.toggle("change");
   }
@@ -308,6 +308,7 @@ usermenu.id = "usermenu";
 var secmenu = document.getElementById("block-menu-menu-men-secundario").cloneNode(true);
 secmenu.id = "secmenu";
 
+var logo = document.getElementById("logo").cloneNode(true);
 
 var sidenav = document.createElement("div");
 sidenav.id = "sidebar";
@@ -315,9 +316,10 @@ sidenav.classList = "navigation";
 document.getElementById("main").appendChild(sidenav);
 document.getElementById("main").insertBefore(sidenav,document.getElementById("main").firstChild);
 
+
 sidenav.insertBefore(usermenu,sidenav.firstChild);
 sidenav.insertBefore(mainmenu,sidenav.firstChild);
-
+sidenav.appendChild(document.createElement("hr"));
 
 
 if(document.URL.indexOf("https://guao.org/biblioteca") >= 0){ 
@@ -331,24 +333,41 @@ if(document.URL.indexOf("https://guao.org/biblioteca") >= 0){
     biblio_title.innerHTML = "Biblioteca"
     var biblio = document.getElementById("block-views-exp-library-page-1")
     biblio.insertBefore(biblio_title,biblio.firstChild)
+    sidenav.appendChild(document.createElement("hr"));
 }
 
-sidenav.appendChild(secmenu);
 
 
 if(document.URL.indexOf("https://guao.org/buenas_practicas") >= 0){ 
+    
+    var sidebarfirst = document.getElementById("sidebar-first").cloneNode(true);
+    sidebarfirst.id = "sidebarfirst";
+
+    sidenav.appendChild(sidebarfirst);
     const innovaciones = document.getElementById("block-views-exp-buenas-pr-cticas-page-1")
     const innovaciones_title = document.createElement("h2")
     innovaciones_title.id = "title_innovaciones"
     innovaciones_title.innerHTML = "Innovaciones Educativas"
     innovaciones.insertBefore(innovaciones_title, innovaciones.firstChild)
+    sidenav.appendChild(document.createElement("hr"));
+
 }
 
 
 if(document.URL.indexOf("https://guao.org/portafolio-docente") >= 0){ 
+
+    var sidebarfirst = document.getElementById("sidebar-first").cloneNode(true);
+    sidebarfirst.id = "sidebarfirst";
+
+    sidenav.appendChild(sidebarfirst);
     const portafolio = document.getElementById("block-views-exp-portafolio-docente-page-1")
     const portafolio_title = document.createElement("h2")
     portafolio_title.id = "title_portafolio"
     portafolio_title.innerHTML = "Portafolio Docente"
     portafolio.insertBefore(portafolio_title, portafolio.firstChild)
+    sidenav.appendChild(document.createElement("hr"));
+
 }
+
+sidenav.appendChild(secmenu);
+sidenav.insertBefore(logo,sidenav.firstChild);
