@@ -2147,7 +2147,6 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    /*transform: translate(10px, 10px);*/
     background-color: #f2f2f2;
     font-weight: bold;
     transform: translateZ(0);
@@ -2170,7 +2169,7 @@
   #secmenu {
     transform: scaleY(0) !important;
     overflow: visible;
-    transition: all 0.5s;
+    transition: transform 0.5s;
     transform-origin: top;
   }
 
@@ -2203,10 +2202,10 @@
   #angle-arrow-down {
     opacity: 1;
     transition: 1s;
-    font-size: 10em;
+    font-size: 7em;
     right: 0;
     position: absolute;
-    top: 2rem;
+    top: 3rem;
     animation-name: updown;
     animation-iteration-count: infinite;
     animation-duration: 1s;
@@ -2232,12 +2231,14 @@
     height: 100%;
     transition: 0.4s;
     z-index: 3;
+    opacity: 0;
   }
 
   .change #sidebar {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 68%;
     transition: 0.3s;
+    opacity: 1;
   }
 
   #page {
@@ -2505,6 +2506,8 @@
   #footer {
     margin-top: 0;
   }
+  
+
   /*********FIN FOOTER********/
 
   /******** SIDEBARS ************/
@@ -3881,7 +3884,11 @@
   }
 
   .rtejustify > span {
-    font-size: 1em !important;
+    font-size: 1.15em !important;
+  }
+  
+  .rtecenter > iframe {
+      width: 100%;
   }
 
   div.view.view-Noticias > div.view-header h1 {
@@ -4041,9 +4048,9 @@
 
   .page-user-login .section {
     display: flex;
-    flex-flow: column;
+    flex-flow:column wrap;
     justify-content: space-around;
-    width: 100%;
+
   }
 
   #block-block-33 {
