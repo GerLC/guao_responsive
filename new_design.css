@@ -2181,7 +2181,7 @@
   }
 
   .region-sidebar-first {
-    transform: translateY(10px);
+    transform: translateZ(0);
     backface-visibility: hidden;
     -webkit-font-smoothing: subpixel-antialiased;
   }
