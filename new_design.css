@@ -29,17 +29,26 @@
 }
 
 #sidebar {
-    display: none;
+  display: none;
 }
 
 @keyframes stretch {
-  0% { transform: scale(0.8); border-radius: 100%;}
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(0.8);
+    border-radius: 100%;
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes updown {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
 
 @media (max-width: 1024px) {
@@ -509,8 +518,8 @@
 
   .sidebar .block {
     padding-left: 2.3rem;
-    background-color:#f2f2f2 !important;
-    color:black !important;
+    background-color: #f2f2f2 !important;
+    color: black !important;
   }
 
   input.form-radio {
@@ -1645,7 +1654,7 @@
 ##Screen = B/w 768px to 1024px
 */
 
-@media (orientation: landscape) and (min-height: 479px) and (max-width: 1024px)  {
+@media (orientation: landscape) and (min-height: 479px) and (max-width: 1024px) {
   .bloqueshomepage {
     display: flex;
     flex-direction: row;
@@ -1717,31 +1726,31 @@
 ##Screen = B/w 320px to 479px
 */
 
-@media (max-width: 767px)  and (orientation: portrait) {
-    
-    .lateral_izq_bloque01 > li:before, .lateral_izq_bloque02 > li:before, .lateral_izq_bloque03 > li:before {
+@media (max-width: 767px) and (orientation: portrait) {
+  .lateral_izq_bloque01 > li:before,
+  .lateral_izq_bloque02 > li:before,
+  .lateral_izq_bloque03 > li:before {
     border-color: transparent black;
-}
+  }
 
-#block-block-12{
+  #block-block-12 {
     padding-left: 3rem;
-}
-    
-    .lateral_izq_nosotros > li:before {
+  }
+
+  .lateral_izq_nosotros > li:before {
     border-color: transparent black;
-}
-    .views-exposed-widgets {
+  }
+  .views-exposed-widgets {
     margin-bottom: -3rem;
     /*margin-top: -5rem;*/
-}
-.sidebar h2 {
-        font-size: 1.1em;
-        margin-top: 2rem;
-        font-weight: bold;
-        margin-bottom: -2rem;
-    }
+  }
+  .sidebar h2 {
+    font-size: 1.1em;
+    margin-top: 2rem;
+    font-weight: bold;
+    margin-bottom: -2rem;
+  }
 
-    
   .tabs ul.primary {
     font-size: 1.5rem;
   }
@@ -1750,7 +1759,7 @@
   .sidebar .section {
     font-size: 2.5em;
   }
-  
+
   #main-wrapper {
     min-height: 317vh;
   }
@@ -1761,21 +1770,22 @@
     background-color: white;
     width: 100%;
   }
-  
+
   #page {
-      display: flex;
-      flex-flow: column wrap;
-      align-items: stretch;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: stretch;
   }
-  
 
   #main-wrapper {
     margin-bottom: 3rem;
     flex: 1;
   }
-  
-  #main-wrapper, #header, #footer-wrapper {
-      flex-shrink: 0;
+
+  #main-wrapper,
+  #header,
+  #footer-wrapper {
+    flex-shrink: 0;
   }
 
   .section {
@@ -1976,18 +1986,18 @@
     min-height: 7.5rem;
     outline: none;
     overflow: hidden;
-    z-index: 2; 
+    z-index: 2;
   }
-  
+
   #header div.section {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-}
-  
+  }
+
   div.region.region-header {
-      height: auto;
+    height: auto;
   }
 
   #hamburgerid {
@@ -2042,143 +2052,154 @@
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-13px, -8px);
   }
-  
+
   /**********FIN MEN?? HAMBURGER *******/
 
   #main-menu {
-      display: none;
+    display: none;
   }
-  
 
   #mainmenu #main-menu-links a {
     color: black;
     background-color: #f2f2f2;
     text-align: start;
     text-transform: capitalize;
-    padding-left: 5rem;  
+    padding-left: 5rem;
   }
-
 
   #mainmenu #main-menu-links li {
     font-size: 2.5em;
     height: 7rem;
-}
+  }
 
   #mainmenu #main-menu-links {
     -webkit-transform: scale(1);
     transform: translateZ(0);
-}
+  }
 
   #mainmenu #main-menu-links .active-trail {
     display: none;
-}
-
-
- #sidebarfirst .section {
-     margin-left: 0;
-     margin-right: 0;
-}
-
-  
-  #sidebar .sidebar .section {
-      font-size: 3.3em !important;
   }
-  
+
+  #sidebarfirst .section {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #sidebar .sidebar .section {
+    font-size: 3.3em !important;
+  }
+
   #sidebar-first .option {
+  }
 
-}
-
-#edit-field-categor-as-tid > div:nth-child(36) > label, #edit-field-categor-as-tid > div:nth-child(48) > label {
+  #edit-field-categor-as-tid > div:nth-child(36) > label,
+  #edit-field-categor-as-tid > div:nth-child(48) > label {
     display: content;
-}
+  }
 
-
- .lateral_izq_bloque01 > li > a, .lateral_izq_bloque02 > li > a, .lateral_izq_bloque03 > li > a {
-     color: black;
- }
- 
- #block-block-8 > h2, #block-block-13 > h2, #block-block-15 > h2, #block-block-48 > h2 {
-     color: black;
- }
- 
- .page-primer-grado .lateral_izq_bloque01 > li:nth-child(1) > a, .page-segundo-grado .lateral_izq_bloque01 > li:nth-child(2) > a, .page-tercer-grado .lateral_izq_bloque01 > li:nth-child(3) > a, .page-cuarto-grado .lateral_izq_bloque01 > li:nth-child(4) > a, .page-quinto-grado .lateral_izq_bloque01 > li:nth-child(5) > a, .page-sexto-grado .lateral_izq_bloque01 > li:nth-child(6) > a, .page-primer-ano .lateral_izq_bloque02 > li:nth-child(1) > a, .page-segundo-ano .lateral_izq_bloque02 > li:nth-child(2) > a, .page-tercer-ano .lateral_izq_bloque02 > li:nth-child(3) > a, .page-cuarto-ano .lateral_izq_bloque02 > li:nth-child(4) > a, .page-quinto-ano .lateral_izq_bloque02 > li:nth-child(5) > a, .page-docentes-primer-ano .lateral_izq_bloque02 > li:nth-child(1) > a, .page-docentes-segundo-ano .lateral_izq_bloque02 > li:nth-child(2) > a, .page-docentes-tercer-ano .lateral_izq_bloque02 > li:nth-child(3) > a, .page-docentes-cuarto-ano .lateral_izq_bloque02 > li:nth-child(4) > a, .page-docentes-quinto-ano .lateral_izq_bloque02 > li:nth-child(5) > a, .page-celebraciones-escolares .lateral_izq_bloque03 > li:nth-child(1) > a, .page-efemerides .lateral_izq_bloque03 > li:nth-child(4) > a {
-     color: black;
- }
- 
-
-  #sidebar #block-block-12 > h2, #sidebar .lateral_izq_nosotros > li > a {
+  .lateral_izq_bloque01 > li > a,
+  .lateral_izq_bloque02 > li > a,
+  .lateral_izq_bloque03 > li > a {
     color: black;
+  }
 
-}
- 
+  #block-block-8 > h2,
+  #block-block-13 > h2,
+  #block-block-15 > h2,
+  #block-block-48 > h2 {
+    color: black;
+  }
 
+  .page-primer-grado .lateral_izq_bloque01 > li:nth-child(1) > a,
+  .page-segundo-grado .lateral_izq_bloque01 > li:nth-child(2) > a,
+  .page-tercer-grado .lateral_izq_bloque01 > li:nth-child(3) > a,
+  .page-cuarto-grado .lateral_izq_bloque01 > li:nth-child(4) > a,
+  .page-quinto-grado .lateral_izq_bloque01 > li:nth-child(5) > a,
+  .page-sexto-grado .lateral_izq_bloque01 > li:nth-child(6) > a,
+  .page-primer-ano .lateral_izq_bloque02 > li:nth-child(1) > a,
+  .page-segundo-ano .lateral_izq_bloque02 > li:nth-child(2) > a,
+  .page-tercer-ano .lateral_izq_bloque02 > li:nth-child(3) > a,
+  .page-cuarto-ano .lateral_izq_bloque02 > li:nth-child(4) > a,
+  .page-quinto-ano .lateral_izq_bloque02 > li:nth-child(5) > a,
+  .page-docentes-primer-ano .lateral_izq_bloque02 > li:nth-child(1) > a,
+  .page-docentes-segundo-ano .lateral_izq_bloque02 > li:nth-child(2) > a,
+  .page-docentes-tercer-ano .lateral_izq_bloque02 > li:nth-child(3) > a,
+  .page-docentes-cuarto-ano .lateral_izq_bloque02 > li:nth-child(4) > a,
+  .page-docentes-quinto-ano .lateral_izq_bloque02 > li:nth-child(5) > a,
+  .page-celebraciones-escolares .lateral_izq_bloque03 > li:nth-child(1) > a,
+  .page-efemerides .lateral_izq_bloque03 > li:nth-child(4) > a {
+    color: black;
+  }
 
-  #sidebar #block-block-48,#sidebar #block-block-13,#sidebar #block-block-8 {
+  #sidebar #block-block-12 > h2,
+  #sidebar .lateral_izq_nosotros > li > a {
+    color: black;
+  }
+
+  #sidebar #block-block-48,
+  #sidebar #block-block-13,
+  #sidebar #block-block-8 {
     margin-top: 0;
   }
-  
-  #secmenu > div.content > ul  {
+
+  #secmenu > div.content > ul {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-<<<<<<< HEAD
     /*transform: translate(10px, 10px);*/
-    background-color:#f2f2f2;
+    background-color: #f2f2f2;
     font-weight: bold;
-=======
     transform: translateZ(0);
->>>>>>> 4c139984a12623d78901f85bada05d802926f7a5
   }
-  
-  
-   #secmenu > div.content > ul > li > a {
+
+  #secmenu > div.content > ul > li > a {
     color: black;
     padding: 0.5rem 3.25rem;
     text-decoration: none;
     font-size: 3em;
   }
-  
+
   #secmenu > div.content > ul > li.leaf {
-    border-bottom: 1px dotted #C2C3C5;
+    border-bottom: 1px dotted #c2c3c5;
     line-height: 6rem;
-}
-  
-  #sidebarfirst, #mainmenu, #secmenu { 
-<<<<<<< HEAD
-    /*margin-bottom: 3rem;*/
-=======
->>>>>>> 4c139984a12623d78901f85bada05d802926f7a5
+  }
+
+  #sidebarfirst,
+  #mainmenu,
+  #secmenu {
     transform: scaleY(0) !important;
     overflow: visible;
-    transition: all .5s;
+    transition: all 0.5s;
     transform-origin: top;
   }
-  
-  
-   .change #sidebarfirst,.change #mainmenu,.change #secmenu { 
+
+  .change #sidebarfirst,
+  .change #mainmenu,
+  .change #secmenu {
     transform: scaleY(1) !important;
   }
-  
-    .region-sidebar-first {
+
+  .region-sidebar-first {
     transform: translateY(10px);
     backface-visibility: hidden;
     -webkit-font-smoothing: subpixel-antialiased;
   }
-  
+
   #logo > img {
     transform: translateZ(0);
   }
-  
+
   .show #login {
-  animation-name: stretch;
-  animation-duration: 1s; 
-  animation-timing-function: ease-out; 
-  animation-delay: 0;
-  animation-direction: alternate;
-  animation-fill-mode: none;
-  animation-play-state: running;
+    animation-name: stretch;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
   }
-  
+
   #angle-arrow-down {
     opacity: 1;
     transition: 1s;
@@ -2188,20 +2209,19 @@
     top: 2rem;
     animation-name: updown;
     animation-iteration-count: infinite;
-    animation-duration: 1s; 
-    animation-timing-function: ease-out; 
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
     animation-delay: 0;
     animation-direction: alternate;
     animation-fill-mode: none;
     animation-play-state: running;
   }
-  
+
   .open1 #angle-arrow-down {
-     opacity: 0;
+    opacity: 0;
   }
 
-
-   #sidebar {
+  #sidebar {
     display: block;
     position: fixed;
     width: 0;
@@ -2212,22 +2232,18 @@
     height: 100%;
     transition: 0.4s;
     z-index: 3;
-}
+  }
 
+  .change #sidebar {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 68%;
+    transition: 0.3s;
+  }
 
+  #page {
+    transition: 0.3s;
+  }
 
-   .change #sidebar  {
-       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-       width: 68%;
-       transition: 0.3s;
-   }
-   
-
-   #page {
-       transition: 0.3s;
-   }
-   
-   
   /************ MEN?? TU AULA / BIBLIOTECA ... */
 
   #main-menu-links li {
@@ -2250,28 +2266,27 @@
     z-index: 2;
     top: 16rem;
     right: 15rem;
-    transition: all .2s;
+    transition: all 0.2s;
     transform-origin: top;
   }
 
-
-    #block-system-user-menu > div.content {
+  #block-system-user-menu > div.content {
     position: absolute;
     left: 4rem;
     top: -1rem;
     background-color: white;
     overflow: hidden;
-    box-shadow:  0 0 1px 2px rgba(0,0,0,0.6);
-    border-radius:25px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
     z-index: 1;
   }
 
-  #block-system-user-menu > div.content > ul  {
+  #block-system-user-menu > div.content > ul {
     display: flex;
-    flex-flow:column wrap;
+    flex-flow: column wrap;
     justify-content: space-between;
   }
-  
+
   #block-system-user-menu > div.content > ul > li > a {
     background-image: none;
     border: 1px solid black;
@@ -2281,16 +2296,15 @@
     padding: 1.5rem 1.25rem;
     width: 25rem;
     height: 4rem;
-    padding-top: 3rem; 
-    padding-top: 3rem; 
+    padding-top: 3rem;
+    padding-top: 3rem;
     display: block;
   }
-  
+
   #block-system-user-menu > div.content > ul > li.first > a {
     background-image: none;
+  }
 
-}
-  
   #login {
     display: block !important;
     position: relative;
@@ -2305,7 +2319,6 @@
   .show #block-system-user-menu {
     transform: scaleY(1) !important;
     display: inline-block !important;
-
   }
 
   /* B??SQUEDA  */
@@ -2329,10 +2342,10 @@
   #block-search-form1 > element.style {
     transform: scaleY(0) !important;
   }
-  
+
   #block-search-form > div > form > div > div {
     transform: translateZ(0);
-}
+  }
 
   #busqueda {
     display: block !important;
@@ -2496,7 +2509,7 @@
 
   /******** SIDEBARS ************/
   #sidebar-first {
-      display: none;
+    display: none;
     text-align: initial;
     font-size: 1.5em;
     width: 0;
@@ -2542,7 +2555,7 @@
 
   .sidebar .block {
     padding-left: 5rem;
-    background-color:#f2f2f2 !important;
+    background-color: #f2f2f2 !important;
     color: black !important;
   }
 
@@ -3488,7 +3501,7 @@
   /*  aqui estoy  */
 
   /* SIDEBAR DERECHA */
-/*
+  /*
   #block-block-13 {
     height: 50rem;
     width: 41rem;
@@ -3527,7 +3540,7 @@
   }
 
   .view_bloque_lateral > div.top > a > img {
-    width: 20rem !important; 
+    width: 20rem !important;
     height: auto !important;
     transform: translateZ(0);
   }
@@ -3537,12 +3550,11 @@
     text-align: center;
     line-height: 5rem;
   }
-  
-.view_bloque_lateral > div.content a {
+
+  .view_bloque_lateral > div.content a {
     font-size: 2.5em;
     line-height: 4rem;
-
-}
+  }
 
   .node-type-video .field.field-name-body > div > div > iframe {
     width: 60rem;
@@ -4267,95 +4279,171 @@
     top: -4rem;
     left: 0rem;
   }
-  
+
   .page-cursos #page-title {
     margin-bottom: 5rem;
-}
-  .page-cursos #content .section, .page-cursos .view-cursos, .page-cursos .views-row {
+  }
+  .page-cursos #content .section,
+  .page-cursos .view-cursos,
+  .page-cursos .views-row {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-}
+  }
 
- .page-cursos .views-row .views-field-field-portada-curso, .page-cursos .views-row .views-field-field-portada-curso > div {
-     float: none;
-     width: 100%;
-     height: auto;
- }
+  .page-cursos .views-row .views-field-field-portada-curso,
+  .page-cursos .views-row .views-field-field-portada-curso > div {
+    float: none;
+    width: 100%;
+    height: auto;
+  }
 
-.page-cursos .views-row .views-field-nothing a {
+  .page-cursos .views-row .views-field-nothing a {
     width: 3.5rem;
     height: auto;
-}
+  }
 
- .page-cursos .view-content {
-     display: flex;
-     flex-flow: wrap;
-     justify-content: space-evenly;
- }
-  
-  
+  .page-cursos .view-content {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+  }
+
   .page-node-20656
     div.form-item.form-type-textfield.form-item-field-autor-value
     > input,
   div.form-item.form-type-textfield.form-item-title > input {
     width: 26rem;
   }
-  
-  
-  .page-primer-grado-educacion-estetica #content, .page-segundo-grado-educacion-estetica #content, .page-tercer-grado-educacion-estetica #content, .page-cuarto-grado-educacion-estetica #content, .page-quinto-grado-educacion-estetica #content, .page-sexto-grado-educacion-estetica #content, .page-tercer-ano-quimica #content, .page-cuarto-ano-quimica #content, .page-quinto-ano-quimica #content, .page-tercer-ano-fisica #content, .page-cuarto-ano-fisica #content, .page-quinto-ano-fisica #content, .page-primer-grado-ciencias-sociales #content, .page-segundo-grado-ciencias-sociales #content, .page-tercer-grado-ciencias-sociales #content, .page-cuarto-grado-ciencias-sociales #content, .page-quinto-grado-ciencias-sociales #content, .page-sexto-grado-ciencias-sociales #content, .page-quinto-ano-ciencias-de-la-tierra #content, .page-primer-grado-educacion-fisica-y-deporte #content, .page-segundo-grado-educacion-fisica-y-deporte #content, .page-tercer-grado-educacion-fisica-y-deporte #content, .page-cuarto-grado-educacion-fisica-y-deporte #content, .page-quinto-grado-educacion-fisica-y-deporte #content, .page-sexto-grado-educacion-fisica-y-deporte #content, .page-primer-ano-estudios-de-la-naturaleza #content, .page-segundo-ano-biologia #content, .page-tercer-ano-biologia #content, .page-cuarto-ano-biologia #content, .page-quinto-ano-biologia #content, .page-primer-grado-ciencias-naturales #content, .page-segundo-grado-ciencias-naturales #content, .page-tercer-grado-ciencias-naturales #content, .page-cuarto-grado-ciencias-naturales #content, .page-quinto-grado-ciencias-naturales #content, .page-sexto-grado-ciencias-naturales #content, .page-primer-grado-educacion-sexual #content, .page-segundo-grado-educacion-sexual #content, .page-tercer-grado-educacion-sexual #content, .page-cuarto-grado-educacion-sexual #content, .page-quinto-grado-educacion-sexual #content, .page-sexto-grado-educacion-sexual #content, .page-primer-ano-educacion-sexual #content, .page-segundo-ano-educacion-sexual #content, .page-tercer-ano-educacion-sexual #content, .page-cuarto-ano-educacion-sexual #content, .page-quinto-ano-educacion-sexual #content, .page-primer-grado-lengua #content, .page-segundo-grado-lengua #content, .page-tercer-grado-lengua #content, .page-cuarto-grado-lengua #content, .page-quinto-grado-lengua #content, .page-sexto-grado-lengua #content, .page-primer-grado-matematica #content, .page-segundo-grado-matematica #content, .page-tercer-grado-matematica #content, .page-cuarto-grado-matematica #content, .page-quinto-grado-matematica #content, .page-sexto-grado-matematica #content, .page-primer-ano-castellano-y-literatura #content, .page-segundo-ano-castellano-y-literatura #content, .page-tercer-ano-castellano-y-literatura #content, .page-cuarto-ano-lengua-y-literatura #content, .page-quinto-ano-lengua-y-literatura #content, .page-primer-ano-historia-de-venezuela #content, .page-segundo-ano-historia-de-venezuela #content, .page-primer-ano-matematica #content, .page-segundo-ano-matematica #content, .page-tercer-ano-matematica #content, .page-cuarto-ano-matematica #content, .page-quinto-ano-matematica #content, .page-docentes-primer-ano-matematica #content, .page-docentes-segundo-ano-matematica #content, .page-docentes-tercer-ano-matematica #content, .page-docentes-cuarto-ano-matematica #content, .page-docentes-quinto-ano-matematica #content, .page-docentes-tercer-ano-quimica #content, .page-docentes-cuarto-ano-quimica #content, .page-docentes-quinto-ano-quimica #content, .page-docentes-tercer-ano-fisica #content, .page-docentes-cuarto-ano-fisica #content, .page-docentes-quinto-ano-fisica #content {
-      margin-left: 0;
+
+  .page-primer-grado-educacion-estetica #content,
+  .page-segundo-grado-educacion-estetica #content,
+  .page-tercer-grado-educacion-estetica #content,
+  .page-cuarto-grado-educacion-estetica #content,
+  .page-quinto-grado-educacion-estetica #content,
+  .page-sexto-grado-educacion-estetica #content,
+  .page-tercer-ano-quimica #content,
+  .page-cuarto-ano-quimica #content,
+  .page-quinto-ano-quimica #content,
+  .page-tercer-ano-fisica #content,
+  .page-cuarto-ano-fisica #content,
+  .page-quinto-ano-fisica #content,
+  .page-primer-grado-ciencias-sociales #content,
+  .page-segundo-grado-ciencias-sociales #content,
+  .page-tercer-grado-ciencias-sociales #content,
+  .page-cuarto-grado-ciencias-sociales #content,
+  .page-quinto-grado-ciencias-sociales #content,
+  .page-sexto-grado-ciencias-sociales #content,
+  .page-quinto-ano-ciencias-de-la-tierra #content,
+  .page-primer-grado-educacion-fisica-y-deporte #content,
+  .page-segundo-grado-educacion-fisica-y-deporte #content,
+  .page-tercer-grado-educacion-fisica-y-deporte #content,
+  .page-cuarto-grado-educacion-fisica-y-deporte #content,
+  .page-quinto-grado-educacion-fisica-y-deporte #content,
+  .page-sexto-grado-educacion-fisica-y-deporte #content,
+  .page-primer-ano-estudios-de-la-naturaleza #content,
+  .page-segundo-ano-biologia #content,
+  .page-tercer-ano-biologia #content,
+  .page-cuarto-ano-biologia #content,
+  .page-quinto-ano-biologia #content,
+  .page-primer-grado-ciencias-naturales #content,
+  .page-segundo-grado-ciencias-naturales #content,
+  .page-tercer-grado-ciencias-naturales #content,
+  .page-cuarto-grado-ciencias-naturales #content,
+  .page-quinto-grado-ciencias-naturales #content,
+  .page-sexto-grado-ciencias-naturales #content,
+  .page-primer-grado-educacion-sexual #content,
+  .page-segundo-grado-educacion-sexual #content,
+  .page-tercer-grado-educacion-sexual #content,
+  .page-cuarto-grado-educacion-sexual #content,
+  .page-quinto-grado-educacion-sexual #content,
+  .page-sexto-grado-educacion-sexual #content,
+  .page-primer-ano-educacion-sexual #content,
+  .page-segundo-ano-educacion-sexual #content,
+  .page-tercer-ano-educacion-sexual #content,
+  .page-cuarto-ano-educacion-sexual #content,
+  .page-quinto-ano-educacion-sexual #content,
+  .page-primer-grado-lengua #content,
+  .page-segundo-grado-lengua #content,
+  .page-tercer-grado-lengua #content,
+  .page-cuarto-grado-lengua #content,
+  .page-quinto-grado-lengua #content,
+  .page-sexto-grado-lengua #content,
+  .page-primer-grado-matematica #content,
+  .page-segundo-grado-matematica #content,
+  .page-tercer-grado-matematica #content,
+  .page-cuarto-grado-matematica #content,
+  .page-quinto-grado-matematica #content,
+  .page-sexto-grado-matematica #content,
+  .page-primer-ano-castellano-y-literatura #content,
+  .page-segundo-ano-castellano-y-literatura #content,
+  .page-tercer-ano-castellano-y-literatura #content,
+  .page-cuarto-ano-lengua-y-literatura #content,
+  .page-quinto-ano-lengua-y-literatura #content,
+  .page-primer-ano-historia-de-venezuela #content,
+  .page-segundo-ano-historia-de-venezuela #content,
+  .page-primer-ano-matematica #content,
+  .page-segundo-ano-matematica #content,
+  .page-tercer-ano-matematica #content,
+  .page-cuarto-ano-matematica #content,
+  .page-quinto-ano-matematica #content,
+  .page-docentes-primer-ano-matematica #content,
+  .page-docentes-segundo-ano-matematica #content,
+  .page-docentes-tercer-ano-matematica #content,
+  .page-docentes-cuarto-ano-matematica #content,
+  .page-docentes-quinto-ano-matematica #content,
+  .page-docentes-tercer-ano-quimica #content,
+  .page-docentes-cuarto-ano-quimica #content,
+  .page-docentes-quinto-ano-quimica #content,
+  .page-docentes-tercer-ano-fisica #content,
+  .page-docentes-cuarto-ano-fisica #content,
+  .page-docentes-quinto-ano-fisica #content {
+    margin-left: 0;
   }
-  
+
   /*ADMIN USER*/
-  
+
   html body.admin-menu {
     margin-top: 67px !important;
-}
+  }
 
- .page-admin #admin-menu {
+  .page-admin #admin-menu {
     font-size: 0.7em;
     height: 9.5%;
-}
+  }
 
- .page-admin div.admin .right, .page-admin div.admin .left {
+  .page-admin div.admin .right,
+  .page-admin div.admin .left {
     width: 100%;
-}
+  }
 
+  /*Panel de Control*/
 
- /*Panel de Control*/
- 
-
-
- #branding {
+  #branding {
     width: 100%;
-}
+  }
 
- #dashboard {
-     display: flex;
-     flex-flow: column wrap;
-     justify-content: center;
+  #dashboard {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+  }
 
- }
-
- #dashboard div#dashboard_main {
+  #dashboard div#dashboard_main {
     width: 100%;
     margin-right: 1%;
     order: 2;
     display: flex;
     align-self: center;
-}
+  }
 
-#dashboard div#dashboard_sidebar {
+  #dashboard div#dashboard_sidebar {
     width: 65%;
     float: none;
     order: 1;
     display: flex;
     align-self: center;
-}
-
-
-  
+  }
 }
 
 /*##Device = Smartphones Most of the Smartphones (Landscape)*/
