@@ -2135,6 +2135,7 @@
   #sidebar #block-block-12 > h2,
   #sidebar .lateral_izq_nosotros > li > a {
     color: black;
+    font-size: 1.1em;
   }
 
   #sidebar #block-block-48,
@@ -2234,11 +2235,19 @@
     opacity: 0;
   }
 
+  #block-block-8 > h2,
+  #block-block-13 > h2,
+  #block-block-15 > h2,
+  #block-block-48 > h2 {
+    font-size: 1.3em;
+  }
+
   .change #sidebar {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 68%;
     transition: 0.3s;
     opacity: 1;
+    background-color: #f2f2f2;
   }
 
   #page {
@@ -2506,7 +2515,6 @@
   #footer {
     margin-top: 0;
   }
-  
 
   /*********FIN FOOTER********/
 
@@ -3886,9 +3894,9 @@
   .rtejustify > span {
     font-size: 1.15em !important;
   }
-  
+
   .rtecenter > iframe {
-      width: 100%;
+    width: 100%;
   }
 
   div.view.view-Noticias > div.view-header h1 {
@@ -4048,9 +4056,8 @@
 
   .page-user-login .section {
     display: flex;
-    flex-flow:column wrap;
+    flex-flow: column wrap;
     justify-content: space-around;
-
   }
 
   #block-block-33 {
