@@ -282,12 +282,6 @@ blockbutton3.id = "blockbuttonid3";
 document.getElementsByClassName("blockbuttonhome")[0].appendChild(blockbutton3);
 
 
- var span = document.createElement("span");
- var arrow = document.createTextNode("︾"); 
- span.id = "angle-arrow-down";
- span.appendChild(arrow);
- blockbutton1.appendChild(span);
-
 
 var block1 =  document.getElementById("main-wrapper");
 

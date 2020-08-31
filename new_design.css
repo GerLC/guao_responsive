@@ -2098,8 +2098,6 @@
     color: black;
 
 }
- 
-
 
   #sidebar #block-block-48,#sidebar #block-block-13,#sidebar #block-block-8 {
     margin-top: 0;
@@ -2138,7 +2136,7 @@
   }
   
     .region-sidebar-first {
-    transform: translateY(10px);
+    transform: translateZ(0);
     backface-visibility: hidden;
     -webkit-font-smoothing: subpixel-antialiased;
   }
@@ -2157,27 +2155,6 @@
   animation-play-state: running;
   }
   
-  #angle-arrow-down {
-    opacity: 1;
-    transition: 1s;
-    font-size: 10em;
-    right: 0;
-    position: absolute;
-    top: 2rem;
-    animation-name: updown;
-    animation-iteration-count: infinite;
-    animation-duration: 1s; 
-    animation-timing-function: ease-out; 
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-fill-mode: none;
-    animation-play-state: running;
-  }
-  
-  .open1 #angle-arrow-down {
-     opacity: 0;
-  }
-
 
    #sidebar {
     display: block;
