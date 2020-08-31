@@ -146,7 +146,7 @@
     margin-bottom: 6rem;
   }
 
-  /* MENÚ HAMBURGER */
+  /* MEN?? HAMBURGER */
 
   #logo {
     position: relative;
@@ -230,7 +230,7 @@
     margin-bottom: 3rem;
   }
 
-  /* MENÚ TU AULA / BIBLIOTECA ... */
+  /* MEN?? TU AULA / BIBLIOTECA ... */
 
   #main-menu-links li {
     font-weight: bold;
@@ -238,7 +238,7 @@
     width: 100%;
   }
 
-  /* MENÚ SECUNDARIO NOSOTROS , CONTACTOS ... */
+  /* MEN?? SECUNDARIO NOSOTROS , CONTACTOS ... */
 
   #block-menu-menu-men-secundario {
     position: relative;
@@ -253,7 +253,7 @@
     color: black;
   }
 
-  /* BÚSQUEDA  */
+  /* B??SQUEDA  */
 
   #block-search-form {
     transform: scaleX(0);
@@ -360,7 +360,7 @@
     transform: scaleX(1);
   }
 
-  /* INICIAR SESIÓN */
+  /* INICIAR SESI??N */
 
   .element-invisible {
     image-rendering: pixelated;
@@ -1162,7 +1162,7 @@
     margin: 2rem 10px;
   }
 
-  /****** PRIMER/QUINTO -- GRADO/AÑO MATERIA TABLET Portrait******/
+  /****** PRIMER/QUINTO -- GRADO/A??O MATERIA TABLET Portrait******/
 
   /* BODYCUERPO */
 
@@ -1364,7 +1364,7 @@
     margin-bottom: 2rem;
   }
 
-  /******FIN  PRIMER/QUINTO -- GRADO/AÑO MATERIA TABLET Portrait******/
+  /******FIN  PRIMER/QUINTO -- GRADO/A??O MATERIA TABLET Portrait******/
 
   .breadcrumb {
     font-size: 2em;
@@ -1575,7 +1575,7 @@
     border-bottom-right-radius: 35px;
   }
 
-  /**********  Venezuela CAMAPAÑA ***********/
+  /**********  Venezuela CAMAPA??A ***********/
 
   .page-venezuela-le-habla-a-la-educacion-campanas
     .view-filters
@@ -1719,15 +1719,27 @@
 
 @media (max-width: 767px)  and (orientation: portrait) {
     
+    .lateral_izq_bloque01 > li:before, .lateral_izq_bloque02 > li:before, .lateral_izq_bloque03 > li:before {
+    border-color: transparent black;
+}
+
+#block-block-12{
+    padding-left: 3rem;
+}
+    
+    .lateral_izq_nosotros > li:before {
+    border-color: transparent black;
+}
     .views-exposed-widgets {
     margin-bottom: -3rem;
-    margin-top: -5rem;
+    /*margin-top: -5rem;*/
 }
 .sidebar h2 {
         font-size: 1.1em;
         margin-top: 2rem;
         font-weight: bold;
-}
+        margin-bottom: -2rem;
+    }
 
     
   .tabs ul.primary {
@@ -1958,7 +1970,7 @@
 
   /******Fin Home*******/
 
-  /**********MENÚ HAMBURGER *******/
+  /**********MEN?? HAMBURGER *******/
   #header {
     border-bottom: 1px outset black;
     min-height: 7.5rem;
@@ -2031,7 +2043,7 @@
     transform: rotate(45deg) translate(-13px, -8px);
   }
   
-  /**********FIN MENÚ HAMBURGER *******/
+  /**********FIN MEN?? HAMBURGER *******/
 
   #main-menu {
       display: none;
@@ -2107,7 +2119,9 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    transform: translate(10px, 10px);
+    /*transform: translate(10px, 10px);*/
+    background-color:#f2f2f2;
+    font-weight: bold;
   }
   
   
@@ -2124,7 +2138,7 @@
 }
   
   #sidebarfirst, #mainmenu, #secmenu { 
-    margin-bottom: 3rem;
+    /*margin-bottom: 3rem;*/
     transform: scaleY(0) !important;
     overflow: visible;
     transition: all .5s;
@@ -2205,7 +2219,7 @@
    }
    
    
-  /************ MENÚ TU AULA / BIBLIOTECA ... */
+  /************ MEN?? TU AULA / BIBLIOTECA ... */
 
   #main-menu-links li {
     font-weight: bold;
@@ -2213,7 +2227,7 @@
     width: 100%;
   }
 
-  /* INICIAR SESIÓN */
+  /* INICIAR SESI??N */
 
   .element-invisible {
     image-rendering: pixelated;
@@ -2285,7 +2299,7 @@
 
   }
 
-  /* BÚSQUEDA  */
+  /* B??SQUEDA  */
 
   #block-search-form {
     transform: scaleY(0);
@@ -2426,15 +2440,15 @@
     transform: scaleY(1);
   }
 
-  /************FIN MENÚ TU AULA / BIBLIOTECA ... */
+  /************FIN MEN?? TU AULA / BIBLIOTECA ... */
 
-  /******** MENÚ SECUNDARIO NOSOTROS , CONTACTOS ... */
+  /******** MEN?? SECUNDARIO NOSOTROS , CONTACTOS ... */
 
   #block-menu-menu-men-secundario {
     display: none;
   }
 
-  /********FIN MENÚ SECUNDARIO NOSOTROS , CONTACTOS ... */
+  /********FIN MEN?? SECUNDARIO NOSOTROS , CONTACTOS ... */
 
   /******** FOOTER PORTRAIT MOBILE*****/
   .rteright {
@@ -3307,7 +3321,7 @@
     width: 42rem;
   }
 
-  /**********  Venezuela CAMAPAÑA ***********/
+  /**********  Venezuela CAMAPA??A ***********/
 
   .page-venezuela-le-habla-a-la-educacion-campanas .view-header img {
     width: 67rem;
@@ -3347,7 +3361,7 @@
 
   /**********  FIN Venezuela - MOBILE Portrait ***********/
 
-  /****** PRIMER/QUINTO -- GRADO/AÑO MATERIA MOBILE Portrait******/
+  /****** PRIMER/QUINTO -- GRADO/A??O MATERIA MOBILE Portrait******/
 
   /* BODYCUERPO */
 
@@ -3527,7 +3541,7 @@
     margin-bottom: 2rem;
   }
 
-  /******FIN  PRIMER/QUINTO -- GRADO/AÑO MATERIA MOBILE Portrait******/
+  /******FIN  PRIMER/QUINTO -- GRADO/A??O MATERIA MOBILE Portrait******/
 
   /********** VARIOS - MOBILE Portrait ***********/
 
@@ -4025,7 +4039,7 @@
 
   /* MI CUENTA - EDIT */
 
-  /* Contraseña*/
+  /* Contrase??a*/
   #user-profile-form .form-item-pass > .form-item {
     height: 5rem;
     width: 36rem;
@@ -4444,7 +4458,7 @@
     width: 100%;
   }
 
-  /* MENÚ SECUNDARIO NOSOTROS , CONTACTOS ... */
+  /* MEN?? SECUNDARIO NOSOTROS , CONTACTOS ... */
 
   #block-menu-menu-men-secundario {
     position: relative;
@@ -4493,7 +4507,7 @@
     margin-top: 0;
   }
 
-  /* BÚSQUEDA  */
+  /* B??SQUEDA  */
 
   #block-search-form {
     transform: scaleX(0);
@@ -4605,7 +4619,7 @@
     transform: scaleX(1);
   }
 
-  /* INICIAR SESIÓN */
+  /* INICIAR SESI??N */
 
   .element-invisible {
     image-rendering: pixelated;
@@ -5267,7 +5281,7 @@
     margin: 2rem 10px;
   }
 
-  /****** PRIMER/QUINTO -- GRADO/AÑO MATERIA MOBILE landscape******/
+  /****** PRIMER/QUINTO -- GRADO/A??O MATERIA MOBILE landscape******/
 
   /* BODYCUERPO */
 
@@ -5820,7 +5834,7 @@
     height: auto;
   }
 
-  /**********  Venezuela CAMAPAÑA ***********/
+  /**********  Venezuela CAMAPA??A ***********/
 
   .page-venezuela-le-habla-a-la-educacion-campanas
     .view-filters
