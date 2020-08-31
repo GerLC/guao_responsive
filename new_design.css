@@ -2081,11 +2081,15 @@
 
   
   #sidebar .sidebar .section {
-      font-size: 3em !important;
+      font-size: 3.3em !important;
   }
   
   #sidebar-first .option {
 
+}
+
+#edit-field-categor-as-tid > div:nth-child(36) > label, #edit-field-categor-as-tid > div:nth-child(48) > label {
+    display: content;
 }
 
 
@@ -2107,21 +2111,23 @@
 
 }
  
-  #sidebar #block-block-13 {
-    
-  }
 
-  #sidebar #block-block-8 {
-  
+
+  #sidebar #block-block-48,#sidebar #block-block-13,#sidebar #block-block-8 {
+    margin-top: 0;
   }
   
   #secmenu > div.content > ul  {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
+<<<<<<< HEAD
     /*transform: translate(10px, 10px);*/
     background-color:#f2f2f2;
     font-weight: bold;
+=======
+    transform: translateZ(0);
+>>>>>>> 4c139984a12623d78901f85bada05d802926f7a5
   }
   
   
@@ -2138,7 +2144,10 @@
 }
   
   #sidebarfirst, #mainmenu, #secmenu { 
+<<<<<<< HEAD
     /*margin-bottom: 3rem;*/
+=======
+>>>>>>> 4c139984a12623d78901f85bada05d802926f7a5
     transform: scaleY(0) !important;
     overflow: visible;
     transition: all .5s;
@@ -2208,7 +2217,7 @@
 
 
    .change #sidebar  {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
        width: 68%;
        transition: 0.3s;
    }
@@ -4251,19 +4260,51 @@
     transition: visibility 0s, opacity 0.7s linear;
   }
 
-  /* DOCENTE CURSO */
+  /* DOCENTE CURSO Y MEDIA MATERIAS */
   #block-views-exp-cursos-page #edit-submit-cursos {
     width: 11rem !important;
     height: 6rem !important;
     top: -4rem;
     left: 0rem;
   }
+  
+  .page-cursos #page-title {
+    margin-bottom: 5rem;
+}
+  .page-cursos #content .section, .page-cursos .view-cursos, .page-cursos .views-row {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
 
+ .page-cursos .views-row .views-field-field-portada-curso, .page-cursos .views-row .views-field-field-portada-curso > div {
+     float: none;
+     width: 100%;
+     height: auto;
+ }
+
+.page-cursos .views-row .views-field-nothing a {
+    width: 3.5rem;
+    height: auto;
+}
+
+ .page-cursos .view-content {
+     display: flex;
+     flex-flow: wrap;
+     justify-content: space-evenly;
+ }
+  
+  
   .page-node-20656
     div.form-item.form-type-textfield.form-item-field-autor-value
     > input,
   div.form-item.form-type-textfield.form-item-title > input {
     width: 26rem;
+  }
+  
+  
+  .page-primer-grado-educacion-estetica #content, .page-segundo-grado-educacion-estetica #content, .page-tercer-grado-educacion-estetica #content, .page-cuarto-grado-educacion-estetica #content, .page-quinto-grado-educacion-estetica #content, .page-sexto-grado-educacion-estetica #content, .page-tercer-ano-quimica #content, .page-cuarto-ano-quimica #content, .page-quinto-ano-quimica #content, .page-tercer-ano-fisica #content, .page-cuarto-ano-fisica #content, .page-quinto-ano-fisica #content, .page-primer-grado-ciencias-sociales #content, .page-segundo-grado-ciencias-sociales #content, .page-tercer-grado-ciencias-sociales #content, .page-cuarto-grado-ciencias-sociales #content, .page-quinto-grado-ciencias-sociales #content, .page-sexto-grado-ciencias-sociales #content, .page-quinto-ano-ciencias-de-la-tierra #content, .page-primer-grado-educacion-fisica-y-deporte #content, .page-segundo-grado-educacion-fisica-y-deporte #content, .page-tercer-grado-educacion-fisica-y-deporte #content, .page-cuarto-grado-educacion-fisica-y-deporte #content, .page-quinto-grado-educacion-fisica-y-deporte #content, .page-sexto-grado-educacion-fisica-y-deporte #content, .page-primer-ano-estudios-de-la-naturaleza #content, .page-segundo-ano-biologia #content, .page-tercer-ano-biologia #content, .page-cuarto-ano-biologia #content, .page-quinto-ano-biologia #content, .page-primer-grado-ciencias-naturales #content, .page-segundo-grado-ciencias-naturales #content, .page-tercer-grado-ciencias-naturales #content, .page-cuarto-grado-ciencias-naturales #content, .page-quinto-grado-ciencias-naturales #content, .page-sexto-grado-ciencias-naturales #content, .page-primer-grado-educacion-sexual #content, .page-segundo-grado-educacion-sexual #content, .page-tercer-grado-educacion-sexual #content, .page-cuarto-grado-educacion-sexual #content, .page-quinto-grado-educacion-sexual #content, .page-sexto-grado-educacion-sexual #content, .page-primer-ano-educacion-sexual #content, .page-segundo-ano-educacion-sexual #content, .page-tercer-ano-educacion-sexual #content, .page-cuarto-ano-educacion-sexual #content, .page-quinto-ano-educacion-sexual #content, .page-primer-grado-lengua #content, .page-segundo-grado-lengua #content, .page-tercer-grado-lengua #content, .page-cuarto-grado-lengua #content, .page-quinto-grado-lengua #content, .page-sexto-grado-lengua #content, .page-primer-grado-matematica #content, .page-segundo-grado-matematica #content, .page-tercer-grado-matematica #content, .page-cuarto-grado-matematica #content, .page-quinto-grado-matematica #content, .page-sexto-grado-matematica #content, .page-primer-ano-castellano-y-literatura #content, .page-segundo-ano-castellano-y-literatura #content, .page-tercer-ano-castellano-y-literatura #content, .page-cuarto-ano-lengua-y-literatura #content, .page-quinto-ano-lengua-y-literatura #content, .page-primer-ano-historia-de-venezuela #content, .page-segundo-ano-historia-de-venezuela #content, .page-primer-ano-matematica #content, .page-segundo-ano-matematica #content, .page-tercer-ano-matematica #content, .page-cuarto-ano-matematica #content, .page-quinto-ano-matematica #content, .page-docentes-primer-ano-matematica #content, .page-docentes-segundo-ano-matematica #content, .page-docentes-tercer-ano-matematica #content, .page-docentes-cuarto-ano-matematica #content, .page-docentes-quinto-ano-matematica #content, .page-docentes-tercer-ano-quimica #content, .page-docentes-cuarto-ano-quimica #content, .page-docentes-quinto-ano-quimica #content, .page-docentes-tercer-ano-fisica #content, .page-docentes-cuarto-ano-fisica #content, .page-docentes-quinto-ano-fisica #content {
+      margin-left: 0;
   }
   
   /*ADMIN USER*/
