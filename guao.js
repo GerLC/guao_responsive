@@ -37,7 +37,8 @@ window.addEventListener('click', function(event) {
                     /*  INICIO SESION  */
 window.addEventListener('click', function(event) {
   if (!event.target.matches('.login')) {
-    var dropdowns = document.getElementsByClassName("region-header");
+   /* var dropdowns = document.getElementsByClassName("region-header");*/
+    var dropdowns = document.getElementsByClassName("section");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
@@ -90,8 +91,11 @@ divclass.onclick = function () {
   
 };
 document.getElementsByClassName("section")[0].appendChild(divclass);
-/*document.getElementById("header").appendChild(divclass);*/
- 
+
+ var what = document.getElementById("hamburgerid");
+ var to = document.getElementsByClassName("section")[0];
+ to.insertBefore (what, to.firstChild);
+
 var div = document.createElement("div");
 div.id ="hamburger1";
 
@@ -190,12 +194,9 @@ document.getElementById("hamburgerid").appendChild(div);
    
    x.classList.toggle("changeb");
             focus.blur();
- 
-
    }else {
 
     x.classList.toggle("changeb");
-
           focus.focus();
     }
  
@@ -209,7 +210,8 @@ document.getElementById("hamburgerid").appendChild(div);
  login.id = "login";
  login.classList = "login";
  login.onclick = function () {
-     var x = document.getElementsByClassName("region-header")[0];
+    /* var x = document.getElementsByClassName("region-header")[0];*/
+       var x = document.getElementsByClassName("section")[0];
 
      x.classList.toggle("show");
 
@@ -224,7 +226,7 @@ document.getElementById("hamburgerid").appendChild(div);
 */
 
   /* BIBLIOTECA */
-
+/*
  var side = document.createElement("span");
  side.id = "side";
  side.classList = "side";
@@ -240,7 +242,7 @@ document.getElementById("hamburgerid").appendChild(div);
 
  var what = document.getElementById("side");
  var to = document.getElementById("main");
- to.insertBefore (what, to.firstChild);
+ to.insertBefore (what, to.firstChild);*/
 
 /* PARA QUE SE QUEDE AL BAJAR LA PANTALLA*/
 window.onscroll = function() {scrollfuction()};
@@ -264,6 +266,7 @@ var blockbutton = document.createElement("div");
 blockbutton.classList = "blockbuttonhome";
 document.getElementById("main").appendChild(blockbutton);
 
+
  var what = document.getElementsByClassName("blockbuttonhome")[0];
  var to = document.getElementById("main");
  to.insertBefore (what, to.firstChild);
@@ -277,6 +280,13 @@ document.getElementsByClassName("blockbuttonhome")[0].appendChild(blockbutton2);
 var blockbutton3 = document.createElement("button");
 blockbutton3.id = "blockbuttonid3";
 document.getElementsByClassName("blockbuttonhome")[0].appendChild(blockbutton3);
+
+
+ var span = document.createElement("span");
+ var arrow = document.createTextNode("︾"); 
+ span.id = "angle-arrow-down";
+ span.appendChild(arrow);
+ blockbutton1.appendChild(span);
 
 
 var block1 =  document.getElementById("main-wrapper");
@@ -302,8 +312,6 @@ blockbutton3.onclick = function () {
 var mainmenu = document.getElementById("main-menu").cloneNode(true);
 mainmenu.id = "mainmenu";
 
-var usermenu = document.getElementById("block-system-user-menu").cloneNode(true);
-usermenu.id = "usermenu";
 
 var secmenu = document.getElementById("block-menu-menu-men-secundario").cloneNode(true);
 secmenu.id = "secmenu";
@@ -317,10 +325,10 @@ document.getElementById("main").appendChild(sidenav);
 document.getElementById("main").insertBefore(sidenav,document.getElementById("main").firstChild);
 
 
-sidenav.insertBefore(usermenu,sidenav.firstChild);
 sidenav.insertBefore(mainmenu,sidenav.firstChild);
 sidenav.appendChild(document.createElement("hr"));
-
+sidenav.appendChild(secmenu);
+sidenav.appendChild(document.createElement("hr"));
 
 if(document.URL.indexOf("https://guao.org/biblioteca") >= 0){ 
     
@@ -333,7 +341,7 @@ if(document.URL.indexOf("https://guao.org/biblioteca") >= 0){
     biblio_title.innerHTML = "Biblioteca"
     var biblio = document.getElementById("block-views-exp-library-page-1")
     biblio.insertBefore(biblio_title,biblio.firstChild)
-    sidenav.appendChild(document.createElement("hr"));
+ 
 }
 
 
@@ -349,7 +357,6 @@ if(document.URL.indexOf("https://guao.org/buenas_practicas") >= 0){
     innovaciones_title.id = "title_innovaciones"
     innovaciones_title.innerHTML = "Innovaciones Educativas"
     innovaciones.insertBefore(innovaciones_title, innovaciones.firstChild)
-    sidenav.appendChild(document.createElement("hr"));
 
 }
 
@@ -365,9 +372,21 @@ if(document.URL.indexOf("https://guao.org/portafolio-docente") >= 0){
     portafolio_title.id = "title_portafolio"
     portafolio_title.innerHTML = "Portafolio Docente"
     portafolio.insertBefore(portafolio_title, portafolio.firstChild)
-    sidenav.appendChild(document.createElement("hr"));
+    
+}
+
+
+if(document.URL.indexOf("https://guao.org/primer_grado/") >= 0 || document.URL.indexOf("https://guao.org/segundo_grado/") >= 0 || document.URL.indexOf("https://guao.org/tercer_grado/") >= 0 || document.URL.indexOf("https://guao.org/cuarto_grado/") >= 0 || document.URL.indexOf("https://guao.org/quinto_grado/") >= 0 || document.URL.indexOf("https://guao.org/sexto_grado/") >= 0 || document.URL.indexOf("https://guao.org/primer_ano/") >= 0 || document.URL.indexOf("https://guao.org/segundo_ano/") >= 0 || document.URL.indexOf("https://guao.org/tercer_ano/") >= 0 || document.URL.indexOf("https://guao.org/cuarto_ano/") >= 0 || document.URL.indexOf("https://guao.org/quinto_ano/") >= 0 || document.URL.indexOf("https://guao.org/nosotros/") >= 0)
+{ 
+
+    
+    var sidebarfirst = document.getElementById("sidebar-first").cloneNode(true);
+    sidebarfirst.id = "sidebarfirst";
+
+    sidenav.appendChild(sidebarfirst);
 
 }
 
-sidenav.appendChild(secmenu);
+
+
 sidenav.insertBefore(logo,sidenav.firstChild);
