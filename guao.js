@@ -22,6 +22,40 @@ appendText()*/
 /* CLICK AFUERA PARA QUITAR LA VENTANA*/
 /*  SIBEBAR  */
 
+
+
+
+var loader = document.createElement("span");
+
+var loaderin = document.createElement("span");
+
+loader.appendChild(loaderin)
+
+var loaderwrapper = document.createElement("div");
+ loaderwrapper.classList = "loader-wrapper";
+loaderwrapper.appendChild(loader);
+
+var to = document.getElementById("main");
+to.insertBefore(loaderwrapper, to.firstChild);
+
+
+window.addEventListener('beforeunload', (event) => {
+        var fade = document.getElementsByClassName("loader-wrapper")[0];
+            fade.style.opacity = 1;
+          
+           loader.classList = "loader";
+           loaderin.classList = "loader-inner";
+        });
+
+window.addEventListener('load', (event) => {
+            var fade = document.getElementsByClassName("loader-wrapper")[0];
+        fade.style.opacity = 0;
+  
+           loader.removeClassList;
+           loaderin.removeClassList;
+        });
+
+
 window.addEventListener("click", function (event) {
   if (
     !event.target.matches(".side") &&
@@ -372,7 +406,8 @@ if (
   document.URL.indexOf("https://guao.org/docentes/segundo_ano/") >= 0 ||
   document.URL.indexOf("https://guao.org/docentes/tercer_ano/") >= 0 ||
   document.URL.indexOf("https://guao.org/docentes/cuarto_ano/") >= 0 ||
-  document.URL.indexOf("https://guao.org/docentes/quinto_ano/") >= 0
+  document.URL.indexOf("https://guao.org/docentes/quinto_ano/") >= 0 ||
+  document.URL.indexOf("https://guao.org/efemerides") >= 0
 ) {
   var sidebarfirst = document.getElementById("sidebar-first").cloneNode(true);
   sidebarfirst.id = "sidebarfirst";
