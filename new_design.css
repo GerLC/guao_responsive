@@ -1761,8 +1761,8 @@
 .loader-inner {
   vertical-align: top;
   display: inline-block;
+  background-color: aqua;
   width: 100%;
-  background-color: black;
   animation: loader-inner 2s infinite ease-in;
 }
 
@@ -1865,7 +1865,8 @@
   }
 
   .sticky + .clearfix {
-    padding-top: 10rem;
+  	width: 100%;
+    padding-top: 1rem;
   }
 
   /*********Home portrait mobile*******/
@@ -2044,6 +2045,7 @@
     overflow: hidden;
     z-index: 2;
   }
+  
 
   #header div.section {
     display: flex;
@@ -2110,7 +2112,27 @@
   }
 
   /**********FIN MEN?? HAMBURGER *******/
+  
+  #angle-arrow-down {
+    opacity: 1;
+    transition: 1s;
+    font-size: 6em;
+    right: 0;
+    position: absolute;
+    top: 3rem;
+    animation-name: updown;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+  }
 
+  .open1 #angle-arrow-down {
+    opacity: 0;
+  }
   #main-menu {
     display: none;
   }
@@ -3069,16 +3091,14 @@
 
   .page-node-16097 .field-name-body .concurso_header > div > div img,
   .page-node-18556 .field-name-body .concurso_header > div > div img {
-    width: 16rem;
+    width: 100%;
     height: auto;
   }
 
   .page-node-16097 .field-name-share-buttons a > img {
     background: url(/sites/default/files/concurso/icon_facebook.png) no-repeat
-      top left;
+    top left;
     background-size: 32rem;
-    width: 0px;
-    height: 0px;
     padding: 16px;
   }
 
@@ -4603,8 +4623,8 @@
  /* Load Page */
   .loader {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   position: relative;
   border: 4px solid black;
   top: 50%;
@@ -4614,8 +4634,8 @@
 .loader-inner {
   vertical-align: top;
   display: inline-block;
+  background-color: aqua;
   width: 100%;
-  background-color: black;
   animation: loader-inner 2s infinite ease-in;
 }
 
@@ -4631,7 +4651,8 @@
     justify-content: center;
     z-index: 1000;
     pointer-events: none;
-    transition:all .3s;
+    transition: all .5s;
+    transition-delay: .3s;
 }
 
   #main-menu {
@@ -4781,27 +4802,6 @@
     animation-direction: alternate;
     animation-fill-mode: none;
     animation-play-state: running;
-  }
-
-  #angle-arrow-down {
-    opacity: 1;
-    transition: 1s;
-    font-size: 6em;
-    right: 0;
-    position: absolute;
-    top: 3rem;
-    animation-name: updown;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-fill-mode: none;
-    animation-play-state: running;
-  }
-
-  .open1 #angle-arrow-down {
-    opacity: 0;
   }
 
   #sidebar {
@@ -5761,6 +5761,20 @@
   }
 
   /* concursante */
+  
+   .page-node-16097 .field-name-body .concurso_header {
+    width: 136%;
+    height: 62rem;
+    background-size: 66rem 100%;
+    position: relative;
+    right: 7rem;
+  }
+
+  .page-node-16097 .field-name-body .concurso_header > div > div img,
+  .page-node-18556 .field-name-body .concurso_header > div > div img {
+    width: 100%;
+    height: auto;
+  }
 
   .page-concurso-buenas-practicas-educativas-concursante
     div.view-concurso-mis-videos

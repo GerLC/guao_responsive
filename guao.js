@@ -34,30 +34,36 @@ loader.classList = "loader";
 loaderin.classList = "loader-inner";
 
 var loaderwrapper = document.createElement("div");
-loaderwrapper.classList = "loader-wrapper";
+
 loaderwrapper.appendChild(loader);
+loaderwrapper.classList = "loader-wrapper";
 
 var to = document.getElementsByClassName("html")[0];
 to.insertBefore(loaderwrapper, to.firstChild);
+var fade = document.getElementsByClassName("loader-wrapper")[0];
 
+window.addEventListener('beforeunload', (event) => {
 
-/*window.addEventListener('beforeunload', (event) => {
-        var fade = document.getElementsByClassName("loader-wrapper")[0];
            fade.style.opacity = 1;
            loader.classList = "loader";
            loaderin.classList = "loader-inner";
-           
-        });*/
-        
-/*usar DOMContentLoaded  */
-window.addEventListener('load', (event) => {
-        const fade = document.getElementsByClassName("loader-wrapper")[0];
+
+        });
+ 
+window.addEventListener('DOMContentLoaded', (event) => {
            fade.style.opacity = 0;
            loader.removeClassList;
            loaderin.removeClassList;
-
         });
         
+        
+window.addEventListener('pageshow', function (event) {
+  if (!event.persisted) {
+           fade.style.opacity = 0;
+           loader.removeClassList;
+           loaderin.removeClassList;
+  }
+}); 
 
 
 window.addEventListener("click", function (event) {
@@ -247,27 +253,7 @@ imglogin.src = "/sites/default/files/login0.png";
 imglogin.classList = "login";
 login.appendChild(imglogin);
 document.getElementsByClassName("section")[0].appendChild(login);
-/* document.getElementById("header").appendChild(login);
- */
 
-/* BIBLIOTECA */
-/*
- var side = document.createElement("span");
- side.id = "side";
- side.classList = "side";
- var t = document.createTextNode("✏"); 
- side.appendChild(t);
- side.onclick = function () {
-    var x = document.getElementById("main");
-  x.classList.toggle("open");
-};
-
-
- document.getElementById("main").appendChild(side);
-
- var what = document.getElementById("side");
- var to = document.getElementById("main");
- to.insertBefore (what, to.firstChild);*/
 
 /* PARA QUE SE QUEDE AL BAJAR LA PANTALLA*/
 window.onscroll = function () {
