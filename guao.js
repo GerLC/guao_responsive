@@ -30,30 +30,34 @@ var loader = document.createElement("span");
 var loaderin = document.createElement("span");
 
 loader.appendChild(loaderin)
+loader.classList = "loader";
+loaderin.classList = "loader-inner";
 
 var loaderwrapper = document.createElement("div");
- loaderwrapper.classList = "loader-wrapper";
+loaderwrapper.classList = "loader-wrapper";
 loaderwrapper.appendChild(loader);
 
-var to = document.getElementById("main");
+var to = document.getElementsByClassName("html")[0];
 to.insertBefore(loaderwrapper, to.firstChild);
 
 
-window.addEventListener('beforeunload', (event) => {
+/*window.addEventListener('beforeunload', (event) => {
         var fade = document.getElementsByClassName("loader-wrapper")[0];
-            fade.style.opacity = 1;
-          
+           fade.style.opacity = 1;
            loader.classList = "loader";
            loaderin.classList = "loader-inner";
-        });
-
+           
+        });*/
+        
+/*usar DOMContentLoaded  */
 window.addEventListener('load', (event) => {
-            var fade = document.getElementsByClassName("loader-wrapper")[0];
-        fade.style.opacity = 0;
-  
+        const fade = document.getElementsByClassName("loader-wrapper")[0];
+           fade.style.opacity = 0;
            loader.removeClassList;
            loaderin.removeClassList;
+
         });
+        
 
 
 window.addEventListener("click", function (event) {
