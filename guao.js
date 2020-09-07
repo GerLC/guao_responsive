@@ -43,25 +43,23 @@ to.insertBefore(loaderwrapper, to.firstChild);
 var fade = document.getElementsByClassName("loader-wrapper")[0];
 
 window.addEventListener('beforeunload', (event) => {
-
-           fade.style.opacity = 1;
            loader.classList = "loader";
            loaderin.classList = "loader-inner";
-
+           fade.style.opacity = 1;
         });
  
 window.addEventListener('DOMContentLoaded', (event) => {
            fade.style.opacity = 0;
-           loader.removeClassList;
-           loaderin.removeClassList;
+           loader.classList.remove("loader");
+           loaderin.classList.remove("loader-inner");
         });
         
         
 window.addEventListener('pageshow', function (event) {
   if (!event.persisted) {
            fade.style.opacity = 0;
-           loader.removeClassList;
-           loaderin.removeClassList;
+           loader.classList.remove("loader");
+           loaderin.classList.remove("loader-inner");
   }
 }); 
 
