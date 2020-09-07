@@ -2404,14 +2404,22 @@
   .page-search .breadcrumb {
     font-size: 3em !important;
     }
-    
+
+
   .page-search #search-form input#edit-keys, .page-search #search-form input.form-submit {
     font-size: 3rem !important;
     width: 100% !important;
-    height: auto !important;
+    height: auto;
     line-height: 2rem;
 }
 
+
+  .page-search #edit-submit {
+    height: 3.5rem !important;
+    background-size: 5rem !important;
+    background-color: WhiteSmoke !important;
+  }
+  
   #block-search-form {
     transform: scaleY(0);
     position: fixed;
@@ -2453,7 +2461,7 @@
     > div
     > div.form-item.form-type-textfield.form-item-search-block-form
     > input {
-    width: 68rem !important;
+    width: 66rem !important;
     font-size: 3em;
   }
 
@@ -2487,14 +2495,30 @@
     > div.form-item.form-type-textfield.form-item-search-block-form
     > input {
     margin-top: 3rem;
-    margin-left: 2rem;
+    margin-left: 3rem;
   }
 
-  #autocomplete {
-    font-size: 3em;
+  .region-header #autocomplete {
+    font-size: 3.5em;
     margin-top: 3rem;
     margin-left: 2rem;
+    width: 100%;
+    z-index: 10;
+    overflow: auto;
+    background-color: white;
   }
+  
+  .region-content #autocomplete {
+  	 font-size: 1.5em;
+     margin-top: 0;
+     margin-left: 0;
+     width: 100%;
+  	 z-index: 10;
+  	 overflow: auto;
+  	 background-color: white;
+  }
+  
+
 
   #busquedaX {
     position: absolute;
@@ -5093,6 +5117,40 @@
     > input {
     height: 2.45rem;
     background-size: 2rem;
+  }
+
+  .region-header #autocomplete {
+    font-size: 1.5em;
+    z-index: 10;
+    overflow: auto;
+    background-color: white;
+  }
+  
+  .region-content #autocomplete {
+  	 font-size: 1.5em;
+     margin-top: 0;
+     margin-left: 0;
+     width: 100%;
+  	 z-index: 10;
+  	 overflow: auto;
+  	 background-color: white;
+  }
+  
+  .page-search #search-form input#edit-keys {
+  	width: 30em !important;
+  }
+  
+  .page-search #edit-submit {
+    width: 13rem !important;
+    height: 3.5rem !important;
+    background-size: 5rem !important;
+    background-color: WhiteSmoke !important;
+  }
+  
+  .page-search .container-inline {
+  	display: flex;
+  	flex-flow: column wrap;
+  	align-items: center;
   }
 
   #busquedaX {
