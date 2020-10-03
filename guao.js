@@ -37,31 +37,31 @@ const rbs = document.querySelectorAll('input[name="field_categor_as_tid"] , inpu
 
 var loader = document.createElement("span");
 
-var loaderin = document.createElement("span");
+var loaderIn = document.createElement("span");
 
-loader.appendChild(loaderin)
+loader.appendChild(loaderIn)
 loader.classList = "loader";
-loaderin.classList = "loader-inner";
+loaderIn.classList = "loader-inner";
 
-var loaderwrapper = document.createElement("div");
+var loaderWrapper = document.createElement("div");
 
-loaderwrapper.appendChild(loader);
-loaderwrapper.classList = "loader-wrapper";
+loaderWrapper.appendChild(loader);
+loaderWrapper.classList = "loader-wrapper";
 
 var to = document.getElementsByClassName("html")[0];
-to.insertBefore(loaderwrapper, to.firstChild);
+to.insertBefore(loaderWrapper, to.firstChild);
 var fade = document.getElementsByClassName("loader-wrapper")[0];
 
 window.addEventListener('beforeunload', (event) => {
            loader.classList = "loader";
-           loaderin.classList = "loader-inner";
+           loaderIn.classList = "loader-inner";
            fade.style.opacity = 1;
         });
  
 window.addEventListener('DOMContentLoaded', (event) => {
            fade.style.opacity = 0;
            loader.classList.remove("loader");
-           loaderin.classList.remove("loader-inner");
+           loaderIn.classList.remove("loader-inner");
         });
         
         
@@ -69,7 +69,7 @@ window.addEventListener('pageshow', function (event) {
   if (!event.persisted) {
            fade.style.opacity = 0;
            loader.classList.remove("loader");
-           loaderin.classList.remove("loader-inner");
+           loaderIn.classList.remove("loader-inner");
   }
 }); 
 
@@ -90,10 +90,10 @@ window.addEventListener("click", function (event) {
 });
 
 /* FUNCION PARA EL HAMBURGER , SE REPITEN 3 VECES MOBILE PORTRAIT */
-var divclass = document.createElement("div");
-divclass.id = "hamburger-id";
-divclass.classList = "hamburger";
-divclass.onclick = function () {
+var divClass = document.createElement("div");
+divClass.id = "hamburger-id";
+divClass.classList = "hamburger";
+divClass.onclick = function () {
 
   var x = document.getElementById("main");
   var y = document.getElementById("header");
@@ -109,7 +109,7 @@ divclass.onclick = function () {
     y.classList.toggle("change");
   }
 };
-document.getElementsByClassName("section")[0].appendChild(divclass);
+document.getElementsByClassName("section")[0].appendChild(divClass);
 
 var what = document.getElementById("hamburger-id");
 var to = document.getElementsByClassName("section")[0];
@@ -134,9 +134,9 @@ document.getElementById("hamburger-id").appendChild(div);
 
 /* REDES SOCIALES EN FOOTER  MOBILE PORTRAIT*/
 
-var divfooter = document.createElement("div");
-divfooter.id = "redes";
-document.getElementById("block-block-10").querySelectorAll('[class="content"]')[0].appendChild(divfooter);
+var divFooter = document.createElement("div");
+divFooter.id = "redes";
+document.getElementById("block-block-10").querySelectorAll('[class="content"]')[0].appendChild(divFooter);
 
 var a = document.createElement("a");
 var img = document.createElement("img");
@@ -175,12 +175,12 @@ busqueda.classList = "busqueda";
 
 document.getElementsByClassName("section")[0].appendChild(busqueda);
 
-var busquedaimg = document.createElement("div");
-busquedaimg.id = "busqueda-img";
-document.getElementById("busqueda").appendChild(busquedaimg);
+var busquedaImg = document.createElement("div");
+busquedaImg.id = "busqueda-img";
+document.getElementById("busqueda").appendChild(busquedaImg);
 var imgb = document.createElement("img");
 imgb.src = "/sites/default/files/home_search.png";
-busquedaimg.appendChild(imgb);
+busquedaImg.appendChild(imgb);
 
 var div = document.createElement("div");
 div.id = "busquedaX";
@@ -193,7 +193,7 @@ div.onclick = function () {
   var x = document.getElementById("page-wrapper").classList.toggle("changeb");
 };
 
-busquedaimg.onclick = function () {
+busquedaImg.onclick = function () {
   var x = document.getElementById("page-wrapper");
   var y = document.getElementById("busqueda-img");
   var focus = document.getElementById("edit-search-block-form--2");
@@ -210,33 +210,32 @@ busquedaimg.onclick = function () {
 };
 
 /* INICIO SESION DROPDOWN */
-var bloquelogin = document.getElementById("block-system-user-menu");
+var bloqueLogin = document.getElementById("block-system-user-menu");
 var login = document.createElement("div");
 login.id = "login";
 login.classList = "login";
 login.onclick = function () {
-  /* var x = document.getElementsByClassName("region-header")[0];*/
   var x = document.getElementsByClassName("section")[0];
 
   x.classList.toggle("show");
 };
 
-var imglogin = document.createElement("img");
-imglogin.src = "/sites/default/files/login0.png";
-imglogin.classList = "login";
-login.appendChild(imglogin);
+var imgLogin = document.createElement("img");
+imgLogin.src = "/sites/default/files/login0.png";
+imgLogin.classList = "login";
+login.appendChild(imgLogin);
 document.getElementsByClassName("section")[0].appendChild(login);
 
 
 /* PARA QUE SE QUEDE AL BAJAR LA PANTALLA*/
 window.onscroll = function () {
-  scrollfuction();
+  scrollFuction();
 };
 
 var header = document.getElementById("header");
 var sticky = header.offsetTop;
 
-function scrollfuction() {
+function scrollFuction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
   } else {
@@ -246,70 +245,70 @@ function scrollfuction() {
 
 /* HOME BLOCKS */
 
-var blockbutton = document.createElement("div");
-blockbutton.classList = "block-button-home";
-document.getElementById("main").appendChild(blockbutton);
+var blockButton = document.createElement("div");
+blockButton.classList = "block-button-home";
+document.getElementById("main").appendChild(blockButton);
 
 var what = document.getElementsByClassName("block-button-home")[0];
 var to = document.getElementById("main");
 to.insertBefore(what, to.firstChild);
 
-var blockbutton1 = document.createElement("button");
-blockbutton1.id = "block-button-id-1";
-document.getElementsByClassName("block-button-home")[0].appendChild(blockbutton1);
-var blockbutton2 = document.createElement("button");
-blockbutton2.id = "block-button-id-2";
-document.getElementsByClassName("block-button-home")[0].appendChild(blockbutton2);
-var blockbutton3 = document.createElement("button");
-blockbutton3.id = "block-button-id-3";
-document.getElementsByClassName("block-button-home")[0].appendChild(blockbutton3);
+var blockButton1 = document.createElement("button");
+blockButton1.id = "block-button-id-1";
+document.getElementsByClassName("block-button-home")[0].appendChild(blockButton1);
+var blockButton2 = document.createElement("button");
+blockButton2.id = "block-button-id-2";
+document.getElementsByClassName("block-button-home")[0].appendChild(blockButton2);
+var blockButton3 = document.createElement("button");
+blockButton3.id = "block-button-id-3";
+document.getElementsByClassName("block-button-home")[0].appendChild(blockButton3);
 
 var block1 = document.getElementById("main-wrapper");
 
-blockbutton1.onclick = function () {
+blockButton1.onclick = function () {
   block1.classList.toggle("open1");
   block1.classList.remove("open2");
   block1.classList.remove("open3");
 };
 
-blockbutton2.onclick = function () {
+blockButton2.onclick = function () {
   block1.classList.toggle("open2");
   block1.classList.remove("open1");
   block1.classList.remove("open3");
 };
-blockbutton3.onclick = function () {
+blockButton3.onclick = function () {
   block1.classList.toggle("open3");
   block1.classList.remove("open1");
   block1.classList.remove("open2");
 };
 
-var mainmenu = document.getElementById("main-menu").cloneNode(true);
-mainmenu.id = "mainmenu";
+var mainMenu = document.getElementById("main-menu").cloneNode(true);
+mainMenu.id = "mainmenu";
 
-var secmenu = document
+var secMenu = document
   .getElementById("block-menu-menu-men-secundario")
   .cloneNode(true);
-secmenu.id = "sec-menu";
+secMenu.id = "sec-menu";
 
 var logo = document.getElementById("logo").cloneNode(true);
 
-var sidenav = document.createElement("div");
-sidenav.id = "sidebar";
-sidenav.classList = "navigation";
+var sideNav = document.createElement("div");
+sideNav.id = "sidebar";
+sideNav.classList = "navigation";
 document
   .getElementById("main")
-  .insertBefore(sidenav, document.getElementById("main").firstChild);
+  .insertBefore(sideNav, document.getElementById("main").firstChild);
 
-sidenav.insertBefore(mainmenu, sidenav.firstChild);
-sidenav.appendChild(document.createElement("hr"));
-sidenav.appendChild(secmenu);
-sidenav.appendChild(document.createElement("hr"));
+sideNav.insertBefore(mainMenu, sideNav.firstChild);
+sideNav.appendChild(document.createElement("hr"));
+sideNav.appendChild(secMenu);
+sideNav.appendChild(document.createElement("hr"));
 
 if (document.URL.indexOf("https://guao.org/biblioteca") >= 0) {
   var sidebarfirst = document.getElementById("sidebar-first").cloneNode(true);
   sidebarfirst.id = "sidebarfirst";
 
-  sidenav.appendChild(sidebarfirst);
+  sideNav.appendChild(sidebarfirst);
   var biblio_title = document.createElement("h2");
   biblio_title.id = "title_biblioteca";
   biblio_title.innerHTML = "Biblioteca";
@@ -321,7 +320,7 @@ if (document.URL.indexOf("https://guao.org/buenas_practicas") >= 0) {
   var sidebarfirst = document.getElementById("sidebar-first").cloneNode(true);
   sidebarfirst.id = "sidebarfirst";
 
-  sidenav.appendChild(sidebarfirst);
+  sideNav.appendChild(sidebarfirst);
   const innovaciones = document.getElementById(
     "block-views-exp-buenas-pr-cticas-page-1"
   );
@@ -335,7 +334,7 @@ if (document.URL.indexOf("https://guao.org/portafolio-docente") >= 0) {
   var sidebarfirst = document.getElementById("sidebar-first").cloneNode(true);
   sidebarfirst.id = "sidebarfirst";
 
-  sidenav.appendChild(sidebarfirst);
+  sideNav.appendChild(sidebarfirst);
   const portafolio = document.getElementById(
     "block-views-exp-portafolio-docente-page-1"
   );
@@ -368,10 +367,10 @@ if (
   var sidebarfirst = document.getElementById("sidebar-first").cloneNode(true);
   sidebarfirst.id = "sidebarfirst";
 
-  sidenav.appendChild(sidebarfirst);
+  sideNav.appendChild(sidebarfirst);
 }
 
-sidenav.insertBefore(logo, sidenav.firstChild);
+sideNav.insertBefore(logo, sideNav.firstChild);
 
 const exist = document.querySelectorAll('[id="sidebarfirst"]');
 console.log(exist.length);
