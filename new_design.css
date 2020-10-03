@@ -101,6 +101,7 @@
     margin: 0;
     left: 50%;
     transform: translate(-50%);
+    top: 1rem;
   }
 
   .bloqueshomepage {
@@ -483,9 +484,7 @@
     width: 3rem;
   }
 
-  #redesmensaje {
-    display: none;
-  }
+
 
   #terminos {
     font-size: 2.5em;
@@ -558,15 +557,7 @@
   div.form-item.form-type-textfield.form-item-populate > input {
     width: 30rem;
   }
-  /*
-    #block-views-exp-library-page-1 #edit-submit-library {
-        width: 5rem;
-        height: 5rem;
-        background-size: 2.4rem !important;
-        position: relative;
-        top: -0.8rem;
-        left: 22rem;
-    }*/
+
 
   .views-exposed-form .views-exposed-widget .form-submit {
     width: 5rem !important;
@@ -789,21 +780,10 @@
     display: inline-block;
   }
 
-  div.form-item.form-type-textfield > input {
-    width: 30rem;
-  }
-
-  /*
- .views-exposed-form .views-exposed-widget .form-submit {
-        width: 5rem !important;
-        height: 5rem !important;
-        background-size: 3.55rem !important;
-        position: relative;
-        top: -2rem;
-        left: 22rem;
-
- }
- */
+  .page-buenas-practicas div.form-item.form-type-textfield > input {
+	width: 45rem ;
+    height: 6rem;
+}
 
   /******INNOVACIONES************/
 
@@ -1787,6 +1767,10 @@
   .sidebar .section {
     font-size: 2.5em;
   }
+  
+  .item-list {
+  	font-size: 1.5em;
+  }
 
   #main-wrapper {
     min-height: 317vh;
@@ -2010,7 +1994,7 @@
   /**********MEN?? HAMBURGER *******/
   #header {
     border-bottom: 1px outset black;
-    min-height: 7.5rem;
+    min-height: 9.5rem;
     outline: none;
     overflow: hidden;
     z-index: 2;
@@ -2038,8 +2022,8 @@
     position: absolute;
     left: -28rem;
     top: 5%;
-    width: 50px;
-    height: 8px;
+    width: 67px;
+    height: 10px;
     background-color: black;
     margin: 6px 30rem;
     transition: 0.4s;
@@ -2049,10 +2033,10 @@
     position: absolute;
     left: -28rem;
     top: 5%;
-    width: 50px;
-    height: 8px;
+    width: 60px;
+    height: 10px;
     background-color: black;
-    margin: 20px 30rem;
+    margin: 28px 30rem;
     transition: 0.4s;
   }
 
@@ -2060,16 +2044,19 @@
     position: absolute;
     left: -28rem;
     top: 5%;
-    width: 50px;
-    height: 8px;
+    width: 72px;
+    height: 10px;
     background-color: black;
-    margin: 34px 30rem;
+    margin: 50px 30rem;
     transition: 0.4s;
   }
 
   .change #hamburger-1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-13px, 6px);
+    width: 72px;
+    height: 10px;
+    margin: 6px 30rem;
   }
 
   .change #hamburger-2 {
@@ -2079,6 +2066,8 @@
   .change #hamburger-3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-13px, -8px);
+    width: 72px;
+    margin: 38px 30rem;
   }
   
   
@@ -2122,8 +2111,6 @@
     font-size: 3.3em !important;
   }
 
-  #sidebar-first .option {
-  }
 
   #edit-field-categor-as-tid > div:nth-child(36) > label,
   #edit-field-categor-as-tid > div:nth-child(48) > label {
@@ -2360,12 +2347,13 @@
   #login {
     display: block !important;
     position: relative;
-    bottom: 0.3rem;
+    top: 1rem;
     right: 2rem;
   }
 
   #login > img {
-    width: 2.5rem;
+  	transform: translateZ(0);
+    width: 2.8rem;
   }
 
   .show #block-system-user-menu {
@@ -2403,14 +2391,14 @@
     position: fixed;
     width: 75rem !important;
     overflow: visible;
-    transition: transform 0.3s ease-out;
+    transition: transform 0.1s ease-out;
     height: auto;
     transform-origin: top;
-    top: 13.9rem;
+    top: 15rem;
     left: -56.5rem;
     z-index: 1;
     background-color: white;
-    height: 10rem;
+    height: 12rem;
     border-bottom: 1px solid black;
   }
 
@@ -2425,7 +2413,8 @@
   #busqueda {
     display: block !important;
     position: relative;
-    right: 4rem;
+    right: 5rem;
+    top: .9rem;
     z-index: 1;
     -webkit-transition: -webkit-transform 0.5s ease-in-out;
     -ms-transition: -ms-transform 0.5s ease-in-out;
@@ -2440,7 +2429,8 @@
     > div.form-item.form-type-textfield.form-item-search-block-form
     > input {
     width: 66rem !important;
-    font-size: 3em;
+    height: 5rem;
+    font-size: 3.5em;
   }
 
   #search-form input#edit-keys,
@@ -2455,8 +2445,8 @@
     > div
     > div.form-actions.form-wrapper
     > input {
-    height: 3.4rem;
-    background-size: 3.5rem;
+	height: 5.7rem;
+    background-size: 5rem;
     width: 5rem;
     margin-top: 3rem;
   }
@@ -2500,7 +2490,7 @@
 
   #busquedaX {
     position: absolute;
-    left: -32rem;
+    left: -33rem;
     bottom: 0;
     width: 50px;
     height: 8px;
@@ -2513,8 +2503,8 @@
 
   #busquedaX1 {
     position: absolute;
-    left: -32rem;
-    bottom: -3.4rem;
+    left: -33rem;
+    bottom: -3.5rem;
     width: 50px;
     height: 8px;
     background-color: black;
@@ -2545,6 +2535,8 @@
   }
   
   #busqueda-img > img {
+  	width: 5.5rem;
+  	transform: translateZ(0);
     animation-name: stretch;
     animation-duration: .6s;
     animation-timing-function: ease-out;
@@ -2583,24 +2575,19 @@
     display: block;
     position: relative;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
 
   #redes > a {
-    margin: 2rem;
-    width: 3rem;
+    margin: 3rem;
   }
 
   #redes > a > img {
-    width: 3rem;
-  }
-
-  #redesmensaje {
-    display: none;
+    width: 4.5rem;
   }
 
   #terminos {
-    font-size: 3em;
+    font-size: 3.4em;
     text-align: center;
   }
 
@@ -2613,19 +2600,6 @@
   /******** SIDEBARS ************/
   #sidebar-first {
     display: none;
-    text-align: initial;
-    font-size: 1.5em;
-    width: 0;
-    max-width: 57rem;
-    top: 0;
-    position: fixed;
-    z-index: 1;
-    height: 100%;
-    left: 0;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    transition: 0.5s;
-    opacity: 95%;
   }
 
   #sidebar-first .section {
@@ -2669,6 +2643,7 @@
 
   div.form-item.form-type-textfield.form-item-populate > input {
     width: 42rem;
+    height: 3.4rem;
   }
 
   #block-views-exp-library-page-1 #edit-submit-library {
@@ -2825,6 +2800,15 @@
   #widgets-element-socialmedia_share-default {
     margin-top: 0;
   }
+  
+  .node-type-libro-de-biblioteca .sidebar .block .content{
+	line-height: 2.4;	
+  }
+  
+  .node-type-libro-de-biblioteca #block-views-exp-library-page-1 #edit-submit-library {
+  	    top: 3.6rem;
+    	left: -1rem;
+  }
 
   .node.node-libro-de-biblioteca
     .field-name-field-videoteca
@@ -2945,16 +2929,17 @@
   }
 
   .page-buenas-practicas div.form-item.form-type-textfield > input {
-    width: 30rem;
+    width: 42rem !important;
+    height: 3.4rem;
   }
 
   .views-exposed-form .views-exposed-widget .form-submit {
     width: 5rem !important;
     height: 5rem !important;
-    background-size: 3.55rem !important;
+	background-size: 3.7rem !important;
     position: relative;
-    top: -2rem;
-    left: 22rem;
+    top: -2.1567rem;
+    left: 34rem;
   }
   /* FIN INNOVACIONES sidebar*/
 
@@ -3048,13 +3033,11 @@
   #portafolio_docente_top > div#left > p#titulo {
     text-align: center;
   }
-
+  
   /* sidebar */
-  .page-portafolio-docente
-    div.form-item.form-type-textfield.form-item-field-autor-value
-    > input,
-  div.form-item.form-type-textfield.form-item-title > input {
-    width: 30rem;
+  .page-portafolio-docente div.form-item.form-type-textfield > input {
+    width: 42rem !important;
+    height: 3.4rem;
   }
 
   /****** Portafolio Detalle ****/
@@ -3085,7 +3068,7 @@
 
   .page-node-16097 .field-name-body .concurso_header > div > div img,
   .page-node-18556 .field-name-body .concurso_header > div > div img {
-    width: 100%;
+    width: 33%;
     height: auto;
   }
 
@@ -4686,6 +4669,10 @@
     font-size: 3.3em !important;
   }
 
+
+  .item-list {
+  	font-size: 1.5em;
+  }
  
   #edit-field-categor-as-tid > div:nth-child(36) > label,
   #edit-field-categor-as-tid > div:nth-child(48) > label {
@@ -4767,6 +4754,7 @@
     overflow: visible;
     transition: transform 0.5s;
     transform-origin: top;
+    background-color: white;
   }
 
   .change #sidebarfirst,
@@ -4785,7 +4773,7 @@
    }
 
    #subtitle {
-	font-size: 1em;
+	font-size: .8em;
 }
 
   .change #page  {
@@ -4938,7 +4926,7 @@
 
  #header {
     border-bottom: 1px outset black;
-    min-height: 7.5rem;
+    min-height: 7rem;
     outline: none;
     overflow: hidden;
     z-index: 2;
@@ -5048,21 +5036,19 @@
   }
 
   #redes > a {
-    margin: 1rem;
+    margin: 3rem;
     width: 3rem;
   }
 
   #redes > a > img {
-    width: 2.5em;
+    width: 4.5rem;
   }
 
-  #redesmensaje {
-    display: none;
-  }
 
   #terminos {
-    font-size: 1.5em;
+    font-size: 2.5em;
     text-align: center;
+    margin-bottom: 2rem;
   }
 
   #footer {
@@ -5075,12 +5061,11 @@
     transform: scaleX(0);
     position: relative;
     right: 48rem;
-    top: 4.5rem;
-    width: 51rem !important;
+    top: 3.5rem;
+    width: 55rem !important;
     overflow: visible;
-    transition: transform 0.3s ease-out;
+    transition: transform 0.1s ease-out;
     height: auto;
-
     transform-origin: right;
   }
 
@@ -5091,8 +5076,8 @@
   #busqueda {
     display: block !important;
     position: absolute;
-    top: 2rem;
-    left: 64.5rem;
+    top: 1.45rem;
+    left: 63.5rem;
     z-index: 1;
     -webkit-transition: -webkit-transform 0.5s ease-in-out;
     -ms-transition: -ms-transform 0.5s ease-in-out;
@@ -5107,12 +5092,13 @@
     > div
     > div.form-item.form-type-textfield.form-item-search-block-form
     > input {
-    width: 35rem !important;
+    width: 48rem !important;
+    height: 3rem;
   }
 
   #search-form input#edit-keys,
   #block-search-form .form-item-search-block-form input {
-    font-size: 1.5rem;
+    font-size: 2.5em;
   }
 
   #block-search-form
@@ -5122,8 +5108,9 @@
     > div
     > div.form-actions.form-wrapper
     > input {
-    height: 2.45rem;
-    background-size: 2rem;
+    height: 3.7rem;
+    background-size: 3rem;
+    width: 4rem;
   }
 
   .region-header #autocomplete {
@@ -5208,7 +5195,7 @@
   }
   
   .changeb #logo {
-  	display: none;
+	opacity: 0;
   }
 
   #busqueda-img > img {
@@ -5282,7 +5269,7 @@
     display: block;
     position: relative;
     right: 2rem;
-    top: 1rem;
+    top: .5rem;
 }
  
 
@@ -5367,14 +5354,12 @@
 
   div.form-item.form-type-textfield.form-item-populate > input {
     width: 45rem;
+    height: 6rem;
   }
 
   #block-views-exp-library-page-1 #edit-submit-library {
-    width: 4rem;
-    height: 4rem;
-    background-size: 2.6rem;
     position: relative;
-    top: -3rem;
+    top: -5rem;
     left: 37rem;
   }
 
@@ -5400,7 +5385,7 @@
   }
   
   .sidebar .block .content {
-      line-height: 2.3em;
+      line-height: 2.5em;
   }
 
   .views-exposed-form .form-item,
@@ -5561,7 +5546,7 @@
 
   #buenas_practicas_top > div#left > p#titulo {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   #buenas_practicas_top > div#left > p#contenido {
@@ -5641,21 +5626,20 @@
 
   /****Innovaciones sidebar landscape tlf******/
 
-  .page-buenas-practicas #side {
-    display: inline-block;
-  }
 
-  div.form-item.form-type-textfield > input {
-    width: 30rem;
-  }
+  .page-buenas-practicas div.form-item.form-type-textfield > input {
+	width: 45rem !important;
+    height: 6rem;
+}
+
 
   .views-exposed-form .views-exposed-widget .form-submit {
-    width: 6rem !important;
-    height: auto !important;
-    background-size: 3.6rem !important;
+    width: 7rem !important;
+    height: 7rem !important;
+    background-size: 6.6rem !important;
     position: relative;
-    top: -3rem;
-    left: 22rem;
+    top: -5rem;
+    left: 37rem;
   }
 
   .node-buenas-pr-cticas .field-name-field-archivo-buenas-practicas {
@@ -5733,6 +5717,11 @@
     > a
     > img {
     height: 20rem;
+  }
+  
+  .page-portafolio-docente div.form-item.form-type-textfield > input {
+    width: 45rem !important;
+    height: 6rem;
   }
 
   #portafolio_docente_top {
@@ -6088,7 +6077,6 @@
   #titulo {
     font-size: 2.2em;
     text-align: center;
-    line-height: 5rem;
   }
 
   .view_bloque_lateral > div.content a {

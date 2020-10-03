@@ -27,7 +27,7 @@ const rbs = document.querySelectorAll('input[name="field_categor_as_tid"] , inpu
 					
 					console.log(subtitle.textContent);
 					
-					if (tbs.textContent != "- Cualquiera -  ") {
+					if (tbs.textContent !== "- Cualquiera -  ") {
 					document.querySelectorAll('[class="title"],[id="titulo"]')[0].appendChild(subtitle);
 					}
 
@@ -91,8 +91,8 @@ window.addEventListener("click", function (event) {
 
 /* FUNCION PARA EL HAMBURGER , SE REPITEN 3 VECES MOBILE PORTRAIT */
 var divclass = document.createElement("div");
-divclass.classList = "hamburger";
 divclass.id = "hamburger-id";
+divclass.classList = "hamburger";
 divclass.onclick = function () {
 
   var x = document.getElementById("main");
@@ -136,7 +136,7 @@ document.getElementById("hamburger-id").appendChild(div);
 
 var divfooter = document.createElement("div");
 divfooter.id = "redes";
-document.getElementById("footer").appendChild(divfooter);
+document.getElementById("block-block-10").querySelectorAll('[class="content"]')[0].appendChild(divfooter);
 
 var a = document.createElement("a");
 var img = document.createElement("img");
@@ -200,7 +200,7 @@ busquedaimg.onclick = function () {
 
   /*
    if ( y.style.transform == "scaleY(0)") */
-  if (y.style.display == "none") {
+  if (y.style.display === "none") {
     x.classList.toggle("changeb");
     focus.blur();
   } else {
@@ -296,7 +296,6 @@ var logo = document.getElementById("logo").cloneNode(true);
 var sidenav = document.createElement("div");
 sidenav.id = "sidebar";
 sidenav.classList = "navigation";
-document.getElementById("main").appendChild(sidenav);
 document
   .getElementById("main")
   .insertBefore(sidenav, document.getElementById("main").firstChild);
