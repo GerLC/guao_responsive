@@ -3,27 +3,37 @@ meta.setAttribute("name", "viewport");
 meta.setAttribute("content", "width=device-width");
 var head = document.getElementsByTagName("head")[0];
 head.append(meta);
+					
+document.addEventListener('gesturestart', function (e) {
+    e.preventDefault();
+});
 
-/*
-var jQueryScript = document.createElement('script');  
-jQueryScript.setAttribute('src','https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js');
-document.head.appendChild(jQueryScript);
-    
-    function appendText() {
-  var txt1 = "<p>Text.</p>";               // Create element with HTML 
-  var txt2 = $("<p></p>").text("Text.");   // Create with jQuery
-  var txt3 = document.createElement("p");  // Create with DOM
-  txt3.innerHTML = "Text.";
-  $("#blockbuttonid1").append(txt1, txt2, txt3);      // Append the new elements
-}
+const rbs = document.querySelectorAll('input[name="field_categor_as_tid"] , input[name="field_buenas_pr_cticas_tid"] , input[name="field_portafolio_docente_tid"]');
 
-appendText()*/
-/* LISTENER */
-/* CLICK AFUERA PARA QUITAR LA VENTANA*/
-/*  SIBEBAR  */
+            let selectedValue;
+            for (const rb of rbs) {
+                if (rb.checked) {
+                    selectedValue = rb.id;
 
+					const tbs = document.querySelectorAll('[for='+ CSS.escape(selectedValue) +']')[0];
+					
+					console.log(tbs.textContent);
+				
+					var copy = document.createTextNode(tbs.textContent.replace("-", ""));
+					
+					var subtitle = document.createElement("div");
+					subtitle.id = "subtitle"
+					subtitle.appendChild(copy);
+					
+					console.log(subtitle.textContent);
+					
+					if (tbs.textContent != "- Cualquiera -  ") {
+					document.querySelectorAll('[class="title"],[id="titulo"]')[0].appendChild(subtitle);
+					}
 
-
+                    break;
+                }
+            }
 
 var loader = document.createElement("span");
 
@@ -64,27 +74,6 @@ window.addEventListener('pageshow', function (event) {
 }); 
 
 
-window.addEventListener("click", function (event) {
-  if (
-    !event.target.matches(".side") &&
-    !event.target.matches(".form-text") &&
-    !event.target.matches(".region-sidebar-first") &&
-    !event.target.matches(".views-exposed-widgets") &&
-    !event.target.matches(".block") &&
-    !event.target.matches(".block-views") &&
-    !event.target.matches(".views-exposed-form") &&
-    !event.target.matches(".views-widget-filter-populate")
-  ) {
-    var sidebar = document.getElementsByClassName("clearfix");
-
-    for (i = 0; i < sidebar.length; i++) {
-      var openDropdown = sidebar[i];
-      if (openDropdown.classList.contains("open")) {
-        openDropdown.classList.remove("open");
-      }
-    }
-  }
-});
 /*  INICIO SESION  */
 window.addEventListener("click", function (event) {
   if (!event.target.matches(".login")) {
@@ -103,57 +92,43 @@ window.addEventListener("click", function (event) {
 /* FUNCION PARA EL HAMBURGER , SE REPITEN 3 VECES MOBILE PORTRAIT */
 var divclass = document.createElement("div");
 divclass.classList = "hamburger";
-divclass.id = "hamburgerid";
+divclass.id = "hamburger-id";
 divclass.onclick = function () {
-  /*  var x = document.getElementById("header");
-
-  if (x.style.maxHeight ) {
-
-    x.style.maxHeight = null;
-    x.classList.toggle("change");
-  } else {
-
-    x.style.maxHeight = 50+ "rem";
-  x.classList.toggle("change");
-  
-  }*/
-
-  /* nuevo menu */
 
   var x = document.getElementById("main");
   var y = document.getElementById("header");
-  var z = document.getElementById("page");
+  var z = document.getElementById("page-wrapper");
 
   if (z.style.marginLeft) {
-    z.style.marginLeft = null;
+    z.classList.toggle("change");
     x.classList.toggle("change");
     y.classList.toggle("change");
   } else {
-    z.style.marginLeft = "95%";
+    z.classList.toggle("change");
     x.classList.toggle("change");
     y.classList.toggle("change");
   }
 };
 document.getElementsByClassName("section")[0].appendChild(divclass);
 
-var what = document.getElementById("hamburgerid");
+var what = document.getElementById("hamburger-id");
 var to = document.getElementsByClassName("section")[0];
 to.insertBefore(what, to.firstChild);
 
 var div = document.createElement("div");
-div.id = "hamburger1";
+div.id = "hamburger-1";
 
-document.getElementById("hamburgerid").appendChild(div);
-
-var div = document.createElement("div");
-div.id = "hamburger2";
-
-document.getElementById("hamburgerid").appendChild(div);
+document.getElementById("hamburger-id").appendChild(div);
 
 var div = document.createElement("div");
-div.id = "hamburger3";
+div.id = "hamburger-2";
 
-document.getElementById("hamburgerid").appendChild(div);
+document.getElementById("hamburger-id").appendChild(div);
+
+var div = document.createElement("div");
+div.id = "hamburger-3";
+
+document.getElementById("hamburger-id").appendChild(div);
 
 /* FIN */
 
@@ -201,7 +176,7 @@ busqueda.classList = "busqueda";
 document.getElementsByClassName("section")[0].appendChild(busqueda);
 
 var busquedaimg = document.createElement("div");
-busquedaimg.id = "busquedaimg";
+busquedaimg.id = "busqueda-img";
 document.getElementById("busqueda").appendChild(busquedaimg);
 var imgb = document.createElement("img");
 imgb.src = "/sites/default/files/home_search.png";
@@ -220,7 +195,7 @@ div.onclick = function () {
 
 busquedaimg.onclick = function () {
   var x = document.getElementById("page-wrapper");
-  var y = document.getElementById("busquedaimg");
+  var y = document.getElementById("busqueda-img");
   var focus = document.getElementById("edit-search-block-form--2");
 
   /*
@@ -272,28 +247,22 @@ function scrollfuction() {
 /* HOME BLOCKS */
 
 var blockbutton = document.createElement("div");
-blockbutton.classList = "blockbuttonhome";
+blockbutton.classList = "block-button-home";
 document.getElementById("main").appendChild(blockbutton);
 
-var what = document.getElementsByClassName("blockbuttonhome")[0];
+var what = document.getElementsByClassName("block-button-home")[0];
 var to = document.getElementById("main");
 to.insertBefore(what, to.firstChild);
 
 var blockbutton1 = document.createElement("button");
-blockbutton1.id = "blockbuttonid1";
-document.getElementsByClassName("blockbuttonhome")[0].appendChild(blockbutton1);
+blockbutton1.id = "block-button-id-1";
+document.getElementsByClassName("block-button-home")[0].appendChild(blockbutton1);
 var blockbutton2 = document.createElement("button");
-blockbutton2.id = "blockbuttonid2";
-document.getElementsByClassName("blockbuttonhome")[0].appendChild(blockbutton2);
+blockbutton2.id = "block-button-id-2";
+document.getElementsByClassName("block-button-home")[0].appendChild(blockbutton2);
 var blockbutton3 = document.createElement("button");
-blockbutton3.id = "blockbuttonid3";
-document.getElementsByClassName("blockbuttonhome")[0].appendChild(blockbutton3);
-
-var span = document.createElement("span");
-var arrow = document.createTextNode("︾");
-span.id = "angle-arrow-down";
-span.appendChild(arrow);
-blockbutton1.appendChild(span);
+blockbutton3.id = "block-button-id-3";
+document.getElementsByClassName("block-button-home")[0].appendChild(blockbutton3);
 
 var block1 = document.getElementById("main-wrapper");
 
@@ -320,7 +289,7 @@ mainmenu.id = "mainmenu";
 var secmenu = document
   .getElementById("block-menu-menu-men-secundario")
   .cloneNode(true);
-secmenu.id = "secmenu";
+secmenu.id = "sec-menu";
 
 var logo = document.getElementById("logo").cloneNode(true);
 
@@ -404,3 +373,18 @@ if (
 }
 
 sidenav.insertBefore(logo, sidenav.firstChild);
+
+const exist = document.querySelectorAll('[id="sidebarfirst"]');
+console.log(exist.length);
+
+  if (exist.length != 0) {
+  const x = document.getElementById("main");
+  const y = document.getElementById("header");
+  const z = document.getElementById("page-wrapper");
+
+    z.classList.toggle("change");
+    x.classList.toggle("change");
+    y.classList.toggle("change");
+  	document.getElementById("sidebarfirst").scrollIntoView({block: "start", behavior: "smooth"});
+  	
+  }
