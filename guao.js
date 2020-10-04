@@ -39,9 +39,7 @@ var loader = document.createElement("span");
 
 var loaderIn = document.createElement("span");
 
-loader.appendChild(loaderIn)
-loader.classList = "loader";
-loaderIn.classList = "loader-inner";
+loader.appendChild(loaderIn);
 
 var loaderWrapper = document.createElement("div");
 
@@ -65,15 +63,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
         });
         
         
-window.addEventListener('pageshow', function (event) {
-  if (!event.persisted) {
-           fade.style.opacity = 0;
-           loader.classList.remove("loader");
-           loaderIn.classList.remove("loader-inner");
-  }
-}); 
-
-
 /*  INICIO SESION  */
 window.addEventListener("click", function (event) {
   if (!event.target.matches(".login")) {
@@ -386,3 +375,4 @@ console.log(exist.length);
   	document.getElementById("sidebarfirst").scrollIntoView({block: "start", behavior: "smooth"});
   	
   }
+  

@@ -781,11 +781,28 @@
   }
 
   .page-buenas-practicas div.form-item.form-type-textfield > input {
-	width: 45rem ;
+	width: 45rem;
     height: 6rem;
 }
 
+  .node-type-buenas-pr-cticas div.form-item.form-type-textfield.form-item-title > input {
+	width: 45rem;
+    height: 6rem;
+}
+
+  .node-type-buenas-pr-cticas .views-exposed-form .views-exposed-widget .form-submit {
+    top: 3.6rem;
+    left: -1rem;
+}
+
+  .node-type-buenas-pr-cticas .sidebar .block .content {
+    line-height: 2.4;
+}
   /******INNOVACIONES************/
+  
+  .node-type-buenas-pr-cticas .region-help {
+      font-size: 1.2em;
+  }
 
   #buenas_practicas_top > div#right {
     float: right;
@@ -1731,6 +1748,7 @@
     z-index: 1000;
     pointer-events: none;
     transition:all .3s;
+    opacity : 0;
 }
   
   .lateral_izq_bloque01 > li:before,
@@ -1746,10 +1764,11 @@
   .lateral_izq_nosotros > li:before {
     border-color: transparent black;
   }
+  
   .views-exposed-widgets {
     margin-bottom: -3rem;
-    /*margin-top: -5rem;*/
   }
+  
   .sidebar h2 {
     font-size: 1.1em;
     margin-top: 2rem;
@@ -2201,7 +2220,7 @@
   }
   
   #breadcrumb {
-	display: block;
+	display: block !important;
 }
 
 .title {
@@ -4365,15 +4384,11 @@
 
   /* DOCENTE CURSO Y MEDIA MATERIAS */
   #block-views-exp-cursos-page #edit-submit-cursos {
-    width: 11rem !important;
-    height: 6rem !important;
-    top: -4rem;
-    left: 0rem;
+    width: 24rem !important;
+    height: 8rem !important;
+    left: 40rem;
   }
 
-  .page-cursos #page-title {
-    margin-bottom: 5rem;
-  }
   .page-cursos #content .section,
   .page-cursos .view-cursos,
   .page-cursos .views-row {
@@ -4399,11 +4414,16 @@
     flex-flow: wrap;
     justify-content: space-evenly;
   }
+  
+  .page-cursos div.form-item.form-type-textfield.form-item-title > input {
+      width: 30rem;
+      height: auto;
+      margin-bottom: 3rem;
+  }
 
   .page-node-20656
     div.form-item.form-type-textfield.form-item-field-autor-value
-    > input,
-  div.form-item.form-type-textfield.form-item-title > input {
+    > input {
     width: 26rem;
   }
 
@@ -4586,9 +4606,15 @@
       display: none;
   }
   
- 
+  .messages .status {
+    background-size: 3rem;
+    font-size: 2.5em;
+    padding-left: 5rem;
+  }
 
-  
+   .node-type-curso .rtejustify > strong > span {
+    font-size: 1.5em !important;
+    }  
 }
 
 /*##Device = Smartphones Most of the Smartphones (Landscape)*/
@@ -4630,6 +4656,7 @@
     pointer-events: none;
     transition: all .5s;
     transition-delay: .3s;
+    opacity : 0;
 }
 
   #main-menu {
@@ -4764,7 +4791,7 @@
   }
   
     #breadcrumb {
-	display: block;
+	display: block !important;
 }
 
    .title {
@@ -6545,15 +6572,12 @@
   /* DOCENTES */
   
     #block-views-exp-cursos-page #edit-submit-cursos {
-    width: 11rem !important;
+    width: 24rem !important;
     height: 6rem !important;
     top: -4rem;
     left: 0rem;
   }
 
-  .page-cursos #page-title {
-    margin-bottom: 5rem;
-  }
   .page-cursos #content .section,
   .page-cursos .view-cursos,
   .page-cursos .views-row {
@@ -6582,8 +6606,7 @@
 
   .page-node-20656
     div.form-item.form-type-textfield.form-item-field-autor-value
-    > input,
-  div.form-item.form-type-textfield.form-item-title > input {
+    > input {
     width: 26rem;
   }
 
@@ -6688,5 +6711,31 @@
   	width: 100%;
 
   }
+  
+    #page {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: stretch;
+  }
+
+  #main-wrapper {
+    margin-bottom: 3rem;
+    flex: 1;
+  }
+
+  #main-wrapper,
+  #header,
+  #footer-wrapper {
+    flex-shrink: 0;
+  }
+  
+  .messages .status {
+    background-size: 2rem;
+    font-size: 1.5em;
+  }
+  
+   .node-type-curso .rtejustify > strong > span {
+    font-size: 1.5em !important;
+    }  
 
 }
