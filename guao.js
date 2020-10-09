@@ -8,33 +8,6 @@ document.addEventListener('gesturestart', function (e) {
     e.preventDefault();
 });
 
-const rbs = document.querySelectorAll('input[name="field_categor_as_tid"] , input[name="field_buenas_pr_cticas_tid"] , input[name="field_portafolio_docente_tid"]');
-
-            let selectedValue;
-            for (const rb of rbs) {
-                if (rb.checked) {
-                    selectedValue = rb.id;
-
-					const tbs = document.querySelectorAll('[for='+ CSS.escape(selectedValue) +']')[0];
-					
-					console.log(tbs.textContent);
-				
-					var copy = document.createTextNode(tbs.textContent.replace("-", ""));
-					
-					var subtitle = document.createElement("div");
-					subtitle.id = "subtitle"
-					subtitle.appendChild(copy);
-					
-					console.log(subtitle.textContent);
-					
-					if (tbs.textContent !== "- Cualquiera -  ") {
-					document.querySelectorAll('[class="title"],[id="titulo"]')[0].appendChild(subtitle);
-					}
-
-                    break;
-                }
-            }
-
 var loader = document.createElement("span");
 
 var loaderIn = document.createElement("span");
@@ -53,7 +26,7 @@ var fade = document.getElementsByClassName("loader-wrapper")[0];
 window.addEventListener('beforeunload', (event) => {
            loader.classList = "loader";
            loaderIn.classList = "loader-inner";
-           fade.style.opacity = 1;
+           fade.style.opacity = .9;
         });
  
 window.addEventListener('DOMContentLoaded', (event) => {
@@ -361,6 +334,13 @@ if (
 
 sideNav.insertBefore(logo, sideNav.firstChild);
 
+if (
+  document.URL.indexOf("https://guao.org/biblioteca") >= 0 ||
+  document.URL.indexOf("https://guao.org/buenas_practicas") >= 0 ||
+  document.URL.indexOf("https://guao.org/portafolio-docente") >= 0
+
+) {
+
 const exist = document.querySelectorAll('[id="sidebarfirst"]');
 console.log(exist.length);
 
@@ -375,4 +355,37 @@ console.log(exist.length);
   	document.getElementById("sidebarfirst").scrollIntoView({block: "start", behavior: "smooth"});
   	
   }
-  
+
+}
+
+
+
+
+const rbs = document.querySelectorAll('input[name="field_categor_as_tid"] , input[name="field_buenas_pr_cticas_tid"] , input[name="field_portafolio_docente_tid"]');
+
+            let selectedValue;
+            for (const rb of rbs) {
+                if (rb.checked) {
+                    selectedValue = rb.id;
+
+					const tbs = document.querySelectorAll('[for='+ CSS.escape(selectedValue) +']')[0];
+					
+					console.log(tbs.textContent);
+				
+					var copy = document.createTextNode(tbs.textContent.replace("-", ""));
+					
+					var subtitle = document.createElement("div");
+					subtitle.id = "subtitle"
+					subtitle.appendChild(copy);
+					
+					console.log(subtitle.textContent);
+					
+					if (tbs.textContent !== "- Cualquiera -  ") {
+					document.querySelectorAll('[class="title"],[id="titulo"]')[0].appendChild(subtitle);
+					}
+
+                    break;
+                }
+            }
+
+

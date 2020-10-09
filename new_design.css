@@ -254,17 +254,15 @@
   }
 
   .change #hamburger-1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-13px, 6px);
+
   }
 
   .change #hamburger-2 {
-    opacity: 0;
+
   }
 
   .change #hamburger-3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-13px, -8px);
+
   }
 
   #footer-wrapper {
@@ -545,7 +543,7 @@
 
   .sidebar .block {
     padding-left: 2.3rem;
-    background-color: #f2f2f2 !important;
+    background-color: snow !important;
     color: black !important;
   }
 
@@ -631,9 +629,6 @@
 
 
   /****** Detalle libro *********/
-  /* #sidebar-first > div.section {
-        display: none;
-}*/
 
   #content .section,
   .sidebar .section {
@@ -691,21 +686,8 @@
 
   .region.region-help > div > div.content {
     margin: 0px;
-    font-size: 0.6em;
-  }
-
-  #bloque_compartir {
-    font-size: 1em;
-    width: 10rem;
-  }
-
-  #bloque_comentar {
-    font-size: 1em;
     width: 12rem;
-  }
-
-  .region.region-help > div#block-block-20 .content {
-    width: 8rem;
+    font-size: 0.6em;
   }
 
   #block-block-21 {
@@ -776,9 +758,6 @@
 
   /* INNOVACIONES SIDEBAR */
 
-  .page-buenas-practicas #side {
-    display: inline-block;
-  }
 
   .page-buenas-practicas div.form-item.form-type-textfield > input {
 	width: 45rem;
@@ -887,11 +866,7 @@
     height: 35rem;
     margin-bottom: 2rem;
   }
-  /* PORTAFOLIO SIDEBAR */
 
-  .page-portafolio-docente #side {
-    display: inline-block;
-  }
 
   /******PORTAFOLIOS************/
 
@@ -1282,18 +1257,6 @@
 
   /* SIDEBAR DERECHA */
 
-  #block-block-13 {
-    height: 32rem;
-    width: 35rem;
-    margin-top: 0;
-  }
-
-  #block-block-8 {
-    height: 32rem;
-    width: 35rem;
-    margin-top: 0;
-  }
-
   #sidebar-first {
     transition-timing-function: ease-in;
   }
@@ -1373,9 +1336,6 @@
     margin-right: -4rem;
   }
 
-  .page-node-9243 #side {
-    display: inline-block !important;
-  }
 
   .page-node-9243 .lateral_izq_nosotros > li > a,
   .page-node-9244 .lateral_izq_nosotros > li > a,
@@ -1384,26 +1344,7 @@
     padding-left: 4rem;
   }
 
-  /* Mision y Aliados */
-  .page-node-9244 #side {
-    display: inline-block !important;
-  }
 
-  .page-nosotros-aliados #side {
-    display: inline-block !important;
-  }
-
-  .node-type-aliados #side {
-    display: inline-block !important;
-  }
-
-  /*
-    #block-block-12 {
-    height: 800px;
-    background: #00bce4;
-    margin-top: 0px;
-}
-*/
   /****Voluntariado portrait ipad*********/
 
   #node-1740 {
@@ -2041,7 +1982,7 @@
     position: absolute;
     left: -28rem;
     top: 5%;
-    width: 67px;
+    width: 65px;
     height: 10px;
     background-color: black;
     margin: 6px 30rem;
@@ -2052,7 +1993,7 @@
     position: absolute;
     left: -28rem;
     top: 5%;
-    width: 60px;
+    width: 65px;
     height: 10px;
     background-color: black;
     margin: 28px 30rem;
@@ -2063,7 +2004,7 @@
     position: absolute;
     left: -28rem;
     top: 5%;
-    width: 72px;
+    width: 65px;
     height: 10px;
     background-color: black;
     margin: 50px 30rem;
@@ -2071,22 +2012,33 @@
   }
 
   .change #hamburger-1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-13px, 6px);
-    width: 72px;
-    height: 10px;
-    margin: 6px 30rem;
+    animation-name: stretch;
+    animation-duration: .6s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
   }
 
   .change #hamburger-2 {
-    opacity: 0;
+    animation-name: stretch;
+    animation-duration: .6s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
   }
 
   .change #hamburger-3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-13px, -8px);
-    width: 72px;
-    margin: 38px 30rem;
+    animation-name: stretch;
+    animation-duration: .6s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
   }
   
   
@@ -2100,9 +2052,8 @@
 
   #mainmenu #main-menu-links a {
     color: black;
-    background-color: #f2f2f2;
+    background-color: snow;
     text-align: start;
-    text-transform: capitalize;
     padding-left: 4rem;
   }
 
@@ -2117,7 +2068,8 @@
     transform: translateZ(0);
   }
 
-  #mainmenu #main-menu-links .active-trail {
+  #mainmenu #main-menu-links .active-trail,
+  #mainmenu #main-menu-links .first {
     display: none;
   }
 
@@ -2186,7 +2138,7 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    background-color: #f2f2f2;
+    background-color: snow;
     font-weight: bold;
     transform: translateZ(0);
   }
@@ -2195,7 +2147,7 @@
     color: black;
     padding: 0.5rem 3.25rem;
     text-decoration: none;
-    font-size: 3em;
+    font-size: 2.8em;
     display: flex;
   }
 
@@ -2251,6 +2203,7 @@
     z-index: 4;
     opacity: 0;
     transition-duration: 1s;
+    top: 0;
   }
   
    .change #sidebar #logo {
@@ -2294,7 +2247,7 @@
     width: 57rem;
     transition: 0.3s;
     opacity: 1;
-    background-color: #f2f2f2;
+    background-color: snow;
   }
 
   #page {
@@ -2602,16 +2555,18 @@
   }
 
   #redes > a > img {
-    width: 4.5rem;
+    width: 4rem;
   }
 
   #terminos {
-    font-size: 3.4em;
+    font-size: 3.1em;
     text-align: center;
   }
 
-  #footer {
-    margin-top: 0;
+
+  
+  #footer .block .content {
+    padding: 3rem 0 6rem 0;
   }
 
   /*********FIN FOOTER********/
@@ -2634,7 +2589,9 @@
     margin-top: 1rem;
     width: 60%;
   }
-
+  
+  .node-type-buenas-pr-cticas .views-exposed-form .views-exposed-widget .form-item,
+  .node-type-buenas-pr-cticas .views-exposed-form .views-exposed-widget .form-submit,
   .page-biblioteca .views-exposed-form .form-item,
   .page-biblioteca .views-exposed-form .form-submit,
   .page-buenas-practicas .views-exposed-form .form-item,
@@ -2651,7 +2608,7 @@
 
   .sidebar .block {
     padding-left: 5rem;
-    background-color: #f2f2f2 !important;
+    background-color: snow !important;
     color: black !important;
   }
 
@@ -2778,30 +2735,22 @@
 
   .region.region-help > div > div.content {
     margin: 0px;
-    font-size: 1.25em;
+    width: 11rem;
+    font-size: .71em;
   }
 
-  #bloque_compartir {
-    font-size: 0.5em;
-    width: 10rem;
-  }
 
   div.region.region-help > div#block-block-14 {
-    margin-right: 2rem;
+    margin-right: 3rem;
   }
   div.region.region-help > div#block-block-19 {
+    margin-right: 4rem;
+  }
+    div.region.region-help > div#block-block-16 {
     margin-right: 2rem;
   }
 
-  #bloque_comentar {
-    font-size: 0.5em;
-    width: 12rem;
-  }
 
-  .region.region-help > div#block-block-20 .content {
-    width: 10rem;
-    font-size: 0.6em;
-  }
   .form-actions {
     text-align: center;
   }
@@ -2850,6 +2799,10 @@
   }
 
   /******Innovaciones portrait tlf*******************/
+  
+  #comments div.comment.clearfix > div.comment-text {
+  	margin-left: 0;
+  }
 
   div.view.view-buenas-pr-cticas
     .field.field-name-title-field
@@ -2943,11 +2896,8 @@
 
   /* INNOVACIONES sidebar*/
 
-  .page-buenas-practicas #side {
-    display: inline-block;
-  }
 
-  .page-buenas-practicas div.form-item.form-type-textfield > input {
+  .page-buenas-practicas div.form-item.form-type-textfield > input,  .node-type-buenas-pr-cticas div.form-item.form-type-textfield.form-item-title > input  {
     width: 42rem !important;
     height: 3.4rem;
   }
@@ -2960,13 +2910,12 @@
     top: -2.1567rem;
     left: 34rem;
   }
+  
+  
   /* FIN INNOVACIONES sidebar*/
 
   /* PORTAFOLIO sidebar*/
 
-  .page-portafolio-docente #side {
-    display: inline-block;
-  }
 
   /******* PORTAFOLIO *********/
 
@@ -3580,7 +3529,7 @@
 
   .field-type-image img,
   .user-picture img {
-    margin: 0 0 -0.8em;
+    margin: 0 0 -0.2em;
   }
 
 
@@ -3856,9 +3805,7 @@
     margin-right: -4rem;
   }
 
-  .page-node-9243 #side {
-    display: inline-block !important;
-  }
+
 
   .page-node-9243 .lateral_izq_nosotros li > a,
   .page-node-9244 .lateral_izq_nosotros li > a,
@@ -3867,18 +3814,6 @@
     padding-left: 6rem;
   }
 
-  /* Mision y Aliados */
-  .page-node-9244 #side {
-    display: inline-block !important;
-  }
-
-  .page-nosotros-aliados #side {
-    display: inline-block !important;
-  }
-
-  .node-type-aliados #side {
-    display: inline-block !important;
-  }
 
   /****Voluntariado portrait mobile*********/
 
@@ -4266,11 +4201,7 @@
     padding: 22px 5rem 23px;
   }
 
-  #block-block-16 .content {
-    font-size: 0.65em;
-    width: 12rem;
-    margin-left: -1rem;
-  }
+
 
   #edit-comment-body-und-0-value {
     height: 15rem !important;
@@ -4412,7 +4343,7 @@
   .page-cursos .view-content {
     display: flex;
     flex-flow: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   
   .page-cursos div.form-item.form-type-textfield.form-item-title > input {
@@ -4665,9 +4596,8 @@
 
   #mainmenu #main-menu-links a {
     color: black;
-    background-color: #f2f2f2;
+    background-color: snow;
     text-align: start;
-    text-transform: capitalize;
     padding-left: 4rem;
   }
 
@@ -4683,7 +4613,8 @@
     margin-bottom: 1.5rem;;
   }
 
-  #mainmenu #main-menu-links .active-trail {
+  #mainmenu #main-menu-links .active-trail,
+  #mainmenu #main-menu-links .first {
     display: none;
   }
 
@@ -4756,7 +4687,7 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    background-color: #f2f2f2;
+    background-color: snow;
     font-weight: bold;
     transform: translateZ(0);
   }
@@ -4765,7 +4696,7 @@
     color: black;
     padding: 0.5rem 3.25rem;
     text-decoration: none;
-    font-size: 3em;
+    font-size: 2.8em;
     display: flex;
   }
 
@@ -4823,6 +4754,7 @@
     z-index: 4;
     opacity: 0;
     transition-duration: .5s;
+    top: 0;
   }
   
   .show #login {
@@ -4861,7 +4793,7 @@
     width: 58rem;
     transition: 0.3s;
     opacity: 1;
-    background-color: #f2f2f2;
+    background-color: snow;
   }
   
   .change #sidebar #logo {
@@ -5010,17 +4942,33 @@
   }
 
   .change #hamburger-1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-13px, 6px);
+    animation-name: stretch;
+    animation-duration: .6s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
   }
 
   .change #hamburger-2 {
-    opacity: 0;
+    animation-name: stretch;
+    animation-duration: .6s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
   }
 
   .change #hamburger-3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-13px, -8px);
+    animation-name: stretch;
+    animation-duration: .6s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
   }
 
   /* MENU PRIMARIO TU AULA, BIBLIOTECA... */
@@ -5038,17 +4986,10 @@
   /* MEN?? SECUNDARIO NOSOTROS , CONTACTOS ... */
 
   #block-menu-menu-men-secundario {
-    position: relative;
-    top: 28.7rem;
-    margin-left: 14rem;
-    width: 100%;
+	display: none;
   }
 
-  #block-menu-menu-men-secundario > div.content > ul > li > a {
-    font-size: 1.2rem;
-    border-left: 6px solid red;
-    color: black;
-  }
+
 
   /* FOOTER Y REDES SOCIALES */
 
@@ -5068,14 +5009,19 @@
   }
 
   #redes > a > img {
-    width: 3.5rem;
+    width: 3rem;
   }
 
 
   #terminos {
-    font-size: 2.4em;
+    font-size: 2.1em;
     text-align: center;
     margin-bottom: 2rem;
+  }
+
+  
+  #footer .block .content {
+    padding: 3rem 0 4rem 0;
   }
 
   #footer {
@@ -5088,7 +5034,7 @@
     transform: scaleX(0);
     position: relative;
     right: 48rem;
-    top: 3.5rem;
+    top: 4.5rem;
     width: 55rem !important;
     overflow: visible;
     transition: transform 0.1s ease-out;
@@ -5123,11 +5069,16 @@
     height: 3rem;
   }
 
-  #search-form input#edit-keys,
-  #block-search-form .form-item-search-block-form input {
+  #search-form input#edit-keys
+  {
+    font-size: 1.8em;
+  }
+  
+  #block-search-form .form-item-search-block-form input 
+  {
     font-size: 2.5em;
   }
-
+  
   #block-search-form
     > div
     > form
@@ -5141,7 +5092,7 @@
   }
 
   .region-header #autocomplete {
-    font-size: 1.5em;
+    font-size: 3em;
     z-index: 10;
     overflow: auto;
     background-color: white;
@@ -5158,7 +5109,7 @@
   }
   
   .page-search #search-form input#edit-keys {
-  	width: 30em !important;
+  	width: 100%;
   }
   
   .page-search #edit-submit {
@@ -5223,6 +5174,11 @@
   
   .changeb #logo {
 	opacity: 0;
+  }
+
+  .changeb #header {
+  	min-height: 50rem;
+  	z-index: 3;
   }
 
   #busqueda-img > img {
@@ -5407,7 +5363,7 @@
 
   .sidebar .block {
     padding-left: 3.5rem;
-    background-color: #f2f2f2 !important;
+    background-color: snow !important;
     color: black !important;
   }
   
@@ -5490,18 +5446,24 @@
     margin-top: 0;
   }
 
-  #bloque_compartir {
-    font-size: 0.75em;
+  .region.region-help > div > div.content {
+    margin: 0px;
+    width: 10rem;
+    font-size: 1em;
   }
 
-  #bloque_comentar {
-    font-size: 0.75em;
+
+  div.region.region-help > div#block-block-14 {
+    margin-right: 1rem;
+  }
+  div.region.region-help > div#block-block-19 {
+    margin-right: 2rem;
   }
 
-  #block-block-20 {
-    font-size: 0.75em;
+  div.region.region-help > div#block-block-16 {
+    margin-right: 2rem;
   }
-
+  
   .form-actions {
     text-align: center;
   }
@@ -5654,7 +5616,7 @@
   /****Innovaciones sidebar landscape tlf******/
 
 
-  .page-buenas-practicas div.form-item.form-type-textfield > input {
+  .page-buenas-practicas div.form-item.form-type-textfield > input, .node-type-buenas-pr-cticas div.form-item.form-type-textfield.form-item-title > input  {
 	width: 45rem !important;
     height: 6rem;
 }
@@ -5800,10 +5762,6 @@
   /****Fin portafolio detalle landscape tlf****/
 
   /* PORTAFOLIO SIDEBAR */
-
-  .page-portafolio-docente #side {
-    display: inline-block;
-  }
 
   /* CONCURSO  LANDSCAPE*/
   .page-node-16097 .field-name-body .concurso_header {
@@ -6024,9 +5982,7 @@
     height: 4rem;
     font-size: 2em;
   }
-  #block-block-16 {
-    font-size: 0.7em;
-  }
+
 
   .views-row > .views-accordion-header > .field-content > a {
     padding-left: 96px;
@@ -6055,22 +6011,11 @@
 
   .field-type-image img,
   .user-picture img {
-    margin: 0 0 -2.2em;
+    margin: 0 0 -1em;
   }
 
   /* SIDEBAR DERECHA */
 
-  #block-block-13 {
-    height: 100rem;
-    width: 35rem;
-    margin-top: 0;
-  }
-
-  #block-block-8 {
-    height: 100rem;
-    width: 35rem;
-    margin-top: 0;
-  }
 
   #sidebar-first {
     display: none;
@@ -6123,9 +6068,6 @@
     margin-right: -4rem;
   }
 
-  .page-node-9243 #side {
-    display: inline-block !important;
-  }
 
   .page-node-9243 .lateral_izq_nosotros li > a,
   .page-node-9244 .lateral_izq_nosotros li > a,
@@ -6138,18 +6080,7 @@
     height: 160%;
   }
 
-  /* Mision y Aliados */
-  .page-node-9244 #side {
-    display: inline-block !important;
-  }
 
-  .page-nosotros-aliados #side {
-    display: inline-block !important;
-  }
-
-  .node-type-aliados #side {
-    display: inline-block !important;
-  }
 
   /****Voluntariado portrait landscape*********/
 
@@ -6574,9 +6505,16 @@
     #block-views-exp-cursos-page #edit-submit-cursos {
     width: 24rem !important;
     height: 6rem !important;
-    top: -4rem;
+    top: -1.3rem;
     left: 0rem;
   }
+  
+  .page-cursos div.form-item.form-type-textfield.form-item-title > input {
+    width: 24rem;
+    height: auto;
+    position: relative;
+    top: 3rem;
+}
 
   .page-cursos #content .section,
   .page-cursos .view-cursos,
@@ -6601,7 +6539,7 @@
   .page-cursos .view-content {
     display: flex;
     flex-flow: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   .page-node-20656
@@ -6734,8 +6672,18 @@
     font-size: 1.5em;
   }
   
+    .page-search #messages {
+      font-size: 2em !important;
+  }
+  
    .node-type-curso .rtejustify > strong > span {
     font-size: 1.5em !important;
     }  
+    
+   .lateral_izq_bloque01 > li:before,
+  .lateral_izq_bloque02 > li:before,
+  .lateral_izq_bloque03 > li:before {
+    border-color: transparent black;
+  }
 
 }
