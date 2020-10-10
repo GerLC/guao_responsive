@@ -78,17 +78,17 @@ var to = document.getElementsByClassName("section")[0];
 to.insertBefore(what, to.firstChild);
 
 var div = document.createElement("div");
-div.id = "hamburger-1";
+div.id = "hamburger-bar-1";
 
 document.getElementById("hamburger-id").appendChild(div);
 
 var div = document.createElement("div");
-div.id = "hamburger-2";
+div.id = "hamburger-bar-2";
 
 document.getElementById("hamburger-id").appendChild(div);
 
 var div = document.createElement("div");
-div.id = "hamburger-3";
+div.id = "hamburger-bar-3";
 
 document.getElementById("hamburger-id").appendChild(div);
 
@@ -343,8 +343,11 @@ if (
 
 const exist = document.querySelectorAll('[id="sidebarfirst"]');
 console.log(exist.length);
+const existT = document.querySelectorAll('.page-biblioteca, .page-buenas-practicas, .page-portafolio-docente');
+console.log(existT.length);
 
-  if (exist.length != 0) {
+
+  if (exist.length !== 0 && existT.length !== 0) {
   const x = document.getElementById("main");
   const y = document.getElementById("header");
   const z = document.getElementById("page-wrapper");

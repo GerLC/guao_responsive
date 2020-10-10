@@ -149,6 +149,288 @@
 ##Screen = B/w 768px to 1024px
 */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+	
+ /* Load Page */
+  .loader {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border: 4px solid black;
+  top: 50%;
+  animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  background-color: aqua;
+  width: 100%;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    pointer-events: none;
+    transition:all .4s;
+    opacity : 0;
+}
+  	
+  	
+  	  #sidebar #block-block-12 > h2,
+  #sidebar .lateral_izq_nosotros > li > a {
+    color: black;
+    font-size: 1.1em;
+  }
+
+  #sidebar #block-block-48,
+  #sidebar #block-block-13,
+  #sidebar #block-block-8 {
+    margin-top: 0;
+  }
+
+  #sec-menu > div.content > ul {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    background-color: snow;
+    font-weight: bold;
+    transform: translateZ(0);
+  }
+
+  #sec-menu > div.content > ul > li > a {
+    color: black;
+    padding: 0.5rem 3.25rem;
+    text-decoration: none;
+    font-size: 2.8em;
+    display: flex;
+  }
+
+  #sec-menu > div.content > ul > li.leaf {
+    border-bottom: 1px dotted #c2c3c5;
+    line-height: 6rem;
+  }
+
+  #sidebarfirst,
+  #mainmenu,
+  #sec-menu {
+    transform: scaleY(0) !important;
+    overflow: visible;
+    transition: transform 0.5s;
+    transform-origin: top;
+  }
+
+  .change #sidebarfirst,
+  .change #mainmenu,
+  .change #sec-menu {
+    transform: scaleY(1) !important;
+  }
+  
+  #breadcrumb {
+	display: block !important;
+}
+
+.title {
+	display: flex;
+	flex-flow: column;
+}
+
+   #subtitle {
+	font-size: .5em;
+}
+
+  .change #page  {
+	margin-left: 95%;
+  }
+
+  .region-sidebar-first {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+
+  #logo > img {
+    transform: translateZ(0);
+  }
+ 
+  #sidebar #logo {
+    position: relative;
+    z-index: 4;
+    opacity: 0;
+    transition-duration: 1s;
+    top: 0;
+  }
+  
+   .change #sidebar #logo {
+    opacity: 1;
+  }
+  
+  .show #login {
+    animation-name: stretch;
+    animation-duration: .6s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+  }
+
+
+  #sidebar {
+    display: block;
+    position: fixed;
+    width: 0;
+    left: 0;
+    top: 0;
+    background-color: white;
+    overflow-x: hidden;
+    height: 100%;
+    transition: 0.4s;
+    z-index: 3;
+    opacity: 0;
+  }
+
+  #block-block-8 > h2,
+  #block-block-13 > h2,
+  #block-block-15 > h2,
+  #block-block-48 > h2 {
+    font-size: 1.3em;
+  }
+
+  .change #sidebar {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 57rem;
+    transition: 0.3s;
+    opacity: 1;
+    background-color: snow;
+  }
+
+  #page {
+    transition:all 0.3s;
+  }
+	
+	
+  #main-menu {
+    display: none;
+  }
+
+  #mainmenu #main-menu-links a {
+    color: black;
+    background-color: snow;
+    text-align: start;
+    padding-left: 4rem;
+  }
+
+  #mainmenu #main-menu-links li {
+    font-size: 2.5em;
+    height: 7rem;
+    width: 100%;
+  }
+
+  #mainmenu #main-menu-links {
+    background-color: white;
+    -webkit-transform: scale(1);
+    transform: translateZ(0);
+  }
+
+  #mainmenu #main-menu-links .active-trail {
+    display: none;
+  }
+
+  #sidebarfirst .section {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #sidebar .sidebar .section {
+    font-size: 3.3em !important;
+  }
+
+  #sidebar .sidebar .section {
+    font-size: 3.3em !important;
+  }
+
+
+  #edit-field-categor-as-tid > div:nth-child(36) > label,
+  #edit-field-categor-as-tid > div:nth-child(48) > label {
+    display: content;
+  }
+
+  .lateral_izq_bloque01 > li > a,
+  .lateral_izq_bloque02 > li > a,
+  .lateral_izq_bloque03 > li > a {
+    color: black;
+  }
+
+  #block-block-8 > h2,
+  #block-block-13 > h2,
+  #block-block-15 > h2,
+  #block-block-48 > h2 {
+    color: black;
+  }
+
+  .page-primer-grado .lateral_izq_bloque01 > li:nth-child(1) > a,
+  .page-segundo-grado .lateral_izq_bloque01 > li:nth-child(2) > a,
+  .page-tercer-grado .lateral_izq_bloque01 > li:nth-child(3) > a,
+  .page-cuarto-grado .lateral_izq_bloque01 > li:nth-child(4) > a,
+  .page-quinto-grado .lateral_izq_bloque01 > li:nth-child(5) > a,
+  .page-sexto-grado .lateral_izq_bloque01 > li:nth-child(6) > a,
+  .page-primer-ano .lateral_izq_bloque02 > li:nth-child(1) > a,
+  .page-segundo-ano .lateral_izq_bloque02 > li:nth-child(2) > a,
+  .page-tercer-ano .lateral_izq_bloque02 > li:nth-child(3) > a,
+  .page-cuarto-ano .lateral_izq_bloque02 > li:nth-child(4) > a,
+  .page-quinto-ano .lateral_izq_bloque02 > li:nth-child(5) > a,
+  .page-docentes-primer-ano .lateral_izq_bloque02 > li:nth-child(1) > a,
+  .page-docentes-segundo-ano .lateral_izq_bloque02 > li:nth-child(2) > a,
+  .page-docentes-tercer-ano .lateral_izq_bloque02 > li:nth-child(3) > a,
+  .page-docentes-cuarto-ano .lateral_izq_bloque02 > li:nth-child(4) > a,
+  .page-docentes-quinto-ano .lateral_izq_bloque02 > li:nth-child(5) > a,
+  .page-celebraciones-escolares .lateral_izq_bloque03 > li:nth-child(1) > a,
+  .page-efemerides .lateral_izq_bloque03 > li:nth-child(4) > a {
+    color: black;
+  }
+  #edit-field-categor-as-tid > div:nth-child(36) > label,
+  #edit-field-categor-as-tid > div:nth-child(48) > label {
+    display: content;
+  }
+
+  .lateral_izq_bloque01 > li > a,
+  .lateral_izq_bloque02 > li > a,
+  .lateral_izq_bloque03 > li > a {
+    color: black;
+  }
+
+  #block-block-8 > h2,
+  #block-block-13 > h2,
+  #block-block-15 > h2,
+  #block-block-48 > h2 {
+    color: black;
+  }
+	
+	
+  div.form-item.form-type-textfield.form-item-populate > input {
+    width: 42rem;
+    height: 3.4rem;
+  }
+
+  #block-views-exp-library-page-1 #edit-submit-library {
+    width: 5rem;
+    height: 5rem;
+    background-size: 3.7rem !important;
+    position: relative;
+    top: -2.1567rem;
+    left: 34rem;
+  }
+
   .bloqueshomepage {
     margin: 6rem 0 0 0;
   }
@@ -219,8 +501,13 @@
     transition: max-height 0.6s ease-out;
     z-index: 2;
   }
+  
+  #hamburger-id {
+    position: relative;
+	top: 2rem;
+  }
 
-  #hamburger-1 {
+  #hamburger-bar-1 {
     position: absolute;
     left: -28rem;
     top: 6%;
@@ -231,7 +518,7 @@
     transition: 0.4s;
   }
 
-  #hamburger-2 {
+  #hamburger-bar-2 {
     position: absolute;
     left: -28rem;
     top: 6%;
@@ -242,7 +529,7 @@
     transition: 0.4s;
   }
 
-  #hamburger-3 {
+  #hamburger-bar-3 {
     position: absolute;
     left: -28rem;
     top: 6%;
@@ -253,20 +540,37 @@
     transition: 0.4s;
   }
 
-  .change #hamburger-1 {
-
+  .change #hamburger-bar-1 {
+    animation-name: stretch;
+    animation-duration: .6s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
   }
 
-  .change #hamburger-2 {
-
+  .change #hamburger-bar-2 {
+    animation-name: stretch;
+    animation-duration: .6s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
   }
 
-  .change #hamburger-3 {
-
+  .change #hamburger-bar-3 {
+    animation-name: stretch;
+    animation-duration: .6s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
   }
 
   #footer-wrapper {
-    position: fixed;
     bottom: 0;
     left: 0;
     background-color: white;
@@ -295,6 +599,7 @@
     transform: scaleX(0);
     position: relative;
     right: 30rem;
+    top: 1.5rem;
     width: 40rem !important;
     overflow: visible;
     transition: transform 0.3s ease-out;
@@ -302,8 +607,7 @@
     transform-origin: right;
   }
 
-  #block-search-form > element.style {
-  }
+
 
   #busqueda {
     display: block !important;
@@ -552,18 +856,28 @@
     height: 2.5rem;
   }
 
-  div.form-item.form-type-textfield.form-item-populate > input {
-    width: 30rem;
+   .page-portafolio-docente div.form-item.form-type-textfield > input {
+    width: 42rem !important;
+    height: 3.4rem;
   }
 
 
   .views-exposed-form .views-exposed-widget .form-submit {
     width: 5rem !important;
     height: 5rem !important;
-    background-size: 2.4rem !important;
+    background-size: 5.4rem !important;
     position: relative;
-    top: -0.8rem;
-    left: 22rem;
+    top: -4.8rem;
+    left: 35rem;
+  }
+  
+    .node-type-libro-de-biblioteca .sidebar .block .content{
+	line-height: 2.4;	
+  }
+  
+  .node-type-libro-de-biblioteca #block-views-exp-library-page-1 #edit-submit-library {
+  	    top: 3.6rem;
+    	left: -1rem;
   }
 
   .page-biblioteca .views-row {
@@ -760,12 +1074,12 @@
 
 
   .page-buenas-practicas div.form-item.form-type-textfield > input {
-	width: 45rem;
+	width: 42rem;
     height: 6rem;
 }
 
   .node-type-buenas-pr-cticas div.form-item.form-type-textfield.form-item-title > input {
-	width: 45rem;
+	width: 42rem;
     height: 6rem;
 }
 
@@ -1688,7 +2002,7 @@
     justify-content: center;
     z-index: 1000;
     pointer-events: none;
-    transition:all .3s;
+    transition:all .4s;
     opacity : 0;
 }
   
@@ -1978,7 +2292,7 @@
     left: 1rem;
   }
 
-  #hamburger-1 {
+  #hamburger-bar-1 {
     position: absolute;
     left: -28rem;
     top: 5%;
@@ -1989,7 +2303,7 @@
     transition: 0.4s;
   }
 
-  #hamburger-2 {    
+  #hamburger-bar-2 {    
     position: absolute;
     left: -28rem;
     top: 5%;
@@ -2000,7 +2314,7 @@
     transition: 0.4s;
   }
 
-  #hamburger-3 {
+  #hamburger-bar-3 {
     position: absolute;
     left: -28rem;
     top: 5%;
@@ -2011,7 +2325,7 @@
     transition: 0.4s;
   }
 
-  .change #hamburger-1 {
+  .change #hamburger-bar-1 {
     animation-name: stretch;
     animation-duration: .6s;
     animation-timing-function: ease-out;
@@ -2021,7 +2335,7 @@
     animation-play-state: running;
   }
 
-  .change #hamburger-2 {
+  .change #hamburger-bar-2 {
     animation-name: stretch;
     animation-duration: .6s;
     animation-timing-function: ease-out;
@@ -2031,7 +2345,7 @@
     animation-play-state: running;
   }
 
-  .change #hamburger-3 {
+  .change #hamburger-bar-3 {
     animation-name: stretch;
     animation-duration: .6s;
     animation-timing-function: ease-out;
@@ -2068,8 +2382,7 @@
     transform: translateZ(0);
   }
 
-  #mainmenu #main-menu-links .active-trail,
-  #mainmenu #main-menu-links .first {
+  #mainmenu #main-menu-links .active-trail {
     display: none;
   }
 
@@ -2551,7 +2864,7 @@
   }
 
   #redes > a {
-    margin: 3rem;
+    margin: 1.5rem;
   }
 
   #redes > a > img {
@@ -4613,8 +4926,7 @@
     margin-bottom: 1.5rem;;
   }
 
-  #mainmenu #main-menu-links .active-trail,
-  #mainmenu #main-menu-links .first {
+  #mainmenu #main-menu-links .active-trail {
     display: none;
   }
 
@@ -4908,7 +5220,7 @@
     left: 1rem;
   }
 
-  #hamburger-1 {
+  #hamburger-bar-1 {
     position: absolute;
     left: -28rem;
     top: 8%;
@@ -4919,7 +5231,7 @@
     transition: 0.4s;
   }
 
-  #hamburger-2 {
+  #hamburger-bar-2 {
     position: absolute;
     left: -28rem;
     top: 8%;
@@ -4930,7 +5242,7 @@
     transition: 0.4s;
   }
 
-  #hamburger-3 {
+  #hamburger-bar-3 {
     position: absolute;
     left: -28rem;
     top: 8%;
@@ -4941,7 +5253,7 @@
     transition: 0.4s;
   }
 
-  .change #hamburger-1 {
+  .change #hamburger-bar-1 {
     animation-name: stretch;
     animation-duration: .6s;
     animation-timing-function: ease-out;
@@ -4951,7 +5263,7 @@
     animation-play-state: running;
   }
 
-  .change #hamburger-2 {
+  .change #hamburger-bar-2 {
     animation-name: stretch;
     animation-duration: .6s;
     animation-timing-function: ease-out;
@@ -4961,7 +5273,7 @@
     animation-play-state: running;
   }
 
-  .change #hamburger-3 {
+  .change #hamburger-bar-3 {
     animation-name: stretch;
     animation-duration: .6s;
     animation-timing-function: ease-out;
@@ -5004,7 +5316,7 @@
   }
 
   #redes > a {
-    margin: 3rem;
+    margin: 2rem;
     width: 3rem;
   }
 
