@@ -274,16 +274,6 @@
     opacity: 1;
   }
   
-  .show #login {
-    animation-name: stretch;
-    animation-duration: .6s;
-    animation-timing-function: ease-out;
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-fill-mode: none;
-    animation-play-state: running;
-  }
-
 
   #sidebar {
     display: block;
@@ -424,7 +414,7 @@
 
   #block-views-exp-library-page-1 #edit-submit-library {
     width: 5rem;
-    height: 5rem;
+    height: 5.1rem;
     background-size: 3.7rem !important;
     position: relative;
     top: -2.1567rem;
@@ -482,7 +472,6 @@
   #logo {
     position: relative;
     left: 20%;
-    top: 0.45rem;
   }
 
   #logo > img {
@@ -503,44 +492,21 @@
   }
   
   #hamburger-id {
-    position: relative;
-	top: 2rem;
-  }
-
-  #hamburger-bar-1 {
     position: absolute;
-    left: -28rem;
-    top: 6%;
-    width: 50px;
-    height: 8px;
-    background-color: black;
-    margin: 6px 30rem;
-    transition: 0.4s;
+    top: .5rem;
+    left: 2rem;
+    font-size: 5em;
+  }
+  
+  .hamburger:before {
+  	display: none;
+  	font-family: "Font Awesome 5 Free"; 
+  	font-weight: 900;
+  	content: "\f0c9";
   }
 
-  #hamburger-bar-2 {
-    position: absolute;
-    left: -28rem;
-    top: 6%;
-    width: 50px;
-    height: 8px;
-    background-color: black;
-    margin: 20px 30rem;
-    transition: 0.4s;
-  }
-
-  #hamburger-bar-3 {
-    position: absolute;
-    left: -28rem;
-    top: 6%;
-    width: 50px;
-    height: 8px;
-    background-color: black;
-    margin: 34px 30rem;
-    transition: 0.4s;
-  }
-
-  .change #hamburger-bar-1 {
+  
+  .change .hamburger {
     animation-name: stretch;
     animation-duration: .6s;
     animation-timing-function: ease-out;
@@ -548,26 +514,10 @@
     animation-direction: alternate;
     animation-fill-mode: none;
     animation-play-state: running;
-  }
 
-  .change #hamburger-bar-2 {
-    animation-name: stretch;
-    animation-duration: .6s;
-    animation-timing-function: ease-out;
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-fill-mode: none;
-    animation-play-state: running;
   }
-
-  .change #hamburger-bar-3 {
-    animation-name: stretch;
-    animation-duration: .6s;
-    animation-timing-function: ease-out;
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-fill-mode: none;
-    animation-play-state: running;
+   .page-biblioteca .change .hamburger:before, .page-buenas-practicas .change .hamburger:before, .page-portafolio-docente .change .hamburger:before {
+  	content: "\f31e";
   }
 
   #footer-wrapper {
@@ -707,53 +657,59 @@
     transform: translateZ(0);
   }
 
-  #block-system-user-menu {
+    #block-system-user-menu {
+    transform: scaleY(0) !important;
     position: fixed;
-    display: none;
     z-index: 2;
     top: 16rem;
-    right: 7rem;
+    right: 9rem;
+    transition: all 0.2s;
+    transform-origin: top;
   }
+  
 
   #block-system-user-menu > div.content {
     position: absolute;
     left: 4rem;
     top: -1rem;
-    background-color: #f1f1f1;
-    min-width: 1rem;
+    background-color: white;
     overflow: hidden;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
     z-index: 1;
+  }
+
+  #block-system-user-menu > div.content > ul {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+  }
+
+  #block-system-user-menu > div.content > ul > li > a {
+    background-image: none;
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+    font-size: 3.6em;
+    padding: 1.5rem 1.25rem;
+    width: 25rem;
+    height: 4rem;
+    padding-top: 3rem;
+    padding-top: 3rem;
+    display: block;
   }
 
   #block-system-user-menu > div.content > ul > li.first > a {
     background-image: none;
-    border: 1px solid black;
   }
-  #block-system-user-menu > div.content > ul > li.last > a {
-    border: 1px solid black;
-  }
-
-  #block-system-user-menu > div.content > ul > li.last {
-    float: none;
-  }
-
-  #block-system-user-menu > div.content > ul > li > a {
-    color: black;
-    padding: 1.5rem 1.25rem;
-    text-decoration: none;
-    display: block;
-    font-size: 3em;
-    width: 16rem;
-    height: 3rem;
-    padding-top: 3rem;
-  }
+ 
 
   #login {
     display: block !important;
     position: relative;
-    bottom: 37.9rem;
-    left: 71rem;
+    left: 55rem;
+    top: 1.85rem;
+    width: 0;
   }
 
   #login > img {
@@ -761,6 +717,7 @@
   }
 
   .show #block-system-user-menu {
+    transform: scaleY(1) !important;
     display: inline-block !important;
   }
 
@@ -847,7 +804,6 @@
 
   .sidebar .block {
     padding-left: 2.3rem;
-    background-color: snow !important;
     color: black !important;
   }
 
@@ -2287,74 +2243,42 @@
   }
 
   #hamburger-id {
-    position: relative;
-    bottom: 1.1rem;
-    left: 1rem;
-  }
-
-  #hamburger-bar-1 {
     position: absolute;
-    left: -28rem;
-    top: 5%;
-    width: 65px;
-    height: 10px;
-    background-color: black;
-    margin: 6px 30rem;
-    transition: 0.4s;
-  }
-
-  #hamburger-bar-2 {    
-    position: absolute;
-    left: -28rem;
-    top: 5%;
-    width: 65px;
-    height: 10px;
-    background-color: black;
-    margin: 28px 30rem;
-    transition: 0.4s;
-  }
-
-  #hamburger-bar-3 {
-    position: absolute;
-    left: -28rem;
-    top: 5%;
-    width: 65px;
-    height: 10px;
-    background-color: black;
-    margin: 50px 30rem;
-    transition: 0.4s;
-  }
-
-  .change #hamburger-bar-1 {
-    animation-name: stretch;
-    animation-duration: .6s;
-    animation-timing-function: ease-out;
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-fill-mode: none;
-    animation-play-state: running;
-  }
-
-  .change #hamburger-bar-2 {
-    animation-name: stretch;
-    animation-duration: .6s;
-    animation-timing-function: ease-out;
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-fill-mode: none;
-    animation-play-state: running;
-  }
-
-  .change #hamburger-bar-3 {
-    animation-name: stretch;
-    animation-duration: .6s;
-    animation-timing-function: ease-out;
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-fill-mode: none;
-    animation-play-state: running;
+    top: 1.5rem;
+    left: 2rem;
+    font-size: 5em;
   }
   
+    #hamburger-menu {
+    position: fixed;
+    bottom: 5rem;
+    right: 7rem;
+    font-size: 7em;
+  }
+  
+  .hamburger:before {
+  	display: none;
+  	font-family: "Font Awesome 5 Free"; 
+  	font-weight: 900;
+  	content: "\f0c9";
+  }
+
+  
+  .change .hamburger {
+    animation-name: stretch;
+    animation-duration: .6s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+
+  }
+   .page-biblioteca .change .hamburger:before, .page-buenas-practicas .change .hamburger:before, .page-portafolio-docente .change .hamburger:before {
+  	content: "\f31e";
+  }
+
+
   
 
   /**********FIN MEN?? HAMBURGER *******/
@@ -2864,11 +2788,11 @@
   }
 
   #redes > a {
-    margin: 1.5rem;
+    margin: 1.3rem;
   }
 
   #redes > a > img {
-    width: 4rem;
+    width: 4.6rem;
   }
 
   #terminos {
@@ -2921,7 +2845,6 @@
 
   .sidebar .block {
     padding-left: 5rem;
-    background-color: snow !important;
     color: black !important;
   }
 
@@ -2940,7 +2863,7 @@
     height: 5rem;
     background-size: 3.7rem !important;
     position: relative;
-    top: -2.1567rem;
+    top: -2.25rem;
     left: 34rem;
   }
 
@@ -3220,7 +3143,7 @@
     height: 5rem !important;
 	background-size: 3.7rem !important;
     position: relative;
-    top: -2.1567rem;
+    top: -2.25rem;
     left: 34rem;
   }
   
@@ -3349,7 +3272,7 @@
 
   .page-node-16097 .field-name-body .concurso_header > div > div img,
   .page-node-18556 .field-name-body .concurso_header > div > div img {
-    width: 33%;
+    width: 100%;
     height: auto;
   }
 
@@ -3838,6 +3761,7 @@
   .vista-materia .views-field.views-field-field-recursos h2 a {
     line-height: 5rem;
     border-bottom: 2px solid lightgrey;
+    font-size: .6em;
   }
 
   .field-type-image img,
@@ -4254,9 +4178,7 @@
     margin-top: 16px;
   }
   /* FORM */
-  div.form-item.form-type-textfield > input {
-    width: 37rem;
-  }
+
 
   /* Si ya estas registrado */
   #block-block-32 {
@@ -5214,46 +5136,22 @@
     height: auto;
   }
   
-    #hamburger-id {
-    position: relative;
-    bottom: 1.1rem;
-    left: 1rem;
-  }
-
-  #hamburger-bar-1 {
+  #hamburger-id {
     position: absolute;
-    left: -28rem;
-    top: 8%;
-    width: 45px;
-    height: 7px;
-    background-color: black;
-    margin: 6px 30rem;
-    transition: 0.4s;
+    top: 1rem;
+    left: 2rem;
+    font-size: 4em;
+  }
+  
+  .hamburger:before {
+  	display: none;
+  	font-family: "Font Awesome 5 Free"; 
+  	font-weight: 900;
+  	content: "\f0c9";
   }
 
-  #hamburger-bar-2 {
-    position: absolute;
-    left: -28rem;
-    top: 8%;
-    width: 45px;
-    height: 7px;
-    background-color: black;
-    margin: 20px 30rem;
-    transition: 0.4s;
-  }
-
-  #hamburger-bar-3 {
-    position: absolute;
-    left: -28rem;
-    top: 8%;
-    width: 45px;
-    height: 7px;
-    background-color: black;
-    margin: 34px 30rem;
-    transition: 0.4s;
-  }
-
-  .change #hamburger-bar-1 {
+  
+  .change .hamburger {
     animation-name: stretch;
     animation-duration: .6s;
     animation-timing-function: ease-out;
@@ -5261,29 +5159,13 @@
     animation-direction: alternate;
     animation-fill-mode: none;
     animation-play-state: running;
-  }
 
-  .change #hamburger-bar-2 {
-    animation-name: stretch;
-    animation-duration: .6s;
-    animation-timing-function: ease-out;
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-fill-mode: none;
-    animation-play-state: running;
   }
-
-  .change #hamburger-bar-3 {
-    animation-name: stretch;
-    animation-duration: .6s;
-    animation-timing-function: ease-out;
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-fill-mode: none;
-    animation-play-state: running;
+   .page-biblioteca .change .hamburger:before, .page-buenas-practicas .change .hamburger:before, .page-portafolio-docente .change .hamburger:before {
+  	content: "\f31e";
   }
-
   /* MENU PRIMARIO TU AULA, BIBLIOTECA... */
+  
   #main-menu-links {
     position: relative;
     top: 2rem;
@@ -5316,12 +5198,11 @@
   }
 
   #redes > a {
-    margin: 2rem;
-    width: 3rem;
+    margin: 1rem;
   }
 
   #redes > a > img {
-    width: 3rem;
+    width: 3.5rem;
   }
 
 
@@ -5675,7 +5556,6 @@
 
   .sidebar .block {
     padding-left: 3.5rem;
-    background-color: snow !important;
     color: black !important;
   }
   
@@ -6319,6 +6199,7 @@
   .vista-materia .views-field.views-field-field-recursos h2 a {
     line-height: 5.5rem;
     border-bottom: 2px solid lightgrey;
+  	font-size: .7em;
   }
 
   .field-type-image img,

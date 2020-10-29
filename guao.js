@@ -3,6 +3,23 @@ meta.setAttribute("name", "viewport");
 meta.setAttribute("content", "width=device-width");
 var head = document.getElementsByTagName("head")[0];
 head.append(meta);
+
+
+/*var link = "https://use.fontawesome.com/releases/v5.15.1/css/all.css";
+var element = document.createElement("link");
+element.setAttribute("href", link);
+element.setAttribute("rel", 'stylesheet');
+element.setAttribute("type", 'text/css');
+
+document.head.appendChild(element); */
+
+
+var link = "https://use.fontawesome.com/releases/v5.15.1/js/all.js";
+var element = document.createElement("script");
+element.setAttribute("src", link);
+element.setAttribute("data-search-pseudo-elements",'');
+
+document.head.appendChild(element); 
 					
 document.addEventListener('gesturestart', function (e) {
     e.preventDefault();
@@ -26,7 +43,7 @@ var fade = document.getElementsByClassName("loader-wrapper")[0];
 window.addEventListener('beforeunload', (event) => {
            loader.classList = "loader";
            loaderIn.classList = "loader-inner";
-           fade.style.opacity = .9;
+           fade.style.opacity = .95;
         });
  
 window.addEventListener('DOMContentLoaded', (event) => {
@@ -39,7 +56,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
 /*  INICIO SESION  */
 window.addEventListener("click", function (event) {
   if (!event.target.matches(".login")) {
-    /* var dropdowns = document.getElementsByClassName("region-header");*/
     var dropdowns = document.getElementsByClassName("section");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
@@ -52,7 +68,7 @@ window.addEventListener("click", function (event) {
 });
 
 /* FUNCION PARA EL HAMBURGER , SE REPITEN 3 VECES MOBILE PORTRAIT */
-var divClass = document.createElement("div");
+var divClass = document.createElement("span");
 divClass.id = "hamburger-id";
 divClass.classList = "hamburger";
 divClass.onclick = function () {
@@ -77,20 +93,6 @@ var what = document.getElementById("hamburger-id");
 var to = document.getElementsByClassName("section")[0];
 to.insertBefore(what, to.firstChild);
 
-var div = document.createElement("div");
-div.id = "hamburger-bar-1";
-
-document.getElementById("hamburger-id").appendChild(div);
-
-var div = document.createElement("div");
-div.id = "hamburger-bar-2";
-
-document.getElementById("hamburger-id").appendChild(div);
-
-var div = document.createElement("div");
-div.id = "hamburger-bar-3";
-
-document.getElementById("hamburger-id").appendChild(div);
 
 /* FIN */
 
@@ -160,8 +162,6 @@ busquedaImg.onclick = function () {
   var y = document.getElementById("busqueda-img");
   var focus = document.getElementById("edit-search-block-form--2");
 
-  /*
-   if ( y.style.transform == "scaleY(0)") */
   if (y.style.display === "none") {
     x.classList.toggle("changeb");
     focus.blur();
@@ -352,15 +352,16 @@ console.log(existT.length);
   const y = document.getElementById("header");
   const z = document.getElementById("page-wrapper");
 
+
     z.classList.toggle("change");
     x.classList.toggle("change");
     y.classList.toggle("change");
+  
   	document.getElementById("sidebarfirst").scrollIntoView({block: "start", behavior: "smooth"});
   	
   }
 
 }
-
 
 
 
