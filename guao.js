@@ -5,15 +5,6 @@ var head = document.getElementsByTagName("head")[0];
 head.append(meta);
 
 
-/*var link = "https://use.fontawesome.com/releases/v5.15.1/css/all.css";
-var element = document.createElement("link");
-element.setAttribute("href", link);
-element.setAttribute("rel", 'stylesheet');
-element.setAttribute("type", 'text/css');
-
-document.head.appendChild(element); */
-
-
 var link = "https://use.fontawesome.com/releases/v5.15.1/js/all.js";
 var element = document.createElement("script");
 element.setAttribute("src", link);
@@ -67,31 +58,48 @@ window.addEventListener("click", function (event) {
   }
 });
 
-/* FUNCION PARA EL HAMBURGER , SE REPITEN 3 VECES MOBILE PORTRAIT */
+
+
+/** Boton Expandir Filtro Sidebar-first */
+
+var expandBtn = document.createElement("span");
+expandBtn.classList = "btn-expand";
+
+expandBtn.onclick = function () {
+
+  const z = document.getElementById("page-wrapper");
+
+  	  z.classList.toggle('expand-sidebar');
+  	  z.classList.remove('change');
+      z.classList.remove('icon-open-search');
+
+};
+
+/** Hamburger Button  
+  * Opens Menu on click
+  * Closes it on click if opened
+*/
 var divClass = document.createElement("span");
-divClass.id = "hamburger-id";
+divClass.id = "hamburger-id-btn";
 divClass.classList = "hamburger";
 divClass.onclick = function () {
 
-  var x = document.getElementById("main");
-  var y = document.getElementById("header");
   var z = document.getElementById("page-wrapper");
 
   if (z.style.marginLeft) {
     z.classList.toggle("change");
-    x.classList.toggle("change");
-    y.classList.toggle("change");
+    z.classList.remove('expand-sidebar');
+    z.classList.remove('icon-open-search');
+
   } else {
     z.classList.toggle("change");
-    x.classList.toggle("change");
-    y.classList.toggle("change");
+    z.classList.remove('expand-sidebar');
+    z.classList.remove('icon-open-search');
   }
 };
-document.getElementsByClassName("section")[0].appendChild(divClass);
 
-var what = document.getElementById("hamburger-id");
 var to = document.getElementsByClassName("section")[0];
-to.insertBefore(what, to.firstChild);
+to.insertBefore(divClass, to.firstChild);
 
 
 /* FIN */
@@ -135,7 +143,6 @@ document.getElementById("redes").appendChild(a);
 /* BUSQUEDA MOBILE LANDSCAPE */
 var busqueda = document.createElement("div");
 busqueda.id = "busqueda";
-busqueda.classList = "busqueda";
 
 document.getElementsByClassName("section")[0].appendChild(busqueda);
 
@@ -154,7 +161,7 @@ var div = document.createElement("div");
 div.id = "busquedaX1";
 document.getElementById("busqueda").appendChild(div);
 div.onclick = function () {
-  var x = document.getElementById("page-wrapper").classList.toggle("changeb");
+  var x = document.getElementById("page-wrapper").classList.toggle("icon-open-search");
 };
 
 busquedaImg.onclick = function () {
@@ -163,10 +170,14 @@ busquedaImg.onclick = function () {
   var focus = document.getElementById("edit-search-block-form--2");
 
   if (y.style.display === "none") {
-    x.classList.toggle("changeb");
+    x.classList.toggle("icon-open-search");
+    x.classList.remove('change');
+    x.classList.remove('expand-sidebar');
     focus.blur();
   } else {
-    x.classList.toggle("changeb");
+    x.classList.toggle("icon-open-search");
+    x.classList.remove('change');
+    x.classList.remove('expand-sidebar');
     focus.focus();
   }
 };
@@ -184,8 +195,8 @@ login.onclick = function () {
 
 var imgLogin = document.createElement("img");
 imgLogin.src = "/sites/default/files/login0.png";
-imgLogin.classList = "login";
 login.appendChild(imgLogin);
+imgLogin.classList = "login";
 document.getElementsByClassName("section")[0].appendChild(login);
 
 
@@ -228,20 +239,20 @@ document.getElementsByClassName("block-button-home")[0].appendChild(blockButton3
 var block1 = document.getElementById("main-wrapper");
 
 blockButton1.onclick = function () {
-  block1.classList.toggle("open1");
-  block1.classList.remove("open2");
-  block1.classList.remove("open3");
+  block1.classList.toggle("open-1");
+  block1.classList.remove("open-2");
+  block1.classList.remove("open-3");
 };
 
 blockButton2.onclick = function () {
-  block1.classList.toggle("open2");
-  block1.classList.remove("open1");
-  block1.classList.remove("open3");
+  block1.classList.toggle("open-2");
+  block1.classList.remove("open-1");
+  block1.classList.remove("open-3");
 };
 blockButton3.onclick = function () {
-  block1.classList.toggle("open3");
-  block1.classList.remove("open1");
-  block1.classList.remove("open2");
+  block1.classList.toggle("open-3");
+  block1.classList.remove("open-1");
+  block1.classList.remove("open-2");
 };
 
 var mainMenu = document.getElementById("main-menu").cloneNode(true);
@@ -267,22 +278,16 @@ sideNav.appendChild(secMenu);
 sideNav.appendChild(document.createElement("hr"));
 
 if (document.URL.indexOf("https://guao.org/biblioteca") >= 0) {
-  var sidebarfirst = document.getElementById("sidebar-first").cloneNode(true);
-  sidebarfirst.id = "sidebarfirst";
 
-  sideNav.appendChild(sidebarfirst);
   var biblio_title = document.createElement("h2");
   biblio_title.id = "title_biblioteca";
-  biblio_title.innerHTML = "Biblioteca";
+  biblio_title.innerHTML = "Filtro Biblioteca";
   var biblio = document.getElementById("block-views-exp-library-page-1");
   biblio.insertBefore(biblio_title, biblio.firstChild);
 }
 
 if (document.URL.indexOf("https://guao.org/buenas_practicas") >= 0) {
-  var sidebarfirst = document.getElementById("sidebar-first").cloneNode(true);
-  sidebarfirst.id = "sidebarfirst";
 
-  sideNav.appendChild(sidebarfirst);
   const innovaciones = document.getElementById(
     "block-views-exp-buenas-pr-cticas-page-1"
   );
@@ -292,11 +297,8 @@ if (document.URL.indexOf("https://guao.org/buenas_practicas") >= 0) {
   innovaciones.insertBefore(innovaciones_title, innovaciones.firstChild);
 }
 
-if (document.URL.indexOf("https://guao.org/portafolio-docente") >= 0) {
-  var sidebarfirst = document.getElementById("sidebar-first").cloneNode(true);
-  sidebarfirst.id = "sidebarfirst";
+if (document.URL.indexOf("https://guao.org/portafolio-docente") >= 0 || document.URL.indexOf("https://guao.org/portafolio_docente") >= 0  ) {
 
-  sideNav.appendChild(sidebarfirst);
   const portafolio = document.getElementById(
     "block-views-exp-portafolio-docente-page-1"
   );
@@ -326,10 +328,11 @@ if (
   document.URL.indexOf("https://guao.org/docentes/quinto_ano/") >= 0 ||
   document.URL.indexOf("https://guao.org/efemerides") >= 0
 ) {
-  var sidebarfirst = document.getElementById("sidebar-first").cloneNode(true);
-  sidebarfirst.id = "sidebarfirst";
 
-  sideNav.appendChild(sidebarfirst);
+var to = document.getElementsByClassName("section")[0];
+to.insertBefore(expandBtn, to.firstChild);
+
+
 }
 
 sideNav.insertBefore(logo, sideNav.firstChild);
@@ -338,33 +341,58 @@ if (
   document.URL.indexOf("https://guao.org/biblioteca") >= 0 ||
   document.URL.indexOf("https://guao.org/buenas_practicas") >= 0 ||
   document.URL.indexOf("https://guao.org/portafolio-docente") >= 0
+||
+  document.URL.indexOf("https://guao.org/portafolio_docente") >= 0
 
 ) {
 
-const exist = document.querySelectorAll('[id="sidebarfirst"]');
+var to = document.getElementsByClassName("section")[0];
+to.insertBefore(expandBtn, to.firstChild);
+
+const exist = document.querySelectorAll('[id="sidebar-first"]');
 console.log(exist.length);
-const existT = document.querySelectorAll('.page-biblioteca, .page-buenas-practicas, .page-portafolio-docente');
-console.log(existT.length);
+const existFilter = document.querySelectorAll('.page-biblioteca, .page-buenas-practicas, .page-portafolio-docente');
+console.log(existFilter.length);
 
 
-  if (exist.length !== 0 && existT.length !== 0) {
-  const x = document.getElementById("main");
-  const y = document.getElementById("header");
+  if (exist.length !== 0 && existFilter.length !== 0) {
+
   const z = document.getElementById("page-wrapper");
 
+    z.classList.toggle("expand-sidebar");
 
-    z.classList.toggle("change");
-    x.classList.toggle("change");
-    y.classList.toggle("change");
-  
-  	document.getElementById("sidebarfirst").scrollIntoView({block: "start", behavior: "smooth"});
-  	
   }
+  
 
 }
 
 
 
+/** Change backgroundColor 
+ * This part changes the backgroundColor of the sidebar-first
+ * First, it looks if sidebar-first exist to proceed
+ * On the block class it gets the actual backgroundColor
+ * 
+ * The reason for this it's beacause if i dont put it, the sidebar-first doesnt get all the background in the same color.
+ */
+ 
+  if (document.querySelectorAll('[id="sidebar-first"]').length !== 0) {
+
+  const z = document.getElementById("sidebar-first").getElementsByClassName('block')[0];
+
+   let filterColor =  window.getComputedStyle(z).backgroundColor;
+   document.getElementById('sidebar-first').style.backgroundColor = filterColor;
+   console.log(filterColor);
+  }
+
+
+/** Subtitle on selected value on filter
+ * It gets all the input
+ * It checks the selectedValue and takes the id
+ * Once it has the Id, we get the 'for' element who has the name of the selectedValue
+ * Then it creates a textContent and we added it there
+ */
+ 
 const rbs = document.querySelectorAll('input[name="field_categor_as_tid"] , input[name="field_buenas_pr_cticas_tid"] , input[name="field_portafolio_docente_tid"]');
 
             let selectedValue;
