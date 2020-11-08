@@ -502,11 +502,11 @@
   	display: none;
   	font-family: "Font Awesome 5 Free"; 
   	font-weight: 900;
-  	content: "\f31e";
+  	content: "\f78c";
   }
 
     .expand-sidebar .btn-expand:before {
-  	content: "\f78c";
+  	content: "\f31e";
   }
 
   #footer-wrapper {
@@ -2277,11 +2277,11 @@
   	display: none;
   	font-family: "Font Awesome 5 Free"; 
   	font-weight: 900;
-  	content: "\f31e";
+  	content: "\f78c";
   }
 
     .expand-sidebar .btn-expand:before {
-  	content: "\f78c";
+  	content: "\f31e";
   }
 
   
@@ -5154,11 +5154,11 @@
   	display: none;
   	font-family: "Font Awesome 5 Free"; 
   	font-weight: 900;
-  	content: "\f31e";
+  	content: "\f78c";
   }
 
     .expand-sidebar .btn-expand:before {
-  	content: "\f78c";
+  	content: "\f31e";
   }
   
   /* MENU PRIMARIO TU AULA, BIBLIOTECA... */
