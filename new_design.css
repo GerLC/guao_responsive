@@ -164,7 +164,7 @@
 .loader-inner {
   vertical-align: top;
   display: inline-block;
-  background-color: aqua;
+  background-color: #00FFFF;
   width: 100%;
   animation: loader-inner 2s infinite ease-in;
 }
@@ -176,7 +176,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: white;
+    background-color: #FFFFFF;
     display: flex;
     justify-content: center;
     z-index: 1000;
@@ -190,7 +190,7 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    background-color: snow;
+    background-color: #FFFAFA;
     font-weight: bold;
     transform: translateZ(0);
   }
@@ -269,7 +269,7 @@
     width: 0;
     left: 0;
     top: 0;
-    background-color: white;
+    background-color: #FFFFFF;
     overflow-x: hidden;
     height: 100%;
     transition: 0.4s;
@@ -289,7 +289,7 @@
     width: 57rem;
     transition: 0.3s;
     opacity: 1;
-    background-color: snow;
+    background-color: #FFFAFA;
   }
 
   #page {
@@ -303,7 +303,7 @@
 
   #mainmenu #main-menu-links a {
     color: black;
-    background-color: snow;
+    background-color: #FFFAFA;
     text-align: start;
     padding-left: 4rem;
   }
@@ -315,7 +315,7 @@
   }
 
   #mainmenu #main-menu-links {
-    background-color: white;
+    background-color: #FFFFFF;
     -webkit-transform: scale(1);
     transform: translateZ(0);
   }
@@ -479,14 +479,7 @@
 
   
   .change .hamburger {
-    animation-name: stretch;
-    animation-duration: .6s;
-    animation-timing-function: ease-out;
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-fill-mode: none;
-    animation-play-state: running;
-
+	animation: stretch .6s ease-out alternate none running;
   }
 
    .btn-expand {
@@ -512,7 +505,7 @@
   #footer-wrapper {
     bottom: 0;
     left: 0;
-    background-color: white;
+    background-color: #FFFFFF;
     width: 100%;
   }
 
@@ -585,33 +578,33 @@
     background-size: 2rem;
   }
 
-  #busquedaX {
+  #busqueda-X-bar {
     display: none;
     position: absolute;
     left: -28rem;
     top: 4%;
     width: 50px;
     height: 8px;
-    background-color: black;
+    background-color: #000000;
     margin: 16px 29rem;
     transition: 0.4s;
     opacity: 0;
   }
 
-  #busquedaX1 {
+  #busqueda-X1-bar {
     display: none;
     position: absolute;
     left: -28rem;
     top: 4%;
     width: 50px;
     height: 8px;
-    background-color: black;
+    background-color: #000000;
     margin: 44px 29rem;
     transition: 0.4s;
     opacity: 0;
   }
 
-  .icon-open-search #busquedaX {
+  .icon-open-search #busqueda-X-bar {
     display: block;
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-13px, 6px);
@@ -619,7 +612,7 @@
     opacity: 1;
   }
 
-  .icon-open-search #busquedaX1 {
+  .icon-open-search #busqueda-X1-bar {
     display: block;
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-13px, -8px);
@@ -661,7 +654,7 @@
     position: absolute;
     left: 4rem;
     top: -1rem;
-    background-color: white;
+    background-color: #FFFFFF;
     overflow: hidden;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     border-radius: 25px;
@@ -1620,7 +1613,7 @@
   }
 
   #bloque_central > p {
-    background-color: white;
+    background-color: #FFFFFF;
   }
   #node-1740 #bloque_central > #contenedor > h1 {
     margin-bottom: 0rem;
@@ -1731,6 +1724,10 @@
   .view.view-venezuela-le-habla-a-la-educaci-n .views-field.views-field-title {
     width: 41rem;
     height: auto;
+  }
+
+  .view.view-venezuela-le-habla-a-la-educaci-n .view.view-venezuela-le-habla-a-la-educaci-n-2 .views-row .views-field.views-field-field-descripcion > div {
+  	color: #000000;
   }
 
   .view.view-venezuela-le-habla-a-la-educaci-n
@@ -1938,7 +1935,7 @@
 .loader-inner {
   vertical-align: top;
   display: inline-block;
-  background-color: aqua;
+  background-color: #00FFFF;
   width: 100%;
   animation: loader-inner 2s infinite ease-in;
 }
@@ -1950,7 +1947,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: white;
+    background-color: #FFFFFF;
     display: flex;
     justify-content: center;
     z-index: 1000;
@@ -2005,7 +2002,7 @@
   #footer-wrapper {
     bottom: 0;
     left: 0;
-    background-color: white;
+    background-color: #FFFFFF;
     width: 100%;
   }
 
@@ -2254,14 +2251,7 @@
 
   
   .change .hamburger {
-    animation-name: stretch;
-    animation-duration: .6s;
-    animation-timing-function: ease-out;
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-fill-mode: none;
-    animation-play-state: running;
-
+	animation: stretch .6s ease-out alternate none running;
   }
 
   
@@ -2295,7 +2285,7 @@
 
   #mainmenu #main-menu-links a {
     color: black;
-    background-color: snow;
+    background-color: #FFFAFA;
     text-align: start;
     padding-left: 4rem;
   }
@@ -2306,7 +2296,7 @@
   }
 
   #mainmenu #main-menu-links {
-    background-color: white;
+    background-color: #FFFFFF;
     -webkit-transform: scale(1);
     transform: translateZ(0);
   }
@@ -2365,7 +2355,7 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    background-color: snow;
+    background-color: #FFFAFA;
     font-weight: bold;
     transform: translateZ(0);
   }
@@ -2440,13 +2430,7 @@
   }
   
   .show #login {
-    animation-name: stretch;
-    animation-duration: .6s;
-    animation-timing-function: ease-out;
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-fill-mode: none;
-    animation-play-state: running;
+	animation: stretch .6s ease-out alternate none running;
   }
 
 
@@ -2456,7 +2440,7 @@
     width: 0;
     left: 0;
     top: 0;
-    background-color: white;
+    background-color: #FFFFFF;
     overflow-x: hidden;
     height: 100%;
     transition: 0.4s;
@@ -2476,7 +2460,7 @@
     width: 57rem;
     transition: 0.3s;
     opacity: 1;
-    background-color: snow;
+    background-color: #FFFAFA;
     min-height: 100%;
   }
 
@@ -2515,7 +2499,7 @@
     position: absolute;
     left: 4rem;
     top: -1rem;
-    background-color: white;
+    background-color: #FFFFFF;
     overflow: hidden;
     box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.6);
     border-radius: 25px;
@@ -2585,7 +2569,7 @@
   .page-search #edit-submit {
     height: 3.5rem !important;
     background-size: 5rem !important;
-    background-color: WhiteSmoke !important;
+    background-color: #F5F5F5 !important;
   }
   
   #block-search-form {
@@ -2599,7 +2583,7 @@
     top: 15rem;
     left: -56.5rem;
     z-index: 1;
-    background-color: white;
+    background-color: #FFFFFF;
     height: 12rem;
     border-bottom: 1px solid black;
   }
@@ -2675,7 +2659,7 @@
     width: 100%;
     z-index: 10;
     overflow: auto;
-    background-color: white;
+    background-color: #FFFFFF;
   }
   
   .region-content #autocomplete {
@@ -2685,38 +2669,38 @@
      width: 100%;
   	 z-index: 10;
   	 overflow: auto;
-  	 background-color: white;
+  	 background-color: #FFFFFF;
   }
   
 
 
-  #busquedaX {
+  #busqueda-X-bar {
     position: absolute;
     left: -33rem;
     bottom: 0;
     width: 50px;
     height: 8px;
-    background-color: black;
+    background-color: #000000;
     margin: 16px 29rem;
     transition: 0.4s;
     opacity: 0;
     display: none;
   }
 
-  #busquedaX1 {
+  #busqueda-X1-bar {
     position: absolute;
     left: -33rem;
     bottom: -3.5rem;
     width: 50px;
     height: 8px;
-    background-color: black;
+    background-color: #000000;
     margin: 44px 29rem;
     transition: 0.4s;
     opacity: 0;
     display: none;
   }
 
-  .icon-open-search #busquedaX {
+  .icon-open-search #busqueda-X-bar {
     display: block;
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-13px, 6px);
@@ -2724,7 +2708,7 @@
     opacity: 1;
   }
 
-  .icon-open-search #busquedaX1 {
+  .icon-open-search #busqueda-X1-bar {
     display: block;
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-13px, -8px);
@@ -2739,14 +2723,7 @@
   #busqueda-img > img {
   	width: 5.5rem;
   	transform: translateZ(0);
-    animation-name: stretch;
-    animation-duration: .6s;
-    animation-timing-function: ease-out;
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-fill-mode: none;
-    animation-play-state: running;
-    transition: .5s;
+	animation: stretch .6s ease-out alternate none running;
   }
   
 
@@ -3530,6 +3507,8 @@
     > span {
     font-size: unset;
   }
+  
+
 
   /*video 1*/
   .view.view-venezuela-le-habla-a-la-educaci-n
@@ -3550,6 +3529,10 @@
     width: 30rem;
     height: 45rem;
     margin: 5px 26px 25px 13px;
+  }
+
+  .view.view-venezuela-le-habla-a-la-educaci-n .view.view-venezuela-le-habla-a-la-educaci-n-2 .views-row .views-field.views-field-field-descripcion > div {
+  	color: #000000;
   }
   
   .page-venezuela-le-habla-a-la-educacion
@@ -4802,7 +4785,7 @@
 .loader-inner {
   vertical-align: top;
   display: inline-block;
-  background-color: aqua;
+  background-color: #00FFFF;
   width: 100%;
   animation: loader-inner 2s infinite ease-in;
 }
@@ -4814,7 +4797,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: white;
+    background-color: #FFFFFF;
     display: flex;
     justify-content: center;
     z-index: 1000;
@@ -4830,7 +4813,7 @@
 
   #mainmenu #main-menu-links a {
     color: black;
-    background-color: snow;
+    background-color: #FFFAFA;
     text-align: start;
     padding-left: 4rem;
   }
@@ -4841,7 +4824,7 @@
   }
 
   #mainmenu #main-menu-links {
-    background-color: white;
+    background-color: #FFFFFF;
     -webkit-transform: scale(1);
     transform: translateZ(0);
     margin-bottom: 1.5rem;;
@@ -4904,7 +4887,7 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    background-color: snow;
+    background-color: #FFFAFA;
     font-weight: bold;
     transform: translateZ(0);
   }
@@ -4929,7 +4912,7 @@
     overflow: visible;
     transition: transform 0.5s;
     transform-origin: top;
-    background-color: white;
+    background-color: #FFFFFF;
   }
 
   .change #mainmenu,
@@ -4975,13 +4958,7 @@
   }
   
   .show #login {
-    animation-name: stretch;
-    animation-duration: .6s;
-    animation-timing-function: ease-out;
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-fill-mode: none;
-    animation-play-state: running;
+	animation: stretch .6s ease-out alternate none running;
   }
 
   #sidebar {
@@ -4990,7 +4967,7 @@
     width: 0;
     left: 0;
     top: 0;
-    background-color: white;
+    background-color: #FFFFFF;
     overflow-x: hidden;
     height: 100%;
     transition: 0.4s;
@@ -5010,7 +4987,7 @@
     width: 58rem;
     transition: 0.3s;
     opacity: 1;
-    background-color: snow;
+    background-color: #FFFAFA;
   }
   
   .change #sidebar #logo {
@@ -5128,13 +5105,7 @@
 
   
   .change .hamburger {
-    animation-name: stretch;
-    animation-duration: .6s;
-    animation-timing-function: ease-out;
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-fill-mode: none;
-    animation-play-state: running;
+	animation: stretch .6s ease-out alternate none running;
 
   }
   
@@ -5285,7 +5256,7 @@
     font-size: 3em;
     z-index: 10;
     overflow: auto;
-    background-color: white;
+    background-color: #FFFFFF;
   }
   
   .region-content #autocomplete {
@@ -5295,7 +5266,7 @@
      width: 100%;
   	 z-index: 10;
   	 overflow: auto;
-  	 background-color: white;
+  	 background-color: #FFFFFF;
   }
   
   .page-search #search-form input#edit-keys {
@@ -5306,7 +5277,7 @@
     width: 13rem !important;
     height: 3.5rem !important;
     background-size: 5rem !important;
-    background-color: WhiteSmoke !important;
+    background-color: #F5F5F5 !important;
   }
   
   .page-search .container-inline {
@@ -5315,33 +5286,33 @@
   	align-items: center;
   }
 
-  #busquedaX {
+  #busqueda-X-bar {
     position: absolute;
     left: -28rem;
     top: 4%;
     width: 50px;
     height: 8px;
-    background-color: black;
+    background-color: #000000;
     margin: 16px 29rem;
     transition: 0.4s;
     opacity: 0;
     display: none;
   }
 
-  #busquedaX1 {
+  #busqueda-X1-bar {
     position: absolute;
     left: -28rem;
     top: 4%;
     width: 50px;
     height: 8px;
-    background-color: black;
+    background-color: #000000;
     margin: 44px 29rem;
     transition: 0.4s;
     opacity: 0;
     display: none;
   }
 
-  .icon-open-search #busquedaX {
+  .icon-open-search #busqueda-X-bar {
     display: block;
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-13px, 6px);
@@ -5349,7 +5320,7 @@
     opacity: 1;
   }
 
-  .icon-open-search #busquedaX1 {
+  .icon-open-search #busqueda-X1-bar {
     display: block;
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-13px, -8px);
@@ -5372,13 +5343,7 @@
   }
 
   #busqueda-img > img {
-    animation-name: stretch;
-    animation-duration: .6s;
-    animation-timing-function: ease-out;
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-fill-mode: none;
-    animation-play-state: running;
+	animation: stretch .6s ease-out alternate none running;
   }
 
   .icon-open-search #block-search-form {
@@ -5407,7 +5372,7 @@
     position: absolute;
     left: 4rem;
     top: -1rem;
-    background-color: white;
+    background-color: #FFFFFF;
     overflow: hidden;
     box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.6);
     border-radius: 25px;
@@ -6298,7 +6263,7 @@
   }
 
   #bloque_central > p {
-    background-color: white;
+    background-color: #FFFFFF;
   }
   #node-1740 #bloque_central > #contenedor > h1 {
     margin-bottom: 1rem;
@@ -6597,6 +6562,11 @@
     border-bottom-right-radius: 35px;
   }
 
+
+  .view.view-venezuela-le-habla-a-la-educaci-n .view.view-venezuela-le-habla-a-la-educaci-n-2 .views-row .views-field.views-field-field-descripcion > div {
+  	color: #000000;
+  }
+  
   /* Al selecionar una personaje */
   .node-type-venezuela-le-habla-a-la-educaci- #block-block-22 > div.content img,
   .node-type-venezuela-le-habla-a-la-educaci-
@@ -6891,7 +6861,7 @@
    .lateral_izq_bloque01 > li:before,
   .lateral_izq_bloque02 > li:before,
   .lateral_izq_bloque03 > li:before {
-    border-color: transparent black;
+    border-color: transparent #000000;
   }
 
 }

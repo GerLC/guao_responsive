@@ -35,6 +35,7 @@ window.addEventListener('beforeunload', (event) => {
            loader.classList = "loader";
            loaderIn.classList = "loader-inner";
            fade.style.opacity = .95;
+           fade.style.pointerEvents = 'auto';
         });
  
 window.addEventListener('DOMContentLoaded', (event) => {
@@ -153,13 +154,13 @@ var imgb = document.createElement("img");
 imgb.src = "/sites/default/files/home_search.png";
 busquedaImg.appendChild(imgb);
 
-var div = document.createElement("div");
-div.id = "busquedaX";
-document.getElementById("busqueda").appendChild(div);
+var divB1 = document.createElement("div");
+divB1.id = "busqueda-X-bar";
+document.getElementById("busqueda").appendChild(divB1);
 
-var div = document.createElement("div");
-div.id = "busquedaX1";
-document.getElementById("busqueda").appendChild(div);
+var divB2 = document.createElement("div");
+divB2.id = "busqueda-X1-bar";
+document.getElementById("busqueda").appendChild(divB2);
 div.onclick = function () {
   var x = document.getElementById("page-wrapper").classList.toggle("icon-open-search");
 };
@@ -392,7 +393,7 @@ console.log(existFilter.length);
  * Once it has the Id, we get the 'for' element who has the name of the selectedValue
  * Then it creates a textContent and we added it there
  */
- 
+
 const rbs = document.querySelectorAll('input[name="field_categor_as_tid"] , input[name="field_buenas_pr_cticas_tid"] , input[name="field_portafolio_docente_tid"]');
 
             let selectedValue;
