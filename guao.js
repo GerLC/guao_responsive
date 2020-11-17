@@ -161,7 +161,8 @@ document.getElementById("busqueda").appendChild(divB1);
 var divB2 = document.createElement("div");
 divB2.id = "busqueda-X1-bar";
 document.getElementById("busqueda").appendChild(divB2);
-div.onclick = function () {
+
+divB2.onclick = function () {
   var x = document.getElementById("page-wrapper").classList.toggle("icon-open-search");
 };
 
@@ -393,7 +394,7 @@ console.log(existFilter.length);
  * Once it has the Id, we get the 'for' element who has the name of the selectedValue
  * Then it creates a textContent and we added it there
  */
-
+/*
 const rbs = document.querySelectorAll('input[name="field_categor_as_tid"] , input[name="field_buenas_pr_cticas_tid"] , input[name="field_portafolio_docente_tid"]');
 
             let selectedValue;
@@ -422,3 +423,4 @@ const rbs = document.querySelectorAll('input[name="field_categor_as_tid"] , inpu
             }
 
 
+*/
