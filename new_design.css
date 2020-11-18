@@ -319,6 +319,7 @@
 
   .sidebar .section {
     font-size: 4em !important;
+    border: none;
   }
 
   #edit-field-categor-as-tid > div:nth-child(36) > label,
@@ -2284,6 +2285,7 @@
 
   .sidebar .section {
     font-size: 3.5em !important;
+    border: none;
   }
 
   #edit-field-categor-as-tid > div:nth-child(36) > label,
@@ -4797,6 +4799,7 @@
 
   .sidebar .section {
     font-size: 3.3em !important;
+    border: none;
   }
 
   .item-list {
