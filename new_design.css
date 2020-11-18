@@ -1827,6 +1827,42 @@
     z-index: 0;
     background-size: 40rem;
   }
+  
+  /** FOROCHAT */
+  .page-forochat #main-wrapper > #main {
+ 	width: 100%;
+ }
+ 
+  div.view.view-ForoChat > div.view-header {
+  	height: auto;
+  }
+  
+  div.view.view-Noticias .views-field-field-portada-noticias img, div.view.view-ForoChat .views-field-field-portada-chat img {
+     width: 100%;
+     height: auto;
+  }
+  
+  
+  .node.node-forochat > div > .field-type-text {
+  	font-size: 1.3em;
+  }
+  
+  .node.node-forochat .field-items {
+  	display: flex;
+  	flex-flow: column wrap;
+  	justify-content: space-evenly;
+  }
+  
+  .node.node-forochat > div > .field.field-name-field-album-forochat > div > div > a > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .node.node-forochat > div > .field.field-name-field-album-forochat > div > div {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  
 }
 
 /* 
@@ -2034,7 +2070,7 @@
   /*********Home portrait mobile*******/
   .bloqueshomepage > div {
     width: 80%;
-    height: 39rem;
+    height: 40rem;
     margin: 1.5rem 0px;
     padding: 2rem 4rem 8rem 4rem;
   }
@@ -4730,6 +4766,47 @@
   .node-type-curso .rtejustify > strong > span {
     font-size: 1.5em !important;
   }
+  
+  /** FOROCHAT */
+
+  .page-forochat #main-wrapper > #main {
+ 	width: 100%;
+ }
+ 
+  .page-forochat #content .section {
+ 	font-size: 3.5em;
+  }
+  
+  div.view.view-ForoChat > div.view-header {
+  	height: auto;
+  }
+  
+  div.view.view-Noticias .views-field-field-portada-noticias img, div.view.view-ForoChat .views-field-field-portada-chat img {
+     width: 100%;
+     height: auto;
+  }
+  
+  .node.node-forochat > div > .field-type-text {
+  	font-size: 1.3em;
+  }
+  
+  .node.node-forochat .field-items {
+  	display: flex;
+  	flex-flow: column wrap;
+  	justify-content: space-evenly;
+  }
+  
+  .node.node-forochat > div > .field.field-name-field-album-forochat > div > div > a > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .node.node-forochat > div > .field.field-name-field-album-forochat > div > div {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  
 }
 
 /*##Device = Smartphones Most of the Smartphones (Landscape)*/
@@ -6812,5 +6889,43 @@
   .lateral_izq_bloque03 > li:before {
     border-color: transparent #000000;
   }
+  
+  
+  /** FOROCHAT */
+  
+  .page-forochat #main-wrapper > #main {
+ 	width: 100%;
+ }
+
+  div.view.view-ForoChat > div.view-header {
+  	height: auto;
+  }
+  
+  div.view.view-Noticias .views-field-field-portada-noticias img, div.view.view-ForoChat .views-field-field-portada-chat img {
+     width: 100%;
+     height: auto;
+  }
+  
+  
+  .node.node-forochat > div > .field-type-text {
+  	font-size: 1.3em;
+  }
+  
+  .node.node-forochat .field-items {
+  	display: flex;
+  	flex-flow: wrap;
+  	justify-content: space-evenly;
+  }
+  
+  .node.node-forochat > div > .field.field-name-field-album-forochat > div > div > a > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .node.node-forochat > div > .field.field-name-field-album-forochat > div > div {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  
 }
 
