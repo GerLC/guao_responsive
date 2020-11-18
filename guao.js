@@ -4,16 +4,15 @@ meta.setAttribute("content", "width=device-width");
 var head = document.getElementsByTagName("head")[0];
 head.append(meta);
 
-
 var link = "https://use.fontawesome.com/releases/v5.15.1/js/all.js";
 var element = document.createElement("script");
 element.setAttribute("src", link);
-element.setAttribute("data-search-pseudo-elements",'');
+element.setAttribute("data-search-pseudo-elements", "");
 
-document.head.appendChild(element); 
-					
-document.addEventListener('gesturestart', function (e) {
-    e.preventDefault();
+document.head.appendChild(element);
+
+document.addEventListener("gesturestart", function (e) {
+  e.preventDefault();
 });
 
 var loader = document.createElement("span");
@@ -31,20 +30,19 @@ var to = document.getElementsByClassName("html")[0];
 to.insertBefore(loaderWrapper, to.firstChild);
 var fade = document.getElementsByClassName("loader-wrapper")[0];
 
-window.addEventListener('beforeunload', (event) => {
-           loader.classList = "loader";
-           loaderIn.classList = "loader-inner";
-           fade.style.opacity = .95;
-           fade.style.pointerEvents = 'auto';
-        });
- 
-window.addEventListener('DOMContentLoaded', (event) => {
-           fade.style.opacity = 0;
-           loader.classList.remove("loader");
-           loaderIn.classList.remove("loader-inner");
-        });
-        
-        
+window.addEventListener("beforeunload", (event) => {
+  loader.classList = "loader";
+  loaderIn.classList = "loader-inner";
+  fade.style.opacity = 0.95;
+  fade.style.pointerEvents = "auto";
+});
+
+window.addEventListener("DOMContentLoaded", (event) => {
+  fade.style.opacity = 0;
+  loader.classList.remove("loader");
+  loaderIn.classList.remove("loader-inner");
+});
+
 /*  INICIO SESION  */
 window.addEventListener("click", function (event) {
   if (!event.target.matches(".login")) {
@@ -59,49 +57,42 @@ window.addEventListener("click", function (event) {
   }
 });
 
-
-
 /** Boton Expandir Filtro Sidebar-first */
 
 var expandBtn = document.createElement("span");
 expandBtn.classList = "btn-expand";
 
 expandBtn.onclick = function () {
-
   const z = document.getElementById("page-wrapper");
 
-  	  z.classList.toggle('expand-sidebar');
-  	  z.classList.remove('change');
-      z.classList.remove('icon-open-search');
-
+  z.classList.toggle("expand-sidebar");
+  z.classList.remove("change");
+  z.classList.remove("icon-open-search");
 };
 
-/** Hamburger Button  
-  * Opens Menu on click
-  * Closes it on click if opened
-*/
+/** Hamburger Button
+ * Opens Menu on click
+ * Closes it on click if opened
+ */
 var divClass = document.createElement("span");
 divClass.id = "hamburger-id-btn";
 divClass.classList = "hamburger";
 divClass.onclick = function () {
-
   var z = document.getElementById("page-wrapper");
 
   if (z.style.marginLeft) {
     z.classList.toggle("change");
-    z.classList.remove('expand-sidebar');
-    z.classList.remove('icon-open-search');
-
+    z.classList.remove("expand-sidebar");
+    z.classList.remove("icon-open-search");
   } else {
     z.classList.toggle("change");
-    z.classList.remove('expand-sidebar');
-    z.classList.remove('icon-open-search');
+    z.classList.remove("expand-sidebar");
+    z.classList.remove("icon-open-search");
   }
 };
 
 var to = document.getElementsByClassName("section")[0];
 to.insertBefore(divClass, to.firstChild);
-
 
 /* FIN */
 
@@ -109,7 +100,10 @@ to.insertBefore(divClass, to.firstChild);
 
 var divFooter = document.createElement("div");
 divFooter.id = "redes";
-document.getElementById("block-block-10").querySelectorAll('[class="content"]')[0].appendChild(divFooter);
+document
+  .getElementById("block-block-10")
+  .querySelectorAll('[class="content"]')[0]
+  .appendChild(divFooter);
 
 var a = document.createElement("a");
 var img = document.createElement("img");
@@ -163,7 +157,9 @@ divB2.id = "busqueda-X1-bar";
 document.getElementById("busqueda").appendChild(divB2);
 
 divB2.onclick = function () {
-  var x = document.getElementById("page-wrapper").classList.toggle("icon-open-search");
+  var x = document
+    .getElementById("page-wrapper")
+    .classList.toggle("icon-open-search");
 };
 
 busquedaImg.onclick = function () {
@@ -173,13 +169,13 @@ busquedaImg.onclick = function () {
 
   if (y.style.display === "none") {
     x.classList.toggle("icon-open-search");
-    x.classList.remove('change');
-    x.classList.remove('expand-sidebar');
+    x.classList.remove("change");
+    x.classList.remove("expand-sidebar");
     focus.blur();
   } else {
     x.classList.toggle("icon-open-search");
-    x.classList.remove('change');
-    x.classList.remove('expand-sidebar');
+    x.classList.remove("change");
+    x.classList.remove("expand-sidebar");
     focus.focus();
   }
 };
@@ -200,7 +196,6 @@ imgLogin.src = "/sites/default/files/login0.png";
 login.appendChild(imgLogin);
 imgLogin.classList = "login";
 document.getElementsByClassName("section")[0].appendChild(login);
-
 
 /* PARA QUE SE QUEDE AL BAJAR LA PANTALLA*/
 window.onscroll = function () {
@@ -230,13 +225,19 @@ to.insertBefore(what, to.firstChild);
 
 var blockButton1 = document.createElement("button");
 blockButton1.id = "block-button-id-1";
-document.getElementsByClassName("block-button-home")[0].appendChild(blockButton1);
+document
+  .getElementsByClassName("block-button-home")[0]
+  .appendChild(blockButton1);
 var blockButton2 = document.createElement("button");
 blockButton2.id = "block-button-id-2";
-document.getElementsByClassName("block-button-home")[0].appendChild(blockButton2);
+document
+  .getElementsByClassName("block-button-home")[0]
+  .appendChild(blockButton2);
 var blockButton3 = document.createElement("button");
 blockButton3.id = "block-button-id-3";
-document.getElementsByClassName("block-button-home")[0].appendChild(blockButton3);
+document
+  .getElementsByClassName("block-button-home")[0]
+  .appendChild(blockButton3);
 
 var block1 = document.getElementById("main-wrapper");
 
@@ -280,7 +281,6 @@ sideNav.appendChild(secMenu);
 sideNav.appendChild(document.createElement("hr"));
 
 if (document.URL.indexOf("https://guao.org/biblioteca") >= 0) {
-
   var biblio_title = document.createElement("h2");
   biblio_title.id = "title_biblioteca";
   biblio_title.innerHTML = "Filtro Biblioteca";
@@ -289,7 +289,6 @@ if (document.URL.indexOf("https://guao.org/biblioteca") >= 0) {
 }
 
 if (document.URL.indexOf("https://guao.org/buenas_practicas") >= 0) {
-
   const innovaciones = document.getElementById(
     "block-views-exp-buenas-pr-cticas-page-1"
   );
@@ -299,8 +298,10 @@ if (document.URL.indexOf("https://guao.org/buenas_practicas") >= 0) {
   innovaciones.insertBefore(innovaciones_title, innovaciones.firstChild);
 }
 
-if (document.URL.indexOf("https://guao.org/portafolio-docente") >= 0 || document.URL.indexOf("https://guao.org/portafolio_docente") >= 0  ) {
-
+if (
+  document.URL.indexOf("https://guao.org/portafolio-docente") >= 0 ||
+  document.URL.indexOf("https://guao.org/portafolio_docente") >= 0
+) {
   const portafolio = document.getElementById(
     "block-views-exp-portafolio-docente-page-1"
   );
@@ -330,11 +331,8 @@ if (
   document.URL.indexOf("https://guao.org/docentes/quinto_ano/") >= 0 ||
   document.URL.indexOf("https://guao.org/efemerides") >= 0
 ) {
-
-var to = document.getElementsByClassName("section")[0];
-to.insertBefore(expandBtn, to.firstChild);
-
-
+  var to = document.getElementsByClassName("section")[0];
+  to.insertBefore(expandBtn, to.firstChild);
 }
 
 sideNav.insertBefore(logo, sideNav.firstChild);
@@ -342,51 +340,43 @@ sideNav.insertBefore(logo, sideNav.firstChild);
 if (
   document.URL.indexOf("https://guao.org/biblioteca") >= 0 ||
   document.URL.indexOf("https://guao.org/buenas_practicas") >= 0 ||
-  document.URL.indexOf("https://guao.org/portafolio-docente") >= 0
-||
+  document.URL.indexOf("https://guao.org/portafolio-docente") >= 0 ||
   document.URL.indexOf("https://guao.org/portafolio_docente") >= 0
-
 ) {
+  var to = document.getElementsByClassName("section")[0];
+  to.insertBefore(expandBtn, to.firstChild);
 
-var to = document.getElementsByClassName("section")[0];
-to.insertBefore(expandBtn, to.firstChild);
-
-const exist = document.querySelectorAll('[id="sidebar-first"]');
-console.log(exist.length);
-const existFilter = document.querySelectorAll('.page-biblioteca, .page-buenas-practicas, .page-portafolio-docente');
-console.log(existFilter.length);
-
+  const exist = document.querySelectorAll('[id="sidebar-first"]');
+  console.log(exist.length);
+  const existFilter = document.querySelectorAll(
+    ".page-biblioteca, .page-buenas-practicas, .page-portafolio-docente"
+  );
+  console.log(existFilter.length);
 
   if (exist.length !== 0 && existFilter.length !== 0) {
-
-  const z = document.getElementById("page-wrapper");
+    const z = document.getElementById("page-wrapper");
 
     z.classList.toggle("expand-sidebar");
-
   }
-  
-
 }
 
-
-
-/** Change backgroundColor 
+/** Change backgroundColor
  * This part changes the backgroundColor of the sidebar-first
  * First, it looks if sidebar-first exist to proceed
  * On the block class it gets the actual backgroundColor
- * 
+ *
  * The reason for this it's beacause if i dont put it, the sidebar-first doesnt get all the background in the same color.
  */
- 
-  if (document.querySelectorAll('[id="sidebar-first"]').length !== 0) {
 
-  const z = document.getElementById("sidebar-first").getElementsByClassName('block')[0];
+if (document.querySelectorAll('[id="sidebar-first"]').length !== 0) {
+  const z = document
+    .getElementById("sidebar-first")
+    .getElementsByClassName("block")[0];
 
-   let filterColor =  window.getComputedStyle(z).backgroundColor;
-   document.getElementById('sidebar-first').style.backgroundColor = filterColor;
-   console.log(filterColor);
-  }
-
+  let filterColor = window.getComputedStyle(z).backgroundColor;
+  document.getElementById("sidebar-first").style.backgroundColor = filterColor;
+  console.log(filterColor);
+}
 
 /** Subtitle on selected value on filter
  * It gets all the input
@@ -394,33 +384,37 @@ console.log(existFilter.length);
  * Once it has the Id, we get the 'for' element who has the name of the selectedValue
  * Then it creates a textContent and we added it there
  */
-/*
-const rbs = document.querySelectorAll('input[name="field_categor_as_tid"] , input[name="field_buenas_pr_cticas_tid"] , input[name="field_portafolio_docente_tid"]');
 
-            let selectedValue;
-            for (const rb of rbs) {
-                if (rb.checked) {
-                    selectedValue = rb.id;
+const rbs = document.querySelectorAll(
+  'input[name="field_categor_as_tid"] , input[name="field_buenas_pr_cticas_tid"] , input[name="field_portafolio_docente_tid"]'
+);
 
-					const tbs = document.querySelectorAll('[for='+ CSS.escape(selectedValue) +']')[0];
-					
-					console.log(tbs.textContent);
-				
-					var copy = document.createTextNode(tbs.textContent.replace("-", ""));
-					
-					var subtitle = document.createElement("div");
-					subtitle.id = "subtitle"
-					subtitle.appendChild(copy);
-					
-					console.log(subtitle.textContent);
-					
-					if (tbs.textContent !== "- Cualquiera -  ") {
-					document.querySelectorAll('[class="title"],[id="titulo"]')[0].appendChild(subtitle);
-					}
+let selectedValue;
+for (const rb of rbs) {
+  if (rb.checked) {
+    selectedValue = rb.id;
 
-                    break;
-                }
-            }
+    const tbs = document.querySelectorAll(
+      "[for=" + CSS.escape(selectedValue) + "]"
+    )[0];
 
+    console.log(tbs.textContent);
 
-*/
+    var copy = document.createTextNode(tbs.textContent.replace("-", ""));
+
+    var subtitle = document.createElement("div");
+    subtitle.id = "subtitle";
+    subtitle.appendChild(copy);
+
+    console.log(subtitle.textContent);
+
+    if (tbs.textContent !== "- Cualquiera -  ") {
+      document
+        .querySelectorAll('[class="title"],[id="titulo"]')[0]
+        .appendChild(subtitle);
+    }
+
+    break;
+  }
+}
+

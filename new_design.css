@@ -29,7 +29,7 @@
 }
 
 #subtitle {
-	font-size: 0.5em;
+  font-size: 0.5em;
 }
 
 @keyframes stretch {
@@ -48,20 +48,20 @@
   0% {
     transform: rotate(0deg);
   }
-  
+
   25% {
     transform: rotate(180deg);
   }
-  
+
   50% {
     transform: rotate(180deg);
   }
-  
+
   75% {
     transform: rotate(360deg);
-        transform: scale(1.5);
+    transform: scale(1.5);
   }
-  
+
   100% {
     transform: rotate(360deg);
     transform: scale(1);
@@ -72,19 +72,19 @@
   0% {
     height: 0%;
   }
-  
+
   25% {
     height: 0%;
   }
-  
+
   50% {
     height: 100%;
   }
-  
+
   75% {
     height: 100%;
   }
-  
+
   100% {
     height: 0%;
   }
@@ -149,48 +149,45 @@
 ##Screen = B/w 768px to 1024px
 */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-	
- /* Load Page */
+  /* Load Page */
   .loader {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  position: relative;
-  border: 4px solid black;
-  top: 50%;
-  animation: loader 2s infinite ease;
-}
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 4px solid black;
+    top: 50%;
+    animation: loader 2s infinite ease;
+  }
 
-.loader-inner {
-  vertical-align: top;
-  display: inline-block;
-  background-color: #00FFFF;
-  width: 100%;
-  animation: loader-inner 2s infinite ease-in;
-}
+  .loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    background-color: #00ffff;
+    width: 100%;
+    animation: loader-inner 2s infinite ease-in;
+  }
 
-
-.loader-wrapper {
+  .loader-wrapper {
     width: 100%;
     height: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     z-index: 1000;
     pointer-events: none;
-    transition:all .4s;
-    opacity : 0;
-}
-  	
-  	
+    transition: all 0.4s;
+    opacity: 0;
+  }
+
   #sec-menu > div.content > ul {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    background-color: #FFFAFA;
+    background-color: #fffafa;
     font-weight: bold;
     transform: translateZ(0);
   }
@@ -220,25 +217,23 @@
   .change #sec-menu {
     transform: scaleY(1) !important;
   }
-  
 
-.title {
-	display: flex;
-	flex-flow: column;
-}
-
-   #subtitle {
-	font-size: .5em;
-}
-
-  .change #page  {
-	margin-left: 95%;
-  }
-  
-   .expand-sidebar #page  {
-	margin-left: 95%;
+  .title {
+    display: flex;
+    flex-flow: column;
   }
 
+  #subtitle {
+    font-size: 0.5em;
+  }
+
+  .change #page {
+    margin-left: 95%;
+  }
+
+  .expand-sidebar #page {
+    margin-left: 95%;
+  }
 
   .region-sidebar-first {
     transform: translateZ(0);
@@ -249,7 +244,7 @@
   #logo > img {
     transform: translateZ(0);
   }
- 
+
   #sidebar #logo {
     position: relative;
     z-index: 4;
@@ -257,11 +252,10 @@
     transition-duration: 1s;
     top: 0;
   }
-  
-   .change #sidebar #logo {
+
+  .change #sidebar #logo {
     opacity: 1;
   }
-  
 
   #sidebar {
     display: block;
@@ -269,7 +263,7 @@
     width: 0;
     left: 0;
     top: 0;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     overflow-x: hidden;
     height: 100%;
     transition: 0.4s;
@@ -289,21 +283,20 @@
     width: 57rem;
     transition: 0.3s;
     opacity: 1;
-    background-color: #FFFAFA;
+    background-color: #fffafa;
   }
 
   #page {
-    transition:all 0.3s;
+    transition: all 0.3s;
   }
-	
-	
+
   #main-menu {
     display: none;
   }
 
   #mainmenu #main-menu-links a {
     color: black;
-    background-color: #FFFAFA;
+    background-color: #fffafa;
     text-align: start;
     padding-left: 4rem;
   }
@@ -315,7 +308,7 @@
   }
 
   #mainmenu #main-menu-links {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     -webkit-transform: scale(1);
     transform: translateZ(0);
   }
@@ -324,12 +317,9 @@
     display: none;
   }
 
-
   .sidebar .section {
     font-size: 4em !important;
   }
-
-
 
   #edit-field-categor-as-tid > div:nth-child(36) > label,
   #edit-field-categor-as-tid > div:nth-child(48) > label {
@@ -386,8 +376,7 @@
   #block-block-48 > h2 {
     color: black;
   }
-	
-	
+
   div.form-item.form-type-textfield.form-item-populate > input {
     width: 42rem;
     height: 6rem;
@@ -462,50 +451,47 @@
     transition: max-height 0.6s ease-out;
     z-index: 2;
   }
-  
+
   #hamburger-id-btn {
     position: absolute;
-    top: .5rem;
+    top: 0.5rem;
     left: 2rem;
     font-size: 5em;
   }
-  
+
   .hamburger:before {
-  	display: none;
-  	font-family: "Font Awesome 5 Free"; 
-  	font-weight: 900;
-  	content: "\f0c9";
+    display: none;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0c9";
   }
 
-  
   .change .hamburger {
-	animation: stretch .6s ease-out alternate none running;
+    animation: stretch 0.6s ease-out alternate none running;
   }
 
-   .btn-expand {
+  .btn-expand {
     position: absolute;
-	top: 1rem;
+    top: 1rem;
     left: 8rem;
     font-size: 4em;
   }
-  
 
-  
   .btn-expand:before {
-  	display: none;
-  	font-family: "Font Awesome 5 Free"; 
-  	font-weight: 900;
-  	content: "\f78c";
+    display: none;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f78c";
   }
 
-    .expand-sidebar .btn-expand:before {
-  	content: "\f31e";
+  .expand-sidebar .btn-expand:before {
+    content: "\f31e";
   }
 
   #footer-wrapper {
     bottom: 0;
     left: 0;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     width: 100%;
   }
 
@@ -518,14 +504,12 @@
   #block-menu-menu-men-secundario {
     display: none;
   }
-  
+
   #block-block-6 {
-      display: none;
+    display: none;
   }
 
-
   /* B??SQUEDA  */
-
 
   #block-search-form {
     transform: scaleX(0);
@@ -538,8 +522,6 @@
     height: auto;
     transform-origin: right;
   }
-
-
 
   #busqueda {
     display: block !important;
@@ -639,7 +621,7 @@
     transform: translateZ(0);
   }
 
-    #block-system-user-menu {
+  #block-system-user-menu {
     transform: scaleY(0) !important;
     position: fixed;
     z-index: 2;
@@ -648,13 +630,12 @@
     transition: all 0.2s;
     transform-origin: top;
   }
-  
 
   #block-system-user-menu > div.content {
     position: absolute;
     left: 4rem;
     top: -1rem;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     overflow: hidden;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     border-radius: 25px;
@@ -684,7 +665,6 @@
   #block-system-user-menu > div.content > ul > li.first > a {
     background-image: none;
   }
- 
 
   #login {
     display: block !important;
@@ -725,8 +705,6 @@
     width: 3rem;
   }
 
-
-
   #terminos {
     font-size: 2.5em;
     text-align: center;
@@ -751,10 +729,9 @@
     opacity: 0;
     min-height: 100%;
   }
-  
 
   .expand-sidebar #sidebar-first {
-  	display: block;
+    display: block;
     width: 57rem;
     transition: 0.3s;
     opacity: 1;
@@ -796,20 +773,24 @@
     height: 2.5rem;
   }
 
-   .page-portafolio-docente div.form-item.form-type-textfield > input {
+  .page-portafolio-docente div.form-item.form-type-textfield > input {
     width: 42rem !important;
     height: 6rem;
   }
 
-
-  .node-type-portafolio-docente div.form-item.form-type-textfield.form-item-title > input {
-	width: 42rem;
+  .node-type-portafolio-docente
+    div.form-item.form-type-textfield.form-item-title
+    > input {
+    width: 42rem;
     height: 6rem;
-}
+  }
 
-  .node-type-portafolio-docente .views-exposed-form .views-exposed-widget .form-submit {
-  	top: 3.5rem;
-  	left: -1rem;
+  .node-type-portafolio-docente
+    .views-exposed-form
+    .views-exposed-widget
+    .form-submit {
+    top: 3.5rem;
+    left: -1rem;
   }
 
   .views-exposed-form .views-exposed-widget .form-submit {
@@ -820,14 +801,16 @@
     top: -5rem;
     left: 34rem;
   }
-  
-    .node-type-libro-de-biblioteca .sidebar .block .content{
-	line-height: 2.4;	
+
+  .node-type-libro-de-biblioteca .sidebar .block .content {
+    line-height: 2.4;
   }
-  
-  .node-type-libro-de-biblioteca #block-views-exp-library-page-1 #edit-submit-library {
-  	    top: 3rem;
-    	left: -1rem;
+
+  .node-type-libro-de-biblioteca
+    #block-views-exp-library-page-1
+    #edit-submit-library {
+    top: 3rem;
+    left: -1rem;
   }
 
   .page-biblioteca .views-row {
@@ -891,11 +874,9 @@
     width: 100%;
   }
 
-
   /****** Detalle libro *********/
 
-  #content .section
-  {
+  #content .section {
     font-size: 2em;
   }
 
@@ -1022,29 +1003,33 @@
 
   /* INNOVACIONES SIDEBAR */
 
-
   .page-buenas-practicas div.form-item.form-type-textfield > input {
-	width: 42rem;
+    width: 42rem;
     height: 6rem;
-}
+  }
 
-  .node-type-buenas-pr-cticas div.form-item.form-type-textfield.form-item-title > input {
-	width: 42rem;
+  .node-type-buenas-pr-cticas
+    div.form-item.form-type-textfield.form-item-title
+    > input {
+    width: 42rem;
     height: 6rem;
-}
+  }
 
-  .node-type-buenas-pr-cticas .views-exposed-form .views-exposed-widget .form-submit {
+  .node-type-buenas-pr-cticas
+    .views-exposed-form
+    .views-exposed-widget
+    .form-submit {
     top: 3.5rem;
     left: -1rem;
-}
+  }
 
   .node-type-buenas-pr-cticas .sidebar .block .content {
     line-height: 2.4;
-}
+  }
   /******INNOVACIONES************/
-  
+
   .node-type-buenas-pr-cticas .region-help {
-      font-size: 1.2em;
+    font-size: 1.2em;
   }
 
   #buenas_practicas_top > div#right {
@@ -1130,7 +1115,6 @@
     height: 35rem;
     margin-bottom: 2rem;
   }
-
 
   /******PORTAFOLIOS************/
 
@@ -1596,14 +1580,12 @@
     margin-right: -4rem;
   }
 
-
   .page-node-9243 .lateral_izq_nosotros > li > a,
   .page-node-9244 .lateral_izq_nosotros > li > a,
   .page-nosotros-aliados .lateral_izq_nosotros > li > a,
   .node-type-aliados .lateral_izq_nosotros > li > a {
     padding-left: 4rem;
   }
-
 
   /****Voluntariado portrait ipad*********/
 
@@ -1613,7 +1595,7 @@
   }
 
   #bloque_central > p {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
   #node-1740 #bloque_central > #contenedor > h1 {
     margin-bottom: 0rem;
@@ -1726,8 +1708,12 @@
     height: auto;
   }
 
-  .view.view-venezuela-le-habla-a-la-educaci-n .view.view-venezuela-le-habla-a-la-educaci-n-2 .views-row .views-field.views-field-field-descripcion > div {
-  	color: #000000;
+  .view.view-venezuela-le-habla-a-la-educaci-n
+    .view.view-venezuela-le-habla-a-la-educaci-n-2
+    .views-row
+    .views-field.views-field-field-descripcion
+    > div {
+    color: #000000;
   }
 
   .view.view-venezuela-le-habla-a-la-educaci-n
@@ -1920,42 +1906,40 @@
 */
 
 @media (max-width: 767px) and (orientation: portrait) {
-  
- /* Load Page */
+  /* Load Page */
   .loader {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  position: relative;
-  border: 4px solid black;
-  top: 50%;
-  animation: loader 2s infinite ease;
-}
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 4px solid black;
+    top: 50%;
+    animation: loader 2s infinite ease;
+  }
 
-.loader-inner {
-  vertical-align: top;
-  display: inline-block;
-  background-color: #00FFFF;
-  width: 100%;
-  animation: loader-inner 2s infinite ease-in;
-}
+  .loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    background-color: #00ffff;
+    width: 100%;
+    animation: loader-inner 2s infinite ease-in;
+  }
 
-
-.loader-wrapper {
+  .loader-wrapper {
     width: 100%;
     height: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     z-index: 1000;
     pointer-events: none;
-    transition:all .4s;
-    opacity : 0;
-}
-  
+    transition: all 0.4s;
+    opacity: 0;
+  }
+
   .lateral_izq_bloque01 > li:before,
   .lateral_izq_bloque02 > li:before,
   .lateral_izq_bloque03 > li:before {
@@ -1969,11 +1953,11 @@
   .lateral_izq_nosotros > li:before {
     border-color: transparent white;
   }
-  
+
   .views-exposed-widgets {
     margin-bottom: -3rem;
   }
-  
+
   .sidebar h2 {
     font-size: 1.1em;
     margin-top: 2rem;
@@ -1987,12 +1971,12 @@
     flex-flow: wrap;
   }
 
-  #content .section{
+  #content .section {
     font-size: 2.5em;
   }
-  
+
   .item-list {
-  	font-size: 1.5em;
+    font-size: 1.5em;
   }
 
   #main-wrapper {
@@ -2002,7 +1986,7 @@
   #footer-wrapper {
     bottom: 0;
     left: 0;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     width: 100%;
   }
 
@@ -2042,7 +2026,7 @@
   }
 
   .sticky + .clearfix {
-  	width: 100%;
+    width: 100%;
     padding-top: 1rem;
   }
 
@@ -2222,7 +2206,6 @@
     overflow: hidden;
     z-index: 2;
   }
-  
 
   #header div.section {
     display: flex;
@@ -2241,43 +2224,37 @@
     left: 2rem;
     font-size: 5em;
   }
-  
+
   .hamburger:before {
-  	display: none;
-  	font-family: "Font Awesome 5 Free"; 
-  	font-weight: 900;
-  	content: "\f0c9";
+    display: none;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0c9";
   }
 
-  
   .change .hamburger {
-	animation: stretch .6s ease-out alternate none running;
+    animation: stretch 0.6s ease-out alternate none running;
   }
 
-  
-   .btn-expand {
+  .btn-expand {
     position: absolute;
     top: 1.5rem;
     left: 9rem;
     font-size: 5em;
   }
-  
-  
+
   .btn-expand:before {
-  	display: none;
-  	font-family: "Font Awesome 5 Free"; 
-  	font-weight: 900;
-  	content: "\f78c";
+    display: none;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f78c";
   }
 
-    .expand-sidebar .btn-expand:before {
-  	content: "\f31e";
+  .expand-sidebar .btn-expand:before {
+    content: "\f31e";
   }
-
-  
 
   /**********FIN MEN?? HAMBURGER *******/
-  
 
   #main-menu {
     display: none;
@@ -2285,7 +2262,7 @@
 
   #mainmenu #main-menu-links a {
     color: black;
-    background-color: #FFFAFA;
+    background-color: #fffafa;
     text-align: start;
     padding-left: 4rem;
   }
@@ -2296,7 +2273,7 @@
   }
 
   #mainmenu #main-menu-links {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     -webkit-transform: scale(1);
     transform: translateZ(0);
   }
@@ -2305,11 +2282,9 @@
     display: none;
   }
 
-
   .sidebar .section {
     font-size: 3.5em !important;
   }
-
 
   #edit-field-categor-as-tid > div:nth-child(36) > label,
   #edit-field-categor-as-tid > div:nth-child(48) > label {
@@ -2350,12 +2325,11 @@
     color: black;
   }
 
-
   #sec-menu > div.content > ul {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    background-color: #FFFAFA;
+    background-color: #fffafa;
     font-weight: bold;
     transform: translateZ(0);
   }
@@ -2373,7 +2347,6 @@
     line-height: 6rem;
   }
 
-
   #mainmenu,
   #sec-menu {
     transform: scaleY(0) !important;
@@ -2382,30 +2355,27 @@
     transform-origin: top;
   }
 
-
   .change #mainmenu,
   .change #sec-menu {
     transform: scaleY(1) !important;
   }
-  
 
   .title {
-	display: flex;
-	flex-flow: column;
- }
-
-   #subtitle {
-	font-size: .5em;
-}
-
-  .change #page  {
-	margin-left: 95%;
-  }
-  
-  .expand-sidebar #page  {
-	margin-left: 95%;
+    display: flex;
+    flex-flow: column;
   }
 
+  #subtitle {
+    font-size: 0.5em;
+  }
+
+  .change #page {
+    margin-left: 95%;
+  }
+
+  .expand-sidebar #page {
+    margin-left: 95%;
+  }
 
   .region-sidebar-first {
     transform: translateZ(0);
@@ -2416,7 +2386,7 @@
   #logo > img {
     transform: translateZ(0);
   }
- 
+
   #sidebar #logo {
     position: relative;
     z-index: 4;
@@ -2424,15 +2394,14 @@
     transition-duration: 1s;
     top: 0;
   }
-  
-   .change #sidebar #logo {
+
+  .change #sidebar #logo {
     opacity: 1;
   }
-  
-  .show #login {
-	animation: stretch .6s ease-out alternate none running;
-  }
 
+  .show #login {
+    animation: stretch 0.6s ease-out alternate none running;
+  }
 
   #sidebar {
     display: block;
@@ -2440,7 +2409,7 @@
     width: 0;
     left: 0;
     top: 0;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     overflow-x: hidden;
     height: 100%;
     transition: 0.4s;
@@ -2460,14 +2429,13 @@
     width: 57rem;
     transition: 0.3s;
     opacity: 1;
-    background-color: #FFFAFA;
+    background-color: #fffafa;
     min-height: 100%;
   }
 
   #page {
-    transition:all 0.3s;
+    transition: all 0.3s;
   }
-  
 
   /************ MEN?? TU AULA / BIBLIOTECA ... */
 
@@ -2499,7 +2467,7 @@
     position: absolute;
     left: 4rem;
     top: -1rem;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     overflow: hidden;
     box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.6);
     border-radius: 25px;
@@ -2538,7 +2506,7 @@
   }
 
   #login > img {
-  	transform: translateZ(0);
+    transform: translateZ(0);
     width: 2.8rem;
   }
 
@@ -2548,30 +2516,29 @@
   }
 
   /* B??SQUEDA  */
-  
+
   .page-search #messages {
-      font-size: 2em !important;
+    font-size: 2em !important;
   }
-  
+
   .page-search .breadcrumb {
     font-size: 3em !important;
-    }
+  }
 
-
-  .page-search #search-form input#edit-keys, .page-search #search-form input.form-submit {
+  .page-search #search-form input#edit-keys,
+  .page-search #search-form input.form-submit {
     font-size: 3rem !important;
     width: 100% !important;
     height: auto;
     line-height: 2rem;
-}
-
+  }
 
   .page-search #edit-submit {
     height: 3.5rem !important;
     background-size: 5rem !important;
-    background-color: #F5F5F5 !important;
+    background-color: #f5f5f5 !important;
   }
-  
+
   #block-search-form {
     transform: scaleY(0);
     position: fixed;
@@ -2583,7 +2550,7 @@
     top: 15rem;
     left: -56.5rem;
     z-index: 1;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     height: 12rem;
     border-bottom: 1px solid black;
   }
@@ -2600,7 +2567,7 @@
     display: block !important;
     position: relative;
     right: 5rem;
-    top: .9rem;
+    top: 0.9rem;
     z-index: 1;
     -webkit-transition: -webkit-transform 0.5s ease-in-out;
     -ms-transition: -ms-transform 0.5s ease-in-out;
@@ -2631,7 +2598,7 @@
     > div
     > div.form-actions.form-wrapper
     > input {
-	height: 5.7rem;
+    height: 5.7rem;
     background-size: 5rem;
     width: 5rem;
     margin-top: 3rem;
@@ -2659,20 +2626,18 @@
     width: 100%;
     z-index: 10;
     overflow: auto;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
-  
-  .region-content #autocomplete {
-  	 font-size: 1.5em;
-     margin-top: 0;
-     margin-left: 0;
-     width: 100%;
-  	 z-index: 10;
-  	 overflow: auto;
-  	 background-color: #FFFFFF;
-  }
-  
 
+  .region-content #autocomplete {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    z-index: 10;
+    overflow: auto;
+    background-color: #ffffff;
+  }
 
   #busqueda-X-bar {
     position: absolute;
@@ -2719,16 +2684,15 @@
   .icon-open-search #busqueda-img > img {
     opacity: 0 !important;
   }
-  
+
   #busqueda-img > img {
-  	width: 5.5rem;
-  	transform: translateZ(0);
-	animation: stretch .6s ease-out alternate none running;
+    width: 5.5rem;
+    transform: translateZ(0);
+    animation: stretch 0.6s ease-out alternate none running;
   }
-  
 
   .icon-open-search #busqueda-img {
-  	display: none;
+    display: none;
   }
 
   .icon-open-search #block-search-form {
@@ -2770,7 +2734,6 @@
     text-align: center;
   }
 
-  
   #footer .block .content {
     padding: 3rem 0 6rem 0;
   }
@@ -2791,10 +2754,9 @@
     opacity: 0;
     min-height: 100%;
   }
-  
 
   .expand-sidebar #sidebar-first {
-  	display: block;
+    display: block;
     width: 57rem;
     transition: 0.3s;
     opacity: 1;
@@ -2813,9 +2775,15 @@
     margin-top: 1rem;
     width: 80%;
   }
-  
-  .node-type-buenas-pr-cticas .views-exposed-form .views-exposed-widget .form-item,
-  .node-type-buenas-pr-cticas .views-exposed-form .views-exposed-widget .form-submit,
+
+  .node-type-buenas-pr-cticas
+    .views-exposed-form
+    .views-exposed-widget
+    .form-item,
+  .node-type-buenas-pr-cticas
+    .views-exposed-form
+    .views-exposed-widget
+    .form-submit,
   .page-biblioteca .views-exposed-form .form-item,
   .page-biblioteca .views-exposed-form .form-submit,
   .page-buenas-practicas .views-exposed-form .form-item,
@@ -2832,7 +2800,6 @@
 
   .sidebar .block {
     padding-left: 5rem;
-
   }
 
   input.form-radio {
@@ -2844,7 +2811,6 @@
     width: 42rem;
     height: 3.4rem;
   }
-
 
   /******FIN SIDEBAR*****/
 
@@ -2950,9 +2916,8 @@
   .region.region-help > div > div.content {
     margin: 0px;
     width: 11rem;
-    font-size: .71em;
+    font-size: 0.71em;
   }
-
 
   div.region.region-help > div#block-block-14 {
     margin-right: 3rem;
@@ -2960,10 +2925,9 @@
   div.region.region-help > div#block-block-19 {
     margin-right: 4rem;
   }
-    div.region.region-help > div#block-block-16 {
+  div.region.region-help > div#block-block-16 {
     margin-right: 2rem;
   }
-
 
   .form-actions {
     text-align: center;
@@ -2982,14 +2946,16 @@
   #widgets-element-socialmedia_share-default {
     margin-top: 0;
   }
-  
-  .node-type-libro-de-biblioteca .sidebar .block .content{
-	line-height: 2.4;	
+
+  .node-type-libro-de-biblioteca .sidebar .block .content {
+    line-height: 2.4;
   }
-  
-  .node-type-libro-de-biblioteca #block-views-exp-library-page-1 #edit-submit-library {
-  	    top: 3.6rem;
-    	left: -1rem;
+
+  .node-type-libro-de-biblioteca
+    #block-views-exp-library-page-1
+    #edit-submit-library {
+    top: 3.6rem;
+    left: -1rem;
   }
 
   .node.node-libro-de-biblioteca
@@ -3013,9 +2979,9 @@
   }
 
   /******Innovaciones portrait tlf*******************/
-  
+
   #comments div.comment.clearfix > div.comment-text {
-  	margin-left: 0;
+    margin-left: 0;
   }
 
   div.view.view-buenas-pr-cticas
@@ -3110,8 +3076,10 @@
 
   /* INNOVACIONES sidebar*/
 
-
-  .page-buenas-practicas div.form-item.form-type-textfield > input,  .node-type-buenas-pr-cticas div.form-item.form-type-textfield.form-item-title > input  {
+  .page-buenas-practicas div.form-item.form-type-textfield > input,
+  .node-type-buenas-pr-cticas
+    div.form-item.form-type-textfield.form-item-title
+    > input {
     width: 42rem !important;
     height: 3.4rem;
   }
@@ -3119,25 +3087,29 @@
   .views-exposed-form .views-exposed-widget .form-submit {
     width: 5rem !important;
     height: 5rem !important;
-	background-size: 4.018rem !important;
+    background-size: 4.018rem !important;
     position: relative;
     top: -2.5rem;
     left: 34rem;
   }
-  
-  
+
   /* FIN INNOVACIONES sidebar*/
 
   /* PORTAFOLIO sidebar*/
 
-  .node-type-portafolio-docente div.form-item.form-type-textfield.form-item-title > input {
-	width: 42rem;
+  .node-type-portafolio-docente
+    div.form-item.form-type-textfield.form-item-title
+    > input {
+    width: 42rem;
     height: 3.4rem;
-}
+  }
 
-  .node-type-portafolio-docente .views-exposed-form .views-exposed-widget .form-submit {
-  	top: 3.2rem;
-  	left: -1rem;
+  .node-type-portafolio-docente
+    .views-exposed-form
+    .views-exposed-widget
+    .form-submit {
+    top: 3.2rem;
+    left: -1rem;
   }
 
   /******* PORTAFOLIO *********/
@@ -3224,7 +3196,7 @@
   #portafolio_docente_top > div#left > p#titulo {
     text-align: center;
   }
-  
+
   /* sidebar */
   .page-portafolio-docente div.form-item.form-type-textfield > input {
     width: 42rem !important;
@@ -3265,7 +3237,7 @@
 
   .page-node-16097 .field-name-share-buttons a > img {
     background: url(/sites/default/files/concurso/icon_facebook.png) no-repeat
-    top left;
+      top left;
     background-size: 32rem;
     padding: 16px;
   }
@@ -3507,8 +3479,6 @@
     > span {
     font-size: unset;
   }
-  
-
 
   /*video 1*/
   .view.view-venezuela-le-habla-a-la-educaci-n
@@ -3531,23 +3501,25 @@
     margin: 5px 26px 25px 13px;
   }
 
-  .view.view-venezuela-le-habla-a-la-educaci-n .view.view-venezuela-le-habla-a-la-educaci-n-2 .views-row .views-field.views-field-field-descripcion > div {
-  	color: #000000;
+  .view.view-venezuela-le-habla-a-la-educaci-n
+    .view.view-venezuela-le-habla-a-la-educaci-n-2
+    .views-row
+    .views-field.views-field-field-descripcion
+    > div {
+    color: #000000;
   }
-  
-  .page-venezuela-le-habla-a-la-educacion
-  .view-content {
-      display: flex;
-      flex-flow: wrap;
-      justify-content: space-between;
+
+  .page-venezuela-le-habla-a-la-educacion .view-content {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
   }
-  
+
   .page-venezuela-le-habla-a-la-educacion-personajes .view-content,
-  .page-venezuela-le-habla-a-la-educacion-campanas 
-  .view-content {
-      display: flex !important;
-      flex-flow:column wrap !important;
-      justify-content: space-between;
+  .page-venezuela-le-habla-a-la-educacion-campanas .view-content {
+    display: flex !important;
+    flex-flow: column wrap !important;
+    justify-content: space-between;
   }
 
   .view.view-venezuela-le-habla-a-la-educaci-n
@@ -3753,7 +3725,7 @@
   .vista-materia .views-field.views-field-field-recursos h2 a {
     line-height: 5rem;
     border-bottom: 2px solid lightgrey;
-    font-size: .6em;
+    font-size: 0.6em;
   }
 
   .field-type-image img,
@@ -3761,18 +3733,17 @@
     margin: 0 0 -0.2em;
   }
 
-
   /* SIDEBAR DERECHA */
-
 
   .lateral_izq_bloque01 > li,
   .lateral_izq_bloque02 > li,
   .lateral_izq_bloque03 > li {
     margin-left: -7rem;
   }
-  
-  .node-type-item-de-efem-ride .lateral_izq_bloque03 > li:nth-child(4) > a, .node-type-efem-rides .lateral_izq_bloque03 > li:nth-child(4) > a {
-      color: black;
+
+  .node-type-item-de-efem-ride .lateral_izq_bloque03 > li:nth-child(4) > a,
+  .node-type-efem-rides .lateral_izq_bloque03 > li:nth-child(4) > a {
+    color: black;
   }
 
   .lateral_izq_bloque01 > li > a,
@@ -3786,7 +3757,7 @@
   .view_bloque_lateral {
     display: flex;
     flex-flow: row wrap;
-	justify-content: center;
+    justify-content: center;
     width: 100%;
     position: relative;
     margin-left: 0;
@@ -4011,7 +3982,6 @@
 
   /**** FOOTER ****/
 
-
   /*****Resultados de busqueda portrait mobile*****/
   .breadcrumb {
     font-size: 2em;
@@ -4024,15 +3994,12 @@
     margin-right: -4rem;
   }
 
-
-
   .page-node-9243 .lateral_izq_nosotros li > a,
   .page-node-9244 .lateral_izq_nosotros li > a,
   .page-nosotros-aliados .lateral_izq_nosotros > li > a,
   .node-type-aliados .lateral_izq_nosotros > li > a {
     padding-left: 6rem;
   }
-
 
   /****Voluntariado portrait mobile*********/
 
@@ -4161,7 +4128,6 @@
   }
   /* FORM */
 
-
   /* Si ya estas registrado */
   #block-block-32 {
     background-color: none;
@@ -4276,15 +4242,15 @@
     flex-flow: column wrap;
     justify-content: space-around;
   }
-  
+
   .page-user-login #main-wrapper > #main {
-      width: 100% !important;
+    width: 100% !important;
   }
-  
+
   .page-user-login #content .section {
-      font-size: 3.5em !important;
+    font-size: 3.5em !important;
   }
-  
+
   .page-user-login #highlighted {
     width: 100%;
     align-self: center;
@@ -4294,12 +4260,10 @@
     margin-bottom: 6rem;
     width: 100%;
   }
-  
+
   .page-user-login .div.form-item.form-type-textfield > input,
-  .page-user-login
-  input.form-text
-  {
-      width: 100% !important;
+  .page-user-login input.form-text {
+    width: 100% !important;
   }
 
   input.form-text,
@@ -4309,7 +4273,7 @@
   }
 
   /* MI CUENTA - EDIT */
-  
+
   .page-user .profile > .user-picture img {
     width: 50%;
     height: auto;
@@ -4317,9 +4281,9 @@
     margin-right: auto;
     display: block;
   }
-  
+
   .page-user #content .section {
-      font-size: 3em;
+    font-size: 3em;
   }
 
   /* Contrase??a*/
@@ -4417,8 +4381,6 @@
     height: 3rem;
     padding: 22px 5rem 23px;
   }
-
-
 
   #edit-comment-body-und-0-value {
     height: 15rem !important;
@@ -4562,11 +4524,11 @@
     flex-flow: wrap;
     justify-content: space-between;
   }
-  
+
   .page-cursos div.form-item.form-type-textfield.form-item-title > input {
-      width: 30rem;
-      height: auto;
-      margin-bottom: 3rem;
+    width: 30rem;
+    height: auto;
+    margin-bottom: 3rem;
   }
 
   .page-node-20656
@@ -4669,34 +4631,34 @@
   #admin-menu {
     height: auto;
   }
-  
-  #admin-menu-wrapper {
-      display: flex;
-      flex-flow: column wrap;
-      font-size: 1.3em;
-  }
-  
-  .page-admin #admin-menu-wrapper{
-      font-size: .9em;
-  }
-  
-  .admin-menu-account {
-      order: 1;
-  }
-  
-  .admin-menu-icon {
-      order: 2;
-  }
-  
-    .page-admin-index .clearfix {
-        display: flex;
-        flex-flow: column;
-    }
-    
-    div.admin .right, div.admin .left {
-        width: 100%;;
-    }
 
+  #admin-menu-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    font-size: 1.3em;
+  }
+
+  .page-admin #admin-menu-wrapper {
+    font-size: 0.9em;
+  }
+
+  .admin-menu-account {
+    order: 1;
+  }
+
+  .admin-menu-icon {
+    order: 2;
+  }
+
+  .page-admin-index .clearfix {
+    display: flex;
+    flex-flow: column;
+  }
+
+  div.admin .right,
+  div.admin .left {
+    width: 100%;
+  }
 
   /*Panel de Control*/
 
@@ -4725,87 +4687,86 @@
     display: flex;
     align-self: center;
   }
-  
+
   /*Contenido*/
-  
-  .page-admin-people .views-exposed-form .views-exposed-widget .form-submit,.page-admin-content .views-exposed-form .views-exposed-widget .form-submit {
+
+  .page-admin-people .views-exposed-form .views-exposed-widget .form-submit,
+  .page-admin-content .views-exposed-form .views-exposed-widget .form-submit {
     width: 20rem !important;
     height: auto !important;
     background-size: auto !important;
     position: unset;
   }
-  
-  .page-admin-people #branding,.page-admin-appearance #branding ,.page-admin-content #branding {
+
+  .page-admin-people #branding,
+  .page-admin-appearance #branding,
+  .page-admin-content #branding {
     width: 205%;
-}
-  
+  }
+
   .page-admin-help #block-system-main .content .clearfix {
-      display: flex;
-      flex-flow: row;
+    display: flex;
+    flex-flow: row;
   }
-  
+
   .page-admin-help #branding {
-      width: 150%;
+    width: 150%;
   }
-  
+
   /* Mantenimiento */
-  
+
   .maintenance-page #header {
-      display: none;
+    display: none;
   }
-  
+
   .messages .status {
     background-size: 3rem;
     font-size: 2.5em;
     padding-left: 5rem;
   }
 
-   .node-type-curso .rtejustify > strong > span {
+  .node-type-curso .rtejustify > strong > span {
     font-size: 1.5em !important;
-    }  
+  }
 }
 
 /*##Device = Smartphones Most of the Smartphones (Landscape)*/
 
-@media (max-height: 479px) and (orientation: landscape)
-{
-   
- 
- /* Load Page */
+@media (max-height: 479px) and (orientation: landscape) {
+  /* Load Page */
   .loader {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  position: relative;
-  border: 4px solid black;
-  top: 50%;
-  animation: loader 2s infinite ease;
-}
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border: 4px solid black;
+    top: 50%;
+    animation: loader 2s infinite ease;
+  }
 
-.loader-inner {
-  vertical-align: top;
-  display: inline-block;
-  background-color: #00FFFF;
-  width: 100%;
-  animation: loader-inner 2s infinite ease-in;
-}
+  .loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    background-color: #00ffff;
+    width: 100%;
+    animation: loader-inner 2s infinite ease-in;
+  }
 
-
-.loader-wrapper {
+  .loader-wrapper {
     width: 100%;
     height: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     z-index: 1000;
     pointer-events: none;
-    transition: all .5s;
-    transition-delay: .3s;
-    opacity : 0;
-}
+    transition: all 0.5s;
+    transition-delay: 0.3s;
+    opacity: 0;
+  }
 
   #main-menu {
     display: none;
@@ -4813,7 +4774,7 @@
 
   #mainmenu #main-menu-links a {
     color: black;
-    background-color: #FFFAFA;
+    background-color: #fffafa;
     text-align: start;
     padding-left: 4rem;
   }
@@ -4824,26 +4785,24 @@
   }
 
   #mainmenu #main-menu-links {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     -webkit-transform: scale(1);
     transform: translateZ(0);
-    margin-bottom: 1.5rem;;
+    margin-bottom: 1.5rem;
   }
 
   #mainmenu #main-menu-links .active-trail {
     display: none;
   }
 
-
   .sidebar .section {
     font-size: 3.3em !important;
   }
 
-
   .item-list {
-  	font-size: 1.5em;
+    font-size: 1.5em;
   }
- 
+
   #edit-field-categor-as-tid > div:nth-child(36) > label,
   #edit-field-categor-as-tid > div:nth-child(48) > label {
     display: content;
@@ -4887,7 +4846,7 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    background-color: #FFFAFA;
+    background-color: #fffafa;
     font-weight: bold;
     transform: translateZ(0);
   }
@@ -4905,37 +4864,35 @@
     line-height: 6rem;
   }
 
-
   #mainmenu,
   #sec-menu {
     transform: scaleY(0) !important;
     overflow: visible;
     transition: transform 0.5s;
     transform-origin: top;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
 
   .change #mainmenu,
   .change #sec-menu {
     transform: scaleY(1) !important;
   }
-  
 
-   .title {
-	display: flex;
-	flex-flow: column;
-   }
-
-   #subtitle {
-	font-size: .8em;
-}
-
-  .change #page  {
-	margin-left: 95%;
+  .title {
+    display: flex;
+    flex-flow: column;
   }
 
-  .expand-sidebar #page  {
-	margin-left: 95%;
+  #subtitle {
+    font-size: 0.8em;
+  }
+
+  .change #page {
+    margin-left: 95%;
+  }
+
+  .expand-sidebar #page {
+    margin-left: 95%;
   }
 
   .region-sidebar-first {
@@ -4944,21 +4901,20 @@
     -webkit-font-smoothing: subpixel-antialiased;
   }
 
-
   #logo > img {
     transform: translateZ(0);
   }
- 
+
   #sidebar #logo {
     position: relative;
     z-index: 4;
     opacity: 0;
-    transition-duration: .5s;
+    transition-duration: 0.5s;
     top: 0;
   }
-  
+
   .show #login {
-	animation: stretch .6s ease-out alternate none running;
+    animation: stretch 0.6s ease-out alternate none running;
   }
 
   #sidebar {
@@ -4967,7 +4923,7 @@
     width: 0;
     left: 0;
     top: 0;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     overflow-x: hidden;
     height: 100%;
     transition: 0.4s;
@@ -4987,18 +4943,16 @@
     width: 58rem;
     transition: 0.3s;
     opacity: 1;
-    background-color: #FFFAFA;
-  }
-  
-  .change #sidebar #logo {
-	opacity: 1;
+    background-color: #fffafa;
   }
 
+  .change #sidebar #logo {
+    opacity: 1;
+  }
 
   #page {
-    transition:all 0.3s;
+    transition: all 0.3s;
   }
-
 
   #main {
     margin-bottom: 0;
@@ -5012,8 +4966,6 @@
   #content .section {
     font-size: 1.5em;
   }
-  
-
 
   /*****Home landscape mobile*-***/
   .bloqueshomepage {
@@ -5070,7 +5022,7 @@
     height: auto;
   }
 
- #header {
+  #header {
     border-bottom: 1px outset black;
     min-height: 7rem;
     outline: none;
@@ -5088,52 +5040,49 @@
   div.region.region-header {
     height: auto;
   }
-  
+
   #hamburger-id-btn {
     position: absolute;
     top: 1rem;
     left: 2rem;
     font-size: 4em;
   }
-  
+
   .hamburger:before {
-  	display: none;
-  	font-family: "Font Awesome 5 Free"; 
-  	font-weight: 900;
-  	content: "\f0c9";
+    display: none;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0c9";
   }
 
-  
   .change .hamburger {
-	animation: stretch .6s ease-out alternate none running;
-
+    animation: stretch 0.6s ease-out alternate none running;
   }
-  
-   .btn-expand {
+
+  .btn-expand {
     position: absolute;
-	top: 1rem;
+    top: 1rem;
     left: 8rem;
     font-size: 4em;
   }
-  
+
   .icon-open-search .btn-expand {
-  	display: none;
+    display: none;
   }
 
-  
   .btn-expand:before {
-  	display: none;
-  	font-family: "Font Awesome 5 Free"; 
-  	font-weight: 900;
-  	content: "\f78c";
+    display: none;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f78c";
   }
 
-    .expand-sidebar .btn-expand:before {
-  	content: "\f31e";
+  .expand-sidebar .btn-expand:before {
+    content: "\f31e";
   }
-  
+
   /* MENU PRIMARIO TU AULA, BIBLIOTECA... */
-  
+
   #main-menu-links {
     position: relative;
     top: 2rem;
@@ -5148,10 +5097,8 @@
   /* MEN?? SECUNDARIO NOSOTROS , CONTACTOS ... */
 
   #block-menu-menu-men-secundario {
-	display: none;
+    display: none;
   }
-
-
 
   /* FOOTER Y REDES SOCIALES */
 
@@ -5173,14 +5120,12 @@
     width: 3.5rem;
   }
 
-
   #terminos {
     font-size: 2.1em;
     text-align: center;
     margin-bottom: 2rem;
   }
 
-  
   #footer .block .content {
     padding: 3rem 0 4rem 0;
   }
@@ -5218,7 +5163,6 @@
     transition: transform 0.5s ease-in-out;
   }
 
-
   #block-search-form
     > div
     > form
@@ -5230,16 +5174,14 @@
     height: 3rem;
   }
 
-  #search-form input#edit-keys
-  {
+  #search-form input#edit-keys {
     font-size: 1.8em;
   }
-  
-  #block-search-form .form-item-search-block-form input 
-  {
+
+  #block-search-form .form-item-search-block-form input {
     font-size: 2.5em;
   }
-  
+
   #block-search-form
     > div
     > form
@@ -5256,34 +5198,34 @@
     font-size: 3em;
     z-index: 10;
     overflow: auto;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
-  
+
   .region-content #autocomplete {
-  	 font-size: 1.5em;
-     margin-top: 0;
-     margin-left: 0;
-     width: 100%;
-  	 z-index: 10;
-  	 overflow: auto;
-  	 background-color: #FFFFFF;
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    z-index: 10;
+    overflow: auto;
+    background-color: #ffffff;
   }
-  
+
   .page-search #search-form input#edit-keys {
-  	width: 100%;
+    width: 100%;
   }
-  
+
   .page-search #edit-submit {
     width: 13rem !important;
     height: 3.5rem !important;
     background-size: 5rem !important;
-    background-color: #F5F5F5 !important;
+    background-color: #f5f5f5 !important;
   }
-  
+
   .page-search .container-inline {
-  	display: flex;
-  	flex-flow: column wrap;
-  	align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
   }
 
   #busqueda-X-bar {
@@ -5332,18 +5274,18 @@
     opacity: 0 !important;
     display: none;
   }
-  
+
   .icon-open-search #logo {
-	opacity: 0;
+    opacity: 0;
   }
 
   .icon-open-search #header {
-  	min-height: 50rem;
-  	z-index: 3;
+    min-height: 50rem;
+    z-index: 3;
   }
 
   #busqueda-img > img {
-	animation: stretch .6s ease-out alternate none running;
+    animation: stretch 0.6s ease-out alternate none running;
   }
 
   .icon-open-search #block-search-form {
@@ -5357,7 +5299,7 @@
     transform: translateZ(0);
   }
 
- #block-system-user-menu {
+  #block-system-user-menu {
     transform: scaleY(0) !important;
     position: fixed;
     overflow: visible;
@@ -5372,7 +5314,7 @@
     position: absolute;
     left: 4rem;
     top: -1rem;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     overflow: hidden;
     box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.6);
     border-radius: 25px;
@@ -5407,9 +5349,8 @@
     display: block;
     position: relative;
     right: 2rem;
-    top: .5rem;
-}
- 
+    top: 0.5rem;
+  }
 
   #login > img {
     width: 2rem;
@@ -5419,21 +5360,21 @@
     transform: scaleY(1) !important;
     display: inline-block !important;
   }
-  
+
   .page-user-login .section {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
   }
-  
+
   .page-user-login #main-wrapper > #main {
-      width: 100%;
+    width: 100%;
   }
-  
+
   .page-user-login #content .section {
-      font-size: 2em;
+    font-size: 2em;
   }
-  
+
   .page-user-login #highlighted {
     width: 100%;
     align-self: center;
@@ -5443,12 +5384,10 @@
     margin-bottom: 6rem;
     width: 100%;
   }
-  
+
   .page-user-login .div.form-item.form-type-textfield > input,
-  .page-user-login
-  input.form-text
-  {
-      width: 100% !important;
+  .page-user-login input.form-text {
+    width: 100% !important;
   }
 
   input.form-text,
@@ -5458,12 +5397,12 @@
   }
 
   /****Biblioteca landscape tlf******/
-    
+
   #edit-field-categor-as-tid > div:nth-child(36) > label,
   #edit-field-categor-as-tid > div:nth-child(48) > label {
     display: content;
   }
-  
+
   .one-sidebar #content {
     width: 100%;
   }
@@ -5484,7 +5423,6 @@
     line-height: 2.5rem;
   }
 
-
   input.form-radio {
     width: 2.5rem;
     height: 2.5rem;
@@ -5495,7 +5433,6 @@
     height: 6rem;
   }
 
-  
   #sidebar-first {
     display: block;
     position: fixed;
@@ -5509,10 +5446,9 @@
     opacity: 0;
     min-height: 100%;
   }
-  
 
   .expand-sidebar #sidebar-first {
-  	display: block;
+    display: block;
     width: 58rem;
     transition: 0.3s;
     opacity: 1;
@@ -5536,9 +5472,9 @@
     padding-left: 3.5rem;
     color: black;
   }
-  
+
   .sidebar .block .content {
-      line-height: 2.5em;
+    line-height: 2.5em;
   }
 
   .views-exposed-form .form-item,
@@ -5549,7 +5485,6 @@
   .views-exposed-form label {
     font-weight: bolder;
   }
-
 
   #content .section {
     padding-left: 4rem;
@@ -5622,7 +5557,6 @@
     font-size: 1em;
   }
 
-
   div.region.region-help > div#block-block-14 {
     margin-right: 1rem;
   }
@@ -5633,7 +5567,7 @@
   div.region.region-help > div#block-block-16 {
     margin-right: 2rem;
   }
-  
+
   .form-actions {
     text-align: center;
   }
@@ -5721,10 +5655,13 @@
     margin-left: 1.2rem;
     margin-right: 0;
   }
-  
-  #edit-field-buenas-pr-cticas-tid > div:nth-child(4) > label, #edit-field-buenas-pr-cticas-tid > div:nth-child(5) > label, #edit-field-buenas-pr-cticas-tid > div:nth-child(16) > label, #edit-field-buenas-pr-cticas-tid > div:nth-child(18) > label {
-      display: unset;
-      margin-left: 0;
+
+  #edit-field-buenas-pr-cticas-tid > div:nth-child(4) > label,
+  #edit-field-buenas-pr-cticas-tid > div:nth-child(5) > label,
+  #edit-field-buenas-pr-cticas-tid > div:nth-child(16) > label,
+  #edit-field-buenas-pr-cticas-tid > div:nth-child(18) > label {
+    display: unset;
+    margin-left: 0;
   }
 
   div.view.view-buenas-pr-cticas > div.view-content > div.views-row.views-row-2,
@@ -5785,12 +5722,13 @@
 
   /****Innovaciones sidebar landscape tlf******/
 
-
-  .page-buenas-practicas div.form-item.form-type-textfield > input, .node-type-buenas-pr-cticas div.form-item.form-type-textfield.form-item-title > input  {
-	width: 45rem !important;
+  .page-buenas-practicas div.form-item.form-type-textfield > input,
+  .node-type-buenas-pr-cticas
+    div.form-item.form-type-textfield.form-item-title
+    > input {
+    width: 45rem !important;
     height: 6rem;
-}
-
+  }
 
   .views-exposed-form .views-exposed-widget .form-submit {
     width: 7rem !important;
@@ -5806,10 +5744,22 @@
   }
 
   /****Portafolio landscape tlf****/
-  
-  #edit-field-portafolio-docente-tid > div:nth-child(5) > label, #edit-field-portafolio-docente-tid > div:nth-child(6) > label, #edit-field-portafolio-docente-tid > div:nth-child(13) > label, #edit-field-portafolio-docente-tid > div:nth-child(14) > label, #edit-field-portafolio-docente-tid > div:nth-child(20) > label, #edit-field-portafolio-docente-tid > div:nth-child(21) > label, #edit-field-portafolio-docente-tid > div:nth-child(28) > label, #edit-field-portafolio-docente-tid > div:nth-child(29) > label, #edit-field-portafolio-docente-tid > div:nth-child(32) > label, #edit-field-portafolio-docente-tid > div:nth-child(40) > label, #edit-field-portafolio-docente-tid > div:nth-child(41) > label, #edit-field-portafolio-docente-tid > div:nth-child(42) > label, #edit-field-portafolio-docente-tid > div:nth-child(56) > label {
-      display: unset;
-      margin-left: 0;
+
+  #edit-field-portafolio-docente-tid > div:nth-child(5) > label,
+  #edit-field-portafolio-docente-tid > div:nth-child(6) > label,
+  #edit-field-portafolio-docente-tid > div:nth-child(13) > label,
+  #edit-field-portafolio-docente-tid > div:nth-child(14) > label,
+  #edit-field-portafolio-docente-tid > div:nth-child(20) > label,
+  #edit-field-portafolio-docente-tid > div:nth-child(21) > label,
+  #edit-field-portafolio-docente-tid > div:nth-child(28) > label,
+  #edit-field-portafolio-docente-tid > div:nth-child(29) > label,
+  #edit-field-portafolio-docente-tid > div:nth-child(32) > label,
+  #edit-field-portafolio-docente-tid > div:nth-child(40) > label,
+  #edit-field-portafolio-docente-tid > div:nth-child(41) > label,
+  #edit-field-portafolio-docente-tid > div:nth-child(42) > label,
+  #edit-field-portafolio-docente-tid > div:nth-child(56) > label {
+    display: unset;
+    margin-left: 0;
   }
 
   #portafolio_docente_top > div#left > p#titulo {
@@ -5877,7 +5827,7 @@
     > img {
     height: 20rem;
   }
-  
+
   .page-portafolio-docente div.form-item.form-type-textfield > input {
     width: 45rem !important;
     height: 6rem;
@@ -5932,12 +5882,13 @@
   /****Fin portafolio detalle landscape tlf****/
 
   /* PORTAFOLIO SIDEBAR */
-  
-  .node-type-portafolio-docente div.form-item.form-type-textfield.form-item-title > input {
-	width: 45rem;
-    height: 6rem;
-}
 
+  .node-type-portafolio-docente
+    div.form-item.form-type-textfield.form-item-title
+    > input {
+    width: 45rem;
+    height: 6rem;
+  }
 
   /* CONCURSO  LANDSCAPE*/
   .page-node-16097 .field-name-body .concurso_header {
@@ -5986,8 +5937,8 @@
   }
 
   /* concursante */
-  
-   .page-node-16097 .field-name-body .concurso_header {
+
+  .page-node-16097 .field-name-body .concurso_header {
     width: 136%;
     height: 62rem;
     background-size: 66rem 100%;
@@ -6159,7 +6110,6 @@
     font-size: 2em;
   }
 
-
   .views-row > .views-accordion-header > .field-content > a {
     padding-left: 96px;
     padding-top: 20px;
@@ -6183,7 +6133,7 @@
   .vista-materia .views-field.views-field-field-recursos h2 a {
     line-height: 5.5rem;
     border-bottom: 2px solid lightgrey;
-  	font-size: .7em;
+    font-size: 0.7em;
   }
 
   .field-type-image img,
@@ -6192,7 +6142,6 @@
   }
 
   /* SIDEBAR DERECHA */
-
 
   .lateral_izq_bloque01 > li > a,
   .lateral_izq_bloque02 > li > a,
@@ -6228,19 +6177,17 @@
     font-size: 1.2em;
     line-height: 4rem;
   }
-  
+
   .view_bloque_lateral > div.content {
     font-size: 1em;
     transform: translateZ(0);
   }
-
 
   /*****Nosotros portrait landscape****/
   #node-9243 {
     margin-left: -4rem;
     margin-right: -4rem;
   }
-
 
   .page-node-9243 .lateral_izq_nosotros li > a,
   .page-node-9244 .lateral_izq_nosotros li > a,
@@ -6253,8 +6200,6 @@
     height: 160%;
   }
 
-
-
   /****Voluntariado portrait landscape*********/
 
   #node-1740 {
@@ -6263,7 +6208,7 @@
   }
 
   #bloque_central > p {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
   #node-1740 #bloque_central > #contenedor > h1 {
     margin-bottom: 1rem;
@@ -6562,11 +6507,14 @@
     border-bottom-right-radius: 35px;
   }
 
-
-  .view.view-venezuela-le-habla-a-la-educaci-n .view.view-venezuela-le-habla-a-la-educaci-n-2 .views-row .views-field.views-field-field-descripcion > div {
-  	color: #000000;
+  .view.view-venezuela-le-habla-a-la-educaci-n
+    .view.view-venezuela-le-habla-a-la-educaci-n-2
+    .views-row
+    .views-field.views-field-field-descripcion
+    > div {
+    color: #000000;
   }
-  
+
   /* Al selecionar una personaje */
   .node-type-venezuela-le-habla-a-la-educaci- #block-block-22 > div.content img,
   .node-type-venezuela-le-habla-a-la-educaci-
@@ -6676,23 +6624,22 @@
   #edit-comment-body-und-0-value {
     height: 12rem !important;
   }
-  
-  
+
   /* DOCENTES */
-  
-    #block-views-exp-cursos-page #edit-submit-cursos {
+
+  #block-views-exp-cursos-page #edit-submit-cursos {
     width: 24rem !important;
     height: 6rem !important;
     top: -1.3rem;
     left: 0rem;
   }
-  
+
   .page-cursos div.form-item.form-type-textfield.form-item-title > input {
     width: 24rem;
     height: auto;
     position: relative;
     top: 3rem;
-}
+  }
 
   .page-cursos #content .section,
   .page-cursos .view-cursos,
@@ -6810,25 +6757,24 @@
   .page-docentes-quinto-ano-fisica #content {
     margin-left: 0;
   }
-  
+
   /********* FIN MI CUENTA LANDSCAPE ***************/
-  
-    .maintenance-page #header {
-      display: none;
+
+  .maintenance-page #header {
+    display: none;
   }
-  
-    .sticky {
-   	position: -webkit-sticky;
+
+  .sticky {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
   }
 
   .sticky + .clearfix {
-  	width: 100%;
-
+    width: 100%;
   }
-  
-    #page {
+
+  #page {
     display: flex;
     flex-flow: column wrap;
     align-items: stretch;
@@ -6844,24 +6790,24 @@
   #footer-wrapper {
     flex-shrink: 0;
   }
-  
+
   .messages .status {
     background-size: 2rem;
     font-size: 1.5em;
   }
-  
-    .page-search #messages {
-      font-size: 2em !important;
+
+  .page-search #messages {
+    font-size: 2em !important;
   }
-  
-   .node-type-curso .rtejustify > strong > span {
+
+  .node-type-curso .rtejustify > strong > span {
     font-size: 1.5em !important;
-    }  
-    
-   .lateral_izq_bloque01 > li:before,
+  }
+
+  .lateral_izq_bloque01 > li:before,
   .lateral_izq_bloque02 > li:before,
   .lateral_izq_bloque03 > li:before {
     border-color: transparent #000000;
   }
-
 }
+
