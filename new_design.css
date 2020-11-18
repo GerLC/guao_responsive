@@ -2113,7 +2113,7 @@
 
   .open-1 #bloque01 > ul,
   .open-2 #bloque02 > ul,
-  .open--3 #bloque03 > ul {
+  .open-3 #bloque03 > ul {
     visibility: visible;
     opacity: 1;
     transition: visibility 0s, opacity 0.7s linear;
