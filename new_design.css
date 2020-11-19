@@ -149,6 +149,24 @@
 ##Screen = B/w 768px to 1024px
 */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+	
+  #page {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: stretch;
+  }
+
+  #main-wrapper {
+    margin-bottom: 3rem;
+    flex: 1;
+  }
+
+  #main-wrapper,
+  #header,
+  #footer-wrapper {
+    flex-shrink: 0;
+  }
+  
   /* Load Page */
   .loader {
     display: inline-block;
@@ -327,56 +345,7 @@
     display: content;
   }
 
-  .lateral_izq_bloque01 > li > a,
-  .lateral_izq_bloque02 > li > a,
-  .lateral_izq_bloque03 > li > a {
-    color: black;
-  }
 
-  #block-block-8 > h2,
-  #block-block-13 > h2,
-  #block-block-15 > h2,
-  #block-block-48 > h2 {
-    color: black;
-  }
-
-  .page-primer-grado .lateral_izq_bloque01 > li:nth-child(1) > a,
-  .page-segundo-grado .lateral_izq_bloque01 > li:nth-child(2) > a,
-  .page-tercer-grado .lateral_izq_bloque01 > li:nth-child(3) > a,
-  .page-cuarto-grado .lateral_izq_bloque01 > li:nth-child(4) > a,
-  .page-quinto-grado .lateral_izq_bloque01 > li:nth-child(5) > a,
-  .page-sexto-grado .lateral_izq_bloque01 > li:nth-child(6) > a,
-  .page-primer-ano .lateral_izq_bloque02 > li:nth-child(1) > a,
-  .page-segundo-ano .lateral_izq_bloque02 > li:nth-child(2) > a,
-  .page-tercer-ano .lateral_izq_bloque02 > li:nth-child(3) > a,
-  .page-cuarto-ano .lateral_izq_bloque02 > li:nth-child(4) > a,
-  .page-quinto-ano .lateral_izq_bloque02 > li:nth-child(5) > a,
-  .page-docentes-primer-ano .lateral_izq_bloque02 > li:nth-child(1) > a,
-  .page-docentes-segundo-ano .lateral_izq_bloque02 > li:nth-child(2) > a,
-  .page-docentes-tercer-ano .lateral_izq_bloque02 > li:nth-child(3) > a,
-  .page-docentes-cuarto-ano .lateral_izq_bloque02 > li:nth-child(4) > a,
-  .page-docentes-quinto-ano .lateral_izq_bloque02 > li:nth-child(5) > a,
-  .page-celebraciones-escolares .lateral_izq_bloque03 > li:nth-child(1) > a,
-  .page-efemerides .lateral_izq_bloque03 > li:nth-child(4) > a {
-    color: black;
-  }
-  #edit-field-categor-as-tid > div:nth-child(36) > label,
-  #edit-field-categor-as-tid > div:nth-child(48) > label {
-    display: content;
-  }
-
-  .lateral_izq_bloque01 > li > a,
-  .lateral_izq_bloque02 > li > a,
-  .lateral_izq_bloque03 > li > a {
-    color: black;
-  }
-
-  #block-block-8 > h2,
-  #block-block-13 > h2,
-  #block-block-15 > h2,
-  #block-block-48 > h2 {
-    color: black;
-  }
 
   div.form-item.form-type-textfield.form-item-populate > input {
     width: 42rem;
@@ -767,6 +736,7 @@
 
   .sidebar .block {
     padding-left: 2.3rem;
+    border: none;
   }
 
   input.form-radio {
@@ -873,6 +843,7 @@
 
   .one-sidebar #content {
     width: 100%;
+    margin: auto;
   }
 
   /****** Detalle libro *********/
@@ -1980,7 +1951,7 @@
   .lateral_izq_bloque01 > li:before,
   .lateral_izq_bloque02 > li:before,
   .lateral_izq_bloque03 > li:before {
-    border-color: transparent black;
+    border-color: transparent #ffffff;
   }
 
   #block-block-12 {
@@ -1988,7 +1959,7 @@
   }
 
   .lateral_izq_nosotros > li:before {
-    border-color: transparent white;
+    border-color: transparent #ffffff;
   }
 
   .views-exposed-widgets {
@@ -2205,7 +2176,7 @@
   }
 
   .open-1 #block-button-id-2 {
-    bottom: -43rem;
+    bottom: -44rem;
   }
 
   .open-1 #block-button-id-3,
@@ -2321,7 +2292,6 @@
 
   .sidebar .section {
     font-size: 3.5em !important;
-    border: none;
   }
 
   #edit-field-categor-as-tid > div:nth-child(36) > label,
@@ -2329,39 +2299,7 @@
     display: content;
   }
 
-  .lateral_izq_bloque01 > li > a,
-  .lateral_izq_bloque02 > li > a,
-  .lateral_izq_bloque03 > li > a {
-    color: black;
-  }
 
-  #block-block-8 > h2,
-  #block-block-13 > h2,
-  #block-block-15 > h2,
-  #block-block-48 > h2 {
-    color: black;
-  }
-
-  .page-primer-grado .lateral_izq_bloque01 > li:nth-child(1) > a,
-  .page-segundo-grado .lateral_izq_bloque01 > li:nth-child(2) > a,
-  .page-tercer-grado .lateral_izq_bloque01 > li:nth-child(3) > a,
-  .page-cuarto-grado .lateral_izq_bloque01 > li:nth-child(4) > a,
-  .page-quinto-grado .lateral_izq_bloque01 > li:nth-child(5) > a,
-  .page-sexto-grado .lateral_izq_bloque01 > li:nth-child(6) > a,
-  .page-primer-ano .lateral_izq_bloque02 > li:nth-child(1) > a,
-  .page-segundo-ano .lateral_izq_bloque02 > li:nth-child(2) > a,
-  .page-tercer-ano .lateral_izq_bloque02 > li:nth-child(3) > a,
-  .page-cuarto-ano .lateral_izq_bloque02 > li:nth-child(4) > a,
-  .page-quinto-ano .lateral_izq_bloque02 > li:nth-child(5) > a,
-  .page-docentes-primer-ano .lateral_izq_bloque02 > li:nth-child(1) > a,
-  .page-docentes-segundo-ano .lateral_izq_bloque02 > li:nth-child(2) > a,
-  .page-docentes-tercer-ano .lateral_izq_bloque02 > li:nth-child(3) > a,
-  .page-docentes-cuarto-ano .lateral_izq_bloque02 > li:nth-child(4) > a,
-  .page-docentes-quinto-ano .lateral_izq_bloque02 > li:nth-child(5) > a,
-  .page-celebraciones-escolares .lateral_izq_bloque03 > li:nth-child(1) > a,
-  .page-efemerides .lateral_izq_bloque03 > li:nth-child(4) > a {
-    color: black;
-  }
 
   #sec-menu > div.content > ul {
     display: flex;
@@ -2838,6 +2776,7 @@
 
   .sidebar .block {
     padding-left: 5rem;
+    border: none;
   }
 
   input.form-radio {
@@ -4888,39 +4827,7 @@
     display: content;
   }
 
-  .lateral_izq_bloque01 > li > a,
-  .lateral_izq_bloque02 > li > a,
-  .lateral_izq_bloque03 > li > a {
-    color: black;
-  }
 
-  #block-block-8 > h2,
-  #block-block-13 > h2,
-  #block-block-15 > h2,
-  #block-block-48 > h2 {
-    color: black;
-  }
-
-  .page-primer-grado .lateral_izq_bloque01 > li:nth-child(1) > a,
-  .page-segundo-grado .lateral_izq_bloque01 > li:nth-child(2) > a,
-  .page-tercer-grado .lateral_izq_bloque01 > li:nth-child(3) > a,
-  .page-cuarto-grado .lateral_izq_bloque01 > li:nth-child(4) > a,
-  .page-quinto-grado .lateral_izq_bloque01 > li:nth-child(5) > a,
-  .page-sexto-grado .lateral_izq_bloque01 > li:nth-child(6) > a,
-  .page-primer-ano .lateral_izq_bloque02 > li:nth-child(1) > a,
-  .page-segundo-ano .lateral_izq_bloque02 > li:nth-child(2) > a,
-  .page-tercer-ano .lateral_izq_bloque02 > li:nth-child(3) > a,
-  .page-cuarto-ano .lateral_izq_bloque02 > li:nth-child(4) > a,
-  .page-quinto-ano .lateral_izq_bloque02 > li:nth-child(5) > a,
-  .page-docentes-primer-ano .lateral_izq_bloque02 > li:nth-child(1) > a,
-  .page-docentes-segundo-ano .lateral_izq_bloque02 > li:nth-child(2) > a,
-  .page-docentes-tercer-ano .lateral_izq_bloque02 > li:nth-child(3) > a,
-  .page-docentes-cuarto-ano .lateral_izq_bloque02 > li:nth-child(4) > a,
-  .page-docentes-quinto-ano .lateral_izq_bloque02 > li:nth-child(5) > a,
-  .page-celebraciones-escolares .lateral_izq_bloque03 > li:nth-child(1) > a,
-  .page-efemerides .lateral_izq_bloque03 > li:nth-child(4) > a {
-    color: black;
-  }
 
   #sec-menu > div.content > ul {
     display: flex;
@@ -5550,7 +5457,7 @@
 
   .sidebar .block {
     padding-left: 3.5rem;
-    color: black;
+    border: none;
   }
 
   .sidebar .block .content {
@@ -6887,7 +6794,7 @@
   .lateral_izq_bloque01 > li:before,
   .lateral_izq_bloque02 > li:before,
   .lateral_izq_bloque03 > li:before {
-    border-color: transparent #000000;
+    border-color: transparent #ffffff;
   }
   
   
