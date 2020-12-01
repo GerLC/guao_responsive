@@ -32,6 +32,7 @@
   font-size: 0.5em;
 }
 
+
 @keyframes stretch {
   0% {
     transform: scale(0.8);
@@ -819,6 +820,7 @@
     > img {
     width: 7em;
     height: 11em;
+    image-rendering: pixelated;
   }
 
   div.view.view-library
@@ -1024,6 +1026,7 @@
   #buenas_practicas_top > div#right > img {
     width: 21rem;
     height: 16.5rem;
+    image-rendering: pixelated;
   }
 
   div.view.view-buenas-pr-cticas > div.view-content > div.views-row {
@@ -1110,6 +1113,7 @@
   #portafolio_docente_top > div#right > img {
     width: 21rem;
     height: 16.5rem;
+    image-rendering: pixelated;
   }
 
   div.view.view-portafolio-docente > div.view-content > div.views-row {
@@ -1152,6 +1156,8 @@
     > a
     > img {
     height: 21rem;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
   }
 
   /******CONCURSO IPAD************/
@@ -1867,10 +1873,6 @@
     font-size: 1em;
   }
 
-  .bloqueshomepage > div > ul > li:before {
-    left: -0.5rem;
-    top: 1em;
-  }
 
   #bloque01 {
     background-size: 12rem;
@@ -2041,13 +2043,13 @@
   /*********Home portrait mobile*******/
   .bloqueshomepage > div {
     width: 80%;
-    height: 40rem;
+    height: 41rem;
     margin: 1.5rem 0px;
     padding: 2rem 4rem 8rem 4rem;
   }
 
   .bloqueshomepage > div > ul > li:before {
-    left: -0.6rem;
+    left: -1.6rem;
     top: 2.5rem;
   }
 
@@ -2176,12 +2178,12 @@
   }
 
   .open-1 #block-button-id-2 {
-    bottom: -44rem;
+    bottom: -45rem;
   }
 
   .open-1 #block-button-id-3,
   .open-2 #block-button-id-3 {
-    bottom: -47rem;
+    bottom: -48rem;
   }
 
   .open-2 #block-button-id-2,
@@ -2816,6 +2818,12 @@
     > img {
     width: 7em;
     height: 11em;
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
   }
 
   div.view.view-library
@@ -3005,6 +3013,7 @@
   #buenas_practicas_top > div#right > img {
     width: 25rem;
     height: 37rem;
+    image-rendering: pixelated;
   }
 
   div.view.view-buenas-pr-cticas .field.field-name-title-field,
@@ -3025,6 +3034,12 @@
     > img {
     width: 100%;
     height: 40rem;
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
   }
 
   div.view.view-buenas-pr-cticas > div.view-content > div > div > div.content {
@@ -3137,6 +3152,8 @@
     > img {
     width: 100%;
     height: 40rem;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
   }
 
   #portafolio_docente_top {
@@ -3153,6 +3170,7 @@
   #portafolio_docente_top > div#right > img {
     width: 26rem;
     height: 34rem;
+    image-rendering: pixelated;
   }
 
   #portafolio_docente_top > div#left {
@@ -4955,6 +4973,12 @@
   }
 
   /*****Home landscape mobile*-***/
+  
+  .bloqueshomepage > div > ul > li:before {
+    left: 0.2rem;
+    top: 1em;
+  }
+  
   .bloqueshomepage {
     display: flex;
     flex-direction: row;
@@ -4962,7 +4986,6 @@
     align-items: center;
     margin-left: 8rem;
     margin-right: 8rem;
-    /*margin-bottom: 0;*/
   }
 
   .bloqueshomepage > div {
@@ -4971,7 +4994,6 @@
     margin-left: 1rem;
     padding: 2rem 2rem 4rem 2rem;
     font-size: 0.9em;
-    /*   margin-bottom: 0;*/
   }
 
   .bloqueshomepage > div > p {
@@ -5491,6 +5513,7 @@
     > img {
     width: 9em;
     height: 14em;
+    image-rendering: pixelated;
   }
 
   div.view.view-library
@@ -5671,6 +5694,7 @@
   #buenas_practicas_top > div#right > img {
     width: 31.7167rem;
     height: 23rem;
+    image-rendering: pixelated;
   }
 
   div.node.node-buenas-pr-cticas
@@ -5813,6 +5837,7 @@
     > a
     > img {
     height: 20rem;
+
   }
 
   .page-portafolio-docente div.form-item.form-type-textfield > input {
@@ -5830,6 +5855,7 @@
   #portafolio_docente_top > div#right > img {
     width: 29.77rem;
     height: 23rem;
+    image-rendering: pixelated;
   }
 
   #portafolio_docente_top > div#left {
