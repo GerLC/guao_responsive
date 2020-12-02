@@ -28,6 +28,14 @@
   display: none;
 }
 
+#hamburger-id-btn {
+	display: none;
+}
+
+.btn-expand {
+	display: none;
+}
+
 #subtitle {
   font-size: 0.5em;
 }
@@ -424,39 +432,29 @@
   }
 
   #hamburger-id-btn {
+  	display: initial;
     position: absolute;
     top: 0.5rem;
     left: 2rem;
     font-size: 5em;
   }
 
-  .hamburger:before {
-    display: none;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f0c9";
-  }
 
   .change .hamburger {
     animation: stretch 0.6s ease-out alternate none running;
   }
 
   .btn-expand {
+  	display: initial;
     position: absolute;
     top: 1rem;
     left: 8rem;
     font-size: 4em;
   }
 
-  .btn-expand:before {
-    display: none;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f78c";
-  }
 
-  .expand-sidebar .btn-expand:before {
-    content: "\f31e";
+  .expand-sidebar .btn-expand {
+    animation: stretch 0.6s ease-out alternate none running;
   }
 
   #footer-wrapper {
@@ -2229,39 +2227,31 @@
   }
 
   #hamburger-id-btn {
+  	display: initial;
     position: absolute;
     top: 1.5rem;
     left: 2rem;
     font-size: 5em;
   }
 
-  .hamburger:before {
-    display: none;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f0c9";
-  }
+
 
   .change .hamburger {
     animation: stretch 0.6s ease-out alternate none running;
   }
 
   .btn-expand {
+  	display: initial;
     position: absolute;
     top: 1.5rem;
     left: 9rem;
     font-size: 5em;
   }
 
-  .btn-expand:before {
-    display: none;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f78c";
-  }
 
-  .expand-sidebar .btn-expand:before {
-    content: "\f31e";
+
+  .expand-sidebar .btn-expand {
+    animation: stretch 0.6s ease-out alternate none running;
   }
 
   /**********FIN MEN?? HAMBURGER *******/
@@ -5051,24 +5041,20 @@
   }
 
   #hamburger-id-btn {
+  	display: initial;
     position: absolute;
     top: 1rem;
     left: 2rem;
     font-size: 4em;
   }
 
-  .hamburger:before {
-    display: none;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f0c9";
-  }
 
   .change .hamburger {
     animation: stretch 0.6s ease-out alternate none running;
   }
 
   .btn-expand {
+  	display: initial;
     position: absolute;
     top: 1rem;
     left: 8rem;
@@ -5079,15 +5065,8 @@
     display: none;
   }
 
-  .btn-expand:before {
-    display: none;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f78c";
-  }
-
-  .expand-sidebar .btn-expand:before {
-    content: "\f31e";
+  .expand-sidebar .btn-expand {
+    animation: stretch 0.6s ease-out alternate none running;
   }
 
   /* MENU PRIMARIO TU AULA, BIBLIOTECA... */

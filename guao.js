@@ -7,9 +7,8 @@ head.append(meta);
 var link = "https://use.fontawesome.com/releases/v5.15.1/js/all.js";
 var element = document.createElement("script");
 element.setAttribute("src", link);
-element.setAttribute("data-search-pseudo-elements", "");
+head.appendChild(element);
 
-document.head.appendChild(element);
 
 document.addEventListener("gesturestart", function (e) {
   e.preventDefault();
@@ -62,6 +61,22 @@ window.addEventListener("click", function (event) {
 var expandBtn = document.createElement("span");
 expandBtn.classList = "btn-expand";
 
+var faExpand = document.createElement("i");
+faExpand.classList = "fa fa-expand-arrows-alt";
+expandBtn.appendChild(faExpand);
+
+
+expandBtn.addEventListener("click", evt => {
+  const icon = evt.currentTarget.querySelector("svg");
+  if (icon.classList.contains("fa-expand-arrows-alt")) {
+    icon.classList.remove("fa-expand-arrows-alt");
+    icon.classList.toggle("fa-compress-arrows-alt");
+  } else {
+    icon.classList.remove("fa-compress-arrows-alt");
+    icon.classList.add("fa-expand-arrows-alt");
+  }
+});
+
 expandBtn.onclick = function () {
   const z = document.getElementById("page-wrapper");
 
@@ -69,6 +84,8 @@ expandBtn.onclick = function () {
   z.classList.remove("change");
   z.classList.remove("icon-open-search");
 };
+
+
 
 /** Hamburger Button
  * Opens Menu on click
@@ -91,9 +108,12 @@ divClass.onclick = function () {
   }
 };
 
+var faBar = document.createElement("i");
+faBar.classList = "fas fa-bars";
+
 var to = document.getElementsByClassName("section")[0];
 to.insertBefore(divClass, to.firstChild);
-
+divClass.appendChild(faBar)
 /* FIN */
 
 /* REDES SOCIALES EN FOOTER  MOBILE PORTRAIT*/
@@ -283,7 +303,7 @@ sideNav.appendChild(document.createElement("hr"));
 if (document.URL.indexOf("https://guao.org/biblioteca") >= 0) {
   var biblio_title = document.createElement("h2");
   biblio_title.id = "title_biblioteca";
-  biblio_title.innerHTML = "Filtro Biblioteca";
+  biblio_title.innerHTML = "Biblioteca";
   var biblio = document.getElementById("block-views-exp-library-page-1");
   biblio.insertBefore(biblio_title, biblio.firstChild);
 }
@@ -347,11 +367,11 @@ if (
   to.insertBefore(expandBtn, to.firstChild);
 
   const exist = document.querySelectorAll('[id="sidebar-first"]');
-  console.log(exist.length);
+
   const existFilter = document.querySelectorAll(
     ".page-biblioteca, .page-buenas-practicas, .page-portafolio-docente"
   );
-  console.log(existFilter.length);
+
 
   if (exist.length !== 0 && existFilter.length !== 0) {
     const z = document.getElementById("page-wrapper");
@@ -375,7 +395,7 @@ if (document.querySelectorAll('[id="sidebar-first"]').length !== 0) {
 
   let filterColor = window.getComputedStyle(z).backgroundColor;
   document.getElementById("sidebar-first").style.backgroundColor = filterColor;
-  console.log(filterColor);
+
 }
 
 /** Subtitle on selected value on filter
@@ -398,7 +418,6 @@ for (const rb of rbs) {
       "[for=" + CSS.escape(selectedValue) + "]"
     )[0];
 
-    console.log(tbs.textContent);
 
     var copy = document.createTextNode(tbs.textContent.replace("-", ""));
 
@@ -406,7 +425,6 @@ for (const rb of rbs) {
     subtitle.id = "subtitle";
     subtitle.appendChild(copy);
 
-    console.log(subtitle.textContent);
 
     if (tbs.textContent !== "- Cualquiera -  ") {
       document
