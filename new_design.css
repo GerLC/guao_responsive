@@ -902,8 +902,7 @@
   }
 
   .region.region-help > div > div.content {
-    margin: 0px;
-    width: 12rem;
+    width: 100%;
     font-size: 0.6em;
   }
 
@@ -3815,6 +3814,10 @@
   #content .section {
     padding: 0;
   }
+  
+  .page-celebraciones-escolares .region.region-help > div > div.content {
+  	width: 100%;
+  }
 
   /* CONTENIDO IMAGENES VIEW CONTENT ROW */
 
@@ -6297,6 +6300,10 @@
   /* CELEBRACIONES */
   .node-type-celebraciones-escolares #block-block-25 {
     width: 23rem;
+  }
+  
+    .page-celebraciones-escolares .region.region-help > div > div.content {
+  	width: 100%;
   }
 
   /********** CELEBRACIONES - MOBILE LANDSCAPE ***********/
